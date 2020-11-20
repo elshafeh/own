@@ -1,0 +1,12 @@
+library(ez)
+library(car)
+rm(list=ls())
+#pat   = read.table("~/Dropbox/Fieldtripping/txt/PrepAtt2.new.medianRT.txt",header=T)
+pat   = read.table("~/Dropbox/Fieldtripping/txt/PrepAtt2.new.meanRT.txt",header=T)
+#pat   = pat[pat$DIS == "D0",]
+model.pat <- lme4::lmer(meanRT ~ (CUE+DIS)^2 + (1|SUB), data =pat)
+#model.pat <- lme4::lmer(medianRT ~ (CUE+DIS)^2 + (1|SUB), data =pat)
+a         <-Anova(model.pat,type=2)
+print(a)
+lsmeans::cld(lsmeans::lsmeans(model.pat, "CUE"))
+lsmeans::cld(lsmeans::lsmeans(model.pat, "DIS"))

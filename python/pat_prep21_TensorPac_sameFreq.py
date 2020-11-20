@@ -1,0 +1,152 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Apr  3 11:37:22 2018
+
+@author: heshamelshafei
+"""
+
+# -*- coding: utf-8 -*-
+"""
+Spyder Editor
+
+"""
+
+# !pip install tensorpac
+
+import numpy as np
+import scipy
+import joblib
+import h5py
+import tensorpac
+import matplotlib.pyplot as plt
+import scipy.io as sio
+import pickle
+import math
+
+from decimal import Decimal
+from tensorpac import Pac # data = trials by time
+
+suj_list     = np.array([1,2,3,4,8,9,10,11,12,13,14,15,16,17]) # !! 
+
+time1_list   = np.array([-0.6,0.6])
+time1_wind   = np.array([0.4,0.4])
+
+ix_suj       = -1;
+
+list_chan    = sio.loadmat('/Users/heshamelshafei/GoogleDrive/PhD/Fieldtripping/data/paper_data/prep21_sepvox_chan_list.mat', squeeze_me=True, struct_as_record=False)
+list_chan    = list_chan['chan_list']
+list_cue     = ['NCnD','LCnD','RCnD']
+
+for s in suj_list:
+    
+    suj                         = "yc" + str(s)
+    
+    ext_dir                     = '/Users/heshamelshafei/GoogleDrive/PhD/Fieldtripping/data/paper_data/'
+    
+    mat_name                    = ext_dir+suj+'.CnD.prep21.maxAVMsepVoxels.1t120Hz.m800p2000msCov.mat'
+    low_freq                    = h5py.File(mat_name,'r')
+    high_freq                   = low_freq
+    
+    ntrial                      = len(low_freq['virtsens/trial'])
+    trialen                     = len(low_freq[low_freq['virtsens/trial'][0][0]])
+    nchan                       = len(low_freq[low_freq['virtsens/trial'][0][0]][0])
+    time_axis                   = np.array(low_freq[low_freq['virtsens/time'][0][0]])
+    time_axis                   = np.round(time_axis,3)
+    low_freq_data               = np.empty([ntrial, nchan,trialen],dtype=float)
+    
+    trial_info                  = np.round(np.array(low_freq['virtsens/trialinfo'][0]-1000)/100)
+    
+    print('Importing Phase and Amplitude Data for '+suj)
+                
+    for i in range(0,ntrial):
+        #print('trial '+str(i)+' out of '+ str(ntrial))
+        low_freq_data[:,:,:]    = np.transpose(np.array(low_freq[low_freq['virtsens/trial'][i][0]]))
+    
+    high_freq_data              = low_freq_data
+    chan_interest               = np.array([10,11,12,13,14,20,21,22,23,24,15,16,17,18,19,25,26,27,28,29])
+    
+    for n_method in range(1,6):
+        for ncue in range(0,3):
+            for nti in range(0,len(time1_list)):
+                
+                pha_beg     = 1
+                pha_end     = 20
+                pha_stp     = 2
+                
+                amp_beg     = 40
+                amp_end     = 120
+                amp_stp     = 5
+                
+                vec_pha     = np.arange(pha_beg, pha_end, pha_stp)[:-1]
+                vec_amp     = np.arange(amp_beg, amp_end, amp_stp)[:-1]
+                
+                data_pac    = np.empty([len(chan_interest), len(vec_amp),len(vec_pha)],dtype=float)
+            
+                for xi_chan in range(0,len(chan_interest)):
+                
+                    tbeg        = time1_list[nti]
+                    tend        = tbeg + time1_wind[nti]
+            
+                    if tbeg<0:
+                        nbeg = 'm'+np.str(np.round(np.abs(tbeg)*1000))
+                        nbeg = nbeg.rstrip('0').rstrip('.')
+                    else:
+                        nbeg = 'p'+np.str(np.round(np.abs(tbeg)*1000))
+                        nbeg = nbeg.rstrip('0').rstrip('.')
+                    
+                    if tend<0:
+                        nend = 'm'+np.str(np.round(np.abs(tend)*1000))
+                        nend = nend.rstrip('0').rstrip('.')
+                    else:
+                        nend = 'p'+np.str(np.round(np.abs(tend)*1000))
+                        nend = nend.rstrip('0').rstrip('.')   
+            
+                    period_name = nbeg+nend
+                    
+                    t1          = float('%.3f'%(time1_list[nti]))
+                    t2          = float('%.3f'%(np.round(time1_list[nti]+time1_wind[nti],1)))
+                    
+                    lm1         = np.int(np.where(time_axis==t1)[0])
+                    lm2         = np.int(np.where(time_axis==t2)[0])
+                    
+                    data_pha    = np.squeeze(low_freq_data[np.where(trial_info == ncue),chan_interest[xi_chan],:])
+                    data_pha    = data_pha[:,range(lm1,lm2)]
+                    
+                    data_pha    = data_pha - np.mean(data_pha,0)
+                    data_amp    = data_pha
+                    
+
+                    p           = Pac(idpac=(n_method, 0, 0), fpha=(pha_beg, pha_end, pha_stp, pha_stp), famp=(amp_beg, amp_end, amp_stp, amp_stp),
+                        dcomplex='wavelet',width=7) # start, stop, width, step
+                    
+                    sf          = 600
+                    n_perm      = 200
+                    
+                    xpac        = p.filterfit(sf,data_pha, xamp=data_amp,axis=1, nperm=n_perm, get_pval=True)
+                    xpac        = xpac[0]
+                    #xpac       = 0.5 * (np.log((1+xpac)/(1-xpac)))
+                    xpac        = np.mean(xpac,-1)
+                    
+                    data_pac[xi_chan,:,:] = xpac 
+                    
+                    del xpac
+                    
+                list_method     = np.array(['MVL','KLD','HR','ndPAC','PhaSyn']) #The ndPAC uses a p-value computed as 1/nperm.
+                list_surr       = np.array(['NoSurr','SwPhAmp','SwAmp','ShuAmp','TLag'])
+                list_norm       = np.array(['NoNorm','SubMean','DivMean','SubDivMean','Zscore'])
+                
+                fname_out       = ext_dir + suj + '.' + list_cue[ncue] + '.' + period_name
+                fname_out       = fname_out + '.' + list_method[n_method-1] + '.' +list_surr[0] + '.' + list_norm[0] + '.SameFreqNonZTransMinEvokedSepTensorPac.mat'
+                
+                print('Saving '+fname_out)
+                
+                py_pac          = {'powspctrm': data_pac,'time':vec_pha,'freq':vec_amp,'label':list_chan[chan_interest],'dimord':'chan_freq_time'}
+                
+                sio.savemat(fname_out, {'py_pac':py_pac})
+                
+                del py_pac 
+                del data_pac
+    
+    del low_freq_data       
+    del high_freq_data

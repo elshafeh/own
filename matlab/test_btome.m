@@ -1,0 +1,1 @@
+atlas = ft_read_atlas('/Users/heshamelshafei/Downloads/BNA_MPM_thr25_1.25mm.nii');

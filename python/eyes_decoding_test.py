@@ -1,0 +1,97 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Sep 29 09:44:35 2019
+
+@author: heshamelshafei
+"""
+
+import os
+if os.name != 'nt':
+    os.chdir('/home/mrphys/hesels/.conda/envs/mne_final/lib/python3.5/site-packages/')
+    
+import mne
+import numpy as np
+from mne.decoding import (SlidingEstimator, cross_val_multiscore, LinearModel, get_coef,GeneralizingEstimator,Vectorizer)
+from mne.decoding import (GeneralizingEstimator,SlidingEstimator, cross_val_multiscore, LinearModel, get_coef)
+
+if os.name != 'nt':
+    os.chdir('/home/mrphys/hesels/.conda/envs/mne_final/lib/python3.5/')
+    
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import StandardScaler
+from sklearn.linear_model import LogisticRegression
+from scipy.io import (savemat,loadmat)
+
+
+suj_list                                = list(['sub001','sub002','sub003','sub004','sub005','sub006','sub007',
+                                                'sub008','sub009','sub010','sub011','sub012','sub017','sub018',
+                                                'sub020','sub021','sub022','sub024','sub025','sub026','sub027',	
+                                                'sub028','sub029','sub030'])
+    
+    
+dcd_list                                = list(['decodEyes','decodCue','decodStim','decodCorrect'])
+gab_list                                = list(["cueLock","stimLock"])
+
+for isub in range(len(suj_list)):
+    
+    main_dir                            = 'I:/eyes/preproc/'
+    suj                                 = suj_list[isub]
+    dir_data_out                        = 'I:/eyes/decode/'
+    
+    for ngab in range(len(gab_list)):
+    
+        fname                           = main_dir + suj + '.' + gab_list[ngab] + '.dwn70.mat'
+        eventName                       = main_dir + suj + '.' + gab_list[ngab] + '.trialinfo.mat'
+        
+        # load in data and trailinfo
+        epochs                          = mne.read_epochs_fieldtrip(fname, None, data_name='data', trialinfo_column=0)
+        epochs                          = epochs.apply_baseline(baseline=(-0.2,0))
+        alldata                         = epochs.get_data() #Get all epochs as a 3D array.
+        
+        allevents                       = loadmat(eventName)['index']
+        time_axis                       = epochs.times
+        
+        ## pick trialswith response
+        find_resp                       = np.where(allevents[:,8] != 0)
+        alldata                         = np.squeeze(alldata[find_resp,:,:])
+        allevents                       = np.squeeze(allevents[find_resp,:])
+        
+        # how trialinfo matrix is organized:    
+        # 3 eyes
+        # 5 cue
+        # 6 stim (low/high)
+        # 8 correct
+        
+        indx_dcd                       = np.array([3,5,6,8])
+        
+        for ifeat in range(len(dcd_list)):
+                        
+            x                           = alldata
+            y                           = np.squeeze(allevents[:,indx_dcd[ifeat]])
+            
+            unique_y                    = np.unique(y)
+            y[np.where(y == unique_y[0])] = 0
+            y[np.where(y == unique_y[1])] = 1
+            
+            
+            fname_out                   = dir_data_out + suj + '.' + gab_list[ngab] + '.' + dcd_list[ifeat] + '.bsl.auc.mat'
+            
+            if not os.path.exists(fname_out):
+                
+                # increased no. iterations cause for some reason it wasn't "congerging"
+                clf                     = make_pipeline(StandardScaler(), 
+                                                        LinearModel(LogisticRegression(solver='lbfgs',max_iter=500))) # define model
+                time_decod              = SlidingEstimator(clf, n_jobs=1, scoring = 'roc_auc')
+                scores                  = cross_val_multiscore(time_decod, x, y, cv = 4, n_jobs = 1) # crossvalidate
+                scores                  = np.mean(scores, axis=0) # Mean scores across cross-validation splits
+                
+                print('\nsaving '+fname_out)
+                savemat(fname_out, mdict={'scores': scores,'time_axis':time_axis})
+                
+                # clean up
+                del(scores,x,y,fname_out)
+                
+        del(alldata,allevents,time_axis,epochs)
+        
+                
