@@ -1,0 +1,63 @@
+Scenario - 17_March_2015
+Logfile written - 02/08/2017 10:13:23
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+oc4	1	Response	253	13184	23017	1
+oc4	2	Picture	10	13330	0	1	20165	2	0	20000	other	0
+oc4	3	Picture	10	33662	0	1	40162	2	0	40000	other	0
+oc4	4	Picture	10	73991	0	1	40163	2	0	40000	other	0
+oc4	5	Sound	111	114220	0	1			0		incorrect	6
+oc4	5	Response	252	125656	11436	1
+oc4	6	Sound	122	145289	0	2			0		incorrect	8
+oc4	6	Response	251	152305	7016	2
+oc4	7	Sound	111	176359	0	1			0		incorrect	10
+oc4	7	Response	252	183107	6748	1
+oc4	8	Sound	121	207428	0	2			0		hit	12
+oc4	8	Response	252	216725	9297	2
+oc4	9	Sound	112	238498	0	1			0		incorrect	14
+oc4	9	Response	252	257526	19028	1
+oc4	9	Response	251	268818	30320	1
+oc4	10	Sound	111	269567	0	2			0		miss	0
+oc4	11	Sound	122	300637	0	1			0		hit	18
+oc4	11	Response	252	318382	17745	1
+oc4	12	Sound	111	331707	0	1			0		incorrect	20
+oc4	12	Response	252	343248	11541	2
+oc4	13	Sound	121	362776	0	1			0		incorrect	22
+oc4	13	Response	251	372272	9496	1
+oc4	14	Sound	112	393846	0	1			0		incorrect	24
+oc4	14	Response	252	403369	9523	1
+oc4	15	Sound	121	424915	0	1			0		hit	26
+oc4	15	Response	252	439008	14093	1
+oc4	16	Sound	121	455985	0	1			0		hit	28
+oc4	16	Response	252	469777	13792	1
+oc4	17	Sound	112	487054	0	1			0		incorrect	30
+oc4	17	Response	252	509833	22779	1
+oc4	18	Sound	112	518124	0	1			0		incorrect	32
+oc4	18	Response	252	536522	18398	1
+oc4	19	Sound	122	549193	0	1			0		hit	34
+oc4	19	Response	252	575630	26437	1
+oc4	20	Sound	122	580263	0	1			0		miss	0
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture	10	other				13330	1	20165	2	0	20000
+Picture	10	other				33662	1	40162	2	0	40000
+Picture	10	other				73991	1	40163	2	0	40000
+Sound	111	incorrect	2	11436	2	114220	1			0
+Sound	122	incorrect	1	7016	4	145289	2			0
+Sound	111	incorrect	2	6748	2	176359	1			0
+Sound	121	hit	2	9297	4	207428	2			0
+Sound	112	incorrect	2	19028	2	238498	1			0
+Sound	111	miss				269567	2			0
+Sound	122	hit	2	17745	2	300637	1			0
+Sound	111	incorrect	2	11541	3	331707	1			0
+Sound	121	incorrect	1	9496	2	362776	1			0
+Sound	112	incorrect	2	9523	2	393846	1			0
+Sound	121	hit	2	14093	2	424915	1			0
+Sound	121	hit	2	13792	2	455985	1			0
+Sound	112	incorrect	2	22779	2	487054	1			0
+Sound	112	incorrect	2	18398	2	518124	1			0
+Sound	122	hit	2	26437	2	549193	1			0
+Sound	122	miss				580263	1			0

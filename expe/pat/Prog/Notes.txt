@@ -1,0 +1,28 @@
+#Three tasks:
+
+Detection with fixed cue_target
+Detection with jittered cue_target
+Discrimination with fixed cue_target
+
+# Subjects no longer press Enter
+# Latin Sqaure Arrangement For Subjects; to get rid of the task order effect:
+
+Fix 	Jit 	Disc
+A 	B 	C
+
+SUBJ1	A	B	C
+SUBJ2	C	A	B
+SUBJ3	B	C	A
+SUBJ4	A	B	C
+SUBJ5	C	A	B
+SUBJ6	B	C	A
+SUBJ7	A	B	C
+SUBJ8	C	A	B
+SUBJ9	B	C	A
+SUBJ10	A	B	C
+
+# For congruent vs. incogruent disc trials: we expect more top-down? difference between performances = top-down control?
+# Arousal/Emotion Test for Distractors: Ask Aurelie about it
+# We'll run the same statistical tests she ran in her experiment. 
+# Response window = 1000s (too much?)
+# Set global attenuation = 0.35? 

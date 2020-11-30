@@ -1,0 +1,18 @@
+Scenario - 17_March_2015
+Logfile written - 06/16/2016 10:37:36
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+fc6	1	Response	253	62744	72578	1
+fc6	2	Picture	10	62826	0	1	20165	2	0	20000	other	0
+fc6	3	Picture	10	83157	0	2	40164	3	0	40000	other	0
+fc6	4	Picture	10	123487	0	2	40163	4	0	40000	other	0
+fc6	5	Nothing	91	163652	0	1			0		other	0
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture	10	other				62826	1	20165	2	0	20000
+Picture	10	other				83157	2	40164	3	0	40000
+Picture	10	other				123487	2	40163	4	0	40000
+Nothing	91	other				163652	1			0

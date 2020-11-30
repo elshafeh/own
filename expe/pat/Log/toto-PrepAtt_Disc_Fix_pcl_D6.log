@@ -1,0 +1,93 @@
+Scenario - 17_March_2015
+Logfile written - 02/07/2018 14:56:37
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+toto	1	Response	253	3343	13176	1
+toto	2	Picture	10	3498	0	1	20164	3	0	20000	other	0
+toto	3	Picture	10	23829	0	2	40162	4	0	40000	other	0
+toto	4	Picture	10	64158	0	1	40162	3	0	40000	other	0
+toto	5	Nothing	91	104322	0	1			0		other	0
+toto	6	Picture	103	134651	0	1	1999	3	0	1920	other	0
+toto	7	Sound	63	146638	0	1			0		miss	0
+toto	8	Picture	101	181479	0	1	2000	2	0	1920	other	0
+toto	9	Sound	61	193451	0	2			0		miss	0
+toto	10	Picture	1	228640	0	2	2000	4	0	1920	other	0
+toto	11	Sound	61	240623	0	2			0		miss	0
+toto	12	Picture	24	276136	0	1	1999	3	0	1920	other	0
+toto	12	Sound	52	282366	6230	1			6230		other	0
+toto	13	Sound	64	288125	0	1			0		miss	0
+toto	14	Picture	4	322797	0	2	2000	3	0	1920	other	0
+toto	15	Sound	64	334788	0	2			0		miss	0
+toto	16	Picture	21	369292	0	2	2000	3	0	1920	other	0
+toto	16	Sound	52	376701	7409	1			7410		other	0
+toto	17	Sound	61	381272	0	1			0		miss	0
+toto	18	Picture	204	416954	0	1	1999	3	0	1920	other	0
+toto	19	Sound	64	428953	0	1			0		miss	0
+toto	20	Picture	11	463616	0	1	1999	3	0	1920	other	0
+toto	20	Sound	51	467885	4269	1			4270		other	0
+toto	21	Sound	61	475587	0	1			0		miss	0
+toto	22	Picture	1	510944	0	1	1999	3	0	1920	other	0
+toto	23	Sound	61	522938	0	2			0		miss	0
+toto	24	Picture	3	557272	0	2	2000	4	0	1920	other	0
+toto	25	Sound	63	569243	0	1			0		miss	0
+toto	26	Picture	123	603767	0	2	2000	4	0	1920	other	0
+toto	26	Sound	52	610076	6309	2			6310		other	0
+toto	27	Sound	63	615757	0	1			0		miss	0
+toto	28	Picture	214	650762	0	2	2000	3	0	1920	other	0
+toto	28	Sound	51	655611	4849	2			4850		other	0
+toto	29	Sound	64	662749	0	1			0		miss	0
+toto	30	Picture	202	697757	0	2	2000	4	0	1920	other	0
+toto	31	Sound	62	709742	0	1			0		miss	0
+toto	32	Picture	4	744586	0	1	1999	3	0	1920	other	0
+toto	33	Sound	64	756585	0	1			0		miss	0
+toto	34	Picture	3	792581	0	1	1999	3	0	1920	other	0
+toto	35	Sound	63	804565	0	2			0		miss	0
+toto	36	Picture	101	838742	0	2	2000	3	0	1920	other	0
+toto	37	Sound	61	850720	0	1			0		miss	0
+toto	37	Quit		882430	31710
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture	10	other				3498	1	20164	3	0	20000
+Picture	10	other				23829	2	40162	4	0	40000
+Picture	10	other				64158	1	40162	3	0	40000
+Nothing	91	other				104322	1			0
+Picture	103	other				134651	1	1999	3	0	1920
+Sound	63	miss				146638	1			0
+Picture	101	other				181479	1	2000	2	0	1920
+Sound	61	miss				193451	2			0
+Picture	1	other				228640	2	2000	4	0	1920
+Sound	61	miss				240623	2			0
+Picture	24	other				276136	1	1999	3	0	1920
+Sound	52	other				282366	1			6230
+Sound	64	miss				288125	1			0
+Picture	4	other				322797	2	2000	3	0	1920
+Sound	64	miss				334788	2			0
+Picture	21	other				369292	2	2000	3	0	1920
+Sound	52	other				376701	1			7410
+Sound	61	miss				381272	1			0
+Picture	204	other				416954	1	1999	3	0	1920
+Sound	64	miss				428953	1			0
+Picture	11	other				463616	1	1999	3	0	1920
+Sound	51	other				467885	1			4270
+Sound	61	miss				475587	1			0
+Picture	1	other				510944	1	1999	3	0	1920
+Sound	61	miss				522938	2			0
+Picture	3	other				557272	2	2000	4	0	1920
+Sound	63	miss				569243	1			0
+Picture	123	other				603767	2	2000	4	0	1920
+Sound	52	other				610076	2			6310
+Sound	63	miss				615757	1			0
+Picture	214	other				650762	2	2000	3	0	1920
+Sound	51	other				655611	2			4850
+Sound	64	miss				662749	1			0
+Picture	202	other				697757	2	2000	4	0	1920
+Sound	62	miss				709742	1			0
+Picture	4	other				744586	1	1999	3	0	1920
+Sound	64	miss				756585	1			0
+Picture	3	other				792581	1	1999	3	0	1920
+Sound	63	miss				804565	2			0
+Picture	101	other				838742	2	2000	3	0	1920
+Sound	61	miss				850720	1			0

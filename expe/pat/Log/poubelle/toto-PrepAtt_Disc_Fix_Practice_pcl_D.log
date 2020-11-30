@@ -1,0 +1,57 @@
+Scenario - 17_March_2015
+Logfile written - 05/09/2016 14:20:22
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+toto	1	Response	253	6000	15833	1
+toto	2	Picture	10	6164	0	2	20165	3	0	20000	other	0
+toto	3	Picture	10	26495	0	2	40164	3	0	40000	other	0
+toto	4	Picture	10	66825	0	2	40163	4	0	40000	other	0
+toto	5	Nothing	91	106990	0	1			0		other	0
+toto	6	Picture	202	137152	0	2	2000	3	0	1920	other	0
+toto	7	Sound	62	149123	0	1			0		miss	0
+toto	8	Picture	1	184314	0	2	2000	4	0	1920	other	0
+toto	9	Sound	61	196296	0	1			0		miss	0
+toto	10	Picture	103	230643	0	2	2000	4	0	1920	other	0
+toto	11	Sound	63	242631	0	1			0		miss	0
+toto	12	Picture	204	278306	0	1	2000	2	0	1920	other	0
+toto	13	Sound	64	290283	0	2			0		miss	0
+toto	14	Picture	2	325301	0	2	2000	4	0	1920	other	0
+toto	15	Sound	62	337277	0	1			0		miss	0
+toto	16	Picture	103	372297	0	1	2000	2	0	1920	other	0
+toto	17	Sound	63	384271	0	1			0		miss	0
+toto	18	Picture	123	419959	0	2	2000	4	0	1920	other	0
+toto	18	Sound	52	426048	6089	2			6090		other	0
+toto	19	Sound	63	431953	0	1			0		miss	0
+toto	20	Picture	3	467288	0	2	2000	3	0	1920	other	0
+toto	21	Sound	63	479276	0	1			0		miss	0
+toto	22	Picture	14	514117	0	2	2000	4	0	1920	other	0
+toto	22	Sound	51	517466	3349	1			3350		other	0
+toto	22	Quit		524069	9952
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture	10	other				6164	2	20165	3	0	20000
+Picture	10	other				26495	2	40164	3	0	40000
+Picture	10	other				66825	2	40163	4	0	40000
+Nothing	91	other				106990	1			0
+Picture	202	other				137152	2	2000	3	0	1920
+Sound	62	miss				149123	1			0
+Picture	1	other				184314	2	2000	4	0	1920
+Sound	61	miss				196296	1			0
+Picture	103	other				230643	2	2000	4	0	1920
+Sound	63	miss				242631	1			0
+Picture	204	other				278306	1	2000	2	0	1920
+Sound	64	miss				290283	2			0
+Picture	2	other				325301	2	2000	4	0	1920
+Sound	62	miss				337277	1			0
+Picture	103	other				372297	1	2000	2	0	1920
+Sound	63	miss				384271	1			0
+Picture	123	other				419959	2	2000	4	0	1920
+Sound	52	other				426048	2			6090
+Sound	63	miss				431953	1			0
+Picture	3	other				467288	2	2000	3	0	1920
+Sound	63	miss				479276	1			0
+Picture	14	other				514117	2	2000	4	0	1920
+Sound	51	other				517466	1			3350

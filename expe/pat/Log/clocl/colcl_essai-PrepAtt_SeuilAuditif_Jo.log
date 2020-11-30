@@ -1,0 +1,99 @@
+Scenario - SeuilAuditif
+Logfile written - 05/11/2017 14:41:26
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+colcl_essai	2	Sound	L_tarson_Left_0.7	388	57	2			0		other	0
+colcl_essai	3	Sound	L_tarson_Left_0.65	10535	38	2			0		other	0
+colcl_essai	4	Sound	L_tarson_Left_0.6	20712	50	1			0		other	0
+colcl_essai	4	Response	1	22083	1421	1
+colcl_essai	5	Sound	L_tarson-Left-0.55	30859	31	1			0		other	0
+colcl_essai	6	Sound	L_tarson_Left_0.55	41036	42	1			0		other	0
+colcl_essai	7	Sound	L_tarson_Left_0.6	51213	54	1			0		other	0
+colcl_essai	8	Sound	L_tarson_Left_0.65	61360	35	1			0		other	0
+colcl_essai	8	Response	1	67218	5893	1
+colcl_essai	9	Sound	L_tarson-Left-0.7	71537	46	1			0		other	0
+colcl_essai	10	Sound	L_tarson_Left_0.7	81714	58	1			0		other	0
+colcl_essai	11	Sound	L_tarson_Left_0.68	91861	39	1			0		other	0
+colcl_essai	12	Sound	L_tarson_Left_0.66	102038	51	1			0		other	0
+colcl_essai	13	Sound	L_tarson_Left_0.64	112185	32	1			0		other	0
+colcl_essai	14	Sound	L_tarson_Left_0.62	122361	42	2			0		other	0
+colcl_essai	15	Sound	L_tarson_Left_0.6	132538	53	1			0		other	0
+colcl_essai	16	Sound	L_tarson_Left_0.58	142685	35	2			0		other	0
+colcl_essai	17	Sound	L_tarson_Left_0.56	152862	46	2			0		other	0
+colcl_essai	18	Sound	L_tarson_Left_0.54	163039	57	1			0		other	0
+colcl_essai	19	Sound	L_tarson_Left_0.52	173186	39	1			0		other	0
+colcl_essai	20	Sound	L_tarson_Left_0.5	183363	50	1			0		other	0
+colcl_essai	21	Sound	L_tarson_Left_0.48	193510	31	1			0		other	0
+colcl_essai	22	Sound	L_tarson_Left_0.46	203687	42	1			0		other	0
+colcl_essai	23	Sound	L_tarson_Left_0.44	213864	54	1			0		other	0
+colcl_essai	23	Response	1	223809	9999	2
+colcl_essai	24	Sound	L_tarson-Left-0.42	224011	35	1			0		other	0
+colcl_essai	25	Sound	L_tarson_Left_0.42	234188	47	1			0		other	0
+colcl_essai	26	Sound	L_tarson_Left_0.44	244365	58	1			0		other	0
+colcl_essai	27	Sound	L_tarson_Left_0.46	254512	39	1			0		other	0
+colcl_essai	28	Sound	L_tarson_Left_0.48	264688	49	2			0		other	0
+colcl_essai	28	Response	1	272797	8158	2
+colcl_essai	29	Sound	L_tarson-Left-0.5	274835	31	1			0		other	0
+colcl_essai	30	Sound	L_tarson_Left_0.5	285012	42	1			0		other	0
+colcl_essai	31	Sound	L_tarson_Left_0.48	295189	53	1			0		other	0
+colcl_essai	32	Sound	L_tarson_Left_0.46	305336	35	1			0		other	0
+colcl_essai	33	Sound	L_tarson_Left_0.44	315513	46	1			0		other	0
+colcl_essai	34	Sound	L_tarson_Left_0.42	325690	57	1			0		other	0
+colcl_essai	35	Sound	L_tarson_Left_0.4	335837	38	1			0		other	0
+colcl_essai	36	Sound	L_tarson_Left_0.38	346014	50	1			0		other	0
+colcl_essai	36	Response	1	354180	8216	2
+colcl_essai	37	Sound	L_tarson-Left-0.36	356161	31	1			0		other	0
+colcl_essai	37	Response	1	358641	2511	1
+colcl_essai	38	Sound	L_tarson_Left_0.36	366338	43	1			0		other	0
+colcl_essai	39	Sound	L_tarson_Left_0.38	376515	54	1			0		other	0
+colcl_essai	40	Sound	L_tarson_Left_0.4	386661	34	2			0		other	0
+colcl_essai	40	Response	1	392857	6230	1
+colcl_essai	42	Sound	H_tarson_Left_0.7	407165	40	1			0		other	0
+colcl_essai	43	Sound	H_tarson_Left_0.65	417342	51	1			0		other	0
+colcl_essai	43	Quit		422333	5042
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Sound	L_tarson_Left_0.7	other				388	2			0
+Sound	L_tarson_Left_0.65	other				10535	2			0
+Sound	L_tarson_Left_0.6	other				20712	1			0
+Sound	L_tarson-Left-0.55	other				30859	1			0
+Sound	L_tarson_Left_0.55	other				41036	1			0
+Sound	L_tarson_Left_0.6	other				51213	1			0
+Sound	L_tarson_Left_0.65	other				61360	1			0
+Sound	L_tarson-Left-0.7	other				71537	1			0
+Sound	L_tarson_Left_0.7	other				81714	1			0
+Sound	L_tarson_Left_0.68	other				91861	1			0
+Sound	L_tarson_Left_0.66	other				102038	1			0
+Sound	L_tarson_Left_0.64	other				112185	1			0
+Sound	L_tarson_Left_0.62	other				122361	2			0
+Sound	L_tarson_Left_0.6	other				132538	1			0
+Sound	L_tarson_Left_0.58	other				142685	2			0
+Sound	L_tarson_Left_0.56	other				152862	2			0
+Sound	L_tarson_Left_0.54	other				163039	1			0
+Sound	L_tarson_Left_0.52	other				173186	1			0
+Sound	L_tarson_Left_0.5	other				183363	1			0
+Sound	L_tarson_Left_0.48	other				193510	1			0
+Sound	L_tarson_Left_0.46	other				203687	1			0
+Sound	L_tarson_Left_0.44	other				213864	1			0
+Sound	L_tarson-Left-0.42	other				224011	1			0
+Sound	L_tarson_Left_0.42	other				234188	1			0
+Sound	L_tarson_Left_0.44	other				244365	1			0
+Sound	L_tarson_Left_0.46	other				254512	1			0
+Sound	L_tarson_Left_0.48	other				264688	2			0
+Sound	L_tarson-Left-0.5	other				274835	1			0
+Sound	L_tarson_Left_0.5	other				285012	1			0
+Sound	L_tarson_Left_0.48	other				295189	1			0
+Sound	L_tarson_Left_0.46	other				305336	1			0
+Sound	L_tarson_Left_0.44	other				315513	1			0
+Sound	L_tarson_Left_0.42	other				325690	1			0
+Sound	L_tarson_Left_0.4	other				335837	1			0
+Sound	L_tarson_Left_0.38	other				346014	1			0
+Sound	L_tarson-Left-0.36	other				356161	1			0
+Sound	L_tarson_Left_0.36	other				366338	1			0
+Sound	L_tarson_Left_0.38	other				376515	1			0
+Sound	L_tarson_Left_0.4	other				386661	2			0
+Sound	H_tarson_Left_0.7	other				407165	1			0
+Sound	H_tarson_Left_0.65	other				417342	1			0

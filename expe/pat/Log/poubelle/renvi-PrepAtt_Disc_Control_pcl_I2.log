@@ -1,0 +1,25 @@
+Scenario - 17_March_2015
+Logfile written - 07/19/2017 14:45:51
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+renvi	1	Response	253	2560	12229	3
+renvi	2	Picture	10	2664	0	2	20164	5	0	20000	other	0
+renvi	3	Picture	10	22995	0	2	40162	5	0	40000	other	0
+renvi	3	Response	251	46787	23792	3
+renvi	3	Response	252	61493	38498	1
+renvi	4	Picture	10	63324	0	3	40163	5	0	40000	other	0
+renvi	4	Response	252	78464	15140	1
+renvi	5	Sound	111	103627	0	2			0		incorrect	9
+renvi	5	Response	252	110557	6930	2
+renvi	6	Sound	122	134757	0	2			0		miss	0
+renvi	6	Quit		190798	56041
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture	10	other				2664	2	20164	5	0	20000
+Picture	10	other				22995	2	40162	5	0	40000
+Picture	10	other				63324	3	40163	5	0	40000
+Sound	111	incorrect	2	6930	4	103627	2			0
+Sound	122	miss				134757	2			0

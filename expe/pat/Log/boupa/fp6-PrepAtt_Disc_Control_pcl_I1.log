@@ -1,0 +1,67 @@
+Scenario - 17_March_2015
+Logfile written - 06/23/2016 10:07:39
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+fp6	1	Response	253	19577	29410	1
+fp6	2	Picture	10	19663	0	1	20164	3	0	20000	other	0
+fp6	3	Picture	10	39994	0	2	40163	3	0	40000	other	0
+fp6	3	Response	251	66635	26641	2
+fp6	4	Picture	10	80323	0	2	40163	3	0	40000	other	0
+fp6	4	Response	252	103905	23582	1
+fp6	5	Sound	111	120565	0	1			0		hit	8
+fp6	5	Response	251	128053	7488	1
+fp6	5	Response	252	135272	14707	1
+fp6	6	Sound	122	151634	0	2			0		hit	11
+fp6	6	Response	252	156748	5114	1
+fp6	7	Sound	111	182704	0	1			0		hit	13
+fp6	7	Response	251	191275	8571	1
+fp6	8	Sound	121	213773	0	1			0		incorrect	15
+fp6	8	Response	251	223004	9231	1
+fp6	9	Sound	112	244843	0	1			0		incorrect	17
+fp6	9	Response	252	267114	22271	1
+fp6	10	Sound	111	275912	0	1			0		incorrect	19
+fp6	10	Response	252	293238	17326	1
+fp6	11	Sound	122	306982	0	1			0		hit	21
+fp6	11	Response	252	319268	12286	2
+fp6	12	Sound	111	338051	0	1			0		hit	23
+fp6	12	Response	251	348427	10376	2
+fp6	13	Sound	121	369120	0	2			0		hit	25
+fp6	13	Response	252	384749	15629	2
+fp6	14	Sound	112	400190	0	1			0		incorrect	27
+fp6	14	Response	252	409102	8912	1
+fp6	15	Sound	121	431259	0	2			0		incorrect	29
+fp6	15	Response	251	442283	11024	2
+fp6	16	Sound	121	462329	0	1			0		hit	31
+fp6	16	Response	252	471315	8986	1
+fp6	17	Sound	112	493398	0	1			0		incorrect	33
+fp6	17	Response	252	499115	5717	1
+fp6	18	Sound	112	524468	0	1			0		incorrect	35
+fp6	18	Response	252	530023	5555	1
+fp6	19	Sound	122	555537	0	1			0		incorrect	37
+fp6	19	Response	251	564988	9451	1
+fp6	20	Sound	122	586606	0	2			0		incorrect	39
+fp6	20	Response	251	593671	7065	1
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture	10	other				19663	1	20164	3	0	20000
+Picture	10	other				39994	2	40163	3	0	40000
+Picture	10	other				80323	2	40163	3	0	40000
+Sound	111	hit	1	7488	2	120565	1			0
+Sound	122	hit	2	5114	3	151634	2			0
+Sound	111	hit	1	8571	2	182704	1			0
+Sound	121	incorrect	1	9231	2	213773	1			0
+Sound	112	incorrect	2	22271	2	244843	1			0
+Sound	111	incorrect	2	17326	2	275912	1			0
+Sound	122	hit	2	12286	3	306982	1			0
+Sound	111	hit	1	10376	3	338051	1			0
+Sound	121	hit	2	15629	4	369120	2			0
+Sound	112	incorrect	2	8912	2	400190	1			0
+Sound	121	incorrect	1	11024	4	431259	2			0
+Sound	121	hit	2	8986	2	462329	1			0
+Sound	112	incorrect	2	5717	2	493398	1			0
+Sound	112	incorrect	2	5555	2	524468	1			0
+Sound	122	incorrect	1	9451	2	555537	1			0
+Sound	122	incorrect	1	7065	3	586606	2			0

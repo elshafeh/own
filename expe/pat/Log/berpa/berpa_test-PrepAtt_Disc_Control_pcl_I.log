@@ -1,0 +1,65 @@
+Scenario - 17_March_2015
+Logfile written - 07/26/2017 09:55:32
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+berpa_test	1	Response	253	42957	52790	1
+berpa_test	2	Picture	10	42994	0	1	20164	3	0	20000	other	0
+berpa_test	3	Picture	10	63325	0	1	40162	3	0	40000	other	0
+berpa_test	4	Picture	10	103654	0	2	40162	4	0	40000	other	0
+berpa_test	4	Response	252	126409	22755	1
+berpa_test	4	Response	251	133228	29574	1
+berpa_test	5	Sound	111	143881	0	1			0		incorrect	8
+berpa_test	5	Response	252	155994	12113	1
+berpa_test	6	Sound	122	174951	0	1			0		miss	0
+berpa_test	7	Sound	111	206020	0	1			0		incorrect	11
+berpa_test	7	Response	252	213976	7956	1
+berpa_test	8	Sound	121	237089	0	1			0		incorrect	13
+berpa_test	8	Response	251	240674	3585	1
+berpa_test	9	Sound	112	268159	0	1			0		incorrect	15
+berpa_test	9	Response	252	270756	2597	1
+berpa_test	10	Sound	111	299228	0	1			0		incorrect	17
+berpa_test	10	Response	252	303283	4055	1
+berpa_test	11	Sound	122	330297	0	1			0		incorrect	19
+berpa_test	11	Response	251	333197	2900	2
+berpa_test	12	Sound	111	361366	0	2			0		incorrect	21
+berpa_test	12	Response	252	364182	2816	1
+berpa_test	13	Sound	121	392436	0	1			0		incorrect	23
+berpa_test	13	Response	251	395164	2728	1
+berpa_test	14	Sound	112	423505	0	1			0		incorrect	25
+berpa_test	14	Response	252	427167	3662	1
+berpa_test	15	Sound	121	454574	0	1			0		incorrect	27
+berpa_test	15	Response	251	457526	2952	1
+berpa_test	16	Sound	121	485643	0	2			0		incorrect	29
+berpa_test	16	Response	251	490964	5321	1
+berpa_test	17	Sound	112	516713	0	1			0		incorrect	31
+berpa_test	17	Response	252	519363	2650	1
+berpa_test	18	Sound	112	547782	0	1			0		incorrect	33
+berpa_test	18	Response	252	550762	2980	1
+berpa_test	19	Sound	122	578851	0	2			0		incorrect	35
+berpa_test	19	Response	251	581622	2771	1
+berpa_test	20	Sound	122	609921	0	1			0		incorrect	37
+berpa_test	20	Response	251	613387	3466	1
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture	10	other				42994	1	20164	3	0	20000
+Picture	10	other				63325	1	40162	3	0	40000
+Picture	10	other				103654	2	40162	4	0	40000
+Sound	111	incorrect	2	12113	2	143881	1			0
+Sound	122	miss				174951	1			0
+Sound	111	incorrect	2	7956	2	206020	1			0
+Sound	121	incorrect	1	3585	2	237089	1			0
+Sound	112	incorrect	2	2597	2	268159	1			0
+Sound	111	incorrect	2	4055	2	299228	1			0
+Sound	122	incorrect	1	2900	3	330297	1			0
+Sound	111	incorrect	2	2816	3	361366	2			0
+Sound	121	incorrect	1	2728	2	392436	1			0
+Sound	112	incorrect	2	3662	2	423505	1			0
+Sound	121	incorrect	1	2952	2	454574	1			0
+Sound	121	incorrect	1	5321	3	485643	2			0
+Sound	112	incorrect	2	2650	2	516713	1			0
+Sound	112	incorrect	2	2980	2	547782	1			0
+Sound	122	incorrect	1	2771	3	578851	2			0
+Sound	122	incorrect	1	3466	2	609921	1			0

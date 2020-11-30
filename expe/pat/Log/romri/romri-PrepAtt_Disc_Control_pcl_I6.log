@@ -1,0 +1,66 @@
+Scenario - 17_March_2015
+Logfile written - 05/26/2017 15:04:50
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+romri	1	Response	253	19151	28985	1
+romri	2	Picture	10	19329	0	2	20165	4	0	20000	other	0
+romri	3	Picture	10	39661	0	1	40163	2	0	40000	other	0
+romri	3	Response	251	65922	26261	2
+romri	4	Picture	10	79990	0	2	40163	4	0	40000	other	0
+romri	4	Response	252	95722	15732	1
+romri	5	Sound	111	120236	0	2			0		incorrect	8
+romri	5	Response	252	132233	11997	1
+romri	6	Sound	122	151306	0	1			0		incorrect	10
+romri	6	Response	251	160488	9182	1
+romri	7	Sound	111	182376	0	1			0		incorrect	12
+romri	7	Response	252	188564	6188	2
+romri	8	Sound	121	213445	0	1			0		incorrect	14
+romri	8	Response	251	225892	12447	1
+romri	9	Sound	112	244515	0	1			0		incorrect	16
+romri	9	Response	252	260966	16451	1
+romri	10	Sound	111	275584	0	1			0		incorrect	18
+romri	10	Response	252	284121	8537	1
+romri	11	Sound	122	306654	0	1			0		incorrect	20
+romri	11	Response	251	313824	7170	2
+romri	12	Sound	111	337723	0	1			0		incorrect	22
+romri	12	Response	252	344244	6521	1
+romri	13	Sound	121	368793	0	1			0		incorrect	24
+romri	13	Response	251	381140	12347	1
+romri	14	Sound	112	399862	0	1			0		hit	26
+romri	14	Response	251	408201	8339	2
+romri	15	Sound	121	430932	0	1			0		hit	28
+romri	15	Response	252	442754	11822	1
+romri	16	Sound	121	462001	0	2			0		hit	30
+romri	16	Response	252	467352	5351	1
+romri	17	Sound	112	493071	0	1			0		hit	32
+romri	17	Response	251	502620	9549	1
+romri	18	Sound	112	524141	0	1			0		hit	34
+romri	18	Response	251	530471	6330	1
+romri	19	Sound	122	555210	0	1			0		hit	36
+romri	19	Response	252	562342	7132	1
+romri	20	Sound	122	586280	0	1			0		hit	38
+romri	20	Response	252	592285	6005	2
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture	10	other				19329	2	20165	4	0	20000
+Picture	10	other				39661	1	40163	2	0	40000
+Picture	10	other				79990	2	40163	4	0	40000
+Sound	111	incorrect	2	11997	3	120236	2			0
+Sound	122	incorrect	1	9182	2	151306	1			0
+Sound	111	incorrect	2	6188	3	182376	1			0
+Sound	121	incorrect	1	12447	2	213445	1			0
+Sound	112	incorrect	2	16451	2	244515	1			0
+Sound	111	incorrect	2	8537	2	275584	1			0
+Sound	122	incorrect	1	7170	3	306654	1			0
+Sound	111	incorrect	2	6521	2	337723	1			0
+Sound	121	incorrect	1	12347	2	368793	1			0
+Sound	112	hit	1	8339	3	399862	1			0
+Sound	121	hit	2	11822	2	430932	1			0
+Sound	121	hit	2	5351	3	462001	2			0
+Sound	112	hit	1	9549	2	493071	1			0
+Sound	112	hit	1	6330	2	524141	1			0
+Sound	122	hit	2	7132	2	555210	1			0
+Sound	122	hit	2	6005	3	586280	1			0

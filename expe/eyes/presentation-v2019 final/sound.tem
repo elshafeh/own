@@ -1,0 +1,9 @@
+# == Sounds Definitons ==
+
+sound { wavefile { filename = "Left.wav"; }; default_code = "sound1"; } cue_left;    
+sound { wavefile { filename = "Right.wav"; }; default_code = "sound2"; } cue_right;
+sound { wavefile { filename = "correct.wav"; }; default_code = "feedback_correct"; } feedback_correct;    
+sound { wavefile { filename = "incorrect.wav"; }; default_code = "feedback_incorrect"; } feedback_incorrect;
+sound { wavefile { filename = "end_expe.wav"; }; default_code = "instruct_end_expe"; } instruct_end;    
+sound { wavefile { filename = "eye_close.wav"; }; default_code = "instruct_eye_close"; } instruct_eye_close;    
+sound { wavefile { filename = "eye_open.wav"; }; default_code = "instruct_eye_open"; } instruct_eye_open;

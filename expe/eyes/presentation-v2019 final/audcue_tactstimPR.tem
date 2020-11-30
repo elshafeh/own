@@ -1,0 +1,130 @@
+##################################################
+### trial template < PRACTISE NO DISTRACTORS > ###
+##################################################
+
+### set the trial parameters
+IF '$comb == 1';
+	IF '$resp == 1'; # low freq
+		$pulse_num = 7;
+		$pulse_int = 40;
+	ENDIF;
+	IF '$resp == 2'; # high freq
+		$pulse_num = 11;
+		$pulse_int = 24;
+	ENDIF;
+ENDIF;
+
+IF '$comb == 2';
+	IF '$resp == 1'; # low freq
+		$pulse_num = 7;
+		$pulse_int = 40;
+	ENDIF;
+	IF '$resp == 2'; # high freq
+		$pulse_num = 13;
+		$pulse_int = 20;
+	ENDIF;
+ENDIF;
+
+IF '$comb == 3';
+	IF '$resp == 1'; # low freq
+		$pulse_num = 7;
+		$pulse_int = 40;
+	ENDIF;
+	IF '$resp == 2'; # high freq
+		$pulse_num = 17;
+		$pulse_int = 15;
+	ENDIF;
+ENDIF;
+
+IF '$comb == 4';
+	IF '$resp == 1'; # low freq
+		$pulse_num = 9;
+		$pulse_int = 30;
+	ENDIF;
+	IF '$resp == 2'; # high freq
+		$pulse_num = 11;
+		$pulse_int = 24;
+	ENDIF;
+ENDIF;
+
+IF '$comb == 5';
+	IF '$resp == 1'; # low freq
+		$pulse_num = 9;
+		$pulse_int = 30;
+	ENDIF;
+	IF '$resp == 2'; # high freq
+		$pulse_num = 13;
+		$pulse_int = 20;
+	ENDIF;
+ENDIF;
+
+IF '$comb == 6';
+	IF '$resp == 1'; # low freq
+	$pulse_num = 9;
+	$pulse_int = 30;
+	ENDIF;
+	IF '$resp == 2'; # high freq
+		$pulse_num = 17;
+		$pulse_int = 15;
+	ENDIF;
+ENDIF;
+
+$isi = '1000 + int($random_value * 800)'; # random isi with length 1 - 1.8 s (avg: 1.4 s)
+
+
+### the actual experimental trial 
+trial {
+	trial_duration = '3140 + $isi'; # jittered, average length: 4120 ms (including 200 ms feedback)
+	
+	trial_type 				= first_response;
+	all_responses 			= false;
+	
+	correct_feedback 		= correct;
+	incorrect_feedback 	= incorrect;
+	no_response_feedback = noresp;
+	
+	
+	# fixation cross [0 1.2]
+	picture default;
+	time 			= 0;
+	duration 	= 1200;
+	code 			= "start";
+	#port_code 	= 90;
+		
+	# cue left/right [1.2 1.4]
+	sound $cue;
+	time 			= 1200;
+	duration 	= 200;
+	code 			= $cue_code;
+	port_code 	= $cue_code;
+	
+	# fixation cross, jittered ISI, avg: [1.4 2.8]
+	picture default;
+	time 			= 1400;
+	duration 	= '$isi - $pulse_int';
+	code 			= 32;
+	port_code 	= 32;
+	
+	# stim left/right, response window: max 1 s >> avg: [2.8 3.8] + 120 ms stim
+	nothing{};
+	time = '1400 + $isi - $pulse_int'; # this is for correctly timing the first pulse
+	
+	# mark stim onset
+	nothing{}; 
+	deltat 			= $pulse_int;
+	code 				= 13; # 
+	port_code 		= 13;
+	
+	# the pattern
+	LOOP $i $pulse_num;
+		nothing{};
+		deltat 		= $pulse_int;
+		code 			= $stim;
+		port_code 	= $stim;
+	ENDLOOP;
+
+
+	target_button = $resp;
+	
+	# feedback, 0.2 s, max/avg: [3.8 4] + 120 ms stim
+};

@@ -1,0 +1,71 @@
+Scenario - 17_March_2015
+Logfile written - 07/18/2017 10:05:33
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+bouma	1	Response	251	52582	62415	1
+bouma	1	Response	251	52689	62522	1
+bouma	1	Response	253	115196	125029	1
+bouma	2	Picture	10	115321	0	1	20164	3	0	20000	other	0
+bouma	3	Picture	10	135652	0	2	40163	3	0	40000	other	0
+bouma	4	Picture	10	175981	0	2	40164	3	0	40000	other	0
+bouma	4	Response	251	177399	1418	1
+bouma	4	Response	251	178826	2845	1
+bouma	4	Response	251	182200	6219	1
+bouma	4	Response	252	192631	16650	1
+bouma	5	Sound	111	216229	0	1			0		hit	12
+bouma	5	Response	251	222096	5867	1
+bouma	6	Sound	122	247298	0	1			0		hit	14
+bouma	6	Response	252	254193	6895	1
+bouma	6	Response	251	278053	30755	1
+bouma	7	Sound	111	278368	0	1			0		miss	0
+bouma	8	Sound	121	309437	0	1			0		hit	18
+bouma	8	Response	252	315469	6032	2
+bouma	8	Response	251	332725	23288	1
+bouma	9	Sound	112	340507	0	1			0		hit	21
+bouma	9	Response	251	345959	5452	1
+bouma	10	Sound	111	371576	0	2			0		hit	23
+bouma	10	Response	251	383068	11492	1
+bouma	11	Sound	122	402646	0	1			0		hit	25
+bouma	11	Response	252	408603	5957	2
+bouma	12	Sound	111	433716	0	1			0		hit	27
+bouma	12	Response	251	439723	6007	1
+bouma	13	Sound	121	464785	0	1			0		hit	29
+bouma	13	Response	252	472108	7323	1
+bouma	14	Sound	112	495855	0	1			0		hit	31
+bouma	14	Response	251	501307	5452	1
+bouma	15	Sound	121	526924	0	1			0		hit	33
+bouma	15	Response	252	534643	7719	1
+bouma	16	Sound	121	557994	0	1			0		hit	35
+bouma	16	Response	252	564186	6192	1
+bouma	17	Sound	112	589063	0	2			0		hit	37
+bouma	17	Response	251	594344	5281	2
+bouma	18	Sound	112	620133	0	1			0		hit	39
+bouma	18	Response	251	627392	7259	1
+bouma	19	Sound	122	651203	0	1			0		hit	41
+bouma	19	Response	252	656918	5715	1
+bouma	20	Sound	122	682272	0	1			0		hit	43
+bouma	20	Response	252	688038	5766	1
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture	10	other				115321	1	20164	3	0	20000
+Picture	10	other				135652	2	40163	3	0	40000
+Picture	10	other				175981	2	40164	3	0	40000
+Sound	111	hit	1	5867	2	216229	1			0
+Sound	122	hit	2	6895	2	247298	1			0
+Sound	111	miss				278368	1			0
+Sound	121	hit	2	6032	3	309437	1			0
+Sound	112	hit	1	5452	2	340507	1			0
+Sound	111	hit	1	11492	3	371576	2			0
+Sound	122	hit	2	5957	3	402646	1			0
+Sound	111	hit	1	6007	2	433716	1			0
+Sound	121	hit	2	7323	2	464785	1			0
+Sound	112	hit	1	5452	2	495855	1			0
+Sound	121	hit	2	7719	2	526924	1			0
+Sound	121	hit	2	6192	2	557994	1			0
+Sound	112	hit	1	5281	4	589063	2			0
+Sound	112	hit	1	7259	2	620133	1			0
+Sound	122	hit	2	5715	2	651203	1			0
+Sound	122	hit	2	5766	2	682272	1			0

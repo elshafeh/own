@@ -1,0 +1,28 @@
+# instruction trial template
+
+trial {
+	trial_duration = forever;
+	trial_type = first_response;
+	sound instruct_end;
+	duration 	= 200;
+	code 			= "end";
+	port_code 	= 250;
+}end;
+
+trial {
+	trial_duration = forever;
+	trial_type = first_response;
+	sound instruct_eye_close;
+	duration 	= 200;
+	code 			= "eye_close";
+	port_code 	= 1;
+}eye_close;
+
+trial {
+	trial_duration = forever;
+	trial_type = first_response;
+	sound instruct_eye_open;
+	duration 	= 200;
+	code 			= "eye_open";
+	port_code 	= 2;
+}eye_open;

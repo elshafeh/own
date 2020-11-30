@@ -1,0 +1,44 @@
+Scenario - 17_March_2015
+Logfile written - 05/18/2016 09:58:39
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+fc2	1	Response	253	16050	25883	1
+fc2	2	Picture	10	16163	0	2	20164	4	0	20000	other	0
+fc2	3	Picture	10	36494	0	1	40162	3	0	40000	other	0
+fc2	4	Picture	10	76823	0	2	40162	4	0	40000	other	0
+fc2	5	Sound	111	117062	0	1			0		miss	0
+fc2	6	Sound	122	148131	0	2			0		hit	7
+fc2	6	Response	252	155915	7784	1
+fc2	7	Sound	111	179201	0	1			0		miss	0
+fc2	8	Sound	121	210270	0	1			0		miss	0
+fc2	9	Sound	112	241339	0	1			0		miss	0
+fc2	10	Sound	111	272408	0	2			0		miss	0
+fc2	11	Sound	122	303478	0	1			0		miss	0
+fc2	12	Sound	111	334547	0	1			0		hit	14
+fc2	12	Response	251	337233	2686	1
+fc2	13	Sound	121	365616	0	1			0		miss	0
+fc2	14	Sound	112	396686	0	1			0		incorrect	17
+fc2	14	Response	252	408175	11489	2
+fc2	15	Sound	121	427755	0	1			0		miss	0
+fc2	16	Sound	121	458824	0	1			0		miss	0
+fc2	16	Quit		476992	18168
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture	10	other				16163	2	20164	4	0	20000
+Picture	10	other				36494	1	40162	3	0	40000
+Picture	10	other				76823	2	40162	4	0	40000
+Sound	111	miss				117062	1			0
+Sound	122	hit	2	7784	3	148131	2			0
+Sound	111	miss				179201	1			0
+Sound	121	miss				210270	1			0
+Sound	112	miss				241339	1			0
+Sound	111	miss				272408	2			0
+Sound	122	miss				303478	1			0
+Sound	111	hit	1	2686	2	334547	1			0
+Sound	121	miss				365616	1			0
+Sound	112	incorrect	2	11489	3	396686	1			0
+Sound	121	miss				427755	1			0
+Sound	121	miss				458824	1			0

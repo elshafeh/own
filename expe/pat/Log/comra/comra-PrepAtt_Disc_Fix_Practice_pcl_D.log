@@ -1,0 +1,51 @@
+Scenario - 17_March_2015
+Logfile written - 06/06/2017 09:57:13
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+comra	1	Response	251	48424	58257	1
+comra	1	Response	253	48929	58762	1
+comra	2	Picture	10	48993	0	1	20165	2	0	20000	other	0
+comra	3	Picture	10	69324	0	2	40163	4	0	40000	other	0
+comra	3	Response	251	93304	23980	1
+comra	4	Picture	10	109653	0	2	40163	3	0	40000	other	0
+comra	4	Response	252	133539	23886	1
+comra	5	Nothing	91	149818	0	1			0		other	0
+comra	6	Picture	202	179980	0	1	1999	3	0	1920	other	0
+comra	7	Sound	62	191953	0	1			0		hit	11
+comra	7	Response	251	198671	6718	1
+comra	8	Picture	1	227142	0	1	2000	2	0	1920	other	0
+comra	9	Sound	61	239126	0	1			0		hit	14
+comra	9	Response	251	245161	6035	1
+comra	10	Picture	103	273470	0	2	2000	3	0	1920	other	0
+comra	11	Sound	63	285460	0	2			0		hit	17
+comra	11	Response	252	291860	6400	1
+comra	12	Picture	204	321132	0	1	2000	2	0	1920	other	0
+comra	13	Sound	64	333112	0	1			0		hit	20
+comra	13	Response	252	343049	9937	1
+comra	14	Picture	2	368127	0	2	2000	3	0	1920	other	0
+comra	15	Sound	62	380105	0	1			0		hit	23
+comra	15	Response	251	388357	8252	1
+comra	16	Picture	103	415123	0	1	1999	3	0	1920	other	0
+comra	17	Sound	63	427098	0	1			0		hit	26
+comra	17	Response	252	438441	11343	2
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture	10	other				48993	1	20165	2	0	20000
+Picture	10	other				69324	2	40163	4	0	40000
+Picture	10	other				109653	2	40163	3	0	40000
+Nothing	91	other				149818	1			0
+Picture	202	other				179980	1	1999	3	0	1920
+Sound	62	hit	1	6718	2	191953	1			0
+Picture	1	other				227142	1	2000	2	0	1920
+Sound	61	hit	1	6035	2	239126	1			0
+Picture	103	other				273470	2	2000	3	0	1920
+Sound	63	hit	2	6400	3	285460	2			0
+Picture	204	other				321132	1	2000	2	0	1920
+Sound	64	hit	2	9937	2	333112	1			0
+Picture	2	other				368127	2	2000	3	0	1920
+Sound	62	hit	1	8252	2	380105	1			0
+Picture	103	other				415123	1	1999	3	0	1920
+Sound	63	hit	2	11343	3	427098	1			0

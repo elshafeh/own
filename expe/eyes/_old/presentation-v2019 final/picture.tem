@@ -1,0 +1,9 @@
+# picture template
+picture {
+	text {
+		caption = $content;
+		font_color = $colour;
+	};
+	x = 0;
+	y = 0;
+}$name;

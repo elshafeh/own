@@ -1,0 +1,17 @@
+   "num"  "trialt"     "cue"  "codCUE"  "delay1"   "dis"  "codDIS"               "DIS"  "delay2"          "TAR"  "codTAR"    "bp" "ISIrand";
+       1         1  "Rarrow"       202       340       0        50               "nul"     360   "S_tarson_B"        62       1        98;
+       2         0  "Barrow"         1       344       0        50               "nul"     356   "S_tarson_A"        61       1        29;
+       3         1  "Larrow"       103       494       0        50               "nul"     206   "S_tarson_C"        63       2       150;
+       4         1  "Rarrow"       204       414       0        50               "nul"     286   "S_tarson_D"        64       2        84;
+       5         0  "Barrow"         2       141       0        50               "nul"     559   "S_tarson_B"        62       1        93;
+       6         1  "Larrow"       103       270       0        50               "nul"     430   "S_tarson_C"        63       2       150;
+       7         1  "Larrow"       123       415       2        52       "Alarm_Clock"     285   "S_tarson_C"        63       2       114;
+       8         0  "Barrow"         3       480       0        50               "nul"     220   "S_tarson_C"        63       2        77;
+       9         0  "Barrow"        14       141       1        51      "alarmemontre"     559   "S_tarson_D"        64       2       177;
+	 10        0   "Barrow"         3       546       0        50               "nul"     154   "S_tarson_C"        63       2       162;
+      11         1  "Larrow"       101       504       0        50               "nul"     196   "S_tarson_A"        61       1       187;
+       12         1  "Rarrow"       234       504       3        53          "sonnette"     196   "S_tarson_D"        64       2       161;
+	 13         0  "Barrow"         4       646       0        50               "nul"      54   "S_tarson_A"        64       1        30;
+      14         1  "Rarrow"       214       277       1        51          "reveil12"     423   "S_tarson_D"        64       2       113;
+      15         1  "Rarrow"       204       643       0        50               "nul"      57   "S_tarson_B"        64       2       148;
+};

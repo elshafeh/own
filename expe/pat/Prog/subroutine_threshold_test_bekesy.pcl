@@ -1,0 +1,340 @@
+# -- SUBROUTINE_Threshold_Test_Bekesy Pilot -- #
+
+sub Threshold_Test_Bekesy(
+   string Subject_Name,
+   bool RANDOMIZE,
+   int SOUND_CNT,
+   array <sound,1>& Sounds,
+   int AUDTRIAL_DURATION, 
+   int SPEAKERCODE_CNT,
+   array <int,1>& speakerCodes,     
+   array <double,1>& speakerPans,
+   array <string,1>& speakerStrings)
+   
+begin
+
+   # Set key parameter values         
+   double STARTVOLUME = 0.70;       # starting volume for each test (0.0-1.0)
+   
+	# Set the volume step sizes for descending and ascending sequences
+   array <double> DELTA_VOL[4] = {-0.05, 0.05, -0.02, 0.02}; # dB/100
+   int NUM_LOOPS_AVE = 2;           # number of loops over which to average vol
+   int RESPONSE_WINDOW_START = 200; # start of response window 
+   int HYSTERESIS = 1;              # number of vol incr after button press
+   
+   # Define variables
+   int RESPONSE_BUTTON = 1;
+   double MIN_VOLUME = 0.0;
+   double MAX_VOLUME = 1.0;
+   
+   int idxV;
+   int curSound;
+   string curSpeaker;
+   int curSpeakerCode;
+   double curPan;
+   
+	string termString1;
+   string termString2;
+   string termString3;
+   string termString4;
+   string newtestTextString1;
+   string newtestTextString2;
+   string newEventCode;
+
+   int bCount;
+   int bCountNew;
+   
+	bool buttonPressed;
+   bool firstLoop;
+   bool earlyResponse;
+   
+   stimulus_data curStim;
+   response_data curResp;
+   
+   double currentVol;
+	double currentVol_L;
+   double currentVol_H;
+   
+	double finalVol;
+	double finalVol_L;
+   double finalVol_H;
+   
+   array <double> volHeard[NUM_LOOPS_AVE * 2];
+   array <double> volHeard_L[NUM_LOOPS_AVE * 2];
+   array <double> volHeard_H[NUM_LOOPS_AVE * 2];
+   
+   double aveVol;
+	double aveVol_L;
+   double aveVol_H;
+   
+	double aveAtt;
+	double aveAtt_L;
+	double aveAtt_H;
+	
+	double AVE_Att;
+	double AVE_Att_L;
+	double AVE_Att_H;
+	
+	double FIN_Att;
+	double FIN_Att_L;
+	double FIN_Att_H;
+
+   # Initialize
+   string OFILE_NAME = Subject_Name + "_thresholds.txt";   
+   
+   # Set Test Count
+   int TEST_CNT = SOUND_CNT * SPEAKERCODE_CNT;
+   
+   # Set Seq Count, Create complete Seq Array Including Averaging Loops
+   int SEQ_CNT = DELTA_VOL.count() + (NUM_LOOPS_AVE - 1) * 2; # total no of seqs
+   array <double> deltaVolTotal[SEQ_CNT];
+   loop int nSeq = 1 until nSeq > SEQ_CNT
+   
+   begin
+      if nSeq <= DELTA_VOL.count() then # Copy the original values
+         deltaVolTotal[nSeq] = DELTA_VOL[nSeq];
+      else # repeat the last two values
+         if (mod(nSeq - DELTA_VOL.count(),2) == 1) then
+            deltaVolTotal[nSeq] = DELTA_VOL[DELTA_VOL.count() - 1];
+         else
+            deltaVolTotal[nSeq] = DELTA_VOL[DELTA_VOL.count()];
+         end; 
+      end;
+      nSeq = nSeq + 1;
+   end;                                                      
+   
+   parameter_window.remove_all(); # Remove Default Parameters From Status Window
+   
+   # Open Output File
+   
+   output_file ofile1 = new output_file;
+   ofile1.open(OFILE_NAME,false);
+   ofile1.print("SOUND\t  SPKR_CD\tVOLUME\tATTENUATION\n");
+   
+	# Create String For Later Output To Terminal Window
+   termString1 = "SOUND\tSPKRCD\t";
+   loop int nSeq = 1 until nSeq > (NUM_LOOPS_AVE * 2)
+   begin
+      termString1 = termString1 + "VOL" + string(nSeq) + "\t";
+      nSeq = nSeq + 1;
+   end;                                                      
+   termString1 = termString1 + "AVE_VOL\n";
+   
+   # Create and Randomize Test Order for Tests 1 => TEST_CNT
+   array <int> testNumber[TEST_CNT];
+   array <int> testSound[TEST_CNT];
+   array <string> testSpeaker[TEST_CNT];
+   array <int> testSpeakerCode[TEST_CNT];
+   array <double> testPan[TEST_CNT];
+   array <int> parDispWin[TEST_CNT];
+   
+   loop int nTest = 1; int nSpeakerCode = 1 until nSpeakerCode > 
+      SPEAKERCODE_CNT
+   begin
+      loop int nSound = 1 until nSound > SOUND_CNT
+      begin
+         testNumber[nTest] = nTest;
+         testSound[nTest] = nSound;
+         testSpeaker[nTest] = speakerStrings[nSpeakerCode];
+         testSpeakerCode[nTest] = speakerCodes[nSpeakerCode];
+         testPan[nTest] = speakerPans[nSpeakerCode];
+         parDispWin[nTest] = parameter_window.add_parameter(
+            Sounds[testSound[nTest]].description() + " " + testSpeaker[nTest]);
+         nTest = nTest + 1;
+         nSound = nSound + 1;
+      end;
+      nSpeakerCode = nSpeakerCode + 1;
+   end;
+
+   # Start Test Loop
+   loop int nTest = 1 until nTest > TEST_CNT
+   begin
+		# Reset index for saving volume values
+      idxV = 0; 
+      
+      # Set Parameters For New Test
+      curSound = testSound[testNumber[nTest]];
+      curSpeaker = testSpeaker[testNumber[nTest]];
+      curSpeakerCode = testSpeakerCode[testNumber[nTest]];
+      curPan = testPan[testNumber[nTest]];
+      currentVol = STARTVOLUME;
+      Sounds[curSound].set_volume(currentVol);
+      Sounds[curSound].set_pan(curPan);
+      audstim_ttb.set_stimulus(Sounds[curSound]); 
+     
+      # Alert Subject To Start Of Next Test
+      newtestTextString1 = "Test " + string(nTest) + " sur " + 
+         string(TEST_CNT) + "...";
+      newtestTextString2 = "(Sound " + Sounds[curSound].description() + ", " + 
+         curSpeaker + " Speaker(s))";
+      term.print(newtestTextString1 + " " + newtestTextString2 + "\n");
+      newtestText_ttb.set_caption(newtestTextString1);
+      newtestText_ttb.redraw();
+      newtest_ttb.present();
+     
+      # Set The Initial Button Press Prompt
+      if (deltaVolTotal[1] < 0.0) then 
+         picstim_ttb.set_stimulus(buttonMsg1_ttb); # Descending sequences
+      else                        
+         picstim_ttb.set_stimulus(buttonMsg2_ttb); # Ascending sequences
+      end;
+      
+      # Begin Looping On Descending/Ascending Pulse Sequences
+      term.print("Sound_SpkrCd_Volume_Time\n");
+      loop int nSeq = 1 until nSeq > SEQ_CNT
+      begin    
+         buttonPressed = false;
+         firstLoop = true;
+         earlyResponse = false;
+         bCount = response_manager.total_response_count(RESPONSE_BUTTON);
+         
+         # Loop until button is pressed (one pulse per loop)   
+         loop until buttonPressed
+         begin
+            # Present Stimulus
+            newEventCode = Sounds[curSound].description() + "_" + curSpeaker + 
+               "_" + string(currentVol); 
+            audstim_ttb.set_event_code(newEventCode);
+            audtrial_ttb.present();
+            
+            # Get Stimulus Time
+            curStim = stimulus_manager.last_stimulus_data();
+            term.print(newEventCode + "-" + string(curStim.time()) + "\n");
+            
+            # Check For Button Press
+            bCountNew = response_manager.total_response_count(RESPONSE_BUTTON);
+            if bCountNew > bCount then
+               # If the button was pressed (at least once), determine timing if multiple responses since last check: use last response if first loop, else use first response
+               if firstLoop then
+                  curResp = response_manager.get_response_data(bCountNew);
+               else 
+                  curResp = response_manager.get_response_data(bCount + 1);
+               end;
+               term.print("Button pressed at time " + string(curResp.time()) + 
+                  "\n");
+               if ((curResp.time() - curStim.time()) < RESPONSE_WINDOW_START) 
+                  then
+                  if firstLoop then 																# ignore early button press on first loop
+                     bCount = bCountNew;
+                     term.print("(Ignored - too early)\n");
+                  else 																					# associate button press with previous pulse
+                     earlyResponse = true;
+                     buttonPressed = true;
+                  end;
+               else 																						# associate button press with current pulse
+                  buttonPressed = true;               
+               end;  
+            else
+               # If no button press, continue with sequence
+               currentVol = currentVol + deltaVolTotal[nSeq];
+               if ((currentVol < MIN_VOLUME) || (currentVol > MAX_VOLUME)) then
+                  buttonPressed = true;
+               else
+                  Sounds[curSound].set_volume(currentVol);
+               end;
+            end;
+            firstLoop = false;
+         end;
+       
+         # Save the first/last vol value heard for the last NUM_LOOPS_AVE*2 seqs
+				if (nSeq > (SEQ_CNT - NUM_LOOPS_AVE * 2)) then
+            # First get the final volume associated with the button press
+            finalVol = currentVol;
+            if earlyResponse then # associate button press with previous trial
+               finalVol = finalVol - deltaVolTotal[nSeq];
+            end;
+            # Now get final volume heard
+            idxV = idxV + 1; # 1 => NUM_LOOPS_AVE*2
+            if (deltaVolTotal[nSeq] < 0.0) then 
+               # Descending seq - back up one increment to get last pulse heard
+               volHeard[idxV] = finalVol - deltaVolTotal[nSeq];
+               term.print("Last Volume Heard = " + string(volHeard[idxV]) + "\n");
+            else 
+               # Ascending seq - current value is first pulse heard
+               volHeard[idxV] = finalVol; 
+               term.print("First Volume Heard = " + string(volHeard[idxV]) + "\n");
+            end;
+         end; 
+         
+         # Hysteresis loop (determines the number of volume increments in the same direction after a button press)
+         if (nSeq < SEQ_CNT) then
+            # Set The Button Message To Blank As User Input Is Ignored During This Time
+            picstim_ttb.set_stimulus(default);
+            
+            # Begin
+            loop int nHys = 1 until nHys > HYSTERESIS
+            begin
+					currentVol = currentVol + deltaVolTotal[nSeq];
+						if (currentVol < MIN_VOLUME) then
+							currentVol = MIN_VOLUME;
+						elseif (currentVol > MAX_VOLUME) then
+							currentVol = MAX_VOLUME;
+						end;
+					Sounds[curSound].set_volume(currentVol);
+					newEventCode = Sounds[curSound].description() + "-" + curSpeaker 
+							+ "-" + string(currentVol); 
+						audstim_ttb.set_event_code(newEventCode);
+						audtrial_ttb.present();
+						# Get Stimulus Time
+						curStim = stimulus_manager.last_stimulus_data();
+						term.print(newEventCode + "-" + string(curStim.time()) + 
+							" (Hysteresis)\n");
+						nHys = nHys + 1;
+				end;
+				
+            # Set The Button Message
+            if (deltaVolTotal[nSeq + 1] < 0.0) then 
+               picstim_ttb.set_stimulus(buttonMsg1_ttb); # descending seqs use buttonMsg1
+            else                                    
+               picstim_ttb.set_stimulus(buttonMsg2_ttb); # ascending seqs use buttonMsg2
+            end;
+            
+         end;
+             
+			nSeq = nSeq + 1;
+      
+      end;
+      
+      # Write average volume and volumes used in average calc to file and terminal
+      termString2 = "";
+      aveVol= 0.0;
+      aveAtt= 0.0;
+     
+      # Calculate Average and Save Volumes In String (Low)
+      loop int nSeq =1 until nSeq > (NUM_LOOPS_AVE * 2)
+      begin 
+				termString2 = termString2 + string(volHeard[nSeq]) + "\t";
+				aveVol = aveVol + volHeard[nSeq]; # sum volumes for averaging
+				nSeq = nSeq + 1;
+		end;
+		
+		aveVol = aveVol / double(NUM_LOOPS_AVE * 2);  
+		aveAtt = aveAtt + 1.0 - aveVol ;
+		AVE_Att = AVE_Att + aveAtt	;
+      
+		# Write To File
+		ofile1.print(Sounds[curSound].description() + "\t" + string(curSpeakerCode)
+         + "\t" + string(aveVol) + "\t"  + string(aveAtt) + "\n");
+    
+		# Write To Status window
+			termString2 = Sounds[curSound].description() + "\t" + curSpeaker + "\t" + 
+         termString2 + "\t" + "  " + string(aveVol) + "\t" + string(aveAtt) + "\n";
+			term.print("Test Results:\n");
+			term.print(termString1);
+			term.print(termString2);
+			parameter_window.set_parameter(parDispWin[testNumber[nTest]], 
+				string(aveAtt));
+			nTest = nTest + 1;
+   end;   # ofile1.print("\n" +  "\t" + string(TEST_CNT) + "\n"); 
+
+   ofile1.print("\n" + "sum" + "\t" + string(AVE_Att) + "\n"); 
+   ofile1.print("\n" +  "\t" + string(TEST_CNT) + "\n"); 
+	double TEST_CNT2 = double (TEST_CNT);
+   AVE_Att = (AVE_Att / TEST_CNT2);
+   ofile1.print("\n" + "average ATTENUATION" + "\t" + string(AVE_Att) + "\n"); 
+   FIN_Att = AVE_Att - 0.35;
+   ofile1.print("\n" + "final ATTENUATION" + "\t" + string(FIN_Att) + "\n"); 
+    
+   ofile1.close();
+
+end;

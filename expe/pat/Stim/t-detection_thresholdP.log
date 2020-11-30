@@ -1,0 +1,23 @@
+Scenario - Detection_threshold_P
+Logfile written - 02/02/2009 14:49:33
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+t	1	Sound	1.9_1	20513	10000	1			10000
+t	1	Response	7	73482	62969	3
+t	2	Picture	feedback_c	73503	0	1	14200	2	0	next
+t	3	Sound	1.9_2	108009	9998	4			10000
+t	3	Response	5	182042	84031	2
+t	4	Picture	feedback_w	182088	0	1	14199	3	0	next
+t	5	Sound	2.0_1	216610	10000	1			10000
+t	5	Response	7	243642	37032	2
+t	6	Picture	feedback_c	243731	0	1	14199	3	0	next
+t	7	Sound	2.0_2	278309	10000	1			10000
+t	7	Response	5	335482	67173	3
+t	8	Picture	feedback_w	335610	0	2	14200	3	0	next
+t	9	Sound	2.1_2	370206	9999	4			10000
+t	9	Response	8	389242	29035	3
+t	10	Picture	feedback_c	389402	0	1	14199	3	0	next
+t	11	Sound	2.1_1	423907	9999	2			10000
+t	11	Response	7	435402	21494	3
+t	12	Picture	feedback_c	435509	0	1	29528	2	0	next

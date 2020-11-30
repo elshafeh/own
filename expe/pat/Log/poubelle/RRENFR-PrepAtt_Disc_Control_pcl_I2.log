@@ -1,0 +1,67 @@
+Scenario - 17_March_2015
+Logfile written - 03/28/2017 16:01:18
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+RRENFR	1	Response	253	10071	19904	1
+RRENFR	2	Picture	10	10164	0	1	20164	3	0	20000	other	0
+RRENFR	3	Picture	10	30495	0	1	40163	2	0	40000	other	0
+RRENFR	4	Picture	10	70825	0	1	40162	3	0	40000	other	0
+RRENFR	4	Response	252	77019	6194	2
+RRENFR	4	Response	252	95844	25019	1
+RRENFR	5	Sound	111	111047	0	2			0		hit	8
+RRENFR	5	Response	251	119287	8240	2
+RRENFR	6	Sound	122	142117	0	1			0		hit	10
+RRENFR	6	Response	252	146765	4648	2
+RRENFR	7	Sound	111	173186	0	1			0		incorrect	12
+RRENFR	7	Response	252	180238	7052	1
+RRENFR	8	Sound	121	204256	0	1			0		hit	14
+RRENFR	8	Response	252	212730	8474	1
+RRENFR	9	Sound	112	235325	0	1			0		incorrect	16
+RRENFR	9	Response	252	240799	5474	1
+RRENFR	10	Sound	111	266394	0	2			0		incorrect	18
+RRENFR	10	Response	252	269825	3431	1
+RRENFR	11	Sound	122	297464	0	1			0		hit	20
+RRENFR	11	Response	252	303094	5630	1
+RRENFR	12	Sound	111	328533	0	1			0		hit	22
+RRENFR	12	Response	251	340317	11784	2
+RRENFR	13	Sound	121	359602	0	2			0		hit	24
+RRENFR	13	Response	252	365328	5726	1
+RRENFR	14	Sound	112	390672	0	1			0		incorrect	26
+RRENFR	14	Response	252	395328	4656	2
+RRENFR	15	Sound	121	421741	0	1			0		incorrect	28
+RRENFR	15	Response	251	429262	7521	1
+RRENFR	16	Sound	121	452811	0	1			0		hit	30
+RRENFR	16	Response	252	455617	2806	1
+RRENFR	17	Sound	112	483880	0	1			0		hit	32
+RRENFR	17	Response	251	487354	3474	1
+RRENFR	17	Response	252	490247	6367	2
+RRENFR	18	Sound	112	514950	0	1			0		incorrect	35
+RRENFR	18	Response	252	520441	5491	1
+RRENFR	19	Sound	122	546019	0	1			0		hit	37
+RRENFR	19	Response	252	551524	5505	2
+RRENFR	20	Sound	122	577088	0	1			0		hit	39
+RRENFR	20	Response	252	579775	2687	1
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture	10	other				10164	1	20164	3	0	20000
+Picture	10	other				30495	1	40163	2	0	40000
+Picture	10	other				70825	1	40162	3	0	40000
+Sound	111	hit	1	8240	4	111047	2			0
+Sound	122	hit	2	4648	3	142117	1			0
+Sound	111	incorrect	2	7052	2	173186	1			0
+Sound	121	hit	2	8474	2	204256	1			0
+Sound	112	incorrect	2	5474	2	235325	1			0
+Sound	111	incorrect	2	3431	3	266394	2			0
+Sound	122	hit	2	5630	2	297464	1			0
+Sound	111	hit	1	11784	3	328533	1			0
+Sound	121	hit	2	5726	3	359602	2			0
+Sound	112	incorrect	2	4656	3	390672	1			0
+Sound	121	incorrect	1	7521	2	421741	1			0
+Sound	121	hit	2	2806	2	452811	1			0
+Sound	112	hit	1	3474	2	483880	1			0
+Sound	112	incorrect	2	5491	2	514950	1			0
+Sound	122	hit	2	5505	3	546019	1			0
+Sound	122	hit	2	2687	2	577088	1			0

@@ -1,0 +1,73 @@
+Scenario - 17_March_2015
+Logfile written - 05/10/2017 14:57:46
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+serth	1	Response	253	15695	25528	1
+serth	2	Picture	10	15830	0	1	20165	2	0	20000	other	0
+serth	3	Picture	10	36161	0	2	40163	3	0	40000	other	0
+serth	3	Response	251	70794	34633	1
+serth	4	Picture	10	76491	0	1	40163	2	0	40000	other	0
+serth	4	Response	252	91120	14629	1
+serth	5	Sound	111	116734	0	1			0		hit	8
+serth	5	Response	251	126672	9938	2
+serth	6	Sound	122	147803	0	2			0		hit	10
+serth	6	Response	252	153251	5448	1
+serth	7	Sound	111	178873	0	1			0		hit	12
+serth	7	Response	251	185284	6411	1
+serth	8	Sound	121	209942	0	2			0		hit	14
+serth	8	Response	252	213962	4020	2
+serth	9	Sound	112	241012	0	1			0		hit	16
+serth	9	Response	251	245910	4898	1
+serth	10	Sound	111	272081	0	1			0		hit	18
+serth	10	Response	251	278534	6453	2
+serth	10	Response	252	283409	11328	1
+serth	10	Response	252	284229	12148	1
+serth	10	Response	252	285246	13165	1
+serth	11	Sound	122	303151	0	1			0		hit	23
+serth	11	Response	252	307270	4119	1
+serth	12	Sound	111	334220	0	1			0		hit	25
+serth	12	Response	251	340082	5862	2
+serth	12	Response	252	344660	10440	1
+serth	12	Response	252	345574	11354	2
+serth	13	Sound	121	365290	0	1			0		hit	29
+serth	13	Response	252	369789	4499	1
+serth	14	Sound	112	396359	0	1			0		hit	31
+serth	14	Response	251	400328	3969	1
+serth	14	Response	252	405051	8692	1
+serth	15	Sound	121	427429	0	1			0		hit	34
+serth	15	Response	252	432097	4668	1
+serth	16	Sound	121	458498	0	1			0		hit	36
+serth	16	Response	252	463219	4721	2
+serth	17	Sound	112	489568	0	1			0		hit	38
+serth	17	Response	251	495463	5895	1
+serth	17	Response	252	500253	10685	1
+serth	18	Sound	112	520637	0	1			0		hit	41
+serth	18	Response	251	525046	4409	1
+serth	19	Sound	122	551707	0	1			0		hit	43
+serth	19	Response	252	556279	4572	1
+serth	20	Sound	122	582776	0	1			0		hit	45
+serth	20	Response	252	587333	4557	2
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture	10	other				15830	1	20165	2	0	20000
+Picture	10	other				36161	2	40163	3	0	40000
+Picture	10	other				76491	1	40163	2	0	40000
+Sound	111	hit	1	9938	3	116734	1			0
+Sound	122	hit	2	5448	3	147803	2			0
+Sound	111	hit	1	6411	2	178873	1			0
+Sound	121	hit	2	4020	4	209942	2			0
+Sound	112	hit	1	4898	2	241012	1			0
+Sound	111	hit	1	6453	3	272081	1			0
+Sound	122	hit	2	4119	2	303151	1			0
+Sound	111	hit	1	5862	3	334220	1			0
+Sound	121	hit	2	4499	2	365290	1			0
+Sound	112	hit	1	3969	2	396359	1			0
+Sound	121	hit	2	4668	2	427429	1			0
+Sound	121	hit	2	4721	3	458498	1			0
+Sound	112	hit	1	5895	2	489568	1			0
+Sound	112	hit	1	4409	2	520637	1			0
+Sound	122	hit	2	4572	2	551707	1			0
+Sound	122	hit	2	4557	3	582776	1			0

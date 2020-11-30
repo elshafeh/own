@@ -1,0 +1,32 @@
+################################################################################
+#
+# SUBROUTINE_FileSize.pcl Pilot
+#
+################################################################################
+
+################################################################################
+# 
+# subroutine FileSize: returns file size in number of lines
+#
+################################################################################
+
+sub int FileSize(string filename)
+begin
+   bool endOfFile = false;
+   int nLines = 0;
+   
+   input_file infile = new input_file;
+   infile.open(filename);
+
+   loop until endOfFile
+   begin
+      infile.get_line();
+      endOfFile = !infile.last_succeeded();
+      if !endOfFile then
+         nLines = nLines + 1;
+      end;
+   end;    
+   infile.close();
+   
+   return nLines;
+end;

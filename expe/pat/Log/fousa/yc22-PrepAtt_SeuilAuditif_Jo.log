@@ -1,0 +1,345 @@
+Scenario - SeuilAuditif
+Logfile written - 02/16/2017 14:42:07
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+yc22	2	Sound	L_tarson_Left_0.7	388	57	1			0		other	0
+yc22	3	Sound	L_tarson_Left_0.65	10535	38	1			0		other	0
+yc22	4	Sound	L_tarson_Left_0.6	20712	49	1			0		other	0
+yc22	5	Sound	L_tarson_Left_0.55	30859	31	1			0		other	0
+yc22	6	Sound	L_tarson_Left_0.5	41036	42	1			0		other	0
+yc22	7	Sound	L_tarson_Left_0.45	51212	52	2			0		other	0
+yc22	8	Sound	L_tarson_Left_0.4	61359	34	2			0		other	0
+yc22	9	Sound	L_tarson_Left_0.35	71536	45	1			0		other	0
+yc22	10	Sound	L_tarson_Left_0.3	81713	57	1			0		other	0
+yc22	11	Sound	L_tarson_Left_0.25	91860	38	1			0		other	0
+yc22	12	Sound	L_tarson_Left_0.2	102037	50	1			0		other	0
+yc22	13	Sound	L_tarson_Left_0.15	112184	31	1			0		other	0
+yc22	13	Response	1	115818	3665	1
+yc22	14	Sound	L_tarson-Left-9.99999999999999e-002	122361	42	1			0		other	0
+yc22	15	Sound	L_tarson_Left_9.99999999999999e-002	132538	54	1			0		other	0
+yc22	16	Sound	L_tarson_Left_0.15	142685	35	1			0		other	0
+yc22	17	Sound	L_tarson_Left_0.2	152861	46	2			0		other	0
+yc22	17	Response	1	158432	5617	1
+yc22	18	Sound	L_tarson-Left-0.25	163038	57	2			0		other	0
+yc22	19	Sound	L_tarson_Left_0.25	173185	38	1			0		other	0
+yc22	20	Sound	L_tarson_Left_0.23	183362	50	1			0		other	0
+yc22	21	Sound	L_tarson_Left_0.21	193509	31	1			0		other	0
+yc22	22	Sound	L_tarson_Left_0.19	203686	42	1			0		other	0
+yc22	23	Sound	L_tarson_Left_0.17	213863	54	1			0		other	0
+yc22	23	Response	1	217496	3687	1
+yc22	24	Sound	L_tarson-Left-0.15	224010	35	1			0		other	0
+yc22	25	Sound	L_tarson_Left_0.15	234186	46	2			0		other	0
+yc22	26	Sound	L_tarson_Left_0.17	244363	58	1			0		other	0
+yc22	27	Sound	L_tarson_Left_0.19	254510	39	1			0		other	0
+yc22	27	Response	1	262102	7631	1
+yc22	28	Sound	L_tarson-Left-0.21	264687	50	1			0		other	0
+yc22	29	Sound	L_tarson_Left_0.21	274834	31	1			0		other	0
+yc22	30	Sound	L_tarson_Left_0.19	285011	43	1			0		other	0
+yc22	31	Sound	L_tarson_Left_0.17	295188	54	1			0		other	0
+yc22	32	Sound	L_tarson_Left_0.15	305335	36	1			0		other	0
+yc22	33	Sound	L_tarson_Left_0.13	315511	46	2			0		other	0
+yc22	33	Response	1	321586	6121	2
+yc22	34	Sound	L_tarson-Left-0.11	325688	57	2			0		other	0
+yc22	35	Sound	L_tarson_Left_0.11	335835	39	1			0		other	0
+yc22	36	Sound	L_tarson_Left_0.13	346012	50	1			0		other	0
+yc22	37	Sound	L_tarson_Left_0.15	356159	32	1			0		other	0
+yc22	37	Response	1	361845	5718	2
+yc22	39	Sound	H_tarson_Left_0.7	376513	54	1			0		other	0
+yc22	40	Sound	H_tarson_Left_0.65	386660	36	1			0		other	0
+yc22	41	Sound	H_tarson_Left_0.6	396837	47	1			0		other	0
+yc22	42	Sound	H_tarson_Left_0.55	407013	57	2			0		other	0
+yc22	43	Sound	H_tarson_Left_0.5	417160	39	2			0		other	0
+yc22	44	Sound	H_tarson_Left_0.45	427337	50	1			0		other	0
+yc22	45	Sound	H_tarson_Left_0.4	437484	32	1			0		other	0
+yc22	46	Sound	H_tarson_Left_0.35	447661	43	1			0		other	0
+yc22	47	Sound	H_tarson_Left_0.3	457838	54	1			0		other	0
+yc22	48	Sound	H_tarson_Left_0.25	467985	36	1			0		other	0
+yc22	49	Sound	H_tarson_Left_0.2	478162	47	1			0		other	0
+yc22	50	Sound	H_tarson_Left_0.15	488339	59	1			0		other	0
+yc22	51	Sound	H_tarson_Left_9.99999999999999e-002	498485	39	2			0		other	0
+yc22	51	Response	1	502046	3600	1
+yc22	52	Sound	H_tarson-Left-4.99999999999999e-002	508662	50	1			0		other	0
+yc22	53	Sound	H_tarson_Left_4.99999999999999e-002	518809	32	1			0		other	0
+yc22	54	Sound	H_tarson_Left_9.99999999999999e-002	528986	43	1			0		other	0
+yc22	55	Sound	H_tarson_Left_0.15	539163	56	1			0		other	0
+yc22	55	Response	1	544138	5031	1
+yc22	56	Sound	H_tarson-Left-0.2	549310	36	1			0		other	0
+yc22	57	Sound	H_tarson_Left_0.2	559487	47	1			0		other	0
+yc22	58	Sound	H_tarson_Left_0.18	569664	59	1			0		other	0
+yc22	59	Sound	H_tarson_Left_0.16	579811	40	1			0		other	0
+yc22	60	Sound	H_tarson_Left_0.14	589987	51	1			0		other	0
+yc22	60	Response	1	591278	1342	1
+yc22	61	Sound	H_tarson-Left-0.12	600134	32	1			0		other	0
+yc22	62	Sound	H_tarson_Left_0.12	610311	43	1			0		other	0
+yc22	63	Sound	H_tarson_Left_0.14	620488	55	1			0		other	0
+yc22	64	Sound	H_tarson_Left_0.16	630635	36	1			0		other	0
+yc22	64	Response	1	633519	2920	1
+yc22	65	Sound	H_tarson-Left-0.18	640812	47	1			0		other	0
+yc22	66	Sound	H_tarson_Left_0.18	650989	59	1			0		other	0
+yc22	67	Sound	H_tarson_Left_0.16	661136	40	1			0		other	0
+yc22	68	Sound	H_tarson_Left_0.14	671312	51	2			0		other	0
+yc22	69	Sound	H_tarson_Left_0.12	681459	32	1			0		other	0
+yc22	69	Response	1	684910	3483	1
+yc22	70	Sound	H_tarson-Left-9.99999999999999e-002	691636	44	1			0		other	0
+yc22	71	Sound	H_tarson_Left_9.99999999999999e-002	701813	55	1			0		other	0
+yc22	72	Sound	H_tarson_Left_0.12	711960	36	1			0		other	0
+yc22	73	Sound	H_tarson_Left_0.14	722137	48	1			0		other	0
+yc22	74	Sound	H_tarson_Left_0.16	732314	59	1			0		other	0
+yc22	74	Response	1	737445	5190	1
+yc22	76	Sound	L_tarson_Right_0.7	752638	52	1			0		other	0
+yc22	77	Sound	L_tarson_Right_0.65	762784	32	2			0		other	0
+yc22	78	Sound	L_tarson_Right_0.6	772961	44	1			0		other	0
+yc22	79	Sound	L_tarson_Right_0.55	783138	55	1			0		other	0
+yc22	80	Sound	L_tarson_Right_0.5	793285	37	1			0		other	0
+yc22	81	Sound	L_tarson_Right_0.45	803462	48	1			0		other	0
+yc22	82	Sound	L_tarson_Right_0.4	813639	59	1			0		other	0
+yc22	83	Sound	L_tarson_Right_0.35	823786	41	1			0		other	0
+yc22	84	Sound	L_tarson_Right_0.3	833963	52	1			0		other	0
+yc22	85	Sound	L_tarson_Right_0.25	844109	32	2			0		other	0
+yc22	86	Sound	L_tarson_Right_0.2	854286	44	1			0		other	0
+yc22	87	Sound	L_tarson_Right_0.15	864463	55	1			0		other	0
+yc22	87	Response	1	868647	4239	2
+yc22	88	Sound	L_tarson-Right-9.99999999999999e-002	874610	37	1			0		other	0
+yc22	89	Sound	L_tarson_Right_9.99999999999999e-002	884787	48	1			0		other	0
+yc22	90	Sound	L_tarson_Right_0.15	894964	59	1			0		other	0
+yc22	91	Sound	L_tarson_Right_0.2	905111	41	1			0		other	0
+yc22	91	Response	1	908486	3416	2
+yc22	92	Sound	L_tarson-Right-0.25	915288	52	1			0		other	0
+yc22	93	Sound	L_tarson_Right_0.25	925435	34	1			0		other	0
+yc22	94	Sound	L_tarson_Right_0.23	935612	45	1			0		other	0
+yc22	95	Sound	L_tarson_Right_0.21	945788	55	1			0		other	0
+yc22	96	Sound	L_tarson_Right_0.19	955935	37	1			0		other	0
+yc22	97	Sound	L_tarson_Right_0.17	966112	48	1			0		other	0
+yc22	97	Response	1	967908	1844	1
+yc22	98	Sound	L_tarson-Right-0.15	976259	30	1			0		other	0
+yc22	99	Sound	L_tarson_Right_0.15	986436	41	1			0		other	0
+yc22	100	Sound	L_tarson_Right_0.17	996613	52	1			0		other	0
+yc22	101	Sound	L_tarson_Right_0.19	1006760	34	1			0		other	0
+yc22	102	Sound	L_tarson_Right_0.21	1016936	44	2			0		other	0
+yc22	102	Response	1	1019080	2188	1
+yc22	103	Sound	L_tarson-Right-0.23	1027113	55	1			0		other	0
+yc22	104	Sound	L_tarson_Right_0.23	1037260	37	1			0		other	0
+yc22	105	Sound	L_tarson_Right_0.21	1047437	48	1			0		other	0
+yc22	106	Sound	L_tarson_Right_0.19	1057584	30	1			0		other	0
+yc22	107	Sound	L_tarson_Right_0.17	1067761	41	1			0		other	0
+yc22	107	Response	1	1077016	9296	1
+yc22	108	Sound	L_tarson-Right-0.15	1077938	52	1			0		other	0
+yc22	109	Sound	L_tarson_Right_0.15	1088085	34	1			0		other	0
+yc22	110	Sound	L_tarson_Right_0.17	1098261	44	2			0		other	0
+yc22	111	Sound	L_tarson_Right_0.19	1108438	56	2			0		other	0
+yc22	112	Sound	L_tarson_Right_0.21	1118585	37	1			0		other	0
+yc22	112	Response	1	1121078	2530	1
+yc22	114	Sound	H_tarson_Right_0.7	1138909	30	1			0		other	0
+yc22	115	Sound	H_tarson_Right_0.65	1149086	41	1			0		other	0
+yc22	116	Sound	H_tarson_Right_0.6	1159263	53	1			0		other	0
+yc22	117	Sound	H_tarson_Right_0.55	1169410	34	1			0		other	0
+yc22	118	Sound	H_tarson_Right_0.5	1179587	45	1			0		other	0
+yc22	119	Sound	H_tarson_Right_0.45	1189763	56	2			0		other	0
+yc22	120	Sound	H_tarson_Right_0.4	1199910	37	2			0		other	0
+yc22	121	Sound	H_tarson_Right_0.35	1210087	49	1			0		other	0
+yc22	122	Sound	H_tarson_Right_0.3	1220234	30	1			0		other	0
+yc22	123	Sound	H_tarson_Right_0.25	1230411	41	1			0		other	0
+yc22	124	Sound	H_tarson_Right_0.2	1240588	53	1			0		other	0
+yc22	125	Sound	H_tarson_Right_0.15	1250735	34	1			0		other	0
+yc22	126	Sound	H_tarson_Right_9.99999999999999e-002	1260912	45	1			0		other	0
+yc22	127	Sound	H_tarson_Right_4.99999999999999e-002	1271088	56	2			0		other	0
+yc22	127	Response	1	1271550	518	2
+yc22	128	Sound	H_tarson-Right-0	1281235	37	2			0		other	0
+yc22	129	Sound	H_tarson_Right_0	1291412	49	1			0		other	0
+yc22	130	Sound	H_tarson_Right_5.e-002	1301559	30	1			0		other	0
+yc22	131	Sound	H_tarson_Right_0.1	1311736	42	1			0		other	0
+yc22	132	Sound	H_tarson_Right_0.15	1321913	53	1			0		other	0
+yc22	133	Sound	H_tarson_Right_0.2	1332059	33	2			0		other	0
+yc22	133	Response	1	1333961	1935	1
+yc22	134	Sound	H_tarson-Right-0.25	1342237	46	1			0		other	0
+yc22	135	Sound	H_tarson_Right_0.25	1352414	57	1			0		other	0
+yc22	136	Sound	H_tarson_Right_0.23	1362560	38	2			0		other	0
+yc22	137	Sound	H_tarson_Right_0.21	1372737	49	1			0		other	0
+yc22	138	Sound	H_tarson_Right_0.19	1382884	165	1			0		other	0
+yc22	139	Sound	H_tarson_Right_0.17	1392911	60	1			0		other	0
+yc22	140	Sound	H_tarson_Right_0.15	1403058	40	1			0		other	0
+yc22	141	Sound	H_tarson_Right_0.13	1413235	51	1			0		other	0
+yc22	142	Sound	H_tarson_Right_0.11	1423382	33	1			0		other	0
+yc22	142	Response	1	1427860	4511	1
+yc22	143	Sound	H_tarson-Right-9.00000000000001e-002	1433559	44	1			0		other	0
+yc22	144	Sound	H_tarson_Right_9.00000000000001e-002	1443736	55	1			0		other	0
+yc22	145	Sound	H_tarson_Right_0.11	1453883	37	1			0		other	0
+yc22	146	Sound	H_tarson_Right_0.13	1464060	48	1			0		other	0
+yc22	147	Sound	H_tarson_Right_0.15	1474236	59	2			0		other	0
+yc22	148	Sound	H_tarson_Right_0.17	1484383	40	1			0		other	0
+yc22	148	Response	1	1488644	4301	1
+yc22	149	Sound	H_tarson-Right-0.19	1494560	51	1			0		other	0
+yc22	150	Sound	H_tarson_Right_0.19	1504707	33	1			0		other	0
+yc22	151	Sound	H_tarson_Right_0.17	1514884	44	1			0		other	0
+yc22	152	Sound	H_tarson_Right_0.15	1525061	56	1			0		other	0
+yc22	153	Sound	H_tarson_Right_0.13	1535208	37	1			0		other	0
+yc22	154	Sound	H_tarson_Right_0.11	1545385	48	1			0		other	0
+yc22	154	Response	1	1547467	2130	2
+yc22	155	Sound	H_tarson-Right-9.00000000000001e-002	1555532	30	1			0		other	0
+yc22	156	Sound	H_tarson_Right_9.00000000000001e-002	1565708	40	2			0		other	0
+yc22	157	Sound	H_tarson_Right_0.11	1575885	51	1			0		other	0
+yc22	158	Sound	H_tarson_Right_0.13	1586032	33	1			0		other	0
+yc22	159	Sound	H_tarson_Right_0.15	1596209	44	1			0		other	0
+yc22	160	Sound	H_tarson_Right_0.17	1606386	56	1			0		other	0
+yc22	160	Response	1	1613245	6915	1
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Sound	L_tarson_Left_0.7	other				388	1			0
+Sound	L_tarson_Left_0.65	other				10535	1			0
+Sound	L_tarson_Left_0.6	other				20712	1			0
+Sound	L_tarson_Left_0.55	other				30859	1			0
+Sound	L_tarson_Left_0.5	other				41036	1			0
+Sound	L_tarson_Left_0.45	other				51212	2			0
+Sound	L_tarson_Left_0.4	other				61359	2			0
+Sound	L_tarson_Left_0.35	other				71536	1			0
+Sound	L_tarson_Left_0.3	other				81713	1			0
+Sound	L_tarson_Left_0.25	other				91860	1			0
+Sound	L_tarson_Left_0.2	other				102037	1			0
+Sound	L_tarson_Left_0.15	other				112184	1			0
+Sound	L_tarson-Left-9.99999999999999e-002	other				122361	1			0
+Sound	L_tarson_Left_9.99999999999999e-002	other				132538	1			0
+Sound	L_tarson_Left_0.15	other				142685	1			0
+Sound	L_tarson_Left_0.2	other				152861	2			0
+Sound	L_tarson-Left-0.25	other				163038	2			0
+Sound	L_tarson_Left_0.25	other				173185	1			0
+Sound	L_tarson_Left_0.23	other				183362	1			0
+Sound	L_tarson_Left_0.21	other				193509	1			0
+Sound	L_tarson_Left_0.19	other				203686	1			0
+Sound	L_tarson_Left_0.17	other				213863	1			0
+Sound	L_tarson-Left-0.15	other				224010	1			0
+Sound	L_tarson_Left_0.15	other				234186	2			0
+Sound	L_tarson_Left_0.17	other				244363	1			0
+Sound	L_tarson_Left_0.19	other				254510	1			0
+Sound	L_tarson-Left-0.21	other				264687	1			0
+Sound	L_tarson_Left_0.21	other				274834	1			0
+Sound	L_tarson_Left_0.19	other				285011	1			0
+Sound	L_tarson_Left_0.17	other				295188	1			0
+Sound	L_tarson_Left_0.15	other				305335	1			0
+Sound	L_tarson_Left_0.13	other				315511	2			0
+Sound	L_tarson-Left-0.11	other				325688	2			0
+Sound	L_tarson_Left_0.11	other				335835	1			0
+Sound	L_tarson_Left_0.13	other				346012	1			0
+Sound	L_tarson_Left_0.15	other				356159	1			0
+Sound	H_tarson_Left_0.7	other				376513	1			0
+Sound	H_tarson_Left_0.65	other				386660	1			0
+Sound	H_tarson_Left_0.6	other				396837	1			0
+Sound	H_tarson_Left_0.55	other				407013	2			0
+Sound	H_tarson_Left_0.5	other				417160	2			0
+Sound	H_tarson_Left_0.45	other				427337	1			0
+Sound	H_tarson_Left_0.4	other				437484	1			0
+Sound	H_tarson_Left_0.35	other				447661	1			0
+Sound	H_tarson_Left_0.3	other				457838	1			0
+Sound	H_tarson_Left_0.25	other				467985	1			0
+Sound	H_tarson_Left_0.2	other				478162	1			0
+Sound	H_tarson_Left_0.15	other				488339	1			0
+Sound	H_tarson_Left_9.99999999999999e-002	other				498485	2			0
+Sound	H_tarson-Left-4.99999999999999e-002	other				508662	1			0
+Sound	H_tarson_Left_4.99999999999999e-002	other				518809	1			0
+Sound	H_tarson_Left_9.99999999999999e-002	other				528986	1			0
+Sound	H_tarson_Left_0.15	other				539163	1			0
+Sound	H_tarson-Left-0.2	other				549310	1			0
+Sound	H_tarson_Left_0.2	other				559487	1			0
+Sound	H_tarson_Left_0.18	other				569664	1			0
+Sound	H_tarson_Left_0.16	other				579811	1			0
+Sound	H_tarson_Left_0.14	other				589987	1			0
+Sound	H_tarson-Left-0.12	other				600134	1			0
+Sound	H_tarson_Left_0.12	other				610311	1			0
+Sound	H_tarson_Left_0.14	other				620488	1			0
+Sound	H_tarson_Left_0.16	other				630635	1			0
+Sound	H_tarson-Left-0.18	other				640812	1			0
+Sound	H_tarson_Left_0.18	other				650989	1			0
+Sound	H_tarson_Left_0.16	other				661136	1			0
+Sound	H_tarson_Left_0.14	other				671312	2			0
+Sound	H_tarson_Left_0.12	other				681459	1			0
+Sound	H_tarson-Left-9.99999999999999e-002	other				691636	1			0
+Sound	H_tarson_Left_9.99999999999999e-002	other				701813	1			0
+Sound	H_tarson_Left_0.12	other				711960	1			0
+Sound	H_tarson_Left_0.14	other				722137	1			0
+Sound	H_tarson_Left_0.16	other				732314	1			0
+Sound	L_tarson_Right_0.7	other				752638	1			0
+Sound	L_tarson_Right_0.65	other				762784	2			0
+Sound	L_tarson_Right_0.6	other				772961	1			0
+Sound	L_tarson_Right_0.55	other				783138	1			0
+Sound	L_tarson_Right_0.5	other				793285	1			0
+Sound	L_tarson_Right_0.45	other				803462	1			0
+Sound	L_tarson_Right_0.4	other				813639	1			0
+Sound	L_tarson_Right_0.35	other				823786	1			0
+Sound	L_tarson_Right_0.3	other				833963	1			0
+Sound	L_tarson_Right_0.25	other				844109	2			0
+Sound	L_tarson_Right_0.2	other				854286	1			0
+Sound	L_tarson_Right_0.15	other				864463	1			0
+Sound	L_tarson-Right-9.99999999999999e-002	other				874610	1			0
+Sound	L_tarson_Right_9.99999999999999e-002	other				884787	1			0
+Sound	L_tarson_Right_0.15	other				894964	1			0
+Sound	L_tarson_Right_0.2	other				905111	1			0
+Sound	L_tarson-Right-0.25	other				915288	1			0
+Sound	L_tarson_Right_0.25	other				925435	1			0
+Sound	L_tarson_Right_0.23	other				935612	1			0
+Sound	L_tarson_Right_0.21	other				945788	1			0
+Sound	L_tarson_Right_0.19	other				955935	1			0
+Sound	L_tarson_Right_0.17	other				966112	1			0
+Sound	L_tarson-Right-0.15	other				976259	1			0
+Sound	L_tarson_Right_0.15	other				986436	1			0
+Sound	L_tarson_Right_0.17	other				996613	1			0
+Sound	L_tarson_Right_0.19	other				1006760	1			0
+Sound	L_tarson_Right_0.21	other				1016936	2			0
+Sound	L_tarson-Right-0.23	other				1027113	1			0
+Sound	L_tarson_Right_0.23	other				1037260	1			0
+Sound	L_tarson_Right_0.21	other				1047437	1			0
+Sound	L_tarson_Right_0.19	other				1057584	1			0
+Sound	L_tarson_Right_0.17	other				1067761	1			0
+Sound	L_tarson-Right-0.15	other				1077938	1			0
+Sound	L_tarson_Right_0.15	other				1088085	1			0
+Sound	L_tarson_Right_0.17	other				1098261	2			0
+Sound	L_tarson_Right_0.19	other				1108438	2			0
+Sound	L_tarson_Right_0.21	other				1118585	1			0
+Sound	H_tarson_Right_0.7	other				1138909	1			0
+Sound	H_tarson_Right_0.65	other				1149086	1			0
+Sound	H_tarson_Right_0.6	other				1159263	1			0
+Sound	H_tarson_Right_0.55	other				1169410	1			0
+Sound	H_tarson_Right_0.5	other				1179587	1			0
+Sound	H_tarson_Right_0.45	other				1189763	2			0
+Sound	H_tarson_Right_0.4	other				1199910	2			0
+Sound	H_tarson_Right_0.35	other				1210087	1			0
+Sound	H_tarson_Right_0.3	other				1220234	1			0
+Sound	H_tarson_Right_0.25	other				1230411	1			0
+Sound	H_tarson_Right_0.2	other				1240588	1			0
+Sound	H_tarson_Right_0.15	other				1250735	1			0
+Sound	H_tarson_Right_9.99999999999999e-002	other				1260912	1			0
+Sound	H_tarson_Right_4.99999999999999e-002	other				1271088	2			0
+Sound	H_tarson-Right-0	other				1281235	2			0
+Sound	H_tarson_Right_0	other				1291412	1			0
+Sound	H_tarson_Right_5.e-002	other				1301559	1			0
+Sound	H_tarson_Right_0.1	other				1311736	1			0
+Sound	H_tarson_Right_0.15	other				1321913	1			0
+Sound	H_tarson_Right_0.2	other				1332059	2			0
+Sound	H_tarson-Right-0.25	other				1342237	1			0
+Sound	H_tarson_Right_0.25	other				1352414	1			0
+Sound	H_tarson_Right_0.23	other				1362560	2			0
+Sound	H_tarson_Right_0.21	other				1372737	1			0
+Sound	H_tarson_Right_0.19	other				1382884	1			0
+Sound	H_tarson_Right_0.17	other				1392911	1			0
+Sound	H_tarson_Right_0.15	other				1403058	1			0
+Sound	H_tarson_Right_0.13	other				1413235	1			0
+Sound	H_tarson_Right_0.11	other				1423382	1			0
+Sound	H_tarson-Right-9.00000000000001e-002	other				1433559	1			0
+Sound	H_tarson_Right_9.00000000000001e-002	other				1443736	1			0
+Sound	H_tarson_Right_0.11	other				1453883	1			0
+Sound	H_tarson_Right_0.13	other				1464060	1			0
+Sound	H_tarson_Right_0.15	other				1474236	2			0
+Sound	H_tarson_Right_0.17	other				1484383	1			0
+Sound	H_tarson-Right-0.19	other				1494560	1			0
+Sound	H_tarson_Right_0.19	other				1504707	1			0
+Sound	H_tarson_Right_0.17	other				1514884	1			0
+Sound	H_tarson_Right_0.15	other				1525061	1			0
+Sound	H_tarson_Right_0.13	other				1535208	1			0
+Sound	H_tarson_Right_0.11	other				1545385	1			0
+Sound	H_tarson-Right-9.00000000000001e-002	other				1555532	1			0
+Sound	H_tarson_Right_9.00000000000001e-002	other				1565708	2			0
+Sound	H_tarson_Right_0.11	other				1575885	1			0
+Sound	H_tarson_Right_0.13	other				1586032	1			0
+Sound	H_tarson_Right_0.15	other				1596209	1			0
+Sound	H_tarson_Right_0.17	other				1606386	1			0

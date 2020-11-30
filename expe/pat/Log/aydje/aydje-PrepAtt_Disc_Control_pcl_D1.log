@@ -1,0 +1,54 @@
+Scenario - 17_March_2015
+Logfile written - 07/07/2017 16:58:52
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+aydje	1	Response	253	14969	24802	1
+aydje	2	Picture	10	14996	0	2	20165	3	0	20000	other	0
+aydje	3	Picture	10	35328	0	1	40162	3	0	40000	other	0
+aydje	3	Response	251	48929	13601	1
+aydje	4	Picture	10	75656	0	2	40163	4	0	40000	other	0
+aydje	4	Response	252	81317	5661	1
+aydje	4	Response	252	87897	12241	1
+aydje	4	Response	252	92738	17082	1
+aydje	4	Response	252	100148	24492	2
+aydje	5	Sound	111	115895	0	2			0		hit	11
+aydje	5	Response	251	123367	7472	1
+aydje	6	Sound	122	146965	0	1			0		hit	13
+aydje	6	Response	252	153818	6853	1
+aydje	7	Sound	111	178034	0	1			0		hit	15
+aydje	7	Response	251	181603	3569	1
+aydje	7	Response	251	183529	5495	1
+aydje	8	Sound	121	209103	0	1			0		hit	18
+aydje	8	Response	252	212775	3672	1
+aydje	9	Sound	112	240173	0	1			0		hit	20
+aydje	9	Response	251	243461	3288	1
+aydje	10	Sound	111	271242	0	1			0		hit	22
+aydje	10	Response	251	275596	4354	1
+aydje	11	Sound	122	302311	0	1			0		hit	24
+aydje	11	Response	252	305648	3337	1
+aydje	12	Sound	111	333380	0	2			0		hit	26
+aydje	12	Response	251	337421	4041	2
+aydje	12	Response	253	348718	15338	2
+aydje	13	Sound	121	364450	0	1			0		hit	29
+aydje	13	Response	252	368810	4360	1
+aydje	14	Sound	112	395519	0	1			0		hit	31
+aydje	14	Response	251	399126	3607	2
+aydje	14	Quit		405117	9598
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture	10	other				14996	2	20165	3	0	20000
+Picture	10	other				35328	1	40162	3	0	40000
+Picture	10	other				75656	2	40163	4	0	40000
+Sound	111	hit	1	7472	3	115895	2			0
+Sound	122	hit	2	6853	2	146965	1			0
+Sound	111	hit	1	3569	2	178034	1			0
+Sound	121	hit	2	3672	2	209103	1			0
+Sound	112	hit	1	3288	2	240173	1			0
+Sound	111	hit	1	4354	2	271242	1			0
+Sound	122	hit	2	3337	2	302311	1			0
+Sound	111	hit	1	4041	4	333380	2			0
+Sound	121	hit	2	4360	2	364450	1			0
+Sound	112	hit	1	3607	3	395519	1			0

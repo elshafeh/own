@@ -1,0 +1,67 @@
+Scenario - 17_March_2015
+Logfile written - 06/07/2016 15:20:05
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+fp3	1	Response	253	7433	17266	1
+fp3	2	Picture	10	7498	0	1	20165	2	0	20000	other	0
+fp3	3	Picture	10	27829	0	2	40163	4	0	40000	other	0
+fp3	3	Response	251	46638	18809	2
+fp3	3	Response	251	49965	22136	2
+fp3	4	Picture	10	68159	0	2	40164	3	0	40000	other	0
+fp3	4	Response	252	85582	17423	1
+fp3	5	Sound	111	108386	0	1			0		hit	9
+fp3	5	Response	251	116382	7996	1
+fp3	6	Sound	122	139456	0	1			0		hit	11
+fp3	6	Response	252	147931	8475	1
+fp3	7	Sound	111	170526	0	1			0		hit	13
+fp3	7	Response	251	179515	8989	1
+fp3	8	Sound	121	201596	0	1			0		hit	15
+fp3	8	Response	252	209618	8022	1
+fp3	9	Sound	112	232666	0	1			0		hit	17
+fp3	9	Response	251	247662	14996	1
+fp3	10	Sound	111	263736	0	1			0		hit	19
+fp3	10	Response	251	274000	10264	1
+fp3	11	Sound	122	294806	0	1			0		hit	21
+fp3	11	Response	252	314880	20074	2
+fp3	12	Sound	111	325876	0	1			0		hit	23
+fp3	12	Response	251	335442	9566	1
+fp3	13	Sound	121	356946	0	1			0		hit	25
+fp3	13	Response	252	364570	7624	2
+fp3	14	Sound	112	388016	0	1			0		hit	27
+fp3	14	Response	251	397813	9797	1
+fp3	15	Sound	121	419086	0	1			0		hit	29
+fp3	15	Response	252	425726	6640	1
+fp3	16	Sound	121	450156	0	1			0		hit	31
+fp3	16	Response	252	456305	6149	1
+fp3	17	Sound	112	481226	0	1			0		hit	33
+fp3	17	Response	251	488342	7116	1
+fp3	18	Sound	112	512296	0	1			0		hit	35
+fp3	18	Response	251	523084	10788	1
+fp3	19	Sound	122	543366	0	1			0		hit	37
+fp3	19	Response	252	549890	6524	1
+fp3	20	Sound	122	574436	0	1			0		hit	39
+fp3	20	Response	252	581664	7228	2
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture	10	other				7498	1	20165	2	0	20000
+Picture	10	other				27829	2	40163	4	0	40000
+Picture	10	other				68159	2	40164	3	0	40000
+Sound	111	hit	1	7996	2	108386	1			0
+Sound	122	hit	2	8475	2	139456	1			0
+Sound	111	hit	1	8989	2	170526	1			0
+Sound	121	hit	2	8022	2	201596	1			0
+Sound	112	hit	1	14996	2	232666	1			0
+Sound	111	hit	1	10264	2	263736	1			0
+Sound	122	hit	2	20074	3	294806	1			0
+Sound	111	hit	1	9566	2	325876	1			0
+Sound	121	hit	2	7624	3	356946	1			0
+Sound	112	hit	1	9797	2	388016	1			0
+Sound	121	hit	2	6640	2	419086	1			0
+Sound	121	hit	2	6149	2	450156	1			0
+Sound	112	hit	1	7116	2	481226	1			0
+Sound	112	hit	1	10788	2	512296	1			0
+Sound	122	hit	2	6524	2	543366	1			0
+Sound	122	hit	2	7228	3	574436	1			0

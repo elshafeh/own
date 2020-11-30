@@ -1,0 +1,68 @@
+Scenario - 17_March_2015
+Logfile written - 07/26/2017 09:57:55
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+berpa_test	1	Response	253	38285	48118	1
+berpa_test	2	Picture	10	38327	0	2	20165	3	0	20000	other	0
+berpa_test	3	Picture	10	58659	0	1	40162	3	0	40000	other	0
+berpa_test	3	Response	252	74092	15433	1
+berpa_test	4	Picture	10	98988	0	1	40162	3	0	40000	other	0
+berpa_test	4	Response	251	114591	15603	1
+berpa_test	5	Sound	111	139213	0	1			0		incorrect	8
+berpa_test	5	Response	252	142020	2807	1
+berpa_test	6	Sound	122	170282	0	1			0		incorrect	10
+berpa_test	6	Response	251	173188	2906	1
+berpa_test	7	Sound	111	201351	0	1			0		incorrect	12
+berpa_test	7	Response	252	203943	2592	1
+berpa_test	8	Sound	121	232420	0	2			0		incorrect	14
+berpa_test	8	Response	251	238011	5591	1
+berpa_test	9	Sound	112	263490	0	1			0		incorrect	16
+berpa_test	9	Response	252	266258	2768	1
+berpa_test	10	Sound	111	294559	0	1			0		incorrect	18
+berpa_test	10	Response	252	297356	2797	1
+berpa_test	11	Sound	122	325628	0	1			0		incorrect	20
+berpa_test	11	Response	251	328219	2591	1
+berpa_test	12	Sound	111	356697	0	2			0		incorrect	22
+berpa_test	12	Response	252	360784	4087	1
+berpa_test	13	Sound	121	387767	0	1			0		incorrect	24
+berpa_test	13	Response	251	391141	3374	1
+berpa_test	14	Sound	112	418836	0	1			0		incorrect	26
+berpa_test	14	Response	252	421738	2902	1
+berpa_test	15	Sound	121	449905	0	2			0		incorrect	28
+berpa_test	15	Response	251	452760	2855	1
+berpa_test	16	Sound	121	480975	0	1			0		incorrect	30
+berpa_test	16	Response	251	486807	5832	1
+berpa_test	17	Sound	112	512044	0	1			0		hit	32
+berpa_test	17	Response	251	514658	2614	1
+berpa_test	17	Response	252	534582	22538	1
+berpa_test	17	Response	252	538738	26694	1
+berpa_test	18	Sound	112	543113	0	1			0		incorrect	36
+berpa_test	18	Response	252	550305	7192	1
+berpa_test	19	Sound	122	574182	0	2			0		incorrect	38
+berpa_test	19	Response	251	579275	5093	2
+berpa_test	20	Sound	122	605252	0	1			0		incorrect	40
+berpa_test	20	Response	251	610100	4848	1
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture	10	other				38327	2	20165	3	0	20000
+Picture	10	other				58659	1	40162	3	0	40000
+Picture	10	other				98988	1	40162	3	0	40000
+Sound	111	incorrect	2	2807	2	139213	1			0
+Sound	122	incorrect	1	2906	2	170282	1			0
+Sound	111	incorrect	2	2592	2	201351	1			0
+Sound	121	incorrect	1	5591	3	232420	2			0
+Sound	112	incorrect	2	2768	2	263490	1			0
+Sound	111	incorrect	2	2797	2	294559	1			0
+Sound	122	incorrect	1	2591	2	325628	1			0
+Sound	111	incorrect	2	4087	3	356697	2			0
+Sound	121	incorrect	1	3374	2	387767	1			0
+Sound	112	incorrect	2	2902	2	418836	1			0
+Sound	121	incorrect	1	2855	3	449905	2			0
+Sound	121	incorrect	1	5832	2	480975	1			0
+Sound	112	hit	1	2614	2	512044	1			0
+Sound	112	incorrect	2	7192	2	543113	1			0
+Sound	122	incorrect	1	5093	4	574182	2			0
+Sound	122	incorrect	1	4848	2	605252	1			0

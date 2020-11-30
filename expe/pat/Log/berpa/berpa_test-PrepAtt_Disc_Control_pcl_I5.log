@@ -1,0 +1,67 @@
+Scenario - 17_March_2015
+Logfile written - 07/26/2017 10:09:42
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+berpa_test	1	Response	253	19938	29772	1
+berpa_test	2	Picture	10	19996	0	1	20164	3	0	20000	other	0
+berpa_test	3	Picture	10	40327	0	2	40163	3	0	40000	other	0
+berpa_test	3	Response	251	59007	18680	1
+berpa_test	4	Picture	10	80656	0	2	40163	3	0	40000	other	0
+berpa_test	4	Response	252	97411	16755	2
+berpa_test	5	Sound	111	120894	0	1			0		hit	8
+berpa_test	5	Response	251	125789	4895	2
+berpa_test	6	Sound	122	151963	0	1			0		hit	10
+berpa_test	6	Response	252	157315	5352	2
+berpa_test	7	Sound	111	183032	0	2			0		hit	12
+berpa_test	7	Response	251	187292	4260	1
+berpa_test	8	Sound	121	214102	0	1			0		incorrect	14
+berpa_test	8	Response	251	219983	5881	2
+berpa_test	8	Response	252	233501	19399	1
+berpa_test	9	Sound	112	245171	0	1			0		hit	17
+berpa_test	9	Response	251	250689	5518	1
+berpa_test	10	Sound	111	276240	0	1			0		hit	19
+berpa_test	10	Response	251	284520	8280	1
+berpa_test	11	Sound	122	307309	0	2			0		hit	21
+berpa_test	11	Response	252	312547	5238	1
+berpa_test	12	Sound	111	338379	0	1			0		hit	23
+berpa_test	12	Response	251	348525	10146	1
+berpa_test	13	Sound	121	369448	0	1			0		hit	25
+berpa_test	13	Response	252	374679	5231	1
+berpa_test	14	Sound	112	400517	0	2			0		hit	27
+berpa_test	14	Response	251	409258	8741	2
+berpa_test	15	Sound	121	431587	0	1			0		hit	29
+berpa_test	15	Response	252	436915	5328	2
+berpa_test	16	Sound	121	462656	0	1			0		hit	31
+berpa_test	16	Response	252	471340	8684	1
+berpa_test	17	Sound	112	493725	0	1			0		hit	33
+berpa_test	17	Response	251	498778	5053	1
+berpa_test	18	Sound	112	524794	0	2			0		hit	35
+berpa_test	18	Response	251	530259	5465	1
+berpa_test	19	Sound	122	555864	0	1			0		hit	37
+berpa_test	19	Response	252	568157	12293	1
+berpa_test	20	Sound	122	586933	0	1			0		hit	39
+berpa_test	20	Response	252	591310	4377	1
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture	10	other				19996	1	20164	3	0	20000
+Picture	10	other				40327	2	40163	3	0	40000
+Picture	10	other				80656	2	40163	3	0	40000
+Sound	111	hit	1	4895	3	120894	1			0
+Sound	122	hit	2	5352	3	151963	1			0
+Sound	111	hit	1	4260	3	183032	2			0
+Sound	121	incorrect	1	5881	3	214102	1			0
+Sound	112	hit	1	5518	2	245171	1			0
+Sound	111	hit	1	8280	2	276240	1			0
+Sound	122	hit	2	5238	3	307309	2			0
+Sound	111	hit	1	10146	2	338379	1			0
+Sound	121	hit	2	5231	2	369448	1			0
+Sound	112	hit	1	8741	4	400517	2			0
+Sound	121	hit	2	5328	3	431587	1			0
+Sound	121	hit	2	8684	2	462656	1			0
+Sound	112	hit	1	5053	2	493725	1			0
+Sound	112	hit	1	5465	3	524794	2			0
+Sound	122	hit	2	12293	2	555864	1			0
+Sound	122	hit	2	4377	2	586933	1			0

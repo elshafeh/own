@@ -1,0 +1,30 @@
+Scenario - 17_March_2015
+Logfile written - 04/13/2017 15:00:32
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+bpralus	1	Response	253	19368	29201	1
+bpralus	2	Picture	10	19496	0	2	20165	3	0	20000	other	0
+bpralus	3	Picture	10	39827	0	2	40163	3	0	40000	other	0
+bpralus	3	Response	251	66124	26297	2
+bpralus	4	Picture	10	80157	0	1	40163	2	0	40000	other	0
+bpralus	4	Response	252	97940	17783	1
+bpralus	5	Sound	111	120385	0	1			0		miss	0
+bpralus	6	Sound	122	151455	0	1			0		miss	0
+bpralus	7	Sound	111	182524	0	1			0		miss	0
+bpralus	8	Sound	121	213593	0	2			0		miss	0
+bpralus	9	Sound	112	244663	0	1			0		hit	12
+bpralus	9	Response	251	252386	7723	2
+bpralus	9	Quit		253201	8538
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture	10	other				19496	2	20165	3	0	20000
+Picture	10	other				39827	2	40163	3	0	40000
+Picture	10	other				80157	1	40163	2	0	40000
+Sound	111	miss				120385	1			0
+Sound	122	miss				151455	1			0
+Sound	111	miss				182524	1			0
+Sound	121	miss				213593	2			0
+Sound	112	hit	1	7723	3	244663	1			0

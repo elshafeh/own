@@ -1,0 +1,50 @@
+Scenario - 17_March_2015
+Logfile written - 06/29/2016 15:07:09
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+fc8	1	Response	253	14967	24800	1
+fc8	2	Picture	10	14996	0	2	20165	4	0	20000	other	0
+fc8	3	Picture	10	35328	0	1	40162	3	0	40000	other	0
+fc8	3	Response	251	61313	25985	1
+fc8	4	Picture	10	75657	0	1	40162	3	0	40000	other	0
+fc8	4	Response	252	89637	13980	1
+fc8	5	Nothing	91	115821	0	1			0		other	0
+fc8	6	Picture	202	145983	0	1	2000	2	0	1920	other	0
+fc8	7	Sound	62	157979	0	2			0		hit	10
+fc8	7	Response	251	171231	13252	1
+fc8	8	Picture	1	193145	0	1	1999	3	0	1920	other	0
+fc8	9	Sound	61	205122	0	1			0		hit	13
+fc8	9	Response	251	217249	12127	1
+fc8	10	Picture	103	239473	0	1	2000	2	0	1920	other	0
+fc8	11	Sound	63	251457	0	1			0		hit	16
+fc8	11	Response	252	256766	5309	1
+fc8	12	Picture	204	287135	0	1	2000	2	0	1920	other	0
+fc8	13	Sound	64	299109	0	1			0		hit	19
+fc8	13	Response	252	306062	6953	1
+fc8	14	Picture	2	334130	0	2	2000	3	0	1920	other	0
+fc8	15	Sound	62	346102	0	1			0		hit	22
+fc8	15	Response	251	356890	10788	1
+fc8	16	Picture	103	381125	0	1	2000	2	0	1920	other	0
+fc8	17	Sound	63	393125	0	1			0		hit	25
+fc8	17	Response	252	397905	4780	1
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture	10	other				14996	2	20165	4	0	20000
+Picture	10	other				35328	1	40162	3	0	40000
+Picture	10	other				75657	1	40162	3	0	40000
+Nothing	91	other				115821	1			0
+Picture	202	other				145983	1	2000	2	0	1920
+Sound	62	hit	1	13252	3	157979	2			0
+Picture	1	other				193145	1	1999	3	0	1920
+Sound	61	hit	1	12127	2	205122	1			0
+Picture	103	other				239473	1	2000	2	0	1920
+Sound	63	hit	2	5309	2	251457	1			0
+Picture	204	other				287135	1	2000	2	0	1920
+Sound	64	hit	2	6953	2	299109	1			0
+Picture	2	other				334130	2	2000	3	0	1920
+Sound	62	hit	1	10788	2	346102	1			0
+Picture	103	other				381125	1	2000	2	0	1920
+Sound	63	hit	2	4780	2	393125	1			0

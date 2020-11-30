@@ -1,0 +1,44 @@
+Scenario - 17_March_2015
+Logfile written - 07/04/2017 09:58:52
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+bonwi	1	Response	253	10238	20071	1
+bonwi	2	Picture	10	10330	0	2	20165	3	0	20000	other	0
+bonwi	3	Picture	10	30661	0	2	40163	3	0	40000	other	0
+bonwi	3	Response	251	70824	40163	2
+bonwi	4	Picture	10	70990	0	2	40163	3	0	40000	other	0
+bonwi	4	Response	252	94952	23962	1
+bonwi	5	Sound	111	111225	0	1			0		hit	8
+bonwi	5	Response	251	133755	22530	1
+bonwi	6	Sound	122	142294	0	1			0		hit	10
+bonwi	6	Response	252	152891	10597	2
+bonwi	7	Sound	111	173363	0	2			0		hit	12
+bonwi	7	Response	251	182313	8950	1
+bonwi	8	Sound	121	204432	0	2			0		hit	14
+bonwi	8	Response	252	212730	8298	2
+bonwi	9	Sound	112	235502	0	1			0		hit	16
+bonwi	9	Response	251	242593	7091	1
+bonwi	9	Response	251	247052	11550	2
+bonwi	10	Sound	111	266571	0	1			0		hit	19
+bonwi	10	Response	251	274304	7733	1
+bonwi	11	Sound	122	297640	0	1			0		hit	21
+bonwi	11	Response	252	304401	6761	1
+bonwi	12	Sound	111	328709	0	1			0		hit	23
+bonwi	12	Response	251	334303	5594	1
+bonwi	12	Quit		347185	18476
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture	10	other				10330	2	20165	3	0	20000
+Picture	10	other				30661	2	40163	3	0	40000
+Picture	10	other				70990	2	40163	3	0	40000
+Sound	111	hit	1	22530	2	111225	1			0
+Sound	122	hit	2	10597	3	142294	1			0
+Sound	111	hit	1	8950	3	173363	2			0
+Sound	121	hit	2	8298	4	204432	2			0
+Sound	112	hit	1	7091	2	235502	1			0
+Sound	111	hit	1	7733	2	266571	1			0
+Sound	122	hit	2	6761	2	297640	1			0
+Sound	111	hit	1	5594	2	328709	1			0

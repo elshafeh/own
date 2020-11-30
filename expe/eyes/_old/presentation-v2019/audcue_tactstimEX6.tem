@@ -1,0 +1,51 @@
+##################################
+### trial template < EXAMPLE > ###
+##################################
+# combination 6#
+
+### set the trial parameters
+IF '$resp == 1'; # low freq
+	$pulse_num = 9;
+	$pulse_int = 30;
+ENDIF;
+IF '$resp == 2'; # high freq
+	$pulse_num = 17;
+	$pulse_int = 15;
+ENDIF;
+
+### the actual experimental trial < EXAMPLE >
+trial {
+	trial_duration = 4000;
+	
+	# fixation cross [0 0.5]
+	picture default;
+	time 		= 0;
+	duration = 500;
+	code = "start";
+	
+	# cue left/right [0.5 2]
+	sound $cue;
+	time 			= 500;
+	duration 	= 1500;
+	code 			= $cue_code;
+	port_code 	= $cue_code;
+	
+	# fixation cross [2 3]
+	picture default;
+	time 			= 2000;
+	duration 	= '1000 - $pulse_int';
+	code 			= 32;
+	port_code 	= 32;
+	
+	# stim left/right [3 4]
+	nothing{};
+	time = '3000 - $pulse_int'; # this is for correctly timing the first pulse
+	
+	# the pattern 
+	LOOP $i $pulse_num;
+		nothing{};
+		deltat 		= $pulse_int;
+		code 			= $stim;
+		port_code 	= $stim;
+	ENDLOOP;
+};

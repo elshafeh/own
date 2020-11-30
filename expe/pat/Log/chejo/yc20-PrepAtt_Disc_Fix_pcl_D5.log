@@ -1,0 +1,96 @@
+Scenario - 17_March_2015
+Logfile written - 02/03/2017 16:11:35
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+yc20	1	Response	253	16961	26794	2
+yc20	2	Picture	10	16996	0	2	20165	4	0	20000	other	0
+yc20	3	Picture	10	37327	0	2	40163	4	0	40000	other	0
+yc20	3	Response	251	56519	19192	2
+yc20	4	Picture	10	77657	0	1	40163	2	0	40000	other	0
+yc20	4	Response	252	92560	14903	2
+yc20	5	Nothing	91	117822	0	1			0		other	0
+yc20	6	Picture	103	147984	0	1	1999	3	0	1920	other	0
+yc20	7	Sound	63	159956	0	1			0		hit	10
+yc20	7	Response	252	167783	7827	1
+yc20	8	Picture	101	194812	0	1	2000	2	0	1920	other	0
+yc20	9	Sound	61	206800	0	1			0		hit	13
+yc20	9	Response	251	212804	6004	1
+yc20	10	Picture	1	241974	0	2	2000	4	0	1920	other	0
+yc20	11	Sound	61	253973	0	1			0		hit	16
+yc20	11	Response	251	262526	8553	2
+yc20	12	Picture	24	289470	0	1	1999	3	0	1920	other	0
+yc20	12	Sound	52	295700	6230	1			6230		other	0
+yc20	13	Sound	64	301445	0	1			0		hit	20
+yc20	13	Response	252	307572	6127	2
+yc20	14	Picture	4	336132	0	1	1999	3	0	1920	other	0
+yc20	15	Sound	64	348109	0	2			0		hit	23
+yc20	15	Response	252	354125	6016	1
+yc20	16	Picture	21	382627	0	1	2000	2	0	1920	other	0
+yc20	16	Sound	52	390036	7409	2			7410		other	0
+yc20	17	Sound	61	394624	0	1			0		hit	27
+yc20	17	Response	251	402167	7543	1
+yc20	18	Picture	204	430289	0	1	2000	2	0	1920	other	0
+yc20	19	Sound	64	442276	0	1			0		hit	30
+yc20	19	Response	252	449592	7316	2
+yc20	20	Picture	11	476784	0	2	2000	3	0	1920	other	0
+yc20	20	Sound	51	481053	4269	2			4270		other	0
+yc20	21	Sound	61	488760	0	2			0		hit	34
+yc20	21	Response	251	495787	7027	1
+yc20	22	Picture	1	524113	0	1	2000	2	0	1920	other	0
+yc20	23	Sound	61	536113	0	1			0		hit	37
+yc20	23	Response	251	544519	8406	2
+yc20	24	Picture	3	570442	0	1	2000	2	0	1920	other	0
+yc20	25	Sound	63	582418	0	1			0		hit	40
+yc20	25	Response	252	593169	10751	1
+yc20	26	Picture	123	616937	0	2	2000	3	0	1920	other	0
+yc20	26	Sound	52	623247	6310	1			6310		other	0
+yc20	27	Sound	63	628932	0	2			0		incorrect	44
+yc20	27	Response	251	639880	10948	2
+yc20	27	Response	252	643697	14765	1
+yc20	28	Picture	214	663932	0	2	2000	4	0	1920	other	0
+yc20	28	Sound	51	668781	4849	1			4850		other	0
+yc20	29	Sound	64	675926	0	1			0		hit	49
+yc20	29	Response	252	682482	6556	2
+yc20	29	Quit		705502	29576
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture	10	other				16996	2	20165	4	0	20000
+Picture	10	other				37327	2	40163	4	0	40000
+Picture	10	other				77657	1	40163	2	0	40000
+Nothing	91	other				117822	1			0
+Picture	103	other				147984	1	1999	3	0	1920
+Sound	63	hit	2	7827	2	159956	1			0
+Picture	101	other				194812	1	2000	2	0	1920
+Sound	61	hit	1	6004	2	206800	1			0
+Picture	1	other				241974	2	2000	4	0	1920
+Sound	61	hit	1	8553	3	253973	1			0
+Picture	24	other				289470	1	1999	3	0	1920
+Sound	52	other				295700	1			6230
+Sound	64	hit	2	6127	3	301445	1			0
+Picture	4	other				336132	1	1999	3	0	1920
+Sound	64	hit	2	6016	3	348109	2			0
+Picture	21	other				382627	1	2000	2	0	1920
+Sound	52	other				390036	2			7410
+Sound	61	hit	1	7543	2	394624	1			0
+Picture	204	other				430289	1	2000	2	0	1920
+Sound	64	hit	2	7316	3	442276	1			0
+Picture	11	other				476784	2	2000	3	0	1920
+Sound	51	other				481053	2			4270
+Sound	61	hit	1	7027	3	488760	2			0
+Picture	1	other				524113	1	2000	2	0	1920
+Sound	61	hit	1	8406	3	536113	1			0
+Picture	3	other				570442	1	2000	2	0	1920
+Sound	63	hit	2	10751	2	582418	1			0
+Picture	123	other				616937	2	2000	3	0	1920
+Sound	52	other				623247	1			6310
+Sound	63	incorrect	1	10948	4	628932	2			0
+Picture	214	other				663932	2	2000	4	0	1920
+Sound	51	other				668781	1			4850
+Sound	64	hit	2	6556	3	675926	1			0
+
+The following output port codes were not sent because of a conflict on the port.
+Port	Code	Time(ms)
+1	90	1699.7

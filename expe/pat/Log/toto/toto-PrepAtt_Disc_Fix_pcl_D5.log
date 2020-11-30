@@ -1,0 +1,21 @@
+Scenario - 17_March_2015
+Logfile written - 04/03/2017 14:03:33
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+toto	1	Response	253	394090	403923	1
+toto	2	Picture	10	394126	0	1	20165	2	0	20000	other	0
+toto	3	Picture	10	414457	0	2	40163	3	0	40000	other	0
+toto	4	Picture	10	454786	0	2	23883	3	0	40000	other	0
+toto	4	Quit		471448	16662
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture	10	other				394126	1	20165	2	0	20000
+Picture	10	other				414457	2	40163	3	0	40000
+Picture	10	other				454786	2	23883	3	0	40000
+
+The following output port codes were not sent because of a conflict on the port.
+Port	Code	Time(ms)
+1	90	39412.6

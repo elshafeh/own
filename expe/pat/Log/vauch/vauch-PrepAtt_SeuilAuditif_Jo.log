@@ -1,0 +1,40 @@
+Scenario - SeuilAuditif
+Logfile written - 06/20/2017 10:02:05
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+vauch	2	Sound	L_tarson_Left_0.7	538	40	1			0		other	0
+vauch	3	Sound	L_tarson_Left_0.65	10715	51	1			0		other	0
+vauch	4	Sound	L_tarson_Left_0.6	20862	33	1			0		other	0
+vauch	4	Response	1	21280	451	1
+vauch	5	Sound	L_tarson-Left-0.55	31039	44	1			0		other	0
+vauch	6	Sound	L_tarson_Left_0.55	41216	55	1			0		other	0
+vauch	7	Sound	L_tarson_Left_0.6	51362	35	2			0		other	0
+vauch	8	Sound	L_tarson_Left_0.65	61540	48	1			0		other	0
+vauch	9	Sound	L_tarson_Left_0.7	71717	60	1			0		other	0
+vauch	10	Sound	L_tarson_Left_0.75	81863	39	2			0		other	0
+vauch	11	Sound	L_tarson_Left_0.8	92040	51	1			0		other	0
+vauch	12	Sound	L_tarson_Left_0.85	102187	32	1			0		other	0
+vauch	13	Sound	L_tarson_Left_0.9	112364	43	1			0		other	0
+vauch	13	Response	1	120438	8117	1
+vauch	14	Sound	L_tarson-Left-0.95	122541	55	1			0		other	0
+vauch	15	Sound	L_tarson_Left_0.95	132688	36	1			0		other	0
+vauch	15	Quit		137858	5206
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Sound	L_tarson_Left_0.7	other				538	1			0
+Sound	L_tarson_Left_0.65	other				10715	1			0
+Sound	L_tarson_Left_0.6	other				20862	1			0
+Sound	L_tarson-Left-0.55	other				31039	1			0
+Sound	L_tarson_Left_0.55	other				41216	1			0
+Sound	L_tarson_Left_0.6	other				51362	2			0
+Sound	L_tarson_Left_0.65	other				61540	1			0
+Sound	L_tarson_Left_0.7	other				71717	1			0
+Sound	L_tarson_Left_0.75	other				81863	2			0
+Sound	L_tarson_Left_0.8	other				92040	1			0
+Sound	L_tarson_Left_0.85	other				102187	1			0
+Sound	L_tarson_Left_0.9	other				112364	1			0
+Sound	L_tarson-Left-0.95	other				122541	1			0
+Sound	L_tarson_Left_0.95	other				132688	1			0

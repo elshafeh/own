@@ -1,0 +1,1 @@
+function uniformScreen(col)global wptr dacsizeif (size(col,2) ~= 1)	col = col';endcmap = (col*ones(1,256))';% maxcol =255*ones(256,1);if(dacsize == 10)    error('dacsize = 10 not updated to OsX')% 	SCREEN(wptr,'Gamma',cmap,dacsize);% 	Screen(wptr,'SetClut',[maxcol maxcol maxcol]);else    Screen('loadClut', wptr, cmap);endend

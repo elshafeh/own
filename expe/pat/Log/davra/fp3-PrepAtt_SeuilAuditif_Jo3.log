@@ -1,0 +1,93 @@
+Scenario - SeuilAuditif
+Logfile written - 06/06/2016 14:56:38
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+fp3	2	Sound	L_tarson_Left_0.7	388	57	1			0		other	0
+fp3	3	Sound	L_tarson_Left_0.65	10535	38	2			0		other	0
+fp3	4	Sound	L_tarson_Left_0.6	20712	49	1			0		other	0
+fp3	5	Sound	L_tarson_Left_0.55	30859	30	2			0		other	0
+fp3	6	Sound	L_tarson_Left_0.5	41036	41	2			0		other	0
+fp3	7	Sound	L_tarson_Left_0.45	51214	54	1			0		other	0
+fp3	8	Sound	L_tarson_Left_0.4	61361	35	1			0		other	0
+fp3	9	Sound	L_tarson_Left_0.35	71538	46	1			0		other	0
+fp3	10	Sound	L_tarson_Left_0.3	81715	57	1			0		other	0
+fp3	11	Sound	L_tarson_Left_0.25	91862	38	1			0		other	0
+fp3	12	Sound	L_tarson_Left_0.2	102039	49	1			0		other	0
+fp3	13	Sound	L_tarson_Left_0.15	112186	31	1			0		other	0
+fp3	14	Sound	L_tarson_Left_9.99999999999999e-002	122363	42	2			0		other	0
+fp3	15	Sound	L_tarson_Left_4.99999999999999e-002	132540	53	1			0		other	0
+fp3	16	Sound	L_tarson-Left-0	142688	35	1			0		other	0
+fp3	17	Sound	L_tarson_Left_0	152865	46	1			0		other	0
+fp3	18	Sound	L_tarson_Left_5.e-002	163042	58	1			0		other	0
+fp3	19	Sound	L_tarson_Left_0.1	173189	39	1			0		other	0
+fp3	20	Sound	L_tarson_Left_0.15	183366	50	1			0		other	0
+fp3	21	Sound	L_tarson_Left_0.2	193513	31	1			0		other	0
+fp3	22	Sound	L_tarson_Left_0.25	203690	42	1			0		other	0
+fp3	23	Sound	L_tarson_Left_0.3	213867	53	1			0		other	0
+fp3	24	Sound	L_tarson_Left_0.35	224014	35	1			0		other	0
+fp3	25	Sound	L_tarson_Left_0.4	234191	46	1			0		other	0
+fp3	26	Sound	L_tarson_Left_0.45	244368	58	2			0		other	0
+fp3	27	Sound	L_tarson_Left_0.5	254515	38	2			0		other	0
+fp3	28	Sound	L_tarson_Left_0.55	264693	50	1			0		other	0
+fp3	29	Sound	L_tarson_Left_0.6	274840	32	1			0		other	0
+fp3	30	Sound	L_tarson_Left_0.65	285017	43	1			0		other	0
+fp3	31	Sound	L_tarson_Left_0.7	295194	54	1			0		other	0
+fp3	32	Sound	L_tarson_Left_0.75	305341	35	1			0		other	0
+fp3	33	Sound	L_tarson_Left_0.8	315518	46	1			0		other	0
+fp3	34	Sound	L_tarson_Left_0.85	325695	58	1			0		other	0
+fp3	35	Sound	L_tarson_Left_0.9	335842	39	1			0		other	0
+fp3	35	Response	1	336722	919	1
+fp3	36	Sound	L_tarson-Left-0.95	346019	50	2			0		other	0
+fp3	37	Sound	L_tarson_Left_0.95	356166	31	2			0		other	0
+fp3	38	Sound	L_tarson_Left_0.93	366344	43	1			0		other	0
+fp3	39	Sound	L_tarson_Left_0.91	376521	54	1			0		other	0
+fp3	40	Sound	L_tarson_Left_0.89	386668	36	1			0		other	0
+fp3	41	Sound	L_tarson_Left_0.87	396845	47	1			0		other	0
+fp3	42	Sound	L_tarson_Left_0.85	407022	58	1			0		other	0
+fp3	42	Quit		411661	4697
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Sound	L_tarson_Left_0.7	other				388	1			0
+Sound	L_tarson_Left_0.65	other				10535	2			0
+Sound	L_tarson_Left_0.6	other				20712	1			0
+Sound	L_tarson_Left_0.55	other				30859	2			0
+Sound	L_tarson_Left_0.5	other				41036	2			0
+Sound	L_tarson_Left_0.45	other				51214	1			0
+Sound	L_tarson_Left_0.4	other				61361	1			0
+Sound	L_tarson_Left_0.35	other				71538	1			0
+Sound	L_tarson_Left_0.3	other				81715	1			0
+Sound	L_tarson_Left_0.25	other				91862	1			0
+Sound	L_tarson_Left_0.2	other				102039	1			0
+Sound	L_tarson_Left_0.15	other				112186	1			0
+Sound	L_tarson_Left_9.99999999999999e-002	other				122363	2			0
+Sound	L_tarson_Left_4.99999999999999e-002	other				132540	1			0
+Sound	L_tarson-Left-0	other				142688	1			0
+Sound	L_tarson_Left_0	other				152865	1			0
+Sound	L_tarson_Left_5.e-002	other				163042	1			0
+Sound	L_tarson_Left_0.1	other				173189	1			0
+Sound	L_tarson_Left_0.15	other				183366	1			0
+Sound	L_tarson_Left_0.2	other				193513	1			0
+Sound	L_tarson_Left_0.25	other				203690	1			0
+Sound	L_tarson_Left_0.3	other				213867	1			0
+Sound	L_tarson_Left_0.35	other				224014	1			0
+Sound	L_tarson_Left_0.4	other				234191	1			0
+Sound	L_tarson_Left_0.45	other				244368	2			0
+Sound	L_tarson_Left_0.5	other				254515	2			0
+Sound	L_tarson_Left_0.55	other				264693	1			0
+Sound	L_tarson_Left_0.6	other				274840	1			0
+Sound	L_tarson_Left_0.65	other				285017	1			0
+Sound	L_tarson_Left_0.7	other				295194	1			0
+Sound	L_tarson_Left_0.75	other				305341	1			0
+Sound	L_tarson_Left_0.8	other				315518	1			0
+Sound	L_tarson_Left_0.85	other				325695	1			0
+Sound	L_tarson_Left_0.9	other				335842	1			0
+Sound	L_tarson-Left-0.95	other				346019	2			0
+Sound	L_tarson_Left_0.95	other				356166	2			0
+Sound	L_tarson_Left_0.93	other				366344	1			0
+Sound	L_tarson_Left_0.91	other				376521	1			0
+Sound	L_tarson_Left_0.89	other				386668	1			0
+Sound	L_tarson_Left_0.87	other				396845	1			0
+Sound	L_tarson_Left_0.85	other				407022	1			0

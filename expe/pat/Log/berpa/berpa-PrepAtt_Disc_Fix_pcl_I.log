@@ -1,0 +1,32 @@
+Scenario - 17_March_2015
+Logfile written - 07/26/2017 10:23:28
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+berpa	1	Response	253	13395	23228	1
+berpa	2	Picture	10	13496	0	2	20165	3	0	20000	other	0
+berpa	3	Picture	10	33828	0	1	40162	3	0	40000	other	0
+berpa	3	Response	251	54052	20224	1
+berpa	4	Picture	10	74157	0	1	40162	3	0	40000	other	0
+berpa	4	Response	252	89992	15835	2
+berpa	5	Nothing	91	114321	0	1			0		other	0
+berpa	6	Picture	103	144483	0	2	2000	3	0	1920	false_alarm	9
+berpa	6	Response	253	149871	5388	1
+berpa	7	Sound	63	156483	0	1			0		hit	11
+berpa	7	Response	252	168721	12238	1
+berpa	8	Picture	202	190812	0	1	1999	3	0	1920	other	0
+berpa	9	Sound	62	202787	0	2			0		hit	14
+berpa	9	Response	251	210798	8011	1
+berpa	9	Quit		234748	31961
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture	10	other				13496	2	20165	3	0	20000
+Picture	10	other				33828	1	40162	3	0	40000
+Picture	10	other				74157	1	40162	3	0	40000
+Nothing	91	other				114321	1			0
+Picture	103	false_alarm	3	5388	3	144483	2	2000	3	0	1920
+Sound	63	hit	2	12238	2	156483	1			0
+Picture	202	other				190812	1	1999	3	0	1920
+Sound	62	hit	1	8011	3	202787	2			0

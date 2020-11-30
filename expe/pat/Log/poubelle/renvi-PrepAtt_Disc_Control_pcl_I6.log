@@ -1,0 +1,68 @@
+Scenario - 17_March_2015
+Logfile written - 07/19/2017 14:58:50
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+renvi	1	Response	253	9075	18743	4
+renvi	2	Picture	10	9162	0	3	20165	6	0	20000	other	0
+renvi	3	Picture	10	29494	0	2	40161	6	0	40000	other	0
+renvi	3	Response	251	50504	21010	1
+renvi	4	Picture	10	69824	0	3	40163	5	0	40000	other	0
+renvi	4	Response	252	85250	15426	3
+renvi	4	Response	251	93022	23198	2
+renvi	5	Sound	111	110123	0	2			0		incorrect	9
+renvi	5	Response	252	117725	7602	1
+renvi	6	Sound	122	141253	0	1			0		incorrect	11
+renvi	6	Response	251	146959	5706	1
+renvi	7	Sound	111	172352	0	2			0		incorrect	13
+renvi	7	Response	252	177028	4676	2
+renvi	8	Sound	121	203482	0	1			0		hit	15
+renvi	8	Response	252	213021	9539	2
+renvi	9	Sound	112	234611	0	1			0		hit	17
+renvi	9	Response	251	238751	4140	2
+renvi	10	Sound	111	265740	0	2			0		incorrect	19
+renvi	10	Response	252	271951	6211	2
+renvi	10	Response	251	278090	12350	2
+renvi	11	Sound	122	296870	0	1			0		incorrect	22
+renvi	11	Response	251	303457	6587	2
+renvi	12	Sound	111	327999	0	2			0		incorrect	24
+renvi	12	Response	252	332754	4755	1
+renvi	13	Sound	121	359129	0	1			0		incorrect	26
+renvi	13	Response	251	370771	11642	2
+renvi	14	Sound	112	390258	0	2			0		incorrect	28
+renvi	14	Response	252	402512	12254	1
+renvi	15	Sound	121	421387	0	2			0		hit	30
+renvi	15	Response	252	433545	12158	2
+renvi	16	Sound	121	452517	0	1			0		hit	32
+renvi	16	Response	252	458619	6102	2
+renvi	17	Sound	112	483647	0	1			0		hit	34
+renvi	17	Response	251	490088	6441	2
+renvi	18	Sound	112	514776	0	1			0		hit	36
+renvi	18	Response	251	520932	6156	3
+renvi	19	Sound	122	545905	0	2			0		incorrect	38
+renvi	19	Response	251	551853	5948	2
+renvi	20	Sound	122	577035	0	1			0		incorrect	40
+renvi	20	Response	251	583167	6132	2
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture	10	other				9162	3	20165	6	0	20000
+Picture	10	other				29494	2	40161	6	0	40000
+Picture	10	other				69824	3	40163	5	0	40000
+Sound	111	incorrect	2	7602	3	110123	2			0
+Sound	122	incorrect	1	5706	2	141253	1			0
+Sound	111	incorrect	2	4676	4	172352	2			0
+Sound	121	hit	2	9539	3	203482	1			0
+Sound	112	hit	1	4140	3	234611	1			0
+Sound	111	incorrect	2	6211	4	265740	2			0
+Sound	122	incorrect	1	6587	3	296870	1			0
+Sound	111	incorrect	2	4755	3	327999	2			0
+Sound	121	incorrect	1	11642	3	359129	1			0
+Sound	112	incorrect	2	12254	3	390258	2			0
+Sound	121	hit	2	12158	4	421387	2			0
+Sound	121	hit	2	6102	3	452517	1			0
+Sound	112	hit	1	6441	3	483647	1			0
+Sound	112	hit	1	6156	4	514776	1			0
+Sound	122	incorrect	1	5948	4	545905	2			0
+Sound	122	incorrect	1	6132	3	577035	1			0

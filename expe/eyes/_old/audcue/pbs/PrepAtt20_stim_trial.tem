@@ -1,0 +1,154 @@
+# == Sounds Definitons ==
+sound {wavefile { filename = ""; preload = false;} Sound_dis_wav;  } Sound_dis;
+sound {wavefile { filename = "tar_1_low.wav"; preload = true;} Sound_tar_1_low_wav;  } Sound_tar_1_low; 
+sound {wavefile { filename = "tar_1_high.wav"; preload = true;} Sound_tar_1_high_wav;  } Sound_tar_1_high; 
+#sound {wavefile { filename = "tar_2_low.wav"; preload = true;} Sound_tar_2_low_wav;  } Sound_tar_2_low; 
+#sound {wavefile { filename = "tar_2_high.wav"; preload = true;} Sound_tar_2_high_wav;  } Sound_tar_2_high; 
+#sound {wavefile { filename = "tar_3_low.wav"; preload = true;} Sound_tar_3_low_wav;  } Sound_tar_3_low; 
+#sound {wavefile { filename = "tar_3_high.wav"; preload = true;} Sound_tar_3_high_wav;  } Sound_tar_3_high;
+
+text {
+   caption = "original text" ;
+   font_size = 30; 
+} text1;
+
+# == Images Definition == #
+bitmap { filename = "Cross.bmp";   width= 250; height= 250;  } Cross ;
+picture {bitmap Cross; 	 x = 0; y = 0;} default;
+
+bitmap { filename = "right_arrow.bmp"; width= 250; height= 250;} right_arrow ; 
+picture { bitmap right_arrow;  x = 0; y = 0; }Rarrow;
+
+bitmap { filename = "left_arrow.bmp"; width= 250; height= 250;} left_arrow ; 
+picture { bitmap left_arrow;  x = 0; y = 0; }Larrow;
+
+bitmap { filename = "Barrow.bmp"; width= 250; height= 250;} arrow ; 
+picture { bitmap arrow;  x = 0; y = 0; }Barrow;
+
+# == Trials Definition == #
+# Cue
+trial{
+trial_type = fixed;
+stimulus_event{
+picture { bitmap right_arrow; x = 0; y = 0;} ;
+deltat=0;
+duration=192;  # 200  sd                        #car 12 frames a 60Hz= 200ms
+response_active=true;
+}event_cue;
+}trial_cue;
+
+# Dis 
+trial{
+trial_type = fixed;
+stimulus_event{
+picture { bitmap right_arrow; x = 0; y = 0;} ;
+deltat=0;
+duration=192; # 200  sd
+response_active=true;
+}event_cue_dis;
+stimulus_event{
+sound Sound_dis;
+deltat=300;
+response_active=true;
+}event_dis;
+}trial_cuedis;
+
+# Rand (array?)
+array {
+trial trial_cue;  #cue only
+trial trial_cuedis; #cue + distractor
+}random_trial;
+
+# Target_memory
+#1
+# Low
+trial{
+trial_type = fixed;
+stimulus_event{
+sound Sound_tar_1_low;
+deltat=0;
+duration=2000;
+}event_mtarget1_low;
+}mem_tar1_low;
+# High
+trial{
+trial_type = fixed;
+stimulus_event{
+sound Sound_tar_1_high;
+deltat=0;
+duration=2000;
+}event_mtarget2_high;
+}mem_tar1_high;
+
+
+# Target Sounds 
+#low
+trial{
+trial_type = fixed;
+stimulus_event{
+sound Sound_tar_1_low;
+deltat=0;
+response_active=true;
+target_button=1;
+stimulus_time_in = 0; 
+stimulus_time_out = 3000;
+}event_target1_low;
+}trial_tar1_low;
+
+#high
+trial{
+trial_type = fixed;
+stimulus_event{
+sound Sound_tar_1_high;
+deltat=0;
+response_active=true;
+target_button=2;
+stimulus_time_in = 0; 
+stimulus_time_out = 3000;
+}event_target1_high;
+}trial_tar1_high;
+
+
+
+trial { stimulus_event{	picture { text { caption = "Gardez les yeux fixês sur la croix et\n Appuyez sur le bouton dés que vous entendez le son."; font_size = 30;};
+	x = 0; y = 0; }; duration=3000; port_code=90; code='10';} event_instruc;
+} trial_instruc; 
+
+trial { 
+	picture { text { caption = "Êcoutez et mémorisez les deux sons."; font_size = 30;};
+	x = 0; y = 0;}; duration=2000; port_code=90; code='10'; 
+} trial_instruc2;
+
+trial { 
+	picture { text { caption = "Poussez le joystick dès que vous entendez le son aigu et \n tirez le dès que vous entendez le son grave."; font_size = 30;};
+	x = 0; y = 0;}; duration=9000; port_code=90; code='90'; 
+} disc_instruc;
+
+trial {					 
+   trial_duration=1000;
+   nothing{};  port_code=91; code='91';
+} trial_no; 
+
+trial {                    
+   trial_type = specific_response;
+   terminator_button = 1;
+   trial_duration = forever;
+   picture {
+      text 
+         text1;
+      x =0; y = 0;
+   };
+   time = 0;
+} info_trial;  
+
+trial { 
+   trial_type = specific_response;
+   terminator_button = 3;
+   trial_duration = forever;
+   picture {
+      text 
+         text1;
+      x =0; y = 0;
+   };
+   time = 0;
+} info_trial2;

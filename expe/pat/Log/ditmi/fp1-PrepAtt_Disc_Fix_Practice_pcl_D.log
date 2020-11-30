@@ -1,0 +1,52 @@
+Scenario - 17_March_2015
+Logfile written - 05/11/2016 14:56:55
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+fp1	1	Response	253	22279	32112	1
+fp1	2	Picture	10	22329	0	2	20165	3	0	20000	other	0
+fp1	3	Picture	10	42660	0	2	40163	4	0	40000	other	0
+fp1	3	Response	251	63708	21048	1
+fp1	3	Response	252	69336	26676	1
+fp1	4	Picture	10	82990	0	2	40163	4	0	40000	other	0
+fp1	4	Response	252	102230	19240	1
+fp1	5	Nothing	91	123155	0	1			0		other	0
+fp1	6	Picture	202	153317	0	1	2000	2	0	1920	other	0
+fp1	7	Sound	62	165315	0	1			0		hit	11
+fp1	7	Response	251	181300	15985	1
+fp1	8	Picture	1	200479	0	2	2000	4	0	1920	other	0
+fp1	9	Sound	61	212458	0	1			0		hit	14
+fp1	9	Response	251	224280	11822	1
+fp1	9	Response	252	228242	15784	1
+fp1	10	Picture	103	246808	0	2	2000	4	0	1920	other	0
+fp1	11	Sound	63	258793	0	1			0		hit	18
+fp1	11	Response	252	267264	8471	1
+fp1	12	Picture	204	294471	0	1	1999	3	0	1920	other	0
+fp1	13	Sound	64	306446	0	1			0		hit	21
+fp1	13	Response	252	316090	9644	1
+fp1	14	Picture	2	341466	0	2	2000	3	0	1920	other	0
+fp1	15	Sound	62	353439	0	1			0		hit	24
+fp1	15	Response	251	363900	10461	1
+fp1	16	Picture	103	388462	0	1	2000	2	0	1920	other	0
+fp1	17	Sound	63	400433	0	1			0		hit	27
+fp1	17	Response	252	404783	4350	2
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture	10	other				22329	2	20165	3	0	20000
+Picture	10	other				42660	2	40163	4	0	40000
+Picture	10	other				82990	2	40163	4	0	40000
+Nothing	91	other				123155	1			0
+Picture	202	other				153317	1	2000	2	0	1920
+Sound	62	hit	1	15985	2	165315	1			0
+Picture	1	other				200479	2	2000	4	0	1920
+Sound	61	hit	1	11822	2	212458	1			0
+Picture	103	other				246808	2	2000	4	0	1920
+Sound	63	hit	2	8471	2	258793	1			0
+Picture	204	other				294471	1	1999	3	0	1920
+Sound	64	hit	2	9644	2	306446	1			0
+Picture	2	other				341466	2	2000	3	0	1920
+Sound	62	hit	1	10461	2	353439	1			0
+Picture	103	other				388462	1	2000	2	0	1920
+Sound	63	hit	2	4350	3	400433	1			0

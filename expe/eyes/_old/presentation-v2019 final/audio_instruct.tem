@@ -1,0 +1,25 @@
+# instruction trial template
+
+trial {
+	trial_duration = forever;
+	trial_type = first_response;
+	sound instruct_end;
+	duration 	= 200;
+	code 			= "end";
+}end;
+
+trial {
+	trial_duration = forever;
+	trial_type = first_response;
+	sound instruct_eye_close;
+	duration 	= 200;
+	code 			= "eye_close";
+}eye_close;
+
+trial {
+	trial_duration = forever;
+	trial_type = first_response;
+	sound instruct_eye_open;
+	duration 	= 200;
+	code 			= "eye_open";
+}eye_open;

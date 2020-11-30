@@ -1,0 +1,70 @@
+Scenario - 17_March_2015
+Logfile written - 07/19/2017 15:02:11
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+renvi	1	Response	253	38522	48355	1
+renvi	2	Picture	10	38661	0	2	20165	3	0	20000	other	0
+renvi	2	Response	251	44986	6325	1
+renvi	2	Response	251	51012	12351	1
+renvi	3	Picture	10	58992	0	2	40163	4	0	40000	other	0
+renvi	3	Response	251	77095	18103	2
+renvi	4	Picture	10	99322	0	2	40163	4	0	40000	other	0
+renvi	4	Response	252	115300	15978	1
+renvi	4	Response	251	123391	24069	1
+renvi	5	Sound	111	139543	0	1			0		hit	11
+renvi	5	Response	251	150214	10671	1
+renvi	6	Sound	122	170612	0	2			0		hit	13
+renvi	6	Response	252	180961	10349	1
+renvi	7	Sound	111	201682	0	1			0		hit	15
+renvi	7	Response	251	213388	11706	1
+renvi	8	Sound	121	232752	0	1			0		incorrect	17
+renvi	8	Response	251	244400	11648	1
+renvi	9	Sound	112	263821	0	1			0		hit	19
+renvi	9	Response	251	278039	14218	1
+renvi	10	Sound	111	294891	0	1			0		incorrect	21
+renvi	10	Response	252	299550	4659	2
+renvi	10	Response	251	306353	11462	1
+renvi	11	Sound	122	325960	0	1			0		incorrect	24
+renvi	11	Response	251	331016	5056	1
+renvi	12	Sound	111	357030	0	1			0		hit	26
+renvi	12	Response	251	367272	10242	1
+renvi	13	Sound	121	388099	0	2			0		hit	28
+renvi	13	Response	252	392740	4641	1
+renvi	14	Sound	112	419169	0	1			0		incorrect	30
+renvi	14	Response	252	433857	14688	2
+renvi	14	Response	251	439354	20185	1
+renvi	15	Sound	121	450239	0	1			0		miss	0
+renvi	16	Sound	121	481308	0	1			0		incorrect	34
+renvi	16	Response	251	487099	5791	1
+renvi	17	Sound	112	512378	0	1			0		hit	36
+renvi	17	Response	251	524551	12173	2
+renvi	18	Sound	112	543447	0	1			0		hit	38
+renvi	18	Response	251	552411	8964	1
+renvi	19	Sound	122	574517	0	1			0		incorrect	40
+renvi	19	Response	251	580474	5957	2
+renvi	20	Sound	122	605586	0	2			0		incorrect	42
+renvi	20	Response	251	610186	4600	1
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture	10	other				38661	2	20165	3	0	20000
+Picture	10	other				58992	2	40163	4	0	40000
+Picture	10	other				99322	2	40163	4	0	40000
+Sound	111	hit	1	10671	2	139543	1			0
+Sound	122	hit	2	10349	3	170612	2			0
+Sound	111	hit	1	11706	2	201682	1			0
+Sound	121	incorrect	1	11648	2	232752	1			0
+Sound	112	hit	1	14218	2	263821	1			0
+Sound	111	incorrect	2	4659	3	294891	1			0
+Sound	122	incorrect	1	5056	2	325960	1			0
+Sound	111	hit	1	10242	2	357030	1			0
+Sound	121	hit	2	4641	3	388099	2			0
+Sound	112	incorrect	2	14688	3	419169	1			0
+Sound	121	miss				450239	1			0
+Sound	121	incorrect	1	5791	2	481308	1			0
+Sound	112	hit	1	12173	3	512378	1			0
+Sound	112	hit	1	8964	2	543447	1			0
+Sound	122	incorrect	1	5957	3	574517	1			0
+Sound	122	incorrect	1	4600	3	605586	2			0

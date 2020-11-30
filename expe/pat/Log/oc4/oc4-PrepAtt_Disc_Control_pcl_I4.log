@@ -1,0 +1,65 @@
+Scenario - 17_March_2015
+Logfile written - 02/08/2017 10:16:25
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+oc4	1	Response	253	13899	23732	1
+oc4	2	Picture	10	13997	0	1	20165	2	0	20000	other	0
+oc4	3	Picture	10	34328	0	1	40163	2	0	40000	other	0
+oc4	4	Picture	10	74657	0	2	40163	4	0	40000	other	0
+oc4	5	Sound	111	114878	0	2			0		incorrect	6
+oc4	5	Response	252	128046	13168	1
+oc4	6	Sound	122	145948	0	1			0		incorrect	8
+oc4	6	Response	251	152662	6714	1
+oc4	7	Sound	111	177017	0	2			0		incorrect	10
+oc4	7	Response	252	185647	8630	2
+oc4	8	Sound	121	208087	0	1			0		hit	12
+oc4	8	Response	252	215256	7169	1
+oc4	8	Response	251	226584	18497	1
+oc4	9	Sound	112	239157	0	1			0		incorrect	15
+oc4	9	Response	252	256611	17454	1
+oc4	10	Sound	111	270226	0	1			0		hit	17
+oc4	10	Response	251	288307	18081	1
+oc4	11	Sound	122	301296	0	1			0		hit	19
+oc4	11	Response	252	313892	12596	1
+oc4	12	Sound	111	332365	0	1			0		incorrect	21
+oc4	12	Response	252	348475	16110	1
+oc4	13	Sound	121	363435	0	1			0		incorrect	23
+oc4	13	Response	251	375019	11584	1
+oc4	14	Sound	112	394504	0	1			0		incorrect	25
+oc4	14	Response	252	405677	11173	1
+oc4	15	Sound	121	425574	0	1			0		hit	27
+oc4	15	Response	252	437653	12079	1
+oc4	16	Sound	121	456643	0	1			0		hit	29
+oc4	16	Response	252	469142	12499	2
+oc4	17	Sound	112	487713	0	1			0		incorrect	31
+oc4	17	Response	252	506231	18518	1
+oc4	18	Sound	112	518782	0	1			0		incorrect	33
+oc4	18	Response	252	529719	10937	1
+oc4	19	Sound	122	549852	0	1			0		incorrect	35
+oc4	19	Response	251	557254	7402	1
+oc4	20	Sound	122	580921	0	1			0		incorrect	37
+oc4	20	Response	251	587709	6788	1
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture	10	other				13997	1	20165	2	0	20000
+Picture	10	other				34328	1	40163	2	0	40000
+Picture	10	other				74657	2	40163	4	0	40000
+Sound	111	incorrect	2	13168	3	114878	2			0
+Sound	122	incorrect	1	6714	2	145948	1			0
+Sound	111	incorrect	2	8630	4	177017	2			0
+Sound	121	hit	2	7169	2	208087	1			0
+Sound	112	incorrect	2	17454	2	239157	1			0
+Sound	111	hit	1	18081	2	270226	1			0
+Sound	122	hit	2	12596	2	301296	1			0
+Sound	111	incorrect	2	16110	2	332365	1			0
+Sound	121	incorrect	1	11584	2	363435	1			0
+Sound	112	incorrect	2	11173	2	394504	1			0
+Sound	121	hit	2	12079	2	425574	1			0
+Sound	121	hit	2	12499	3	456643	1			0
+Sound	112	incorrect	2	18518	2	487713	1			0
+Sound	112	incorrect	2	10937	2	518782	1			0
+Sound	122	incorrect	1	7402	2	549852	1			0
+Sound	122	incorrect	1	6788	2	580921	1			0

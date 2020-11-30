@@ -1,0 +1,58 @@
+Scenario - 17_March_2015
+Logfile written - 04/13/2017 15:40:14
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+bpralus	1	Response	253	14809	24642	2
+bpralus	2	Picture	10	14830	0	1	20165	2	0	20000	other	0
+bpralus	3	Picture	10	35161	0	2	40163	3	0	40000	other	0
+bpralus	4	Picture	10	75491	0	1	40162	3	0	40000	other	0
+bpralus	4	Response	252	81299	5808	2
+bpralus	4	Response	252	85733	10242	2
+bpralus	5	Nothing	91	115655	0	1			0		other	0
+bpralus	6	Picture	2	145817	0	2	2000	3	0	1920	other	0
+bpralus	7	Sound	62	157800	0	2			0		miss	0
+bpralus	8	Picture	101	192812	0	2	2000	4	0	1920	other	0
+bpralus	9	Sound	61	204793	0	2			0		miss	0
+bpralus	10	Picture	123	239308	0	1	2000	2	0	1920	other	0
+bpralus	10	Sound	52	246367	7059	2			7060		other	0
+bpralus	11	Sound	63	251308	0	1			0		hit	15
+bpralus	11	Response	252	255263	3955	1
+bpralus	12	Picture	101	285470	0	1	2000	2	0	1920	other	0
+bpralus	13	Sound	61	297463	0	1			0		miss	0
+bpralus	14	Picture	103	332799	0	1	1999	3	0	1920	other	0
+bpralus	15	Sound	63	344785	0	1			0		hit	20
+bpralus	15	Response	252	348427	3642	2
+bpralus	16	Picture	4	380461	0	1	1999	3	0	1920	other	0
+bpralus	17	Sound	64	392437	0	1			0		hit	23
+bpralus	17	Response	252	396390	3953	2
+bpralus	18	Picture	11	427623	0	1	1999	3	0	1920	other	0
+bpralus	18	Sound	51	430333	2710	1			2710		other	0
+bpralus	18	Quit		430397	2774
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture	10	other				14830	1	20165	2	0	20000
+Picture	10	other				35161	2	40163	3	0	40000
+Picture	10	other				75491	1	40162	3	0	40000
+Nothing	91	other				115655	1			0
+Picture	2	other				145817	2	2000	3	0	1920
+Sound	62	miss				157800	2			0
+Picture	101	other				192812	2	2000	4	0	1920
+Sound	61	miss				204793	2			0
+Picture	123	other				239308	1	2000	2	0	1920
+Sound	52	other				246367	2			7060
+Sound	63	hit	2	3955	2	251308	1			0
+Picture	101	other				285470	1	2000	2	0	1920
+Sound	61	miss				297463	1			0
+Picture	103	other				332799	1	1999	3	0	1920
+Sound	63	hit	2	3642	3	344785	1			0
+Picture	4	other				380461	1	1999	3	0	1920
+Sound	64	hit	2	3953	3	392437	1			0
+Picture	11	other				427623	1	1999	3	0	1920
+Sound	51	other				430333	1			2710
+
+The following output port codes were not sent because of a conflict on the port.
+Port	Code	Time(ms)
+1	90	1483

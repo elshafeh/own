@@ -1,0 +1,75 @@
+Scenario - 17_March_2015
+Logfile written - 05/09/2016 14:24:18
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+toto	1	Response	253	26969	36802	2
+toto	2	Picture	10	26996	0	1	20164	3	0	20000	other	0
+toto	3	Picture	10	47327	0	2	40163	3	0	40000	other	0
+toto	4	Picture	10	87657	0	1	40163	2	0	40000	other	0
+toto	5	Nothing	91	127822	0	1			0		other	0
+toto	6	Picture	202	157983	0	2	2000	4	0	1920	other	0
+toto	7	Sound	62	169955	0	1			0		miss	0
+toto	8	Picture	2	204646	0	1	2000	2	0	1920	other	0
+toto	9	Sound	62	216620	0	1			0		miss	0
+toto	10	Picture	113	251141	0	2	2000	4	0	1920	other	0
+toto	10	Sound	51	254460	3319	2			3320		other	0
+toto	11	Sound	63	263134	0	2			0		miss	0
+toto	12	Picture	1	298804	0	1	2000	2	0	1920	other	0
+toto	13	Sound	61	310787	0	1			0		miss	0
+toto	14	Picture	101	345466	0	2	2000	3	0	1920	other	0
+toto	15	Sound	61	357451	0	1			0		miss	0
+toto	16	Picture	212	393128	0	2	2000	4	0	1920	other	0
+toto	16	Sound	51	397987	4859	2			4860		other	0
+toto	17	Sound	62	405103	0	1			0		miss	0
+toto	18	Picture	2	440457	0	2	2000	4	0	1920	other	0
+toto	19	Sound	62	452456	0	1			0		miss	0
+toto	20	Picture	24	487286	0	2	2000	3	0	1920	other	0
+toto	20	Sound	52	494615	7329	2			7330		other	0
+toto	21	Sound	64	499270	0	2			0		miss	0
+toto	22	Picture	12	533782	0	2	2000	3	0	1920	other	0
+toto	22	Sound	51	538681	4899	2			4900		other	0
+toto	23	Sound	62	545755	0	1			0		miss	0
+toto	24	Picture	1	580944	0	2	2000	4	0	1920	other	0
+toto	25	Sound	61	592928	0	2			0		miss	0
+toto	26	Picture	2	628440	0	2	2000	3	0	1920	other	0
+toto	27	Sound	62	640431	0	1			0		miss	0
+toto	27	Quit		647596	7165
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture	10	other				26996	1	20164	3	0	20000
+Picture	10	other				47327	2	40163	3	0	40000
+Picture	10	other				87657	1	40163	2	0	40000
+Nothing	91	other				127822	1			0
+Picture	202	other				157983	2	2000	4	0	1920
+Sound	62	miss				169955	1			0
+Picture	2	other				204646	1	2000	2	0	1920
+Sound	62	miss				216620	1			0
+Picture	113	other				251141	2	2000	4	0	1920
+Sound	51	other				254460	2			3320
+Sound	63	miss				263134	2			0
+Picture	1	other				298804	1	2000	2	0	1920
+Sound	61	miss				310787	1			0
+Picture	101	other				345466	2	2000	3	0	1920
+Sound	61	miss				357451	1			0
+Picture	212	other				393128	2	2000	4	0	1920
+Sound	51	other				397987	2			4860
+Sound	62	miss				405103	1			0
+Picture	2	other				440457	2	2000	4	0	1920
+Sound	62	miss				452456	1			0
+Picture	24	other				487286	2	2000	3	0	1920
+Sound	52	other				494615	2			7330
+Sound	64	miss				499270	2			0
+Picture	12	other				533782	2	2000	3	0	1920
+Sound	51	other				538681	2			4900
+Sound	62	miss				545755	1			0
+Picture	1	other				580944	2	2000	4	0	1920
+Sound	61	miss				592928	2			0
+Picture	2	other				628440	2	2000	3	0	1920
+Sound	62	miss				640431	1			0
+
+The following output port codes were not sent because of a conflict on the port.
+Port	Code	Time(ms)
+1	90	2699.6

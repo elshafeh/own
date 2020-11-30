@@ -1,0 +1,13 @@
+SOUND	  SPKR_CD	VOLUME	ATTENUATION
+L_tarson	1	0.33	0.67
+H_tarson	1	0.285	0.715
+L_tarson	2	0.3	0.7
+H_tarson	2	0.25	0.75
+
+sum	2.835
+
+	4
+
+average ATTENUATION	0.70875
+
+final ATTENUATION	0.35875

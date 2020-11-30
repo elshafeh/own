@@ -1,0 +1,78 @@
+Scenario - 17_March_2015
+Logfile written - 06/27/2017 15:16:59
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+mirma	1	Response	253	-2214	7619	2
+mirma	2	Picture	10	-2167	0	1	20163	3	0	20000	other	0
+mirma	3	Picture	10	18163	0	2	40163	3	0	40000	other	0
+mirma	4	Picture	10	58492	0	2	40163	3	0	40000	other	0
+mirma	5	Sound	111	98715	0	1			0		incorrect	6
+mirma	5	Response	252	112497	13782	1
+mirma	6	Sound	122	129784	0	1			0		incorrect	8
+mirma	6	Response	251	140354	10570	1
+mirma	7	Sound	111	160853	0	2			0		incorrect	10
+mirma	7	Response	252	170475	9622	1
+mirma	8	Sound	121	191923	0	1			0		incorrect	12
+mirma	8	Response	251	200750	8827	1
+mirma	9	Sound	112	222992	0	1			0		incorrect	14
+mirma	9	Response	252	229381	6389	1
+mirma	9	Response	252	237488	14496	2
+mirma	9	Response	252	237591	14599	1
+mirma	10	Sound	111	254062	0	1			0		incorrect	18
+mirma	10	Response	252	264249	10187	2
+mirma	11	Sound	122	285131	0	1			0		incorrect	20
+mirma	11	Response	251	293404	8273	1
+mirma	12	Sound	111	316200	0	1			0		incorrect	22
+mirma	12	Response	252	322554	6354	1
+mirma	13	Sound	121	347270	0	1			0		incorrect	24
+mirma	13	Response	251	354891	7621	1
+mirma	14	Sound	112	378339	0	1			0		incorrect	26
+mirma	14	Response	252	384796	6457	1
+mirma	14	Response	252	391788	13449	2
+mirma	15	Sound	121	409408	0	2			0		incorrect	29
+mirma	15	Response	251	415587	6179	2
+mirma	16	Sound	121	440478	0	1			0		incorrect	31
+mirma	16	Response	251	446237	5759	1
+mirma	17	Sound	112	471547	0	1			0		incorrect	33
+mirma	17	Response	252	476525	4978	1
+mirma	18	Sound	112	502616	0	2			0		hit	35
+mirma	18	Response	251	512230	9614	2
+mirma	19	Sound	122	533686	0	1			0		hit	37
+mirma	19	Response	252	542468	8782	1
+mirma	20	Sound	122	564755	0	1			0		hit	39
+mirma	20	Response	252	574163	9408	1
+mirma	20	Response	252	574267	9512	1
+mirma	20	Response	252	576014	11259	1
+mirma	20	Response	252	576232	11477	1
+mirma	20	Response	252	576336	11581	1
+mirma	20	Response	252	576438	11683	1
+mirma	20	Response	252	576542	11787	1
+mirma	20	Response	252	576645	11890	1
+mirma	20	Response	252	577205	12450	1
+mirma	20	Response	252	577315	12560	1
+mirma	20	Response	252	577423	12668	1
+mirma	20	Response	252	577728	12973	1
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture	10	other				-2167	1	20163	3	0	20000
+Picture	10	other				18163	2	40163	3	0	40000
+Picture	10	other				58492	2	40163	3	0	40000
+Sound	111	incorrect	2	13782	2	98715	1			0
+Sound	122	incorrect	1	10570	2	129784	1			0
+Sound	111	incorrect	2	9622	3	160853	2			0
+Sound	121	incorrect	1	8827	2	191923	1			0
+Sound	112	incorrect	2	6389	2	222992	1			0
+Sound	111	incorrect	2	10187	3	254062	1			0
+Sound	122	incorrect	1	8273	2	285131	1			0
+Sound	111	incorrect	2	6354	2	316200	1			0
+Sound	121	incorrect	1	7621	2	347270	1			0
+Sound	112	incorrect	2	6457	2	378339	1			0
+Sound	121	incorrect	1	6179	4	409408	2			0
+Sound	121	incorrect	1	5759	2	440478	1			0
+Sound	112	incorrect	2	4978	2	471547	1			0
+Sound	112	hit	1	9614	4	502616	2			0
+Sound	122	hit	2	8782	2	533686	1			0
+Sound	122	hit	2	9408	2	564755	1			0

@@ -1,0 +1,16 @@
+Scenario - SeuilAuditif
+Logfile written - 03/30/2017 17:58:44
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+tst	2	Sound	L_tarson_Left_0.7	389	60	1			0		other	0
+tst	3	Sound	L_tarson_Left_0.65	10536	41	1			0		other	0
+tst	4	Sound	L_tarson_Left_0.6	20712	52	1			0		other	0
+tst	4	Quit		23868	3208
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Sound	L_tarson_Left_0.7	other				389	1			0
+Sound	L_tarson_Left_0.65	other				10536	1			0
+Sound	L_tarson_Left_0.6	other				20712	1			0

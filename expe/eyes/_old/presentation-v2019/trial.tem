@@ -1,0 +1,13 @@
+# instruction trial template
+trial {
+	trial_duration = forever;
+	trial_type = first_response;
+	picture {
+		text  {
+			caption = $content;
+		};
+		x = 0;
+		y = 0;
+	};
+	code = $trlcode;
+}$name;

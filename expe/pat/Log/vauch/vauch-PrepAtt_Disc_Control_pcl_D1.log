@@ -1,0 +1,83 @@
+Scenario - 17_March_2015
+Logfile written - 06/20/2017 10:10:37
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+vauch	1	Response	253	52055	61889	1
+vauch	2	Picture	10	52159	0	1	20165	2	0	20000	other	0
+vauch	3	Picture	10	72491	0	1	40162	3	0	40000	other	0
+vauch	3	Response	251	93856	21365	1
+vauch	4	Picture	10	112820	0	1	40163	3	0	40000	other	0
+vauch	4	Response	252	126778	13958	1
+vauch	5	Sound	111	153042	0	1			0		hit	8
+vauch	5	Response	251	157939	4897	1
+vauch	6	Sound	122	184111	0	1			0		hit	10
+vauch	6	Response	252	187587	3476	1
+vauch	7	Sound	111	215181	0	1			0		hit	12
+vauch	7	Response	251	218243	3062	1
+vauch	8	Sound	121	246250	0	1			0		hit	14
+vauch	8	Response	252	252222	5972	1
+vauch	9	Sound	112	277319	0	2			0		hit	16
+vauch	9	Response	251	288044	10725	2
+vauch	10	Sound	111	308389	0	1			0		hit	18
+vauch	10	Response	251	313591	5202	1
+vauch	11	Sound	122	339458	0	2			0		hit	20
+vauch	11	Response	252	344983	5525	1
+vauch	11	Response	251	352409	12951	1
+vauch	11	Response	251	353550	14092	1
+vauch	12	Sound	111	370528	0	1			0		hit	24
+vauch	12	Response	251	373974	3446	1
+vauch	12	Response	252	381544	11016	1
+vauch	12	Response	252	382458	11930	1
+vauch	12	Response	252	382561	12033	2
+vauch	12	Response	252	383580	13052	1
+vauch	13	Sound	121	401597	0	1			0		hit	30
+vauch	13	Response	252	408092	6495	2
+vauch	13	Response	251	414728	13131	1
+vauch	13	Response	251	415847	14250	2
+vauch	14	Sound	112	432667	0	1			0		hit	34
+vauch	14	Response	251	442016	9349	1
+vauch	15	Sound	121	463736	0	1			0		hit	36
+vauch	15	Response	252	469269	5533	1
+vauch	15	Response	251	475341	11605	1
+vauch	15	Response	251	477473	13737	2
+vauch	15	Response	251	478488	14752	1
+vauch	15	Response	251	478590	14854	2
+vauch	15	Response	251	478694	14958	2
+vauch	15	Response	251	479139	15403	1
+vauch	15	Response	251	479244	15508	1
+vauch	16	Sound	121	494806	0	1			0		hit	45
+vauch	16	Response	252	500061	5255	1
+vauch	16	Response	251	505348	10542	2
+vauch	17	Sound	112	525875	0	1			0		hit	48
+vauch	17	Response	251	536419	10544	1
+vauch	18	Sound	112	556944	0	2			0		hit	50
+vauch	18	Response	251	563554	6610	1
+vauch	19	Sound	122	588014	0	1			0		hit	52
+vauch	19	Response	252	591625	3611	1
+vauch	20	Sound	122	619084	0	1			0		hit	54
+vauch	20	Response	252	625011	5927	1
+vauch	20	Response	251	629966	10882	1
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture	10	other				52159	1	20165	2	0	20000
+Picture	10	other				72491	1	40162	3	0	40000
+Picture	10	other				112820	1	40163	3	0	40000
+Sound	111	hit	1	4897	2	153042	1			0
+Sound	122	hit	2	3476	2	184111	1			0
+Sound	111	hit	1	3062	2	215181	1			0
+Sound	121	hit	2	5972	2	246250	1			0
+Sound	112	hit	1	10725	4	277319	2			0
+Sound	111	hit	1	5202	2	308389	1			0
+Sound	122	hit	2	5525	3	339458	2			0
+Sound	111	hit	1	3446	2	370528	1			0
+Sound	121	hit	2	6495	3	401597	1			0
+Sound	112	hit	1	9349	2	432667	1			0
+Sound	121	hit	2	5533	2	463736	1			0
+Sound	121	hit	2	5255	2	494806	1			0
+Sound	112	hit	1	10544	2	525875	1			0
+Sound	112	hit	1	6610	3	556944	2			0
+Sound	122	hit	2	3611	2	588014	1			0
+Sound	122	hit	2	5927	2	619084	1			0

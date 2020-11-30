@@ -1,0 +1,36 @@
+## Audiometry.pcl Pilot Discrimination ##
+
+# -- Variables -- #
+
+preset string SUBJECT_NAME;
+
+string SHL_Thresholds_filename = SUBJECT_NAME + "_SeuilAuditif.txt";
+
+include "SUBROUTINE_FileSize.pcl";
+include "SUBROUTINE_Threshold_Test_Bekesy.pcl";
+
+# -- Begin Threshold_Test_Bekesy -- #
+
+begin
+
+      term.print("Begin: Threshold Test (Bekesy)\n");
+      # Initialize parameters
+      
+      bool RANDOMIZE = false; # toggle random shuffling of tests #*
+      
+      array <sound> Sounds[2]; Sounds[1] = sounds[1]; Sounds[2] = sounds[2]; # 2= Low 3= High
+      int SOUND_CNT = Sounds.count();  # total sounds
+      int AUDTRIAL_DURATION = 2000; # should be > sound length
+      array <int> speakerCodes[2] = {1, 2}; # 1 = Left, 2 = Right     
+      int SPEAKERCODE_CNT = speakerCodes.count(); # total speaker configs to test
+      
+		# Set speaker code translations
+      array <double> speakerPans[SPEAKERCODE_CNT] = {-1.0, 1.0};
+      array <string> speakerStrings[SPEAKERCODE_CNT] = {"Left", "Right"};
+      
+      Threshold_Test_Bekesy(SUBJECT_NAME, RANDOMIZE, SOUND_CNT, Sounds, 
+         AUDTRIAL_DURATION, SPEAKERCODE_CNT, speakerCodes, speakerPans, 
+         speakerStrings);
+      term.print("End: Threshold Test (Bekesy)\n\n");
+      
+end;

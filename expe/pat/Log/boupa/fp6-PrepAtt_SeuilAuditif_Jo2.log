@@ -1,0 +1,27 @@
+Scenario - SeuilAuditif
+Logfile written - 06/23/2016 10:00:50
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+fp6	2	Sound	L_tarson_Left_0.7	388	57	1			0		other	0
+fp6	3	Sound	L_tarson_Left_0.65	10535	38	1			0		other	0
+fp6	4	Sound	L_tarson_Left_0.6	20712	49	1			0		other	0
+fp6	5	Sound	L_tarson_Left_0.55	30859	31	1			0		other	0
+fp6	6	Sound	L_tarson_Left_0.5	41036	42	1			0		other	0
+fp6	7	Sound	L_tarson_Left_0.45	51213	54	1			0		other	0
+fp6	8	Sound	L_tarson_Left_0.4	61360	35	1			0		other	0
+fp6	9	Sound	L_tarson_Left_0.35	71536	45	2			0		other	0
+fp6	9	Response	1	78977	7486	1
+fp6	9	Quit		80660	9169
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Sound	L_tarson_Left_0.7	other				388	1			0
+Sound	L_tarson_Left_0.65	other				10535	1			0
+Sound	L_tarson_Left_0.6	other				20712	1			0
+Sound	L_tarson_Left_0.55	other				30859	1			0
+Sound	L_tarson_Left_0.5	other				41036	1			0
+Sound	L_tarson_Left_0.45	other				51213	1			0
+Sound	L_tarson_Left_0.4	other				61360	1			0
+Sound	L_tarson_Left_0.35	other				71536	2			0

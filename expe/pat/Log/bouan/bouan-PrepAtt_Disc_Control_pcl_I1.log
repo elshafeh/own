@@ -1,0 +1,21 @@
+Scenario - 17_March_2015
+Logfile written - 04/28/2017 15:03:44
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+bouan	1	Response	253	18548	28216	4
+bouan	2	Picture	10	18661	0	5	20165	7	0	20000	other	0
+bouan	3	Picture	10	38992	0	3	40163	5	0	40000	other	0
+bouan	4	Picture	10	79322	0	2	40162	5	0	40000	other	0
+bouan	4	Response	251	80078	756	3
+bouan	4	Response	252	116258	36936	2
+bouan	5	Sound	111	119646	0	2			0		miss	0
+bouan	5	Quit		142309	22663
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture	10	other				18661	5	20165	7	0	20000
+Picture	10	other				38992	3	40163	5	0	40000
+Picture	10	other				79322	2	40162	5	0	40000
+Sound	111	miss				119646	2			0

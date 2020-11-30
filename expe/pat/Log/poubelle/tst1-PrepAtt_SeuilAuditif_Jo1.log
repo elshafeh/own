@@ -1,0 +1,74 @@
+Scenario - SeuilAuditif
+Logfile written - 03/30/2017 18:00:37
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+tst1	2	Sound	L_tarson_Left_0.7	388	57	1			0		other	0
+tst1	3	Sound	L_tarson_Left_0.65	10535	38	1			0		other	0
+tst1	4	Sound	L_tarson_Left_0.6	20712	49	1			0		other	0
+tst1	5	Sound	L_tarson_Left_0.55	30859	31	1			0		other	0
+tst1	6	Sound	L_tarson_Left_0.5	41035	41	2			0		other	0
+tst1	7	Sound	L_tarson_Left_0.45	51212	52	2			0		other	0
+tst1	8	Sound	L_tarson_Left_0.4	61359	34	1			0		other	0
+tst1	9	Sound	L_tarson_Left_0.35	71536	45	1			0		other	0
+tst1	10	Sound	L_tarson_Left_0.3	81713	56	1			0		other	0
+tst1	11	Sound	L_tarson_Left_0.25	91860	38	1			0		other	0
+tst1	12	Sound	L_tarson_Left_0.2	102037	49	1			0		other	0
+tst1	13	Sound	L_tarson_Left_0.15	112184	30	1			0		other	0
+tst1	14	Sound	L_tarson_Left_9.99999999999999e-002	122361	42	1			0		other	0
+tst1	15	Sound	L_tarson_Left_4.99999999999999e-002	132538	53	1			0		other	0
+tst1	16	Sound	L_tarson-Left-0	142684	33	2			0		other	0
+tst1	17	Sound	L_tarson_Left_0	152860	44	8			0		other	0
+tst1	17	Response	1	159953	7137	1
+tst1	18	Sound	L_tarson-Left-5.e-002	163038	56	2			0		other	0
+tst1	19	Sound	L_tarson_Left_5.e-002	173185	37	1			0		other	0
+tst1	20	Sound	L_tarson_Left_3.e-002	183362	49	1			0		other	0
+tst1	21	Sound	L_tarson_Left_1.e-002	193509	30	1			0		other	0
+tst1	22	Sound	L_tarson-Left-0	203686	42	1			0		other	0
+tst1	23	Sound	L_tarson_Left_0	213863	53	1			0		other	0
+tst1	23	Response	1	216811	3001	1
+tst1	24	Sound	L_tarson-Left-2.e-002	224010	34	1			0		other	0
+tst1	25	Sound	L_tarson_Left_2.e-002	234187	45	1			0		other	0
+tst1	26	Sound	L_tarson_Left_0	244364	57	1			0		other	0
+tst1	27	Sound	L_tarson-Left-0	254510	37	2			0		other	0
+tst1	28	Sound	L_tarson_Left_0	264687	49	1			0		other	0
+tst1	29	Sound	L_tarson_Left_2.e-002	274834	30	1			0		other	0
+tst1	30	Sound	L_tarson_Left_4.e-002	285011	41	1			0		other	0
+tst1	31	Sound	L_tarson_Left_6.e-002	295188	52	1			0		other	0
+tst1	32	Sound	L_tarson_Left_8.e-002	305335	34	1			0		other	0
+tst1	32	Quit		312999	7698
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Sound	L_tarson_Left_0.7	other				388	1			0
+Sound	L_tarson_Left_0.65	other				10535	1			0
+Sound	L_tarson_Left_0.6	other				20712	1			0
+Sound	L_tarson_Left_0.55	other				30859	1			0
+Sound	L_tarson_Left_0.5	other				41035	2			0
+Sound	L_tarson_Left_0.45	other				51212	2			0
+Sound	L_tarson_Left_0.4	other				61359	1			0
+Sound	L_tarson_Left_0.35	other				71536	1			0
+Sound	L_tarson_Left_0.3	other				81713	1			0
+Sound	L_tarson_Left_0.25	other				91860	1			0
+Sound	L_tarson_Left_0.2	other				102037	1			0
+Sound	L_tarson_Left_0.15	other				112184	1			0
+Sound	L_tarson_Left_9.99999999999999e-002	other				122361	1			0
+Sound	L_tarson_Left_4.99999999999999e-002	other				132538	1			0
+Sound	L_tarson-Left-0	other				142684	2			0
+Sound	L_tarson_Left_0	other				152860	8			0
+Sound	L_tarson-Left-5.e-002	other				163038	2			0
+Sound	L_tarson_Left_5.e-002	other				173185	1			0
+Sound	L_tarson_Left_3.e-002	other				183362	1			0
+Sound	L_tarson_Left_1.e-002	other				193509	1			0
+Sound	L_tarson-Left-0	other				203686	1			0
+Sound	L_tarson_Left_0	other				213863	1			0
+Sound	L_tarson-Left-2.e-002	other				224010	1			0
+Sound	L_tarson_Left_2.e-002	other				234187	1			0
+Sound	L_tarson_Left_0	other				244364	1			0
+Sound	L_tarson-Left-0	other				254510	2			0
+Sound	L_tarson_Left_0	other				264687	1			0
+Sound	L_tarson_Left_2.e-002	other				274834	1			0
+Sound	L_tarson_Left_4.e-002	other				285011	1			0
+Sound	L_tarson_Left_6.e-002	other				295188	1			0
+Sound	L_tarson_Left_8.e-002	other				305335	1			0

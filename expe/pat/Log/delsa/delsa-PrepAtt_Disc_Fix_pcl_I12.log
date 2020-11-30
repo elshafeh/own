@@ -1,0 +1,375 @@
+Scenario - 17_March_2015
+Logfile written - 07/03/2017 16:48:33
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+delsa	1	Response	253	-3272	6561	2
+delsa	2	Picture	10	-3167	0	1	20163	3	0	20000	other	0
+delsa	3	Picture	10	17163	0	2	40162	4	0	40000	other	0
+delsa	3	Response	251	32740	15577	1
+delsa	4	Picture	10	57492	0	1	40162	2	0	40000	other	0
+delsa	4	Response	252	70258	12766	1
+delsa	5	Nothing	91	97656	0	1			0		other	0
+delsa	6	Picture	12	127817	0	2	2000	4	0	1920	other	0
+delsa	6	Sound	51	132926	5109	2			5110		other	0
+delsa	7	Sound	62	139810	0	1			0		hit	11
+delsa	7	Response	251	152353	12543	2
+delsa	8	Picture	3	174479	0	2	2000	4	0	1920	other	0
+delsa	9	Sound	63	186473	0	2			0		hit	14
+delsa	9	Response	252	192045	5572	1
+delsa	10	Picture	22	221807	0	2	2000	4	0	1920	other	0
+delsa	10	Sound	52	230046	8239	2			8240		other	0
+delsa	11	Sound	62	233795	0	2			0		hit	18
+delsa	11	Response	251	238475	4680	1
+delsa	12	Picture	204	267969	0	2	2000	3	0	1920	other	0
+delsa	13	Sound	64	279950	0	1			0		hit	21
+delsa	13	Response	252	283171	3221	1
+delsa	14	Picture	204	314631	0	1	1999	3	0	1920	other	0
+delsa	15	Sound	64	326614	0	1			0		hit	24
+delsa	15	Response	252	346092	19478	1
+delsa	16	Picture	2	362126	0	1	2000	2	0	1920	other	0
+delsa	17	Sound	62	374115	0	1			0		hit	27
+delsa	17	Response	251	381851	7736	1
+delsa	18	Picture	2	408787	0	2	2000	4	0	1920	other	0
+delsa	19	Sound	62	420779	0	1			0		hit	30
+delsa	19	Response	251	425419	4640	1
+delsa	20	Picture	204	455116	0	1	1999	3	0	1920	other	0
+delsa	21	Sound	64	467113	0	1			0		hit	33
+delsa	21	Response	252	472912	5799	1
+delsa	22	Picture	1	501444	0	2	2000	3	0	1920	other	0
+delsa	23	Sound	61	513417	0	2			0		hit	36
+delsa	23	Response	251	521288	7871	1
+delsa	24	Picture	123	548606	0	1	2000	2	0	1920	other	0
+delsa	24	Sound	52	555675	7069	1			7070		other	0
+delsa	25	Sound	63	560590	0	1			0		hit	40
+delsa	25	Response	252	565945	5355	2
+delsa	26	Picture	103	595101	0	1	1999	3	0	1920	other	0
+delsa	27	Sound	63	607074	0	1			0		hit	43
+delsa	27	Response	252	610031	2957	1
+delsa	28	Picture	11	642429	0	2	2000	3	0	1920	other	0
+delsa	28	Sound	51	647068	4639	1			4640		other	0
+delsa	29	Sound	61	654426	0	1			0		hit	47
+delsa	29	Response	251	659061	4635	1
+delsa	30	Picture	202	689590	0	2	2000	4	0	1920	other	0
+delsa	31	Sound	62	701568	0	1			0		hit	50
+delsa	31	Response	251	708248	6680	1
+delsa	32	Picture	204	736585	0	2	2000	4	0	1920	other	0
+delsa	33	Sound	64	748561	0	1			0		hit	53
+delsa	33	Response	252	752735	4174	1
+delsa	34	Picture	101	782747	0	2	2000	3	0	1920	other	0
+delsa	35	Sound	61	794745	0	2			0		hit	56
+delsa	35	Response	251	799036	4291	1
+delsa	36	Picture	4	829409	0	1	2000	2	0	1920	other	0
+delsa	37	Sound	64	841409	0	1			0		hit	59
+delsa	37	Response	252	845632	4223	2
+delsa	38	Picture	1	875737	0	2	2000	3	0	1920	other	0
+delsa	39	Sound	61	887713	0	1			0		hit	62
+delsa	39	Response	251	892996	5283	2
+delsa	40	Picture	1	923065	0	2	2000	3	0	1920	other	0
+delsa	41	Sound	61	935065	0	1			0		hit	65
+delsa	41	Response	251	941508	6443	1
+delsa	42	Picture	103	970560	0	2	2000	3	0	1920	other	0
+delsa	43	Sound	63	982537	0	1			0		hit	68
+delsa	43	Response	252	987618	5081	1
+delsa	44	Picture	202	1017888	0	2	2000	4	0	1920	other	0
+delsa	45	Sound	62	1029859	0	1			0		incorrect	71
+delsa	45	Response	252	1037752	7893	2
+delsa	46	Picture	103	1064217	0	1	2000	2	0	1920	other	0
+delsa	47	Sound	63	1076193	0	1			0		incorrect	74
+delsa	47	Response	251	1080816	4623	2
+delsa	48	Picture	2	1110545	0	2	2000	4	0	1920	other	0
+delsa	49	Sound	62	1122527	0	2			0		incorrect	77
+delsa	49	Response	252	1126741	4214	1
+delsa	50	Picture	204	1158540	0	1	2000	2	0	1920	other	0
+delsa	51	Sound	64	1170538	0	1			0		hit	80
+delsa	51	Response	252	1175963	5425	1
+delsa	52	Picture	103	1205202	0	1	1999	3	0	1920	other	0
+delsa	53	Sound	63	1217201	0	1			0		hit	83
+delsa	53	Response	252	1222525	5324	1
+delsa	54	Picture	101	1252363	0	2	2000	3	0	1920	other	0
+delsa	55	Sound	61	1264344	0	1			0		hit	86
+delsa	55	Response	251	1269972	5628	2
+delsa	56	Picture	3	1299358	0	2	2000	3	0	1920	other	0
+delsa	57	Sound	63	1311337	0	1			0		hit	89
+delsa	57	Response	252	1317983	6646	1
+delsa	58	Picture	103	1346353	0	1	2000	2	0	1920	other	0
+delsa	59	Sound	63	1358329	0	1			0		hit	92
+delsa	59	Response	252	1363731	5402	1
+delsa	59	Response	252	1366064	7735	1
+delsa	60	Picture	23	1393015	0	1	1999	3	0	1920	other	0
+delsa	60	Sound	52	1399434	6419	2			6420		other	0
+delsa	61	Sound	63	1404993	0	1			0		hit	97
+delsa	61	Response	252	1408960	3967	1
+delsa	62	Picture	24	1440843	0	1	2000	2	0	1920	other	0
+delsa	62	Sound	52	1447132	6289	1			6290		other	0
+delsa	63	Sound	64	1452823	0	2			0		hit	101
+delsa	63	Response	252	1457476	4653	1
+delsa	64	Picture	3	1488504	0	2	2000	4	0	1920	other	0
+delsa	65	Sound	63	1500475	0	1			0		hit	104
+delsa	65	Response	252	1504863	4388	1
+delsa	66	Picture	4	1535166	0	2	2000	3	0	1920	other	0
+delsa	67	Sound	64	1547138	0	2			0		hit	107
+delsa	67	Response	252	1553389	6251	1
+delsa	67	Response	252	1569529	22391	1
+delsa	68	Picture	2	1582661	0	1	2000	2	0	1920	other	0
+delsa	69	Sound	62	1594640	0	1			0		hit	111
+delsa	69	Response	251	1601574	6934	2
+delsa	70	Picture	202	1629489	0	2	2000	3	0	1920	other	0
+delsa	71	Sound	62	1641483	0	1			0		hit	114
+delsa	71	Response	251	1650716	9233	2
+delsa	72	Picture	101	1676318	0	1	1999	3	0	1920	other	0
+delsa	73	Sound	61	1688296	0	1			0		hit	117
+delsa	73	Response	251	1707460	19164	2
+delsa	74	Picture	4	1723979	0	2	2000	4	0	1920	other	0
+delsa	75	Sound	64	1735977	0	2			0		hit	120
+delsa	75	Response	252	1740641	4664	1
+delsa	76	Picture	212	1770307	0	2	2000	4	0	1920	other	0
+delsa	76	Sound	51	1774936	4629	2			4630		other	0
+delsa	77	Sound	62	1782282	0	1			0		hit	124
+delsa	77	Response	251	1787914	5632	1
+delsa	78	Picture	101	1817136	0	1	2000	2	0	1920	other	0
+delsa	79	Sound	61	1829125	0	1			0		hit	127
+delsa	79	Response	251	1834180	5055	1
+delsa	80	Picture	1	1865131	0	1	1999	3	0	1920	other	0
+delsa	81	Sound	61	1877105	0	2			0		hit	130
+delsa	81	Response	251	1880997	3892	1
+delsa	82	Picture	224	1912126	0	1	1999	3	0	1920	other	0
+delsa	82	Sound	52	1918235	6109	1			6110		other	0
+delsa	83	Sound	64	1924098	0	1			0		hit	134
+delsa	83	Response	252	1928369	4271	1
+delsa	84	Picture	13	1959287	0	2	2000	3	0	1920	other	0
+delsa	84	Sound	51	1962696	3409	2			3410		other	0
+delsa	85	Sound	63	1971270	0	2			0		incorrect	138
+delsa	85	Response	251	1978654	7384	2
+delsa	86	Picture	101	2006949	0	1	1999	3	0	1920	other	0
+delsa	87	Sound	61	2018922	0	1			0		incorrect	141
+delsa	87	Response	252	2023256	4334	2
+delsa	88	Picture	2	2054444	0	1	1999	3	0	1920	other	0
+delsa	89	Sound	62	2066423	0	2			0		incorrect	144
+delsa	89	Response	252	2069926	3503	1
+delsa	90	Picture	121	2102438	0	2	2000	4	0	1920	other	0
+delsa	90	Sound	52	2108097	5659	1			5660		other	0
+delsa	91	Sound	61	2114434	0	1			0		incorrect	148
+delsa	91	Response	252	2118087	3653	1
+delsa	92	Picture	202	2150100	0	1	1999	3	0	1920	other	0
+delsa	93	Sound	62	2162085	0	1			0		incorrect	151
+delsa	93	Response	252	2165706	3621	1
+delsa	94	Picture	4	2197261	0	2	2000	4	0	1920	other	0
+delsa	95	Sound	64	2209257	0	1			0		hit	154
+delsa	95	Response	252	2218506	9249	1
+delsa	96	Picture	3	2245089	0	2	2000	4	0	1920	other	0
+delsa	97	Sound	63	2257088	0	1			0		hit	157
+delsa	97	Response	252	2261168	4080	2
+delsa	98	Picture	2	2291251	0	2	2000	3	0	1920	other	0
+delsa	99	Sound	62	2303243	0	1			0		hit	160
+delsa	99	Response	251	2308458	5215	1
+delsa	100	Picture	222	2337746	0	2	2000	3	0	1920	other	0
+delsa	100	Sound	52	2346015	8269	1			8270		other	0
+delsa	101	Sound	62	2349727	0	1			0		incorrect	164
+delsa	101	Response	252	2356090	6363	1
+delsa	102	Picture	101	2383908	0	2	2000	3	0	1920	other	0
+delsa	103	Sound	61	2395881	0	2			0		hit	167
+delsa	103	Response	251	2402574	6693	1
+delsa	104	Picture	103	2430736	0	2	2000	3	0	1920	other	0
+delsa	105	Sound	63	2442725	0	1			0		hit	170
+delsa	105	Response	252	2450238	7513	2
+delsa	106	Picture	111	2478398	0	1	2000	2	0	1920	other	0
+delsa	106	Sound	51	2481237	2839	2			2840		other	0
+delsa	107	Sound	61	2490376	0	1			0		hit	174
+delsa	107	Response	251	2501237	10861	2
+delsa	108	Picture	204	2526226	0	1	2000	2	0	1920	other	0
+delsa	109	Sound	64	2538207	0	1			0		hit	177
+delsa	109	Response	252	2542617	4410	2
+delsa	110	Picture	14	2573054	0	2	1999	5	0	1920	other	0
+delsa	110	Sound	51	2577553	4499	1			4500		other	0
+delsa	111	Sound	64	2585050	0	1			0		hit	181
+delsa	111	Response	252	2590629	5579	2
+delsa	112	Picture	3	2620049	0	2	2000	3	0	1920	other	0
+delsa	113	Sound	63	2632042	0	2			0		hit	184
+delsa	113	Response	252	2636806	4764	1
+delsa	114	Picture	202	2667711	0	1	1999	3	0	1920	other	0
+delsa	115	Sound	62	2679694	0	1			0		hit	187
+delsa	115	Response	251	2684759	5065	1
+delsa	116	Picture	3	2715206	0	1	2000	2	0	1920	other	0
+delsa	117	Sound	63	2727195	0	2			0		hit	190
+delsa	117	Response	252	2732524	5329	1
+delsa	118	Picture	4	2761534	0	1	1999	3	0	1920	other	0
+delsa	119	Sound	64	2773530	0	1			0		hit	193
+delsa	119	Response	252	2778109	4579	2
+delsa	120	Picture	113	2808029	0	1	2000	2	0	1920	other	0
+delsa	120	Sound	51	2812938	4909	2			4910		other	0
+delsa	121	Sound	63	2820013	0	2			0		hit	197
+delsa	121	Response	252	2825407	5394	1
+delsa	122	Picture	1	2856190	0	2	2000	4	0	1920	other	0
+delsa	123	Sound	61	2868174	0	1			0		hit	200
+delsa	123	Response	251	2874325	6151	1
+delsa	124	Picture	21	2903852	0	1	2000	2	0	1920	other	0
+delsa	124	Sound	52	2911571	7719	2			7720		other	0
+delsa	125	Sound	61	2915825	0	1			0		incorrect	204
+delsa	125	Response	252	2921411	5586	2
+delsa	126	Picture	1	2951347	0	1	2000	2	0	1920	other	0
+delsa	127	Sound	61	2963327	0	1			0		hit	207
+delsa	127	Response	251	2969562	6235	1
+delsa	128	Picture	214	2999008	0	2	2000	3	0	1920	other	0
+delsa	128	Sound	51	3001547	2539	2			2540		other	0
+delsa	129	Sound	64	3011008	0	1			0		hit	211
+delsa	129	Response	252	3014725	3717	1
+delsa	130	Picture	4	3046170	0	1	2000	2	0	1920	other	0
+delsa	131	Sound	64	3058150	0	1			0		hit	214
+delsa	131	Response	252	3068925	10775	1
+delsa	132	Picture	202	3094331	0	2	2000	4	0	1920	other	0
+delsa	133	Sound	62	3106310	0	1			0		hit	217
+delsa	133	Response	251	3111650	5340	1
+delsa	134	Response	253	3408438	267778	1
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture	10	other				-3167	1	20163	3	0	20000
+Picture	10	other				17163	2	40162	4	0	40000
+Picture	10	other				57492	1	40162	2	0	40000
+Nothing	91	other				97656	1			0
+Picture	12	other				127817	2	2000	4	0	1920
+Sound	51	other				132926	2			5110
+Sound	62	hit	1	12543	3	139810	1			0
+Picture	3	other				174479	2	2000	4	0	1920
+Sound	63	hit	2	5572	3	186473	2			0
+Picture	22	other				221807	2	2000	4	0	1920
+Sound	52	other				230046	2			8240
+Sound	62	hit	1	4680	3	233795	2			0
+Picture	204	other				267969	2	2000	3	0	1920
+Sound	64	hit	2	3221	2	279950	1			0
+Picture	204	other				314631	1	1999	3	0	1920
+Sound	64	hit	2	19478	2	326614	1			0
+Picture	2	other				362126	1	2000	2	0	1920
+Sound	62	hit	1	7736	2	374115	1			0
+Picture	2	other				408787	2	2000	4	0	1920
+Sound	62	hit	1	4640	2	420779	1			0
+Picture	204	other				455116	1	1999	3	0	1920
+Sound	64	hit	2	5799	2	467113	1			0
+Picture	1	other				501444	2	2000	3	0	1920
+Sound	61	hit	1	7871	3	513417	2			0
+Picture	123	other				548606	1	2000	2	0	1920
+Sound	52	other				555675	1			7070
+Sound	63	hit	2	5355	3	560590	1			0
+Picture	103	other				595101	1	1999	3	0	1920
+Sound	63	hit	2	2957	2	607074	1			0
+Picture	11	other				642429	2	2000	3	0	1920
+Sound	51	other				647068	1			4640
+Sound	61	hit	1	4635	2	654426	1			0
+Picture	202	other				689590	2	2000	4	0	1920
+Sound	62	hit	1	6680	2	701568	1			0
+Picture	204	other				736585	2	2000	4	0	1920
+Sound	64	hit	2	4174	2	748561	1			0
+Picture	101	other				782747	2	2000	3	0	1920
+Sound	61	hit	1	4291	3	794745	2			0
+Picture	4	other				829409	1	2000	2	0	1920
+Sound	64	hit	2	4223	3	841409	1			0
+Picture	1	other				875737	2	2000	3	0	1920
+Sound	61	hit	1	5283	3	887713	1			0
+Picture	1	other				923065	2	2000	3	0	1920
+Sound	61	hit	1	6443	2	935065	1			0
+Picture	103	other				970560	2	2000	3	0	1920
+Sound	63	hit	2	5081	2	982537	1			0
+Picture	202	other				1017888	2	2000	4	0	1920
+Sound	62	incorrect	2	7893	3	1029859	1			0
+Picture	103	other				1064217	1	2000	2	0	1920
+Sound	63	incorrect	1	4623	3	1076193	1			0
+Picture	2	other				1110545	2	2000	4	0	1920
+Sound	62	incorrect	2	4214	3	1122527	2			0
+Picture	204	other				1158540	1	2000	2	0	1920
+Sound	64	hit	2	5425	2	1170538	1			0
+Picture	103	other				1205202	1	1999	3	0	1920
+Sound	63	hit	2	5324	2	1217201	1			0
+Picture	101	other				1252363	2	2000	3	0	1920
+Sound	61	hit	1	5628	3	1264344	1			0
+Picture	3	other				1299358	2	2000	3	0	1920
+Sound	63	hit	2	6646	2	1311337	1			0
+Picture	103	other				1346353	1	2000	2	0	1920
+Sound	63	hit	2	5402	2	1358329	1			0
+Picture	23	other				1393015	1	1999	3	0	1920
+Sound	52	other				1399434	2			6420
+Sound	63	hit	2	3967	2	1404993	1			0
+Picture	24	other				1440843	1	2000	2	0	1920
+Sound	52	other				1447132	1			6290
+Sound	64	hit	2	4653	3	1452823	2			0
+Picture	3	other				1488504	2	2000	4	0	1920
+Sound	63	hit	2	4388	2	1500475	1			0
+Picture	4	other				1535166	2	2000	3	0	1920
+Sound	64	hit	2	6251	3	1547138	2			0
+Picture	2	other				1582661	1	2000	2	0	1920
+Sound	62	hit	1	6934	3	1594640	1			0
+Picture	202	other				1629489	2	2000	3	0	1920
+Sound	62	hit	1	9233	3	1641483	1			0
+Picture	101	other				1676318	1	1999	3	0	1920
+Sound	61	hit	1	19164	3	1688296	1			0
+Picture	4	other				1723979	2	2000	4	0	1920
+Sound	64	hit	2	4664	3	1735977	2			0
+Picture	212	other				1770307	2	2000	4	0	1920
+Sound	51	other				1774936	2			4630
+Sound	62	hit	1	5632	2	1782282	1			0
+Picture	101	other				1817136	1	2000	2	0	1920
+Sound	61	hit	1	5055	2	1829125	1			0
+Picture	1	other				1865131	1	1999	3	0	1920
+Sound	61	hit	1	3892	3	1877105	2			0
+Picture	224	other				1912126	1	1999	3	0	1920
+Sound	52	other				1918235	1			6110
+Sound	64	hit	2	4271	2	1924098	1			0
+Picture	13	other				1959287	2	2000	3	0	1920
+Sound	51	other				1962696	2			3410
+Sound	63	incorrect	1	7384	4	1971270	2			0
+Picture	101	other				2006949	1	1999	3	0	1920
+Sound	61	incorrect	2	4334	3	2018922	1			0
+Picture	2	other				2054444	1	1999	3	0	1920
+Sound	62	incorrect	2	3503	3	2066423	2			0
+Picture	121	other				2102438	2	2000	4	0	1920
+Sound	52	other				2108097	1			5660
+Sound	61	incorrect	2	3653	2	2114434	1			0
+Picture	202	other				2150100	1	1999	3	0	1920
+Sound	62	incorrect	2	3621	2	2162085	1			0
+Picture	4	other				2197261	2	2000	4	0	1920
+Sound	64	hit	2	9249	2	2209257	1			0
+Picture	3	other				2245089	2	2000	4	0	1920
+Sound	63	hit	2	4080	3	2257088	1			0
+Picture	2	other				2291251	2	2000	3	0	1920
+Sound	62	hit	1	5215	2	2303243	1			0
+Picture	222	other				2337746	2	2000	3	0	1920
+Sound	52	other				2346015	1			8270
+Sound	62	incorrect	2	6363	2	2349727	1			0
+Picture	101	other				2383908	2	2000	3	0	1920
+Sound	61	hit	1	6693	3	2395881	2			0
+Picture	103	other				2430736	2	2000	3	0	1920
+Sound	63	hit	2	7513	3	2442725	1			0
+Picture	111	other				2478398	1	2000	2	0	1920
+Sound	51	other				2481237	2			2840
+Sound	61	hit	1	10861	3	2490376	1			0
+Picture	204	other				2526226	1	2000	2	0	1920
+Sound	64	hit	2	4410	3	2538207	1			0
+Picture	14	other				2573054	2	1999	5	0	1920
+Sound	51	other				2577553	1			4500
+Sound	64	hit	2	5579	3	2585050	1			0
+Picture	3	other				2620049	2	2000	3	0	1920
+Sound	63	hit	2	4764	3	2632042	2			0
+Picture	202	other				2667711	1	1999	3	0	1920
+Sound	62	hit	1	5065	2	2679694	1			0
+Picture	3	other				2715206	1	2000	2	0	1920
+Sound	63	hit	2	5329	3	2727195	2			0
+Picture	4	other				2761534	1	1999	3	0	1920
+Sound	64	hit	2	4579	3	2773530	1			0
+Picture	113	other				2808029	1	2000	2	0	1920
+Sound	51	other				2812938	2			4910
+Sound	63	hit	2	5394	3	2820013	2			0
+Picture	1	other				2856190	2	2000	4	0	1920
+Sound	61	hit	1	6151	2	2868174	1			0
+Picture	21	other				2903852	1	2000	2	0	1920
+Sound	52	other				2911571	2			7720
+Sound	61	incorrect	2	5586	3	2915825	1			0
+Picture	1	other				2951347	1	2000	2	0	1920
+Sound	61	hit	1	6235	2	2963327	1			0
+Picture	214	other				2999008	2	2000	3	0	1920
+Sound	51	other				3001547	2			2540
+Sound	64	hit	2	3717	2	3011008	1			0
+Picture	4	other				3046170	1	2000	2	0	1920
+Sound	64	hit	2	10775	2	3058150	1			0
+Picture	202	other				3094331	2	2000	4	0	1920
+Sound	62	hit	1	5340	2	3106310	1			0

@@ -1,0 +1,333 @@
+Scenario - spatial attention practice
+Logfile written - 10/07/2019 10:01:34
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+pilot01	1	Picture	example	10266	0	1	21993	1	0	next	other	0
+pilot01	1	Response	4	32182	21915	1
+pilot01	2	Picture	start	32259	0	1	5065	1	0	5000	other	0
+pilot01	2	Sound	64	37259	5000	1			5000		other	0
+pilot01	2	Picture	32	52386	20127	1	9730	1	20000	9600	other	0
+pilot01	2	Nothing	2	62259	30000	1			30000		other	0
+pilot01	2	Nothing	2	62659	30400	1			30400		other	0
+pilot01	2	Nothing	2	63059	30800	1			30800		other	0
+pilot01	2	Nothing	2	63459	31200	1			31200		other	0
+pilot01	2	Nothing	2	63859	31600	1			31600		other	0
+pilot01	2	Nothing	2	64259	32000	1			32000		other	0
+pilot01	2	Nothing	2	64659	32400	1			32400		other	0
+pilot01	3	Picture	start	72380	0	1	5065	1	0	5000	other	0
+pilot01	3	Sound	64	77380	5000	1			5000		other	0
+pilot01	3	Picture	32	92506	20127	1	9863	1	20000	9760	other	0
+pilot01	3	Nothing	2	102380	30000	1			30000		other	0
+pilot01	3	Nothing	2	102620	30240	1			30240		other	0
+pilot01	3	Nothing	2	102860	30480	1			30480		other	0
+pilot01	3	Nothing	2	103100	30720	1			30720		other	0
+pilot01	3	Nothing	2	103340	30960	1			30960		other	0
+pilot01	3	Nothing	2	103580	31200	1			31200		other	0
+pilot01	3	Nothing	2	103820	31440	1			31440		other	0
+pilot01	3	Nothing	2	104060	31680	1			31680		other	0
+pilot01	3	Nothing	2	104300	31920	1			31920		other	0
+pilot01	3	Nothing	2	104540	32160	1			32160		other	0
+pilot01	3	Nothing	2	104780	32400	1			32400		other	0
+pilot01	4	Picture	start	112500	0	1	5065	1	0	5000	other	0
+pilot01	4	Sound	128	117500	5000	1			5000		other	0
+pilot01	4	Picture	32	132627	20127	1	9730	1	20000	9600	other	0
+pilot01	4	Nothing	1	142500	30000	1			30000		other	0
+pilot01	4	Nothing	1	142900	30400	1			30400		other	0
+pilot01	4	Nothing	1	143300	30800	1			30800		other	0
+pilot01	4	Nothing	1	143700	31200	1			31200		other	0
+pilot01	4	Nothing	1	144100	31600	1			31600		other	0
+pilot01	4	Nothing	1	144500	32000	1			32000		other	0
+pilot01	4	Nothing	1	144900	32400	1			32400		other	0
+pilot01	5	Picture	start	152620	0	1	5065	1	0	5000	other	0
+pilot01	5	Sound	128	157620	5000	1			5000		other	0
+pilot01	5	Picture	32	172747	20127	1	9863	1	20000	9760	other	0
+pilot01	5	Nothing	1	182620	30000	1			30000		other	0
+pilot01	5	Nothing	1	182860	30240	1			30240		other	0
+pilot01	5	Nothing	1	183100	30480	1			30480		other	0
+pilot01	5	Nothing	1	183340	30720	1			30720		other	0
+pilot01	5	Nothing	1	183580	30960	1			30960		other	0
+pilot01	5	Nothing	1	183820	31200	1			31200		other	0
+pilot01	5	Nothing	1	184060	31440	1			31440		other	0
+pilot01	5	Nothing	1	184300	31680	1			31680		other	0
+pilot01	5	Nothing	1	184540	31920	1			31920		other	0
+pilot01	5	Nothing	1	184780	32160	1			32160		other	0
+pilot01	5	Nothing	1	185020	32400	1			32400		other	0
+pilot01	6	Picture	instruct	192740	0	1	95569	1	0	next	other	0
+pilot01	6	Response	4	213085	20345	1
+pilot01	7	Sound	eye_open	213291	0	1			0		other	0
+pilot01	7	Response	4	288233	74942	1
+pilot01	8	Picture	start	288309	0	1	12129	1	0	12000	other	0
+pilot01	8	Sound	64	300309	12000	1			12000		other	0
+pilot01	8	Picture	32	302438	14129	1	12663	1	14000	12630	other	0
+pilot01	8	Nothing	2	315339	27030	1			27030		other	0
+pilot01	8	Nothing	2	315739	27430	1			27430		other	0
+pilot01	8	Nothing	2	316139	27830	1			27830		other	0
+pilot01	8	Nothing	2	316539	28230	1			28230		other	0
+pilot01	8	Nothing	2	316939	28630	1			28630		other	0
+pilot01	8	Nothing	2	317339	29030	1			29030		other	0
+pilot01	8	Nothing	2	317739	29430	1			29430		hit	65
+pilot01	8	Response	4	329934	41625	1
+pilot01	8A	Sound	correct	330116	0	1			0		other	0
+pilot01	9	Picture	start	364817	0	1	12129	1	0	12000	other	0
+pilot01	9	Sound	64	376817	12000	1			12000		other	0
+pilot01	9	Picture	32	378946	14129	1	10263	1	14000	10120	other	0
+pilot01	9	Nothing	2	389337	24520	2			24520		other	0
+pilot01	9	Nothing	2	389737	24920	1			24920		other	0
+pilot01	9	Nothing	2	390137	25320	1			25320		other	0
+pilot01	9	Nothing	2	390537	25720	1			25720		other	0
+pilot01	9	Nothing	2	390937	26120	1			26120		other	0
+pilot01	9	Nothing	2	391337	26520	1			26520		other	0
+pilot01	9	Nothing	2	391737	26920	1			26920		hit	77
+pilot01	9	Response	4	399697	34879	1
+pilot01	9A	Sound	correct	399906	0	1			0		other	0
+pilot01	10	Picture	start	434528	0	1	12129	1	0	12000	other	0
+pilot01	10	Sound	128	446528	12000	1			12000		other	0
+pilot01	10	Picture	32	448657	14129	1	15195	1	14000	15130	other	0
+pilot01	10	Nothing	1	463898	29370	1			29370		other	0
+pilot01	10	Nothing	1	464138	29610	1			29610		other	0
+pilot01	10	Nothing	1	464378	29850	1			29850		other	0
+pilot01	10	Nothing	1	464618	30090	1			30090		other	0
+pilot01	10	Nothing	1	464858	30330	1			30330		other	0
+pilot01	10	Nothing	1	465098	30570	1			30570		other	0
+pilot01	10	Nothing	1	465338	30810	1			30810		other	0
+pilot01	10	Nothing	1	465578	31050	1			31050		other	0
+pilot01	10	Nothing	1	465818	31290	1			31290		other	0
+pilot01	10	Nothing	1	466058	31530	1			31530		other	0
+pilot01	10	Nothing	1	466298	31770	1			31770		miss	0
+pilot01	10	Response	4	471154	36626	1
+pilot01	10A	Sound	incorrect	471321	0	1			0		other	0
+pilot01	11	Picture	start	509970	0	1	12129	1	0	12000	other	0
+pilot01	11	Sound	64	521970	12000	1			12000		other	0
+pilot01	11	Picture	32	524099	14129	1	17594	1	14000	17470	other	0
+pilot01	11	Nothing	2	541694	31723	1			31710		other	0
+pilot01	11	Nothing	2	541934	31963	1			31950		other	0
+pilot01	11	Nothing	2	542174	32203	1			32190		other	0
+pilot01	11	Nothing	2	542414	32443	1			32430		other	0
+pilot01	11	Nothing	2	542654	32683	1			32670		other	0
+pilot01	11	Nothing	2	542894	32923	1			32910		other	0
+pilot01	11	Nothing	2	543134	33163	1			33150		other	0
+pilot01	11	Nothing	2	543374	33403	1			33390		other	0
+pilot01	11	Nothing	2	543614	33643	1			33630		other	0
+pilot01	11	Nothing	2	543854	33883	1			33870		other	0
+pilot01	11	Nothing	2	544094	34123	1			34110		hit	109
+pilot01	11	Response	8	554703	44733	1
+pilot01	11A	Sound	correct	554826	0	1			0		other	0
+pilot01	12	Picture	start	589411	0	1	12129	1	0	12000	other	0
+pilot01	12	Sound	64	601411	12000	1			12000		other	0
+pilot01	12	Picture	32	603540	14129	1	11863	1	14000	11770	other	0
+pilot01	12	Nothing	2	615421	26010	1			26010		other	0
+pilot01	12	Nothing	2	615661	26250	1			26250		other	0
+pilot01	12	Nothing	2	615901	26490	1			26490		other	0
+pilot01	12	Nothing	2	616141	26730	1			26730		other	0
+pilot01	12	Nothing	2	616381	26970	1			26970		other	0
+pilot01	12	Nothing	2	616621	27210	1			27210		other	0
+pilot01	12	Nothing	2	616861	27450	1			27450		other	0
+pilot01	12	Nothing	2	617101	27690	1			27690		other	0
+pilot01	12	Nothing	2	617341	27930	1			27930		other	0
+pilot01	12	Nothing	2	617581	28170	1			28170		other	0
+pilot01	12	Nothing	2	617821	28410	1			28410		miss	0
+pilot01	12	Response	4	625277	35866	1
+pilot01	12A	Sound	incorrect	625429	0	1			0		other	0
+pilot01	13	Picture	start	664186	0	1	12129	1	0	12000	other	0
+pilot01	13	Sound	128	676186	12000	1			12000		other	0
+pilot01	13	Picture	32	678315	14129	1	17461	1	14000	17370	other	0
+pilot01	13	Nothing	1	695796	31610	1			31610		other	0
+pilot01	13	Nothing	1	696036	31850	1			31850		other	0
+pilot01	13	Nothing	1	696276	32090	1			32090		other	0
+pilot01	13	Nothing	1	696516	32330	1			32330		other	0
+pilot01	13	Nothing	1	696756	32570	1			32570		other	0
+pilot01	13	Nothing	1	696997	32810	1			32810		other	0
+pilot01	13	Nothing	1	697237	33050	1			33050		other	0
+pilot01	13	Nothing	1	697477	33290	1			33290		other	0
+pilot01	13	Nothing	1	697717	33530	1			33530		other	0
+pilot01	13	Nothing	1	697957	33770	1			33770		other	0
+pilot01	13	Nothing	1	698197	34010	1			34010		miss	0
+pilot01	13	Response	4	703711	39525	1
+pilot01	13A	Sound	incorrect	703854	0	1			0		other	0
+pilot01	14	Picture	start	742561	0	1	12129	1	0	12000	other	0
+pilot01	14	Sound	128	754561	12000	1			12000		other	0
+pilot01	14	Picture	32	756690	14129	1	15462	1	14000	15440	other	0
+pilot01	14	Nothing	1	772401	29840	1			29840		other	0
+pilot01	14	Nothing	1	772801	30240	1			30240		other	0
+pilot01	14	Nothing	1	773201	30640	1			30640		other	0
+pilot01	14	Nothing	1	773601	31040	1			31040		other	0
+pilot01	14	Nothing	1	774001	31440	1			31440		other	0
+pilot01	14	Nothing	1	774401	31840	1			31840		other	0
+pilot01	14	Nothing	1	774801	32240	1			32240		hit	153
+pilot01	14	Response	4	781988	39427	1
+pilot01	14A	Sound	correct	782177	0	1			0		other	0
+pilot01	15	Picture	start	816803	0	1	12129	1	0	12000	other	0
+pilot01	15	Sound	128	828803	12000	1			12000		other	0
+pilot01	15	Picture	32	830932	14129	1	12929	1	14000	12900	other	0
+pilot01	15	Nothing	1	844103	27300	1			27300		other	0
+pilot01	15	Nothing	1	844503	27700	1			27700		other	0
+pilot01	15	Nothing	1	844903	28100	1			28100		other	0
+pilot01	15	Nothing	1	845303	28500	1			28500		other	0
+pilot01	15	Nothing	1	845703	28900	1			28900		other	0
+pilot01	15	Nothing	1	846103	29300	1			29300		other	0
+pilot01	15	Nothing	1	846503	29700	1			29700		hit	165
+pilot01	15	Response	4	853676	36873	1
+pilot01	15A	Sound	correct	853796	0	1			0		other	0
+pilot01	16	Sound	end	888539	0	1			0		other	0
+pilot01	16	Response	4	989333	100794	1
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture	example	other				10266	1	21993	1	0	next
+Picture	start	other				32259	1	5065	1	0	5000
+Sound	64	other				37259	1			5000
+Picture	32	other				52386	1	9730	1	20000	9600
+Nothing	2	other				62259	1			30000
+Nothing	2	other				62659	1			30400
+Nothing	2	other				63059	1			30800
+Nothing	2	other				63459	1			31200
+Nothing	2	other				63859	1			31600
+Nothing	2	other				64259	1			32000
+Nothing	2	other				64659	1			32400
+Picture	start	other				72380	1	5065	1	0	5000
+Sound	64	other				77380	1			5000
+Picture	32	other				92506	1	9863	1	20000	9760
+Nothing	2	other				102380	1			30000
+Nothing	2	other				102620	1			30240
+Nothing	2	other				102860	1			30480
+Nothing	2	other				103100	1			30720
+Nothing	2	other				103340	1			30960
+Nothing	2	other				103580	1			31200
+Nothing	2	other				103820	1			31440
+Nothing	2	other				104060	1			31680
+Nothing	2	other				104300	1			31920
+Nothing	2	other				104540	1			32160
+Nothing	2	other				104780	1			32400
+Picture	start	other				112500	1	5065	1	0	5000
+Sound	128	other				117500	1			5000
+Picture	32	other				132627	1	9730	1	20000	9600
+Nothing	1	other				142500	1			30000
+Nothing	1	other				142900	1			30400
+Nothing	1	other				143300	1			30800
+Nothing	1	other				143700	1			31200
+Nothing	1	other				144100	1			31600
+Nothing	1	other				144500	1			32000
+Nothing	1	other				144900	1			32400
+Picture	start	other				152620	1	5065	1	0	5000
+Sound	128	other				157620	1			5000
+Picture	32	other				172747	1	9863	1	20000	9760
+Nothing	1	other				182620	1			30000
+Nothing	1	other				182860	1			30240
+Nothing	1	other				183100	1			30480
+Nothing	1	other				183340	1			30720
+Nothing	1	other				183580	1			30960
+Nothing	1	other				183820	1			31200
+Nothing	1	other				184060	1			31440
+Nothing	1	other				184300	1			31680
+Nothing	1	other				184540	1			31920
+Nothing	1	other				184780	1			32160
+Nothing	1	other				185020	1			32400
+Picture	instruct	other				192740	1	95569	1	0	next
+Sound	eye_open	other				213291	1			0
+Picture	start	other				288309	1	12129	1	0	12000
+Sound	64	other				300309	1			12000
+Picture	32	other				302438	1	12663	1	14000	12630
+Nothing	2	other				315339	1			27030
+Nothing	2	other				315739	1			27430
+Nothing	2	other				316139	1			27830
+Nothing	2	other				316539	1			28230
+Nothing	2	other				316939	1			28630
+Nothing	2	other				317339	1			29030
+Nothing	2	hit	1	12195	1	317739	1			29430
+Sound	correct	other				330116	1			0
+Picture	start	other				364817	1	12129	1	0	12000
+Sound	64	other				376817	1			12000
+Picture	32	other				378946	1	10263	1	14000	10120
+Nothing	2	other				389337	2			24520
+Nothing	2	other				389737	1			24920
+Nothing	2	other				390137	1			25320
+Nothing	2	other				390537	1			25720
+Nothing	2	other				390937	1			26120
+Nothing	2	other				391337	1			26520
+Nothing	2	hit	1	7959	1	391737	1			26920
+Sound	correct	other				399906	1			0
+Picture	start	other				434528	1	12129	1	0	12000
+Sound	128	other				446528	1			12000
+Picture	32	other				448657	1	15195	1	14000	15130
+Nothing	1	other				463898	1			29370
+Nothing	1	other				464138	1			29610
+Nothing	1	other				464378	1			29850
+Nothing	1	other				464618	1			30090
+Nothing	1	other				464858	1			30330
+Nothing	1	other				465098	1			30570
+Nothing	1	other				465338	1			30810
+Nothing	1	other				465578	1			31050
+Nothing	1	other				465818	1			31290
+Nothing	1	other				466058	1			31530
+Nothing	1	miss				466298	1			31770
+Sound	incorrect	other				471321	1			0
+Picture	start	other				509970	1	12129	1	0	12000
+Sound	64	other				521970	1			12000
+Picture	32	other				524099	1	17594	1	14000	17470
+Nothing	2	other				541694	1			31710
+Nothing	2	other				541934	1			31950
+Nothing	2	other				542174	1			32190
+Nothing	2	other				542414	1			32430
+Nothing	2	other				542654	1			32670
+Nothing	2	other				542894	1			32910
+Nothing	2	other				543134	1			33150
+Nothing	2	other				543374	1			33390
+Nothing	2	other				543614	1			33630
+Nothing	2	other				543854	1			33870
+Nothing	2	hit	2	10610	2	544094	1			34110
+Sound	correct	other				554826	1			0
+Picture	start	other				589411	1	12129	1	0	12000
+Sound	64	other				601411	1			12000
+Picture	32	other				603540	1	11863	1	14000	11770
+Nothing	2	other				615421	1			26010
+Nothing	2	other				615661	1			26250
+Nothing	2	other				615901	1			26490
+Nothing	2	other				616141	1			26730
+Nothing	2	other				616381	1			26970
+Nothing	2	other				616621	1			27210
+Nothing	2	other				616861	1			27450
+Nothing	2	other				617101	1			27690
+Nothing	2	other				617341	1			27930
+Nothing	2	other				617581	1			28170
+Nothing	2	miss				617821	1			28410
+Sound	incorrect	other				625429	1			0
+Picture	start	other				664186	1	12129	1	0	12000
+Sound	128	other				676186	1			12000
+Picture	32	other				678315	1	17461	1	14000	17370
+Nothing	1	other				695796	1			31610
+Nothing	1	other				696036	1			31850
+Nothing	1	other				696276	1			32090
+Nothing	1	other				696516	1			32330
+Nothing	1	other				696756	1			32570
+Nothing	1	other				696997	1			32810
+Nothing	1	other				697237	1			33050
+Nothing	1	other				697477	1			33290
+Nothing	1	other				697717	1			33530
+Nothing	1	other				697957	1			33770
+Nothing	1	miss				698197	1			34010
+Sound	incorrect	other				703854	1			0
+Picture	start	other				742561	1	12129	1	0	12000
+Sound	128	other				754561	1			12000
+Picture	32	other				756690	1	15462	1	14000	15440
+Nothing	1	other				772401	1			29840
+Nothing	1	other				772801	1			30240
+Nothing	1	other				773201	1			30640
+Nothing	1	other				773601	1			31040
+Nothing	1	other				774001	1			31440
+Nothing	1	other				774401	1			31840
+Nothing	1	hit	1	7187	2	774801	1			32240
+Sound	correct	other				782177	1			0
+Picture	start	other				816803	1	12129	1	0	12000
+Sound	128	other				828803	1			12000
+Picture	32	other				830932	1	12929	1	14000	12900
+Nothing	1	other				844103	1			27300
+Nothing	1	other				844503	1			27700
+Nothing	1	other				844903	1			28100
+Nothing	1	other				845303	1			28500
+Nothing	1	other				845703	1			28900
+Nothing	1	other				846103	1			29300
+Nothing	1	hit	1	7173	1	846503	1			29700
+Sound	correct	other				853796	1			0
+Sound	end	other				888539	1			0

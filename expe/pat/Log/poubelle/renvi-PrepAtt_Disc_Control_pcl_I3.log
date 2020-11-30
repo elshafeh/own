@@ -1,0 +1,73 @@
+Scenario - 17_March_2015
+Logfile written - 07/19/2017 14:47:21
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+renvi	1	Response	252	35164	44832	2
+renvi	1	Response	253	41303	50971	4
+renvi	2	Picture	10	41493	0	3	20000	174	0	20000	other	0
+renvi	3	Picture	10	61825	0	2	40162	5	0	40000	other	0
+renvi	3	Response	251	83414	21589	2
+renvi	3	Response	252	92133	30308	2
+renvi	4	Picture	10	102154	0	3	40163	6	0	40000	other	0
+renvi	4	Response	252	116959	14805	1
+renvi	5	Sound	111	142480	0	2			0		hit	10
+renvi	5	Response	251	161042	18562	2
+renvi	5	Response	252	167593	25113	2
+renvi	6	Sound	122	173609	0	2			0		hit	13
+renvi	6	Response	252	179486	5877	1
+renvi	6	Response	251	187407	13798	2
+renvi	7	Sound	111	204708	0	2			0		incorrect	16
+renvi	7	Response	252	212679	7971	2
+renvi	8	Sound	121	235838	0	2			0		hit	18
+renvi	8	Response	252	244064	8226	1
+renvi	8	Response	251	252090	16252	2
+renvi	9	Sound	112	266937	0	2			0		hit	21
+renvi	9	Response	251	272114	5177	2
+renvi	10	Sound	111	298037	0	2			0		incorrect	23
+renvi	10	Response	252	306239	8202	3
+renvi	11	Sound	122	329166	0	2			0		hit	25
+renvi	11	Response	252	336797	7631	2
+renvi	11	Response	251	341738	12572	3
+renvi	12	Sound	111	360266	0	2			0		hit	28
+renvi	12	Response	251	372960	12694	2
+renvi	13	Sound	121	391365	0	2			0		hit	30
+renvi	13	Response	252	396442	5077	2
+renvi	14	Sound	112	422495	0	2			0		hit	32
+renvi	14	Response	251	430923	8428	1
+renvi	15	Sound	121	453624	0	2			0		hit	34
+renvi	15	Response	252	457666	4042	4
+renvi	16	Sound	121	484724	0	2			0		hit	36
+renvi	16	Response	252	491819	7095	3
+renvi	16	Response	251	497356	12632	3
+renvi	17	Sound	112	515824	0	1			0		hit	39
+renvi	17	Response	251	519522	3698	2
+renvi	18	Sound	112	546953	0	2			0		hit	41
+renvi	18	Response	251	555133	8180	2
+renvi	19	Sound	122	578082	0	2			0		incorrect	43
+renvi	19	Response	251	585130	7048	2
+renvi	20	Sound	122	609182	0	1			0		incorrect	45
+renvi	20	Response	251	622928	13746	2
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture	10	other				41493	3	20000	174	0	20000
+Picture	10	other				61825	2	40162	5	0	40000
+Picture	10	other				102154	3	40163	6	0	40000
+Sound	111	hit	1	18562	4	142480	2			0
+Sound	122	hit	2	5877	3	173609	2			0
+Sound	111	incorrect	2	7971	4	204708	2			0
+Sound	121	hit	2	8226	3	235838	2			0
+Sound	112	hit	1	5177	4	266937	2			0
+Sound	111	incorrect	2	8202	5	298037	2			0
+Sound	122	hit	2	7631	4	329166	2			0
+Sound	111	hit	1	12694	4	360266	2			0
+Sound	121	hit	2	5077	4	391365	2			0
+Sound	112	hit	1	8428	3	422495	2			0
+Sound	121	hit	2	4042	6	453624	2			0
+Sound	121	hit	2	7095	5	484724	2			0
+Sound	112	hit	1	3698	3	515824	1			0
+Sound	112	hit	1	8180	4	546953	2			0
+Sound	122	incorrect	1	7048	4	578082	2			0
+Sound	122	incorrect	1	13746	3	609182	1			0

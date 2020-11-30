@@ -1,0 +1,75 @@
+Scenario - 17_March_2015
+Logfile written - 06/06/2016 15:27:44
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+fp3	1	Response	253	16411	26244	1
+fp3	2	Picture	10	16497	0	1	20165	2	0	20000	other	0
+fp3	3	Picture	10	36829	0	1	40163	2	0	40000	other	0
+fp3	3	Response	252	57023	20194	2
+fp3	3	Response	252	59923	23094	1
+fp3	3	Response	252	69910	33081	1
+fp3	4	Picture	10	77158	0	2	40164	3	0	40000	other	0
+fp3	4	Response	251	80472	3314	1
+fp3	4	Response	251	82990	5832	1
+fp3	4	Response	252	98584	21426	1
+fp3	4	Response	252	100205	23047	1
+fp3	4	Response	251	103366	26208	2
+fp3	4	Response	251	113409	36251	1
+fp3	4	Response	251	115473	38315	1
+fp3	5	Sound	111	117395	0	1			0		miss	0
+fp3	6	Sound	122	148465	0	1			0		incorrect	17
+fp3	6	Response	251	162215	13750	2
+fp3	6	Response	251	174393	25928	2
+fp3	7	Sound	111	179535	0	1			0		miss	0
+fp3	8	Sound	121	210605	0	1			0		miss	0
+fp3	9	Sound	112	241674	0	2			0		incorrect	22
+fp3	9	Response	252	259413	17739	1
+fp3	9	Response	251	261829	20155	1
+fp3	9	Response	251	264436	22762	2
+fp3	9	Response	251	269357	27683	1
+fp3	9	Response	251	272326	30652	2
+fp3	10	Sound	111	272744	0	2			0		hit	28
+fp3	10	Response	251	274570	1826	1
+fp3	10	Response	251	276672	3928	1
+fp3	10	Response	251	283976	11232	1
+fp3	10	Response	251	288102	15358	1
+fp3	10	Response	251	291665	18921	1
+fp3	11	Sound	122	303814	0	2			0		incorrect	34
+fp3	11	Response	251	313925	10111	1
+fp3	11	Response	251	319317	15503	1
+fp3	12	Sound	111	334885	0	1			0		miss	0
+fp3	13	Sound	121	365955	0	1			0		miss	0
+fp3	14	Sound	112	397024	0	2			0		miss	0
+fp3	15	Sound	121	428094	0	2			0		miss	0
+fp3	16	Sound	121	459165	0	1			0		miss	0
+fp3	17	Sound	112	490234	0	2			0		miss	0
+fp3	18	Sound	112	521304	0	2			0		miss	0
+fp3	19	Sound	122	552374	0	2			0		incorrect	44
+fp3	19	Response	251	560890	8516	1
+fp3	19	Response	251	570076	17702	2
+fp3	19	Response	251	574318	21944	1
+fp3	20	Sound	122	583444	0	2			0		miss	0
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture	10	other				16497	1	20165	2	0	20000
+Picture	10	other				36829	1	40163	2	0	40000
+Picture	10	other				77158	2	40164	3	0	40000
+Sound	111	miss				117395	1			0
+Sound	122	incorrect	1	13750	3	148465	1			0
+Sound	111	miss				179535	1			0
+Sound	121	miss				210605	1			0
+Sound	112	incorrect	2	17739	3	241674	2			0
+Sound	111	hit	1	1826	3	272744	2			0
+Sound	122	incorrect	1	10111	3	303814	2			0
+Sound	111	miss				334885	1			0
+Sound	121	miss				365955	1			0
+Sound	112	miss				397024	2			0
+Sound	121	miss				428094	2			0
+Sound	121	miss				459165	1			0
+Sound	112	miss				490234	2			0
+Sound	112	miss				521304	2			0
+Sound	122	incorrect	1	8516	3	552374	2			0
+Sound	122	miss				583444	2			0

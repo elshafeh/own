@@ -1,0 +1,69 @@
+Scenario - 17_March_2015
+Logfile written - 07/03/2017 14:53:47
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+delsa	1	Response	253	4889	14723	1
+delsa	2	Picture	10	4997	0	2	20164	4	0	20000	other	0
+delsa	3	Picture	10	25328	0	2	40162	4	0	40000	other	0
+delsa	3	Response	251	63652	38324	1
+delsa	4	Picture	10	65657	0	2	40163	3	0	40000	other	0
+delsa	4	Response	251	102660	37003	2
+delsa	5	Sound	111	105897	0	1			0		incorrect	8
+delsa	5	Response	252	115023	9126	1
+delsa	5	Response	252	116649	10752	1
+delsa	5	Response	252	116751	10854	2
+delsa	5	Response	252	122687	16790	1
+delsa	6	Sound	122	136966	0	1			0		hit	13
+delsa	6	Response	252	164563	27597	1
+delsa	7	Sound	111	168035	0	1			0		hit	15
+delsa	7	Response	251	188697	20662	1
+delsa	8	Sound	121	199104	0	1			0		incorrect	17
+delsa	8	Response	251	217679	18575	1
+delsa	9	Sound	112	230173	0	2			0		incorrect	19
+delsa	9	Response	252	237998	7825	1
+delsa	10	Sound	111	261242	0	2			0		incorrect	21
+delsa	10	Response	252	273661	12419	2
+delsa	11	Sound	122	292312	0	1			0		incorrect	23
+delsa	11	Response	251	299732	7420	1
+delsa	12	Sound	111	323381	0	1			0		hit	25
+delsa	12	Response	251	349930	26549	1
+delsa	13	Sound	121	354450	0	1			0		incorrect	27
+delsa	13	Response	251	370176	15726	1
+delsa	14	Sound	112	385519	0	1			0		incorrect	29
+delsa	14	Response	252	413073	27554	2
+delsa	15	Sound	121	416588	0	1			0		incorrect	31
+delsa	15	Response	251	438420	21832	1
+delsa	16	Sound	121	447657	0	1			0		incorrect	33
+delsa	16	Response	251	460002	12345	2
+delsa	17	Sound	112	478726	0	1			0		incorrect	35
+delsa	17	Response	252	487265	8539	2
+delsa	18	Sound	112	509795	0	1			0		incorrect	37
+delsa	18	Response	252	521929	12134	1
+delsa	19	Sound	122	540864	0	2			0		incorrect	39
+delsa	19	Response	251	548489	7625	1
+delsa	20	Sound	122	571933	0	2			0		incorrect	41
+delsa	20	Response	251	581301	9368	1
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture	10	other				4997	2	20164	4	0	20000
+Picture	10	other				25328	2	40162	4	0	40000
+Picture	10	other				65657	2	40163	3	0	40000
+Sound	111	incorrect	2	9126	2	105897	1			0
+Sound	122	hit	2	27597	2	136966	1			0
+Sound	111	hit	1	20662	2	168035	1			0
+Sound	121	incorrect	1	18575	2	199104	1			0
+Sound	112	incorrect	2	7825	3	230173	2			0
+Sound	111	incorrect	2	12419	4	261242	2			0
+Sound	122	incorrect	1	7420	2	292312	1			0
+Sound	111	hit	1	26549	2	323381	1			0
+Sound	121	incorrect	1	15726	2	354450	1			0
+Sound	112	incorrect	2	27554	3	385519	1			0
+Sound	121	incorrect	1	21832	2	416588	1			0
+Sound	121	incorrect	1	12345	3	447657	1			0
+Sound	112	incorrect	2	8539	3	478726	1			0
+Sound	112	incorrect	2	12134	2	509795	1			0
+Sound	122	incorrect	1	7625	3	540864	2			0
+Sound	122	incorrect	1	9368	3	571933	2			0

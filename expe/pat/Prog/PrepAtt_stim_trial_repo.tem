@@ -1,0 +1,19 @@
+text {
+   caption = "original text" ;
+   font_size = 30; 
+} text1;
+
+# == Images Definition == #
+bitmap { filename = "Cross.bmp";   width= 250; height= 250;  } Cross ;
+picture {bitmap Cross; 	 x = 0; y = 0;} default;
+
+
+trial { stimulus_event{	picture { text { caption = "Gardez les yeux fixés\n sur la croix."; font_size = 50;};
+	x = 0; y = 0; }; duration=5000; port_code=252; code='253';} event_instruc;
+} trial_instruc; 
+
+
+trial {					 
+   trial_duration=321000;
+   nothing{};  port_code=253; code='253';
+} trial_repo;

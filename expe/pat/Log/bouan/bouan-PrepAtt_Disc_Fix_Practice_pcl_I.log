@@ -1,0 +1,104 @@
+Scenario - 17_March_2015
+Logfile written - 04/28/2017 15:16:01
+
+Subject	Trial	Event Type	Code	Time	TTime	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur	Stim Type	Pair Index
+
+bouan	1	Response	253	6917	16585	4
+bouan	2	Picture	10	6996	0	3	20164	6	0	20000	other	0
+bouan	3	Picture	10	27327	0	2	40162	5	0	40000	other	0
+bouan	3	Response	251	49294	21967	2
+bouan	4	Picture	10	67656	0	3	40163	5	0	40000	other	0
+bouan	4	Response	252	82706	15050	2
+bouan	5	Nothing	91	107828	0	1			0		other	0
+bouan	6	Picture	202	138149	0	2	1998	7	0	1920	other	0
+bouan	7	Sound	62	150143	0	2			0		miss	0
+bouan	8	Picture	1	185310	0	3	2000	6	0	1920	other	0
+bouan	9	Sound	61	197316	0	2			0		incorrect	12
+bouan	9	Response	252	210699	13383	2
+bouan	9	Response	252	214855	17539	2
+bouan	10	Picture	103	231804	0	5	1999	11	0	1920	other	0
+bouan	11	Sound	63	243799	0	2			0		hit	16
+bouan	11	Response	252	253336	9537	3
+bouan	12	Picture	204	279467	0	2	1999	5	0	1920	other	0
+bouan	13	Sound	64	291451	0	2			0		hit	19
+bouan	13	Response	252	300917	9466	2
+bouan	14	Picture	2	326461	0	3	2001	5	0	1920	other	0
+bouan	15	Sound	62	338443	0	2			0		hit	22
+bouan	15	Response	251	351603	13160	2
+bouan	16	Picture	103	373623	0	3	2000	6	0	1920	other	0
+bouan	17	Sound	63	385616	0	2			0		hit	25
+bouan	17	Response	252	393657	8041	1
+bouan	18	Picture	123	421284	0	3	2001	5	0	1920	other	0
+bouan	18	Sound	52	427374	6090	2			6090		other	0
+bouan	19	Sound	63	433268	0	1			0		hit	29
+bouan	19	Response	252	444672	11404	3
+bouan	20	Picture	3	468613	0	3	2000	5	0	1920	other	0
+bouan	21	Sound	63	480619	0	2			0		hit	32
+bouan	21	Response	252	489892	9273	2
+bouan	22	Picture	14	515608	0	2	1999	5	0	1920	other	0
+bouan	22	Sound	51	518957	3349	2			3350		other	0
+bouan	23	Sound	64	527612	0	2			0		hit	36
+bouan	23	Response	252	546038	18426	2
+bouan	24	Picture	3	563602	0	3	2000	6	0	1920	other	0
+bouan	25	Sound	63	575593	0	1			0		hit	39
+bouan	25	Response	252	603117	27524	2
+bouan	26	Picture	101	611430	0	3	2000	6	0	1920	other	0
+bouan	27	Sound	61	623424	0	1			0		hit	42
+bouan	27	Response	251	637689	14265	2
+bouan	28	Picture	234	659592	0	3	2000	5	0	1920	other	0
+bouan	28	Sound	52	666571	6979	2			6980		other	0
+bouan	29	Sound	64	671583	0	2			0		incorrect	46
+bouan	29	Response	251	692057	20474	2
+bouan	30	Picture	4	707420	0	3	1998	8	0	1920	other	0
+bouan	31	Sound	61	719415	0	1			0		hit	49
+bouan	31	Response	251	736111	16696	2
+bouan	32	Picture	214	754082	0	3	1999	7	0	1920	other	0
+bouan	32	Sound	51	758792	4710	1			4710		other	0
+bouan	33	Sound	64	766078	0	2			0		hit	53
+bouan	33	Response	252	778595	12517	1
+bouan	34	Picture	204	801410	0	3	2001	5	0	1920	other	0
+bouan	35	Sound	62	813401	0	2			0		hit	56
+bouan	35	Response	251	826401	13000	1
+bouan	36	Response	253	1474541	625302	4
+
+
+Event Type	Code	Type	Response	RT	RT Uncertainty	Time	Uncertainty	Duration	Uncertainty	ReqTime	ReqDur
+
+Picture	10	other				6996	3	20164	6	0	20000
+Picture	10	other				27327	2	40162	5	0	40000
+Picture	10	other				67656	3	40163	5	0	40000
+Nothing	91	other				107828	1			0
+Picture	202	other				138149	2	1998	7	0	1920
+Sound	62	miss				150143	2			0
+Picture	1	other				185310	3	2000	6	0	1920
+Sound	61	incorrect	2	13383	4	197316	2			0
+Picture	103	other				231804	5	1999	11	0	1920
+Sound	63	hit	2	9537	5	243799	2			0
+Picture	204	other				279467	2	1999	5	0	1920
+Sound	64	hit	2	9466	4	291451	2			0
+Picture	2	other				326461	3	2001	5	0	1920
+Sound	62	hit	1	13160	4	338443	2			0
+Picture	103	other				373623	3	2000	6	0	1920
+Sound	63	hit	2	8041	3	385616	2			0
+Picture	123	other				421284	3	2001	5	0	1920
+Sound	52	other				427374	2			6090
+Sound	63	hit	2	11404	4	433268	1			0
+Picture	3	other				468613	3	2000	5	0	1920
+Sound	63	hit	2	9273	4	480619	2			0
+Picture	14	other				515608	2	1999	5	0	1920
+Sound	51	other				518957	2			3350
+Sound	64	hit	2	18426	4	527612	2			0
+Picture	3	other				563602	3	2000	6	0	1920
+Sound	63	hit	2	27524	3	575593	1			0
+Picture	101	other				611430	3	2000	6	0	1920
+Sound	61	hit	1	14265	3	623424	1			0
+Picture	234	other				659592	3	2000	5	0	1920
+Sound	52	other				666571	2			6980
+Sound	64	incorrect	1	20474	4	671583	2			0
+Picture	4	other				707420	3	1998	8	0	1920
+Sound	61	hit	1	16696	3	719415	1			0
+Picture	214	other				754082	3	1999	7	0	1920
+Sound	51	other				758792	1			4710
+Sound	64	hit	2	12517	3	766078	2			0
+Picture	204	other				801410	3	2001	5	0	1920
+Sound	62	hit	1	13000	3	813401	2			0
