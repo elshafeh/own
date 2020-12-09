@@ -46,6 +46,10 @@ for nt = 1:height(allInfo)
     trialinfo(nt,14)        = trl_button;clear trl_button;
     trialinfo(nt,15)        = trl_correct; clear trl_correct;
     
+    list_block              = {'early' 'late' 'jittered'};
+    
+    
+    
 end
 
 good_events                 = [];
