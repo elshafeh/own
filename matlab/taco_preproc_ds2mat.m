@@ -15,28 +15,28 @@ suj_list                                        = dir([start_dir '/ds/*ds']);
 
 for ns = 1:length(suj_list)
     
-    subjectName                                 = suj_list(ns).name(1:6);
+    subjectName                           	= suj_list(ns).name(1:6);
     
-    ds_dir                                      = [start_dir 'ds/'];
-    preproc_dir                                 = [start_dir 'preproc/'];
+    ds_dir                                	= [start_dir 'ds/'];
+    preproc_dir                          	= [start_dir 'preproc/'];
     
     % check that subject has not been preprocessed
-    chk_preproc                                 = dir([preproc_dir subjectName '*_finalrej.mat']);
+    chk_preproc                          	= dir([preproc_dir subjectName '*_finalrej.mat']);
     
     if isempty(chk_preproc)
         
         % check that .ds has not been conevrted to .mat already
-        chk_mat                                 = dir([preproc_dir subjectName '*_raw_dwnsample.mat']);
+        chk_mat                          	= dir([preproc_dir subjectName '*_raw_dwnsample.mat']);
         
         if isempty(chk_mat)
             
             %                 h_makesubjectdirectory(subjectName);
             
-            dsFileName                          = dir([ds_dir subjectName '*.ds']);
-            dsFileName                          = [dsFileName.folder '/' dsFileName.name];
+            dsFileName                   	= dir([ds_dir subjectName '*.ds']);
+            dsFileName                  	= [dsFileName.folder '/' dsFileName.name];
             
             % check that trigger timings are good :)
-            [hdr,events]                        = taco_fun_checktiming(dsFileName);
+            [hdr,events]                 	= taco_fun_checktiming(dsFileName);
             
             % lock to first cue and add behavior in trial info
             [all_cfg]                       = taco_func_definetrial(dsFileName);
