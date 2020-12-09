@@ -32,11 +32,11 @@ for ns = 1:length(suj_list)
             
             %                 h_makesubjectdirectory(subjectName);
             
-            dsFileName                      = dir([ds_dir subjectName '*.ds']);
-            dsFileName                      = [dsFileName.folder '/' dsFileName.name];
+            dsFileName                          = dir([ds_dir subjectName '*.ds']);
+            dsFileName                          = [dsFileName.folder '/' dsFileName.name];
             
             % check that trigger timings are good :)
-            [hdr,events]                	= taco_fun_checktiming(dsFileName);
+            [hdr,events]                        = taco_fun_checktiming(dsFileName);
             
             % lock to first cue and add behavior in trial info
             [all_cfg]                       = taco_func_definetrial(dsFileName);

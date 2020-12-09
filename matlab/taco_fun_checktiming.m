@@ -114,3 +114,7 @@ subplot(3,2,ix)
 plot(plot_vct);
 ylim([avg_nb-0.2 avg_nb+0.2]);
 title([name_list{ix} ' avg = ' num2str(avg_nb)]);
+
+% gca                    = figure('Position', get(0, 'Screensize'));
+% F                       = getframe(gca);
+% imwrite(F.cdata, 'Foos.png', 'png');

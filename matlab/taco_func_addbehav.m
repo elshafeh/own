@@ -48,7 +48,7 @@ for nt = 1:height(allInfo)
     
     list_block              = {'early' 'late' 'jittered'};
     
-    
+    trialinfo(nt,16)     	= find(strcmp(allInfo(nt,:).bloctype,list_block)); %% 16 add block/jitter type
     
 end
 
