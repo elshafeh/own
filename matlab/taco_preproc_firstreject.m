@@ -52,9 +52,9 @@ InitRej                             = ft_rejectvisual(cfg,data_downsample);
 
 % check for jumps % press !!! QUIT !!!
 cfg                                 = [];
-cfg.method                          = 'channel';
+cfg.method                          = 'trial';
 cfg.preproc.demean                  = 'yes';
-cfg.megscale                        = 1;
+% cfg.megscale                        = 1;
 % cfg.ylim                            = [-2e-12 2e-12];
 % cfg.alim                            = cfg.ylim;
 SecondRej                           = ft_rejectvisual(cfg,InitRej);
@@ -65,6 +65,7 @@ trialinfo                           = SecondRej.trialinfo;
 chaninfo                            = SecondRej.label;
 
 fname                               = [dir_data subjectName '_' ext_lock '_preica_trialinfo.mat'];
+fprintf('saving %s\n',fname);
 save(fname,'trialinfo','chaninfo','-v7.3'); 
 clear trialinfo chaninfo;
 
