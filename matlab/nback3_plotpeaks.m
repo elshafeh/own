@@ -1,15 +1,14 @@
 clear ; close all; global ft_default
 ft_default.spmversion = 'spm12';
 
-load ../data/list/suj.list.alphabetapeak.m1000m0ms.max20chan.p50p200ms.mat
-suj_list               	= good_list;
+suj_list               	= [1:33 35:36 38:44 46:51];
 
 for nsuj = 1:length(suj_list)
     
     subjectname         = ['sub' num2str(suj_list(nsuj))];
     
     % load peak
-    fname               = ['../data/peak/' subjectname '.alphabetapeak.m1000m0ms.max20chan.p50p200ms.mat'];
+    fname               = ['/Volumes/heshamshung/nback/peak/' subjectname '.alphabeta.peak.package.0back.mat'];
     fprintf('loading %s\n',fname);
     load(fname);
     

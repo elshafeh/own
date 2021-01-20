@@ -31,6 +31,7 @@ for nsuj = 1:length(suj_list)
         
         avg                         = ft_timelockanalysis(cfg, data_axial);
         
+        % convert to planar
         cfg                         = [];
         cfg.feedback                = 'yes';
         cfg.method                  = 'template';
@@ -88,7 +89,5 @@ for nj = 1:3
     list_vline{3}                     	= [0 1.5 3 4.5];
     
     vline(list_vline{nj},'--k');
-    
-    
     
 end

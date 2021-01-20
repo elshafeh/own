@@ -6,16 +6,13 @@ else
     start_dir = '~/Dropbox/project_me/data/resting/';
 end
 
-file_list                               = dir([start_dir '/*']);
+file_list                               = dir([start_dir '/ds/']);
 suj_list                                = {};
 
 for nf = 1:length(file_list)
     if ~strcmp(file_list(nf).name(1),'.')
-        suj_list                        = [suj_list;file_list(nf).name];
-        %         mkdir([start_dir file_list(nf).name '/preproc/']);
-        %         mkdir([start_dir file_list(nf).name '/tf/']);
-        %         mkdir([start_dir file_list(nf).name '/erf/']);
-        %         mkdir([start_dir file_list(nf).name '/source/']);
+        name_parts                      = strsplit(file_list(nf).name,'.');
+        suj_list                        = [suj_list;name_parts{1}];
     end
 end
 
@@ -27,8 +24,8 @@ for ns = 1:length(suj_list)
     
     subjectName                         = suj_list{ns};
     
-    dsFileName                          = [start_dir subjectName '/ds/' subjectName '.pat2.restingstate.thrid_order.ds'];
-    finalName                           = [start_dir subjectName '/preproc/' subjectName '.pat22.restingstate.mat'];
+    dsFileName                          = [start_dir 'ds/' subjectName '.pat2.restingstate.thrid_order.ds'];
+    finalName                           = [start_dir 'preproc/' subjectName '.pat22.restingstate.mat'];
     
     if ~exist(finalName)
         
@@ -62,14 +59,13 @@ for ns = 1:length(suj_list)
         cfg.demean                      = 'no';
         data_downsample                 = ft_resampledata(cfg, data); clear data;
         
-        %% check for outlier bad channels & trials
-        % press !!! QUIT !!!
+        %% check for jumps % press !!! QUIT !!!
         cfg                           	= [];
-        cfg.method                     	= 'summary';
+        cfg.method                  	= 'trial';
+        cfg.preproc.demean             	= 'yes';
         cfg.megscale                  	= 1;
-        cfg.alim                       	= 1e-12;
-        cfg.metric                    	= 'maxabs';
-        data                            = ft_rejectvisual(cfg,data_downsample); clear data_downsample;
+        cfg.ylim                     	= [-0.7e-12 0.7e-12];
+        data                            = ft_rejectvisual(cfg,data_downsample); clear data_downsample
         
         % save data
         fprintf('saving %s\n',finalName);

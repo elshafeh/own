@@ -17,7 +17,7 @@ for nsuj = [1:33 35:36 38:44 46:51]
                 if ncorr <2
                     ix                      = find(index(:,1) == nback & index(:,2) == ncorr);
                 else
-                    ix                      = find(index(:,1) == nback );
+                    ix                      = find(index(:,1) == nback);
                 end
                 
                 if ~isempty(ix)

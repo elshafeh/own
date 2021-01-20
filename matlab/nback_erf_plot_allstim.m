@@ -6,7 +6,7 @@ for nsess = 1:2
     
     for ns = [1:33 35:36 38:44 46:51]
         
-        fname               = ['../data/erf/data_sess' num2str(nsess) '_s' num2str(ns) '_erfComb.mat'];
+        fname               = ['~/Dropbox/project_me/data/nback/erf/data_sess' num2str(nsess) '_s' num2str(ns) '_erfComb.mat'];
         fprintf('\nloading %s',fname);
         load(fname);
         
