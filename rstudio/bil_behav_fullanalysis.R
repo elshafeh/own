@@ -116,7 +116,7 @@ ub <- function(x) mean(x) + sd(x)
 
 ### Header ###
 
-dir         <- "/Users/heshamelshafei/Documents/GitHub/me/doc/bil.behavioralReport.n34"
+dir         <- "/Users/heshamelshafei/github/own/doc/bil.behavioralReport.n34"
 sub_table   <- read.table(paste0(dir,".keep.cor",".keep.rt",".txt"),
                           sep = ',',header=T)
 

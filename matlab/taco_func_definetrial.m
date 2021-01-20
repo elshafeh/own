@@ -38,6 +38,8 @@ localizer                       = ft_definetrial(cfg);
 
 cfg.trialdef.eventtype          = 'UPPT002';
 cfg.trialdef.eventvalue         = [1 8];
+cfg.trialdef.prestim            = 0;
+cfg.trialdef.poststim           = 2;
 response                        = ft_definetrial(cfg);
 
 all_cfg.trl{1}                  = first_cue.trl;
@@ -50,4 +52,3 @@ all_cfg.trl{7}                  = response.trl;
 all_cfg.trl{8}                  = localizer.trl;
 
 all_cfg.list                    = {'firstcue' 'firstsamp' 'secondsamp' 'secondcue' 'probe' 'mapping' 'response' 'localizer'};
-

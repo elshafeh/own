@@ -11,7 +11,7 @@ else
     start_dir = '~/Dropbox/project_me/data/taco/';
 end
 
-suj_list                                        = dir([start_dir '/ds/*ds']);
+suj_list                                    = dir([start_dir '/ds/*ds']);
 
 for ns = 1:length(suj_list)
     
@@ -81,6 +81,3 @@ for ns = 1:length(suj_list)
 end
 
 fprintf('\nall caught up! :) \n\n');
-
-% quickly plot behavioral data for quick check
-% bil_quickbehavcheck;

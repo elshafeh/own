@@ -64,6 +64,7 @@ for nt = 1:length(events)
 end
 
 good_trials                 = [];
+good_trials_segmented       = {};
 good_rt                     = [];
 good_soa                    = [];
 
@@ -92,6 +93,7 @@ for nt = 1:length(good_events)
                 
                 if ~isempty(chk_samp1)  && ~isempty(chk_samp2) && ~isempty(chk_samp3) && ~isempty(chk_cue2) && ~isempty(chk_window)
                     good_trials = [good_trials; trl];
+                    good_trials_segmented{end+1}    = trl;
                     good_rt    	= [good_rt (trl(7,2)-trl(6,2))./hdr.Fs];
                     good_soa  	= [good_soa (trl(5,2)-trl(4,2))./hdr.Fs]; clear trl;
                 else
@@ -106,12 +108,13 @@ for nt = 1:length(good_events)
     end
 end
 
-keep good_* cfg_* trialinfo subjectName events hdr *_dir
+keep good_* cfg_* trialinfo subjectName events hdr *_dir good_trials_segmented
 
 if strcmp(subjectName,'tac001') % had two extra trials in the beginning
-    good_trials     = good_trials(15:end,:);
-    good_soa        = good_soa(3:end);
-    good_rt         = good_rt(3:end);
+    good_trials             = good_trials(15:end,:);
+    good_soa                = good_soa(3:end);
+    good_rt                 = good_rt(3:end);
+    good_trials_segmented   = good_trials_segmented(3:end);
 end
 
 if (length(good_soa) ~= length(trialinfo)) || (length(good_rt) ~= length(trialinfo))
@@ -159,24 +162,40 @@ end
 
 for i = 1:length(cfg_out.trl)-1
     
-    samples_ideal   = good_segments{i}(:,2);
-    samples_all     = cfg_out.trl{i}(:,1) + abs(cfg_out.trl{i}(:,3));
-    
-    samples_keep  	= [];
-    
-    for yi = 1:length(samples_all)
-        if ismember(samples_all(yi),samples_ideal)
-            samples_keep     = [samples_keep;yi];
-        end
-    end
-    
     if i < 7
-        cfg_out.trl{i}  = [cfg_out.trl{i}(samples_keep,:) trialinfo [1:length(trialinfo)]'];
+        samples_ideal       = good_segments{i}(:,2);
+        samples_all         = cfg_out.trl{i}(:,1) + abs(cfg_out.trl{i}(:,3));
+        
+        samples_keep        = [];
+        
+        for yi = 1:length(samples_all)
+            if ismember(samples_all(yi),samples_ideal)
+                samples_keep     = [samples_keep;yi];
+            end
+        end
+        
+        cfg_out.trl{i}      = [cfg_out.trl{i}(samples_keep,:) trialinfo [1:length(trialinfo)]'];
+        
+        clear samples_ideal samples_keep samples_all
+        
     else
-    
-        flg             = find(~isnan(trialinfo(:,14)));
-        new_trialinfo   = trialinfo(flg,:);
-        cfg_out.trl{i}  = [cfg_out.trl{i}(samples_keep,:) new_trialinfo flg];
+        
+        nw_trl                  = [];
+        trials2keepinfo         = [];
+        
+        for ntrial = 1:length(good_trials_segmented)
+            flg                 = find(ismember(good_trials_segmented{ntrial}(:,1),[1 8]));
+            smpl                = good_trials_segmented{ntrial}(flg,2);
+            if ~isempty(flg)
+                trials2keepinfo     = [trials2keepinfo ntrial];
+                fnd             = find(cfg_out.trl{i}(:,1) == smpl);
+                nw_trl          = [nw_trl;cfg_out.trl{i}(fnd,:)];
+            end
+        end
+        
+        new_trialinfo       = trialinfo(trials2keepinfo,:);
+        cfg_out.trl{i}      = [nw_trl new_trialinfo trials2keepinfo'];
+        
     end
 end
 
@@ -199,4 +218,6 @@ else
     cfg_out.trl{8}          = [cfg_out.trl{8} trialinfo [1:length(trialinfo)]'];
 end
 
+cfg_out.good_trials_seg   	= good_trials_segmented;
 cfg_out.good_trials        	= good_trials;
+cfg_out.orig_fsample      	= hdr.Fs;

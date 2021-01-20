@@ -7,7 +7,7 @@ function h_plotstat_3d(cfg_in,stat)
 % cfg.legend -> for plots
 % cfg.layout: e.g. 'CTF275_helmet.mat';
 % cfg.colormap : e.g. brewermap(256,'*RdBu');
-
+% cfg.test_name
 
 % for nsuj = 1:size(alldata,1)
 %     for ncond = 1:size(alldata,2)
@@ -94,7 +94,7 @@ else
             cfg.zlim                    = 'maxabs';
             cfg.marker                  = 'off';
             cfg.comment                 = 'no';
-            
+            cfg.figure                  = 0;
             i                           = i +1;
             subplot(nrow,ncol,i)
             ft_topoplotTFR(cfg,stat2plot)
@@ -103,7 +103,11 @@ else
             i                           = i +1;
             subplot(nrow,ncol,i)
             ft_singleplotTFR(cfg,stat2plot);
-            title('');
+            if ncluster == 1
+                title(cfg_in.test_name);
+            else
+                title('');
+            end
             
             if isfield(cfg_in,'vline')
             vline(cfg_in.vline,'--k');
