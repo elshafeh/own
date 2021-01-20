@@ -19,7 +19,8 @@ for nsuj = 1:length(suj_list)
     
     for nbin = 1:length(list_bin)
         
-        fname               	= [project_dir 'data/' subjectName '/erf/' subjectName '.cuelock.itc.withcorrect.' list_bin{nbin} '.erf.mat'];
+        fname               	= ['~/Dropbox/project_me/papers/postdoc/bilbo/v1/data/erf/' subjectName '.cuelock.itc.withcorrect.' list_bin{nbin} '.erf.mat'];
+        %         fname               	= [project_dir 'data/' subjectName '/erf/' subjectName '.cuelock.itc.withcorrect.' list_bin{nbin} '.erf.mat'];
         fprintf('loading %s\n',fname);
         load(fname);
         
@@ -79,10 +80,14 @@ end
 %%
 
 nw_stat                         = stat{1};
+<<<<<<< HEAD
 nw_stat.stat(nw_stat.stat > 0)  = 0;
 sig_time = unique(stat{1}.time .* stat{1}.mask);
 sig_time = sig_time(sig_time ~=0);
 sig_time = [min(sig_time) max(sig_time)];
+=======
+% nw_stat.mask                 	= nw_stat.prob < 0.05;
+>>>>>>> d77931acdbd3cad92ad6f6db3d897f26108d3b01
 
 statplot                        = [];
 statplot.avg                  	= nw_stat.mask .* nw_stat.stat;
