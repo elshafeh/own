@@ -36,11 +36,11 @@ data_rt         = sub_table[sub_table$rt != "all" & sub_table$corr == "correct",
 data_rt$rt      = factor(data_rt$rt)
 data_rt$corr    = factor(data_rt$corr)
 
-model_acc       <- lme4::lmer(pow ~ (eye+corr)^2 + (1|sub), data =data_acc)
+model_acc       <- lme4::lmer(perc_corr ~ (eye+bin)^2 + (1|sub), data =data_acc)
 model_acc_anova <- Anova(model_acc,type=2,test.statistic=c("F"))
 print(model_acc_anova)
 
-model_rt        <- lme4::lmer(pow ~ (eye+rt)^2 + (1|sub), data =data_rt)
+model_rt        <- lme4::lmer(med_rt ~ (eye+bin)^2 + (1|sub), data =data_rt)
 model_rt_anova  <- Anova(model_rt,type=2,test.statistic=c("F"))
 print(model_rt_anova)
 

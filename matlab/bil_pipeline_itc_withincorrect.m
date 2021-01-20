@@ -18,6 +18,10 @@ for ns = 1:length(suj_list)
     
     data_axial                              	= dataPostICA_clean; clear dataPostICA_clean;
     
+    % ------------------------------------------------------------------------
+    data_axial                                  = h_removeEvoked(data_axial);
+    % ------------------------------------------------------------------------
+    
     data_planar                                 = h_ax2plan(data_axial);
     
     time_win1                                   = -0.1;
@@ -43,7 +47,7 @@ for ns = 1:length(suj_list)
     
     phase_lock                                  = bil_itc_sortRT_compute(freq_comb,5);
     
-    fname                                       = [project_dir 'data/' subjectName '/tf/' subjectName '.cuelock.itc.5binned.withEvoked.withIncorrect.mat'];
+    fname                                       = [project_dir 'data/' subjectName '/tf/' subjectName '.cuelock.itc.5binned.minusEvoked.withIncorrect.mat'];
     fprintf('\nSaving %s\n',fname);
     tic;save(fname,'phase_lock','-v7.3');toc; clear phase_lock
     

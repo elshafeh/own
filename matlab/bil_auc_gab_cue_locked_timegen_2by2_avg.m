@@ -4,6 +4,14 @@ ft_default.spmversion = 'spm12';
 
 load ../data/bil_goodsubjectlist.27feb20.mat
 
+if isunix
+    project_dir              	= '/project/3015079.01/';
+    start_dir                	= '/project/';
+else
+    project_dir              	= 'P:/3015079.01/';
+    start_dir               	= 'P:/';
+end
+
 for nsuj = 1:length(suj_list)
     
     subjectName                 = suj_list{nsuj};

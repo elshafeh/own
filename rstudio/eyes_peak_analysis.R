@@ -13,27 +13,21 @@ library(viridis);library(afex)
 library(multcomp);library(emmeans)
 
 rm(list=ls())
-pd          <- position_dodge(0.1)
-alphalev    <- 0.6
+pd                  <- position_dodge(0.2)
+alphalev            <- 0.6
 
-fname       <- "/Users/heshamelshafei/Documents/GitHub/own/doc/eyes_virt_alphabeta_peak_info.csv"
-sub_table   <- read.table(fname,sep = ',',header=T)
+cbPalette_eyes      <- c("#669933","#FFCC33") 
 
-sub_table$sub   = as.factor(sub_table$sub)
-sub_table$eye   = as.factor(sub_table$eye)
-sub_table$roi   = as.factor(sub_table$roi)
-sub_table$hemi  = as.factor(sub_table$hemi)
+fname               <- "P:/3015039.05/data/all_sub/eyes_virt_alphabeta_peak_info.csv"
+sub_table           <- read.table(fname,sep = ',',header=T)
 
-model_peak        <- lme4::lmer(apeak ~ (eye+roi+hemi)^3 + (1|sub), data =sub_table)
+model_peak        <- lme4::lmer(apeak ~ (eye+roi+hemi)^2 + (1|sub), data =sub_table)
 model_peak_anova  <- Anova(model_peak,type=2,test.statistic=c("F"))
 print(model_peak_anova)
 
-emmeans(model_peak, pairwise ~ hemi | roi)
 emmeans(model_peak, pairwise ~ roi)
 emmeans(model_peak, pairwise ~ eye | roi)
-
-cbPalette_1         <- c("#FC4E07","#00AFBB") 
-cbPalette_2         <-c("#CC6666", "#4E84C4") 
+emmeans(model_peak, pairwise ~ roi | eye)
 
 y_lim <- c(5,15)
 
@@ -44,35 +38,21 @@ p1 <- sub_table %>%
     legend.position="none",
     plot.title = element_text(size=11)
   ) +
-  ggtitle("roi p < 0.001") +
+  ggtitle("alpha peak: roi p < 0.001") +
   xlab("")+scale_y_continuous(name="", limits=y_lim)+
   theme_clean()
 
 p2 <- sub_table %>%
-  ggplot( aes(x=roi, y=apeak, fill=hemi)) +
-  geom_boxplot() +
-  theme(
-    legend.position="none",
-    plot.title = element_text(size=11)
-  ) +
-  ggtitle("roi*hemi p = 0.01") +
-  xlab("")+scale_y_continuous(name="", limits=y_lim)+
-  theme_clean()+scale_colour_manual(values = cbPalette_1)+
-  scale_fill_manual(values = cbPalette_1)
-
-p3 <- sub_table %>%
   ggplot( aes(x=roi, y=apeak, fill=eye)) +
   geom_boxplot() +
   theme(
     legend.position="none",
     plot.title = element_text(size=11)
   ) +
-  ggtitle("eyes*hemi p = 0.07") +
+  ggtitle("alpha peak: eye*roi p = 0.04") +
   xlab("")+scale_y_continuous(name="", limits=y_lim)+
-  theme_clean()+scale_colour_manual(values = cbPalette_2)+
-  scale_fill_manual(values = cbPalette_2)
-
-ggarrange(p1,p2,p3,ncol=3,nrow=2)
+  theme_clean()+scale_colour_manual(values = cbPalette_eyes)+
+  scale_fill_manual(values = cbPalette_eyes)
 
 model_peak        <- lme4::lmer(bpeak ~ (eye+roi+hemi)^3 + (1|sub), data =sub_table)
 model_peak_anova  <- Anova(model_peak,type=2,test.statistic=c("F"))
@@ -81,39 +61,27 @@ print(model_peak_anova)
 
 y_lim <- c(10,40)
 
-p1 <- sub_table %>%
+p3 <- sub_table %>%
   ggplot( aes(x=roi, y=bpeak)) +
   geom_boxplot() +
   theme(
     legend.position="none",
     plot.title = element_text(size=11)
   ) +
-  ggtitle("beta peak frequency") +
+  ggtitle("beta peak") +
   xlab("")+scale_y_continuous(name="", limits=y_lim)+
   theme_clean()
 
-p2 <- sub_table %>%
-  ggplot( aes(x=roi, y=bpeak, fill=hemi)) +
-  geom_boxplot() +
-  theme(
-    legend.position="none",
-    plot.title = element_text(size=11)
-  ) +
-  ggtitle("beta peak frequency") +
-  xlab("")+scale_y_continuous(name="", limits=y_lim)+
-  theme_clean()+scale_colour_manual(values = cbPalette_1)+
-  scale_fill_manual(values = cbPalette_1)
-
-p3 <- sub_table %>%
+p4 <- sub_table %>%
   ggplot( aes(x=roi, y=bpeak, fill=eye)) +
   geom_boxplot() +
   theme(
     legend.position="none",
     plot.title = element_text(size=11)
   ) +
-  ggtitle("beta peak frequency") +
+  ggtitle("beta peak") +
   xlab("")+scale_y_continuous(name="", limits=y_lim)+
-  theme_clean()+scale_colour_manual(values = cbPalette_2)+
-  scale_fill_manual(values = cbPalette_2)
+  theme_clean()+scale_colour_manual(values = cbPalette_eyes)+
+  scale_fill_manual(values = cbPalette_eyes)
 
-ggarrange(p1,p2,p3,ncol=3,nrow=2)
+ggarrange(p1,p2,p3,p4,ncol=2,nrow=2)

@@ -6,7 +6,6 @@ function h_plotSingleERFstat_selectChannel_nobox(cfg_in,stat_in,data_in)
 % marked by a rectangle
 
 % cfg.channel
-% cfg.p_threshold : limit to mask stat structure
 % cfg.lineWidth : width of line to be plot
 % cfg.time_limit : to adjust the x-axes (time)
 % cfg.z_limit : to adjust the y-axes
@@ -44,8 +43,8 @@ for ns = 1:size(data_in,1)
             
         else
             
-            t1              = find(round(data_in{ns,ncon}.time,2) == round(stat.time(1),2));
-            t2              = find(round(data_in{ns,ncon}.time,2) == round(stat.time(end),2));
+            t1              = 1; %find(round(data_in{ns,ncon}.time,2) == round(stat.time(1),2));
+            t2              = length(data_in{ns,ncon}.time); %find(round(data_in{ns,ncon}.time,2) == round(stat.time(end),2));
             t1              = t1(1);
             t2              = t2(end);
             
@@ -88,8 +87,7 @@ for ncon = 1:size(data_in,2)
     bounds                              = nanstd(tmp, [], 1);
     bounds_sem                          = bounds ./ sqrt(size(tmp,1));
     
-    %     boundedline(stat.time, mean_data, bounds_sem,['-' cfg_in.color(ncon)],'alpha'); % alpha makes bounds transparent
-    boundedline(stat.time, mean_data, bounds_sem,cfg_in.color{ncon},'alpha'); % alpha makes bounds transparent
+    boundedline(data_in{ns,ncon}.time, mean_data, bounds_sem,cfg_in.color{ncon},'alpha'); % alpha makes bounds transparent
 
     clear mean_data bounds_sem bounds
 end

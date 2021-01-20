@@ -7,9 +7,9 @@ load ../data/bil_goodsubjectlist.27feb20.mat
 for nsuj = 1:length(suj_list)
     
     subjectName                         = suj_list{nsuj};
-    dir_data                            = '~/Dropbox/project_me/data/bil/decode/';
+    dir_data                            = 'D:/Dropbox/project_me/data/bil/decode/';
     
-    list_frequency                      = {'beta'}; % 'theta' 'alpha' 'gamma' 
+    list_frequency                      = {'theta' 'alpha' 'beta'}; % 'gamma' 
     decoding_list                       = {'frequency'}; % 'orientation'
     
     list_bin                            = [1 5];
@@ -23,9 +23,6 @@ for nsuj = 1:length(suj_list)
             pow                         = [];
             
             for ndeco = 1:length(decoding_list)
-                
-                %                 flist_1               	= dir([dir_data subjectName '.1stgab.decodinggabor.' frequency_list{nfreq} ...
-                %                     '.band.preGab1.window.bin' num2str(list_bin(nbin)) '.' decoding_list{ndeco}  ext_name]);
                 
                 flist_1               	= dir([dir_data subjectName '.1stgab.decodinggabor.' list_frequency{nfreq} ...
                     '.band.preGab1.window.bin' num2str(list_bin(nbin)) '.' decoding_list{ndeco}  ext_name]);
@@ -78,12 +75,10 @@ for nfreq = 1:size(alldata,2)
     cfg.correctm                = 'cluster';cfg.statistic = 'depsamplesT';
     cfg.uvar                    = 1;cfg.ivar = 2;
     cfg.tail                    = 0;cfg.clustertail  = 0;
-    cfg.neighbours              = neighbours;
     
     cfg.latency                 = [-0.05 3];
     cfg.clusteralpha            = 0.05; % !!
-    cfg.minnbchan               = 0; % !!
-    cfg.alpha                   = 0.025;
+    cfg.alpha                   = 0.05;
     
     cfg.numrandomization        = 1000;
     cfg.design                  = design;
@@ -94,49 +89,49 @@ end
 
 keep alldata list_* allstat name_bin
 
+plot(allstat{1}.time,allstat{1}.stat.*allstat{1}.mask);
+
 %% - % - 
 
 figure;
-nrow                            = 2;
-ncol                            = 2;
-i                               = 0;
-zlimit                          = [0.55 0.8];
-plimit                          = 0.1;
+nrow                      	= 2;
+ncol                     	= 2;
+i                         	= 0;
+zlimit                   	= [0.55 0.8];
+plimit                   	= 0.1;
 
 for nfreq = 1:length(allstat)
     
-    stat                        = allstat{nfreq};
-    stat.mask                   = stat.prob < plimit;
+    stat                  	= allstat{nfreq};
+    stat.mask             	= stat.prob < plimit;
     
-    for nchan = 1:length(stat.label)
-        
-        vct                     = stat.prob(nchan,:);
-        min_p                   = min(vct);
-        
-        cfg                     = [];
-        cfg.channel             = nchan;
-        cfg.time_limit          = stat.time([1 end]);
-        cfg.color               = {'-b' '-r'};
-        cfg.z_limit             = zlimit(nchan,:);
-        cfg.linewidth           = 10;
-        
-        i = i+1;
-        subplot(nrow,ncol,i);
-        h_plotSingleERFstat_selectChannel_nobox(cfg,stat,squeeze(alldata(:,nfreq,[1 2])));
-        
-        ylabel({stat.label{nchan}, ['p= ' num2str(round(min_p,3))]})
-        
-        
-        vline([0],'--k');
-        
-        xticks([0 0.5 1 1.5 2 2.5 3]);
-        xticklabels({'Gab' '0.5' '1' 'Cue2' '2' '2.5' 'Gab2'});
-        
-        title(list_frequency{nfreq});
-        
-        %         legend(name_bin);
-        
-        set(gca,'FontSize',16,'FontName', 'Calibri','FontWeight','normal');
-        
-    end
+    nchan                   = 1;
+    
+    vct                     = stat.prob(nchan,:);
+    min_p                   = min(vct);
+    
+    cfg                     = [];
+    cfg.time_limit          = stat.time([1 end]);
+    cfg.color               = {'-b' '-r'};
+    cfg.z_limit             = zlimit(nchan,:);
+    cfg.linewidth           = 10;
+    
+    i = i+1;
+    subplot(nrow,ncol,i);
+    h_plotSingleERFstat_singlechannel(cfg,stat,squeeze(alldata(:,nfreq,[1 2])));
+    
+    ylabel({stat.label{nchan}, ['p= ' num2str(round(min_p,3))]})
+    
+    
+    vline([0],'--k');
+    
+    xticks([0 0.5 1 1.5 2 2.5 3]);
+    xticklabels({'Gab' '0.5' '1' 'Cue2' '2' '2.5' 'Gab2'});
+    
+    title(list_frequency{nfreq});
+    
+    %         legend(name_bin);
+    
+    set(gca,'FontSize',16,'FontName', 'Calibri','FontWeight','normal');
+    
 end
