@@ -8,7 +8,7 @@ bins                        = prepare_bin(cfg,freq);
 
 for nb = 1:nb_bin
     
-    vct_target              = freq.trialinfo(bins(:,nb),[3 6 7]);
+    vct_target              = freq.trialinfo(bins(:,nb),[2 4 5]);
     vct_target              = vct_target(vct_target(:,1) == 2,[2 3]);
     
     vct_resp                = vct_target(:,1);
