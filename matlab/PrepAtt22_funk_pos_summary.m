@@ -15,10 +15,13 @@ for n = 1:length(behav_in_recoded)
     
     %     waitbar(n/length(behav_in_recoded))
     
+    % look for cues = codes in the order 1000s
     if  floor(behav_in_recoded(n,3)/1000)==1
         
         ncue = ncue + 1;
         
+        % this a bit of code to remove trials with a response just before
+        % the cue
         if ncue >1
             sub_evnts = PrepAtt22_funk_check_cueBaseline(behav_in_recoded,behav_in_recoded(n,4));
             if isempty(sub_evnts)
@@ -29,14 +32,27 @@ for n = 1:length(behav_in_recoded)
         end
         
         
+        % initialize all variables to make sure they dont bleed into the
+        % next trial
         [sub_idx,nbloc,code,CUE,DIS,TAR,XP,REP,CORR,RT,ERROR,cue_idx,CT,DT,cueON,disON,tarON,CLASS,idx_suj,CD] = deal(0);
         
+        % some subject/block information
         ntrl_blc = ntrl_blc + 1;
         idx_suj  =  behav_in_recoded(n,5);
         sub_idx  =  behav_in_recoded(n,1);
         nbloc    =  behav_in_recoded(n,2);
         
-        code     =behav_in_recoded(n,3)-1000;  CUE=floor(code/100);  DIS=floor((code-100*CUE)/10); TAR=mod(code,10); if TAR>2;XP=2;else XP=1;end;
+        % break down the code to know the trual type
+        code     = behav_in_recoded(n,3)-1000;  
+        CUE=floor(code/100);  
+        DIS=floor((code-100*CUE)/10); 
+        TAR=mod(code,10); 
+        
+        % find out the expected reponse
+        if TAR>2
+            XP=2;
+        else XP=1
+        end
         
         if CUE == 0
             cue_idx = 2;
@@ -44,29 +60,33 @@ for n = 1:length(behav_in_recoded)
             cue_idx = 1;
         end
         
+        % these help initialize your while loop 
+        % a value that you'd change IN the loop
         fcue=1; p=1;
         
-        while fcue==1 && n+p <=length(behav_in_recoded)
+        while fcue==1 && n+p <=length(behav_in_recoded) % make sure you're still within the length of your matrix ; otherwise your while loop will run forever
             
+            % make sure that events are less than 5 seconds apart
             acc_width = behav_in_recoded(n+p,4) - behav_in_recoded(n,4);
             acc_width = acc_width * cnsnt;
             
             if floor(behav_in_recoded(n+p,3)/1000)~=1 && (behav_in_recoded(n+p,4) > behav_in_recoded(n+p-1,4)) && acc_width <= 5000
-                p=p+1;
+                p=p+1; % so as along as you don't find the cue ; the while loop goes on
             else
-                fcue=2;
+                fcue=2; % once you find the cue / the while loop is broken
             end
             
             
         end
         
         p               = p-1;
-        trl             = behav_in_recoded(n:n+p,:);
+        trl             = behav_in_recoded(n:n+p,:); % extract the trials
         
         if size(trl,1) > 1
             
             trl_tot{ntrl_blc}   = trl;
             
+            % find time-stamps for all events
             cuetmp  = find(floor(trl(:,3)/1000)==1);
             tartmp  = find(floor(trl(:,3)/1000)==3);
             distmp  = find(floor(trl(:,3)/1000)==2);
@@ -94,6 +114,7 @@ for n = 1:length(behav_in_recoded)
             
             ERROR=0 ; CORR = 0; REP = 0;
             
+            % analyze behavioral responses
             if size(reptmp,1) == 0  % ----- MISS ---- %
                 ERROR = 1;
             else
@@ -122,7 +143,6 @@ for n = 1:length(behav_in_recoded)
             end
             
             if CORR ==1
-                
                 trl(:,5)=0;
                 
             elseif CORR == 0
@@ -144,6 +164,7 @@ for n = 1:length(behav_in_recoded)
             CT              = CT    * cnsnt;
             DT              = DT    * cnsnt;
             
+            % put all info in an a table
             behav_summary   = [behav_summary ; sub_idx nbloc ntrl_blc code CUE DIS TAR XP REP CORR RT ERROR cue_idx CT DT cueON disON tarON CLASS idx_suj CD];
             
             

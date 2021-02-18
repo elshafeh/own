@@ -11,7 +11,7 @@ library(tidyverse)
 library(hrbrthemes)
 library(viridis);library(afex)
 library(multcomp);library(emmeans);
-library(gridExtra)
+library(gridExtra);library(ez)
 
 rm(list=ls())
 pd          <- position_dodge(0.1)
@@ -20,16 +20,15 @@ alphalev    <- 0.6
 source("/Users/heshamelshafei/github/own/toolbox/RainCloudPlots/tutorial_R/summarySE.R")
 
 dir_file            <- "/Users/heshamelshafei/gitHub/own/doc/"
-fname               <- paste0(dir_file,"eyes_virt_cuelock_behav2fft.csv")
+fname               <- paste0(dir_file,"eyes_virt_stimlock_behav2fft.csv")
 sub_table           <- read.table(fname,sep = ',',header=T)
 
 sub_table$sub       <- as.factor(sub_table$sub)
 sub_table$eye       <- as.factor(sub_table$eye)
-sub_table$cue       <- as.factor(sub_table$cue)
 sub_table$cond      <- as.factor(sub_table$cond)
 sub_table$measure   <- as.factor(sub_table$measure)
 sub_table$compare   <- as.factor(sub_table$compare)
-sub_table$window   <- as.factor(sub_table$window)
+sub_table$window    <- as.factor(sub_table$window)
 
 list_measure        <- levels(sub_table$measure)
 list_compare        <- levels(sub_table$compare)
@@ -63,20 +62,35 @@ for (nwin in 1:length(list_window)){
         plot_lim      = c(0,6)
       }
       
-      
-      model_beh         <- lme4::lmer(var ~ (eye+cond)^2 + (1|sub), data =rep_data)
-      model_beh_anova   <- Anova(model_beh,type=2,test.statistic=c("F"))
+      # model_beh         <- lme4::lmer(var ~ (eye+cond)^2 + (1|sub), data =rep_data)
+      # model_beh_anova   <- Anova(model_beh,type=2,test.statistic=c("F"))
       
       sumrepdat         <- summarySE(rep_data, measurevar = "var", groupvars=c("eye","cond"))
+      
+      e_anova = ezANOVA(
+        data = rep_data
+        , dv = .(var)
+        , wid = .(sub)
+        , within = .(eye,cond)
+      )
+      
+      # pval1 <- round(model_beh_anova$`Pr(>F)`[1],2)
+      # pval2 <- round(model_beh_anova$`Pr(>F)`[2],2)
+      # pval3 <- round(model_beh_anova$`Pr(>F)`[3],2)
+      
+      round_val <- 3
+      pval1 <- round(e_anova$ANOVA$p[1],round_val)
+      pval2 <- round(e_anova$ANOVA$p[2],round_val)
+      pval3 <- round(e_anova$ANOVA$p[3],round_val)
       
       p1                <- ggplot(rep_data, aes(x = eye, y = var, fill = cond))+
         geom_boxplot(aes(x = eye, y = var, fill = cond),outlier.shape = NA, 
                      alpha = .5, width = .5, colour = "black")+
         scale_colour_brewer(palette = "Set1")+
         scale_fill_brewer(palette = "Set1")+
-        ggtitle(paste0("pe = ",round(model_beh_anova$`Pr(>F)`[1],2),
-                       " pb = ",round(model_beh_anova$`Pr(>F)`[2],2),
-                       " pi = ",round(model_beh_anova$`Pr(>F)`[3],2)))+
+        ggtitle(paste0("p(eye) = ",pval1,"\n",
+                       "p(behavior) = ",pval2,"\n",
+                       "p(interaction) = ",pval3))+
         theme_pubclean(base_size = font_s,base_family = "Calibri")+
         scale_y_continuous(name = list_measure[nmes],breaks =c(plot_lim[1], plot_lim[2],mean(plot_lim)),limits = c(plot_lim[1], plot_lim[2]))
       

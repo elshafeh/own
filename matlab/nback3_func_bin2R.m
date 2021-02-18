@@ -4,7 +4,7 @@ alldata                 = [];
 
 for nsuj = [1:33 35:36 38:44 46:51]
     
-    fname            	= ['/Volumes/heshamshung/nback/bin/sub' num2str(nsuj) '.' ext_bin_fname '.binsummary.mat'];
+    fname            	= ['~/Dropbox/project_me/data/nback/bin/sub' num2str(nsuj) '.' ext_bin_fname '.binsummary.mat'];
     fprintf('loading %s\n',fname);
     load(fname);
     

@@ -31,7 +31,7 @@ for nsuj = 1:length(suj_list)
     leadfield                    	= ft_selectdata(cfg,leadfield);
 
     cfg_f                           = [];
-    cfg_f.covariance_window         = [-0.1 0.2];
+    cfg_f.covariance_window         = [-0.1 0.2]; % adapt this one!
     cfg_f.leadfield                 = leadfield;
     cfg_f.vol                       = vol;
     spatialfilter                   = h_create_lcmv_common_filter(cfg_f,data);

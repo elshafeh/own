@@ -33,13 +33,13 @@ for nsuj = [10 20 33]
     source.dim                  	= template_grid.dim;
     source.pow                    	= nan(length(source.pos),1);
     
-<<<<<<< HEAD
+
     vct_data                        = abs((act - bsl) ./ bsl); % rel change 
-=======
+
     find_left                       = find(source.pos(:,1) < 0);
     find_rite                       = find(source.pos(:,1) > 0);
     
->>>>>>> 2cdc2bac5af9f56aae694f74a626225fa09bf808
+
     max_vox                         = [];
     
     % find max left
@@ -65,7 +65,7 @@ for nsuj = [10 20 33]
     end
     
     
-    index_name                      = [{'max occ'};roi_name];
+    index_name                      = [{'max occ'};roi_name]; % adapt NAMES
     index_vox                       = max_vox;
     
     fname_out                       = ['I:/bil/source/' subjectName '.wallis.index.mat'];

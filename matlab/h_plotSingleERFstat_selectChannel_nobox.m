@@ -43,10 +43,15 @@ for ns = 1:size(data_in,1)
             
         else
             
+<<<<<<< HEAD
+            t1              = nearest(data_in{ns,ncon}.time,stat.time(1));
+            t2              = nearest(data_in{ns,ncon}.time,stat.time(end));
+=======
             t1              = 1; %find(round(data_in{ns,ncon}.time,2) == round(stat.time(1),2));
             t2              = length(data_in{ns,ncon}.time); %find(round(data_in{ns,ncon}.time,2) == round(stat.time(end),2));
             t1              = t1(1);
             t2              = t2(end);
+>>>>>>> 6a9ca58b7d384e0e358287d71e8e55c77001b619
             
             find_chan_in_data = [];
             for nc = 1:length(cfg_in.channel)
@@ -86,8 +91,18 @@ for ncon = 1:size(data_in,2)
     mean_data                           = nanmean(tmp,1);
     bounds                              = nanstd(tmp, [], 1);
     bounds_sem                          = bounds ./ sqrt(size(tmp,1));
+    x_axis                              = stat.time;
     
+<<<<<<< HEAD
+    %     boundedline(stat.time, mean_data, bounds_sem,['-' cfg_in.color(ncon)],'alpha'); % alpha makes bounds transparent
+    if iscell(cfg_in.color)
+        boundedline(x_axis, mean_data, bounds_sem,cfg_in.color{ncon},'alpha'); % alpha makes bounds transparent     
+    else
+        boundedline(x_axis, mean_data, bounds_sem,'cmap',cfg_in.color(ncon,:),'alpha'); % alpha makes bounds transparent
+    end
+=======
     boundedline(data_in{ns,ncon}.time, mean_data, bounds_sem,cfg_in.color{ncon},'alpha'); % alpha makes bounds transparent
+>>>>>>> 6a9ca58b7d384e0e358287d71e8e55c77001b619
 
     clear mean_data bounds_sem bounds
 end

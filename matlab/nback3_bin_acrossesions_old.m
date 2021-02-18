@@ -1,14 +1,14 @@
 clear ; close all; global ft_default
 ft_default.spmversion = 'spm12';
 
-suj_list                                    = [1:33 35:36 38:44 46:51];
+suj_list                                    = [25:33 35:36 38:44 46:51];
 
 for nsuj = 1:length(suj_list)
     
     subjectname                             = ['sub' num2str(suj_list(nsuj))];
     
     % load peak
-    fname                                   = ['/Volumes/heshamshung/nback/peak/' subjectname '.alphabeta.peak.package.0back.mat'];
+    fname                                   = ['~/Dropbox/project_me/data/nback/peak/' subjectname '.alphabeta.peak.package.0back.mat'];
     fprintf('loading %s\n',fname);
     load(fname);
     
@@ -36,21 +36,21 @@ for nsuj = 1:length(suj_list)
     for nsess = 1:2
         
         % load peak
-        fname                               = ['/Volumes/heshamshung/nback/peak/sub' num2str(suj_list(nsuj)) '.alphabeta.peak.package.0back.mat'];
+        fname                               = ['~/Dropbox/project_me/data/nback/peak/sub' num2str(suj_list(nsuj)) '.alphabeta.peak.package.0back.mat'];
         fprintf('loading %s\n',fname);
         load(fname);
         
-        fname                               = ['/Volumes/heshamshung/nback/nback_' num2str(nsess) '/data_sess' num2str(nsess) '_s' num2str(suj_list(nsuj)) '.mat'];
+        fname                               = ['~/Dropbox/project_me/data/nback/prepro/nback_' num2str(nsess) '/data_sess' num2str(nsess) '_s' num2str(suj_list(nsuj)) '.mat'];
         fprintf('loading %s\n',fname);
         load(fname);
         
-        %-%-% exclude trials with a previous response
+        %-%-% exclude trials with a previous response + 0back
         cfg                                 = [];
         cfg.trials                          = find(data.trialinfo(:,5) == 0 & data.trialinfo(:,1) ~= 4);
         data                                = ft_selectdata(cfg,data);
         
         sess_carr{nsess}                    = megrepair(data); 
-        sess_norepair{nsess}                = data; clear data;
+        sess_norepair{nsess}                = data; clear data; % we need this cause the non-repaired data doesn't work with MNE-python
         
     end
     
@@ -66,17 +66,29 @@ for nsuj = 1:length(suj_list)
     data_preproc                            = ft_preprocessing(cfg,data_concat);
     
     %-%-% downsample for decoding
+    
+    cfg_demean                              = 'no';
+    
     cfg                                     = [];
     cfg.resamplefs                          = 100;
     cfg.detrend                             = 'no';
-    cfg.demean                              = 'no'; % no demeaning
+    cfg.demean                              = cfg_demean;
     data_downsample                         = ft_resampledata(cfg,  ft_appenddata([],sess_norepair{:}));
     data_downsample                         = rmfield(data_downsample,'cfg');
     
+    %-%-% rearragnge trialinfo
     trialinfo(:,1)                       	= data_concat.trialinfo(:,1); % condition
     trialinfo(:,2)                       	= data_concat.trialinfo(:,3); % stim category 
     trialinfo(:,3)                        	= rem(data_concat.trialinfo(:,2),10)+1; % stim identity
-    trialinfo(:,4)                        	= 1:length(data_concat.trialinfo); % trial indices to match with bin
+    trialinfo(:,4)                       	= data_concat.trialinfo(:,6); % response
+    trialinfo(:,5)                       	= data_concat.trialinfo(:,7); % rt
+    trialinfo(:,6)                        	= 1:length(data_concat.trialinfo); % trial indices to match with bin
+    
+    %-%-% add it to all data to make sure nothing goes wrong
+    data_concat.trialinfo                   = trialinfo;
+    data_preproc.trialinfo                	= trialinfo;
+    data_downsample.trialinfo              	= trialinfo; clear trialinfo
+    
     
     %-%-% select window for FFT 
     cfg                                     = [];
@@ -97,6 +109,8 @@ for nsuj = 1:length(suj_list)
     freq_comb                               = ft_combineplanar([],freq); clear freq;
     
     %-%-% zoom on occipital channels
+    %-%-% we zoom in afterwards (not before) due to some combine planar
+    % problems
     cfg                                     = [];
     cfg.channel                             = max_chan;
     freq                                    = ft_selectdata(cfg,freq_comb); clear freq_comb;
@@ -106,7 +120,7 @@ for nsuj = 1:length(suj_list)
     
     for nband = 1:length(list_band)
         
-        nb_bin                              = 2;
+        nb_bin                              = 3;
         [tmp_summary]                       = nback_func_preparebin_sessionconcat(freq,allpeaks(nsuj,nband),nb_bin,list_width(nband));
         
         for nbin = 1:nb_bin
@@ -119,11 +133,11 @@ for nsuj = 1:length(suj_list)
             bin_summary(i).acc              = tmp_summary.perc_corr(nbin);
             bin_summary(i).rt               = tmp_summary.med_rt(nbin);
             bin_summary(i).index            = tmp_summary.bins(:,nbin);
-            bin_summary(i).trialinfo      	= trialinfo(tmp_summary.bins(:,nbin),:);
+            bin_summary(i).trialinfo      	= freq.trialinfo(tmp_summary.bins(:,nbin),:);
             bin_summary(i).trialcount      	= [];
             
-            for ncond = [1 2]
-                for nstim = [1 2]
+            for ncond = [1 2] % nback
+                for nstim = [1 2] % first/target
                     
                     flg_trials          	= bin_summary(i).trialinfo;
                     flg_trials          	= find(flg_trials(:,1) == ncond+4 & flg_trials(:,2) == nstim);
@@ -139,22 +153,25 @@ for nsuj = 1:length(suj_list)
             avg_comb                        = ft_combineplanar([],avg);
             avg_comb                        = rmfield(avg_comb,'cfg'); clc;
             
-            fname_out                       = ['/Volumes/heshamshung/nback/erf/sub' num2str(suj_list(nsuj)) '.' list_band{nband} '.b' num2str(nbin) '.erfComb.mat'];
+            dir_out                         = '~/Dropbox/project_me/data/nback/erf/';
+            fname_out                       = [dir_out 'sub' num2str(suj_list(nsuj)) '.' list_band{nband} '.b' num2str(nbin) '.erfComb.mat'];
             fprintf('Saving %s\n',fname_out);
             tic;save(fname_out,'avg_comb','-v7.3');toc
             
-            %-%-% Save data for decoding
+            %-%-% Save data + trialinfo for decoding
             cfg                             = [];
             cfg.trials                      = bin_summary(i).index;
             data                            = ft_selectdata(cfg,data_downsample);
             data                            = rmfield(data,'cfg');
-            index                           = bin_summary(i).trialinfo;
+            index                           = data.trialinfo;
             
-            fname_out                    	= ['/Volumes/heshamshung/nback/preproc/sub' num2str(suj_list(nsuj)) '.' list_band{nband} '.b' num2str(nbin) '.4binningDecoding.mat'];
+            dir_out                         = '~/Dropbox/project_me/data/nback/bin_decode/preproc/';
+            ext_name_out                    = [dir_out 'sub' num2str(suj_list(nsuj)) '.' list_band{nband} '.b' num2str(nbin) '.4binningDecoding.' cfg_demean 'demean'];
+            fname_out                    	= [ext_name_out '.mat'];
             fprintf('Saving %s\n',fname_out);
             tic;save(fname_out,'data','-v7.3');toc;
             
-            fname_out                     	= ['/Volumes/heshamshung/nback/preproc/sub' num2str(suj_list(nsuj)) '.' list_band{nband} '.b' num2str(nbin) '.4binningDecoding.trialinfo.mat'];
+            fname_out                     	= [ext_name_out '.trialinfo.mat'];
             fprintf('Saving %s\n',fname_out);
             tic;save(fname_out,'index');toc;
             
@@ -163,8 +180,8 @@ for nsuj = 1:length(suj_list)
         end
     end
 
-    ext_bin_name        = 'exl500concat';
-    fname_out         	= ['/Volumes/heshamshung/nback/bin/sub' num2str(suj_list(nsuj)) '.' ext_bin_name '.binsummary.mat'];
+    ext_bin_name        = ['exl500concat'];
+    fname_out         	= ['~/Dropbox/project_me/data/nback/bin/sub' num2str(suj_list(nsuj)) '.' ext_bin_name '.binsummary.mat'];
     fprintf('saving %s\n',fname_out);
     save(fname_out,'bin_summary');
     

@@ -1,0 +1,1519 @@
+sub,eye,roi,sub_roi,apeak,bpeak
+sub001,open,somato,somato left,10,NaN
+sub001,open,somato,somato right,10,20
+sub001,close,somato,somato left,9,18
+sub001,close,somato,somato right,10,21
+sub001,open,visual,V1d,10,21
+sub001,open,visual,V1v,10,21
+sub001,open,visual,V2d,11,21
+sub001,open,visual,V2v,10,NaN
+sub001,open,visual,V3a,10,NaN
+sub001,open,visual,V3b,10,NaN
+sub001,open,visual,V3d,10,NaN
+sub001,open,visual,V3v,10,21
+sub001,close,visual,V1d,11,21
+sub001,close,visual,V1v,10,20
+sub001,close,visual,V2d,11,21
+sub001,close,visual,V2v,10,20
+sub001,close,visual,V3a,10,18
+sub001,close,visual,V3b,10,20
+sub001,close,visual,V3d,10,19
+sub001,close,visual,V3v,10,20
+sub001,open,frontal,fro Brodmann area 4,10,NaN
+sub001,open,frontal,fro Brodmann area 6,9,NaN
+sub001,open,frontal,fro Brodmann area 8,7,31
+sub001,open,frontal,fro Brodmann area 9,7,NaN
+sub001,open,frontal,fro Brodmann area 10,7,31
+sub001,open,frontal,fro Brodmann area 11,7,16
+sub001,open,frontal,fro Brodmann area 44,8,17
+sub001,open,frontal,fro Brodmann area 45,7,16
+sub001,open,frontal,fro Brodmann area 46,7,NaN
+sub001,open,frontal,fro Brodmann area 47,7,16
+sub001,close,frontal,fro Brodmann area 4,9,18
+sub001,close,frontal,fro Brodmann area 6,8,17
+sub001,close,frontal,fro Brodmann area 8,7,NaN
+sub001,close,frontal,fro Brodmann area 9,7,22
+sub001,close,frontal,fro Brodmann area 10,7,20
+sub001,close,frontal,fro Brodmann area 11,8,18
+sub001,close,frontal,fro Brodmann area 44,9,NaN
+sub001,close,frontal,fro Brodmann area 45,10,22
+sub001,close,frontal,fro Brodmann area 46,7,22
+sub001,close,frontal,fro Brodmann area 47,8,17
+sub001,open,auditory,aud Brodmann area 41,9,22
+sub001,open,auditory,aud Brodmann area 42,9,22
+sub001,open,auditory,aud Brodmann area 22,9,NaN
+sub001,close,auditory,aud Brodmann area 41,9,NaN
+sub001,close,auditory,aud Brodmann area 42,9,22
+sub001,close,auditory,aud Brodmann area 22,9,17
+sub002,open,somato,somato left,7,17
+sub002,open,somato,somato right,8,16
+sub002,close,somato,somato left,7,NaN
+sub002,close,somato,somato right,7,17
+sub002,open,visual,V1d,8,NaN
+sub002,open,visual,V1v,8,NaN
+sub002,open,visual,V2d,9,NaN
+sub002,open,visual,V2v,8,NaN
+sub002,open,visual,V3a,10,NaN
+sub002,open,visual,V3b,8,NaN
+sub002,open,visual,V3d,8,NaN
+sub002,open,visual,V3v,8,NaN
+sub002,close,visual,V1d,9,17
+sub002,close,visual,V1v,9,18
+sub002,close,visual,V2d,9,17
+sub002,close,visual,V2v,8,NaN
+sub002,close,visual,V3a,9,18
+sub002,close,visual,V3b,8,18
+sub002,close,visual,V3d,9,18
+sub002,close,visual,V3v,8,18
+sub002,open,frontal,fro Brodmann area 4,7,17
+sub002,open,frontal,fro Brodmann area 6,7,18
+sub002,open,frontal,fro Brodmann area 8,7,16
+sub002,open,frontal,fro Brodmann area 9,7,18
+sub002,open,frontal,fro Brodmann area 10,7,NaN
+sub002,open,frontal,fro Brodmann area 11,7,17
+sub002,open,frontal,fro Brodmann area 44,7,17
+sub002,open,frontal,fro Brodmann area 45,7,17
+sub002,open,frontal,fro Brodmann area 46,7,17
+sub002,open,frontal,fro Brodmann area 47,7,16
+sub002,close,frontal,fro Brodmann area 4,7,19
+sub002,close,frontal,fro Brodmann area 6,7,20
+sub002,close,frontal,fro Brodmann area 8,7,NaN
+sub002,close,frontal,fro Brodmann area 9,7,23
+sub002,close,frontal,fro Brodmann area 10,7,NaN
+sub002,close,frontal,fro Brodmann area 11,7,NaN
+sub002,close,frontal,fro Brodmann area 44,7,16
+sub002,close,frontal,fro Brodmann area 45,7,NaN
+sub002,close,frontal,fro Brodmann area 46,7,NaN
+sub002,close,frontal,fro Brodmann area 47,7,16
+sub002,open,auditory,aud Brodmann area 41,7,25
+sub002,open,auditory,aud Brodmann area 42,7,NaN
+sub002,open,auditory,aud Brodmann area 22,8,NaN
+sub002,close,auditory,aud Brodmann area 41,7,26
+sub002,close,auditory,aud Brodmann area 42,7,NaN
+sub002,close,auditory,aud Brodmann area 22,7,NaN
+sub003,open,somato,somato left,10,17
+sub003,open,somato,somato right,10,21
+sub003,close,somato,somato left,10,18
+sub003,close,somato,somato right,10,17
+sub003,open,visual,V1d,11,NaN
+sub003,open,visual,V1v,11,NaN
+sub003,open,visual,V2d,11,NaN
+sub003,open,visual,V2v,11,NaN
+sub003,open,visual,V3a,11,NaN
+sub003,open,visual,V3b,11,NaN
+sub003,open,visual,V3d,11,NaN
+sub003,open,visual,V3v,11,NaN
+sub003,close,visual,V1d,10,NaN
+sub003,close,visual,V1v,10,NaN
+sub003,close,visual,V2d,10,NaN
+sub003,close,visual,V2v,10,NaN
+sub003,close,visual,V3a,10,NaN
+sub003,close,visual,V3b,10,NaN
+sub003,close,visual,V3d,10,NaN
+sub003,close,visual,V3v,10,NaN
+sub003,open,frontal,fro Brodmann area 4,7,NaN
+sub003,open,frontal,fro Brodmann area 6,7,17
+sub003,open,frontal,fro Brodmann area 8,7,17
+sub003,open,frontal,fro Brodmann area 9,7,22
+sub003,open,frontal,fro Brodmann area 10,7,16
+sub003,open,frontal,fro Brodmann area 11,7,16
+sub003,open,frontal,fro Brodmann area 44,7,17
+sub003,open,frontal,fro Brodmann area 45,7,17
+sub003,open,frontal,fro Brodmann area 46,7,20
+sub003,open,frontal,fro Brodmann area 47,7,NaN
+sub003,close,frontal,fro Brodmann area 4,10,17
+sub003,close,frontal,fro Brodmann area 6,10,18
+sub003,close,frontal,fro Brodmann area 8,7,19
+sub003,close,frontal,fro Brodmann area 9,7,16
+sub003,close,frontal,fro Brodmann area 10,7,17
+sub003,close,frontal,fro Brodmann area 11,7,17
+sub003,close,frontal,fro Brodmann area 44,7,18
+sub003,close,frontal,fro Brodmann area 45,7,18
+sub003,close,frontal,fro Brodmann area 46,7,16
+sub003,close,frontal,fro Brodmann area 47,7,16
+sub003,open,auditory,aud Brodmann area 41,7,NaN
+sub003,open,auditory,aud Brodmann area 42,7,NaN
+sub003,open,auditory,aud Brodmann area 22,7,NaN
+sub003,close,auditory,aud Brodmann area 41,9,16
+sub003,close,auditory,aud Brodmann area 42,7,NaN
+sub003,close,auditory,aud Brodmann area 22,10,23
+sub004,open,somato,somato left,8,17
+sub004,open,somato,somato right,8,NaN
+sub004,close,somato,somato left,14,NaN
+sub004,close,somato,somato right,8,NaN
+sub004,open,visual,V1d,10,NaN
+sub004,open,visual,V1v,10,NaN
+sub004,open,visual,V2d,10,NaN
+sub004,open,visual,V2v,10,NaN
+sub004,open,visual,V3a,10,NaN
+sub004,open,visual,V3b,10,NaN
+sub004,open,visual,V3d,10,NaN
+sub004,open,visual,V3v,10,NaN
+sub004,close,visual,V1d,10,19
+sub004,close,visual,V1v,10,19
+sub004,close,visual,V2d,10,19
+sub004,close,visual,V2v,10,19
+sub004,close,visual,V3a,10,19
+sub004,close,visual,V3b,10,19
+sub004,close,visual,V3d,10,19
+sub004,close,visual,V3v,10,19
+sub004,open,frontal,fro Brodmann area 4,9,NaN
+sub004,open,frontal,fro Brodmann area 6,7,28
+sub004,open,frontal,fro Brodmann area 8,7,25
+sub004,open,frontal,fro Brodmann area 9,7,22
+sub004,open,frontal,fro Brodmann area 10,7,NaN
+sub004,open,frontal,fro Brodmann area 11,7,NaN
+sub004,open,frontal,fro Brodmann area 44,7,23
+sub004,open,frontal,fro Brodmann area 45,8,26
+sub004,open,frontal,fro Brodmann area 46,7,NaN
+sub004,open,frontal,fro Brodmann area 47,7,NaN
+sub004,close,frontal,fro Brodmann area 4,9,NaN
+sub004,close,frontal,fro Brodmann area 6,10,28
+sub004,close,frontal,fro Brodmann area 8,7,27
+sub004,close,frontal,fro Brodmann area 9,7,NaN
+sub004,close,frontal,fro Brodmann area 10,7,NaN
+sub004,close,frontal,fro Brodmann area 11,9,NaN
+sub004,close,frontal,fro Brodmann area 44,7,NaN
+sub004,close,frontal,fro Brodmann area 45,7,NaN
+sub004,close,frontal,fro Brodmann area 46,7,NaN
+sub004,close,frontal,fro Brodmann area 47,7,29
+sub004,open,auditory,aud Brodmann area 41,8,NaN
+sub004,open,auditory,aud Brodmann area 42,8,25
+sub004,open,auditory,aud Brodmann area 22,7,23
+sub004,close,auditory,aud Brodmann area 41,7,26
+sub004,close,auditory,aud Brodmann area 42,7,25
+sub004,close,auditory,aud Brodmann area 22,7,20
+sub005,open,somato,somato left,9,22
+sub005,open,somato,somato right,8,17
+sub005,close,somato,somato left,9,23
+sub005,close,somato,somato right,9,18
+sub005,open,visual,V1d,10,21
+sub005,open,visual,V1v,9,21
+sub005,open,visual,V2d,10,21
+sub005,open,visual,V2v,9,NaN
+sub005,open,visual,V3a,9,NaN
+sub005,open,visual,V3b,10,NaN
+sub005,open,visual,V3d,10,NaN
+sub005,open,visual,V3v,9,NaN
+sub005,close,visual,V1d,10,20
+sub005,close,visual,V1v,10,20
+sub005,close,visual,V2d,10,20
+sub005,close,visual,V2v,10,20
+sub005,close,visual,V3a,10,19
+sub005,close,visual,V3b,10,19
+sub005,close,visual,V3d,10,20
+sub005,close,visual,V3v,10,20
+sub005,open,frontal,fro Brodmann area 4,8,24
+sub005,open,frontal,fro Brodmann area 6,8,17
+sub005,open,frontal,fro Brodmann area 8,7,23
+sub005,open,frontal,fro Brodmann area 9,7,22
+sub005,open,frontal,fro Brodmann area 10,7,22
+sub005,open,frontal,fro Brodmann area 11,7,18
+sub005,open,frontal,fro Brodmann area 44,7,22
+sub005,open,frontal,fro Brodmann area 45,7,NaN
+sub005,open,frontal,fro Brodmann area 46,7,22
+sub005,open,frontal,fro Brodmann area 47,7,NaN
+sub005,close,frontal,fro Brodmann area 4,9,19
+sub005,close,frontal,fro Brodmann area 6,9,20
+sub005,close,frontal,fro Brodmann area 8,8,21
+sub005,close,frontal,fro Brodmann area 9,8,20
+sub005,close,frontal,fro Brodmann area 10,7,NaN
+sub005,close,frontal,fro Brodmann area 11,8,19
+sub005,close,frontal,fro Brodmann area 44,8,19
+sub005,close,frontal,fro Brodmann area 45,8,NaN
+sub005,close,frontal,fro Brodmann area 46,8,23
+sub005,close,frontal,fro Brodmann area 47,7,21
+sub005,open,auditory,aud Brodmann area 41,8,24
+sub005,open,auditory,aud Brodmann area 42,8,20
+sub005,open,auditory,aud Brodmann area 22,8,21
+sub005,close,auditory,aud Brodmann area 41,9,20
+sub005,close,auditory,aud Brodmann area 42,9,21
+sub005,close,auditory,aud Brodmann area 22,9,20
+sub006,open,somato,somato left,12,21
+sub006,open,somato,somato right,12,21
+sub006,close,somato,somato left,12,19
+sub006,close,somato,somato right,12,20
+sub006,open,visual,V1d,12,NaN
+sub006,open,visual,V1v,12,NaN
+sub006,open,visual,V2d,12,NaN
+sub006,open,visual,V2v,12,NaN
+sub006,open,visual,V3a,12,NaN
+sub006,open,visual,V3b,12,NaN
+sub006,open,visual,V3d,12,NaN
+sub006,open,visual,V3v,12,NaN
+sub006,close,visual,V1d,10,21
+sub006,close,visual,V1v,10,NaN
+sub006,close,visual,V2d,10,NaN
+sub006,close,visual,V2v,10,NaN
+sub006,close,visual,V3a,10,NaN
+sub006,close,visual,V3b,10,24
+sub006,close,visual,V3d,10,NaN
+sub006,close,visual,V3v,10,NaN
+sub006,open,frontal,fro Brodmann area 4,13,21
+sub006,open,frontal,fro Brodmann area 6,13,21
+sub006,open,frontal,fro Brodmann area 8,7,20
+sub006,open,frontal,fro Brodmann area 9,7,19
+sub006,open,frontal,fro Brodmann area 10,7,21
+sub006,open,frontal,fro Brodmann area 11,7,21
+sub006,open,frontal,fro Brodmann area 44,12,19
+sub006,open,frontal,fro Brodmann area 45,12,NaN
+sub006,open,frontal,fro Brodmann area 46,13,19
+sub006,open,frontal,fro Brodmann area 47,7,22
+sub006,close,frontal,fro Brodmann area 4,12,21
+sub006,close,frontal,fro Brodmann area 6,12,22
+sub006,close,frontal,fro Brodmann area 8,12,21
+sub006,close,frontal,fro Brodmann area 9,7,NaN
+sub006,close,frontal,fro Brodmann area 10,7,NaN
+sub006,close,frontal,fro Brodmann area 11,7,21
+sub006,close,frontal,fro Brodmann area 44,12,NaN
+sub006,close,frontal,fro Brodmann area 45,12,20
+sub006,close,frontal,fro Brodmann area 46,12,NaN
+sub006,close,frontal,fro Brodmann area 47,7,20
+sub006,open,auditory,aud Brodmann area 41,10,NaN
+sub006,open,auditory,aud Brodmann area 42,10,NaN
+sub006,open,auditory,aud Brodmann area 22,10,NaN
+sub006,close,auditory,aud Brodmann area 41,11,20
+sub006,close,auditory,aud Brodmann area 42,12,19
+sub006,close,auditory,aud Brodmann area 22,11,NaN
+sub007,open,somato,somato left,11,20
+sub007,open,somato,somato right,7,21
+sub007,close,somato,somato left,10,21
+sub007,close,somato,somato right,11,20
+sub007,open,visual,V1d,11,21
+sub007,open,visual,V1v,11,22
+sub007,open,visual,V2d,11,19
+sub007,open,visual,V2v,11,20
+sub007,open,visual,V3a,12,23
+sub007,open,visual,V3b,12,23
+sub007,open,visual,V3d,12,21
+sub007,open,visual,V3v,11,21
+sub007,close,visual,V1d,11,21
+sub007,close,visual,V1v,11,21
+sub007,close,visual,V2d,11,20
+sub007,close,visual,V2v,11,20
+sub007,close,visual,V3a,11,21
+sub007,close,visual,V3b,11,21
+sub007,close,visual,V3d,11,20
+sub007,close,visual,V3v,11,20
+sub007,open,frontal,fro Brodmann area 4,7,23
+sub007,open,frontal,fro Brodmann area 6,11,20
+sub007,open,frontal,fro Brodmann area 8,7,20
+sub007,open,frontal,fro Brodmann area 9,7,20
+sub007,open,frontal,fro Brodmann area 10,7,NaN
+sub007,open,frontal,fro Brodmann area 11,7,20
+sub007,open,frontal,fro Brodmann area 44,7,23
+sub007,open,frontal,fro Brodmann area 45,7,24
+sub007,open,frontal,fro Brodmann area 46,7,NaN
+sub007,open,frontal,fro Brodmann area 47,7,NaN
+sub007,close,frontal,fro Brodmann area 4,10,21
+sub007,close,frontal,fro Brodmann area 6,11,21
+sub007,close,frontal,fro Brodmann area 8,7,21
+sub007,close,frontal,fro Brodmann area 9,7,21
+sub007,close,frontal,fro Brodmann area 10,7,18
+sub007,close,frontal,fro Brodmann area 11,10,21
+sub007,close,frontal,fro Brodmann area 44,7,20
+sub007,close,frontal,fro Brodmann area 45,7,20
+sub007,close,frontal,fro Brodmann area 46,7,23
+sub007,close,frontal,fro Brodmann area 47,7,21
+sub007,open,auditory,aud Brodmann area 41,7,22
+sub007,open,auditory,aud Brodmann area 42,7,20
+sub007,open,auditory,aud Brodmann area 22,7,20
+sub007,close,auditory,aud Brodmann area 41,10,21
+sub007,close,auditory,aud Brodmann area 42,10,19
+sub007,close,auditory,aud Brodmann area 22,7,20
+sub008,open,somato,somato left,7,30
+sub008,open,somato,somato right,11,30
+sub008,close,somato,somato left,7,30
+sub008,close,somato,somato right,12,30
+sub008,open,visual,V1d,11,31
+sub008,open,visual,V1v,11,31
+sub008,open,visual,V2d,11,31
+sub008,open,visual,V2v,11,31
+sub008,open,visual,V3a,11,30
+sub008,open,visual,V3b,11,30
+sub008,open,visual,V3d,11,30
+sub008,open,visual,V3v,11,NaN
+sub008,close,visual,V1d,11,22
+sub008,close,visual,V1v,12,22
+sub008,close,visual,V2d,12,NaN
+sub008,close,visual,V2v,11,22
+sub008,close,visual,V3a,12,30
+sub008,close,visual,V3b,11,30
+sub008,close,visual,V3d,12,30
+sub008,close,visual,V3v,11,22
+sub008,open,frontal,fro Brodmann area 4,13,30
+sub008,open,frontal,fro Brodmann area 6,7,30
+sub008,open,frontal,fro Brodmann area 8,7,31
+sub008,open,frontal,fro Brodmann area 9,7,NaN
+sub008,open,frontal,fro Brodmann area 10,7,30
+sub008,open,frontal,fro Brodmann area 11,7,30
+sub008,open,frontal,fro Brodmann area 44,7,NaN
+sub008,open,frontal,fro Brodmann area 45,7,NaN
+sub008,open,frontal,fro Brodmann area 46,7,30
+sub008,open,frontal,fro Brodmann area 47,7,30
+sub008,close,frontal,fro Brodmann area 4,13,30
+sub008,close,frontal,fro Brodmann area 6,7,31
+sub008,close,frontal,fro Brodmann area 8,7,NaN
+sub008,close,frontal,fro Brodmann area 9,7,NaN
+sub008,close,frontal,fro Brodmann area 10,7,NaN
+sub008,close,frontal,fro Brodmann area 11,7,NaN
+sub008,close,frontal,fro Brodmann area 44,7,NaN
+sub008,close,frontal,fro Brodmann area 45,7,NaN
+sub008,close,frontal,fro Brodmann area 46,7,31
+sub008,close,frontal,fro Brodmann area 47,7,30
+sub008,open,auditory,aud Brodmann area 41,12,30
+sub008,open,auditory,aud Brodmann area 42,12,30
+sub008,open,auditory,aud Brodmann area 22,12,30
+sub008,close,auditory,aud Brodmann area 41,12,30
+sub008,close,auditory,aud Brodmann area 42,12,30
+sub008,close,auditory,aud Brodmann area 22,11,30
+sub009,open,somato,somato left,10,20
+sub009,open,somato,somato right,9,17
+sub009,close,somato,somato left,10,20
+sub009,close,somato,somato right,9,16
+sub009,open,visual,V1d,9,NaN
+sub009,open,visual,V1v,9,NaN
+sub009,open,visual,V2d,9,NaN
+sub009,open,visual,V2v,9,NaN
+sub009,open,visual,V3a,9,NaN
+sub009,open,visual,V3b,9,17
+sub009,open,visual,V3d,9,18
+sub009,open,visual,V3v,9,18
+sub009,close,visual,V1d,9,NaN
+sub009,close,visual,V1v,9,NaN
+sub009,close,visual,V2d,9,NaN
+sub009,close,visual,V2v,8,NaN
+sub009,close,visual,V3a,9,16
+sub009,close,visual,V3b,9,NaN
+sub009,close,visual,V3d,9,NaN
+sub009,close,visual,V3v,9,NaN
+sub009,open,frontal,fro Brodmann area 4,9,NaN
+sub009,open,frontal,fro Brodmann area 6,9,23
+sub009,open,frontal,fro Brodmann area 8,7,20
+sub009,open,frontal,fro Brodmann area 9,8,20
+sub009,open,frontal,fro Brodmann area 10,7,21
+sub009,open,frontal,fro Brodmann area 11,8,21
+sub009,open,frontal,fro Brodmann area 44,8,18
+sub009,open,frontal,fro Brodmann area 45,7,18
+sub009,open,frontal,fro Brodmann area 46,7,25
+sub009,open,frontal,fro Brodmann area 47,8,20
+sub009,close,frontal,fro Brodmann area 4,8,20
+sub009,close,frontal,fro Brodmann area 6,8,17
+sub009,close,frontal,fro Brodmann area 8,7,22
+sub009,close,frontal,fro Brodmann area 9,8,18
+sub009,close,frontal,fro Brodmann area 10,8,17
+sub009,close,frontal,fro Brodmann area 11,8,16
+sub009,close,frontal,fro Brodmann area 44,8,17
+sub009,close,frontal,fro Brodmann area 45,7,23
+sub009,close,frontal,fro Brodmann area 46,7,17
+sub009,close,frontal,fro Brodmann area 47,8,17
+sub009,open,auditory,aud Brodmann area 41,8,16
+sub009,open,auditory,aud Brodmann area 42,8,27
+sub009,open,auditory,aud Brodmann area 22,8,17
+sub009,close,auditory,aud Brodmann area 41,8,NaN
+sub009,close,auditory,aud Brodmann area 42,8,23
+sub009,close,auditory,aud Brodmann area 22,8,17
+sub010,open,somato,somato left,10,20
+sub010,open,somato,somato right,10,19
+sub010,close,somato,somato left,10,20
+sub010,close,somato,somato right,10,19
+sub010,open,visual,V1d,10,20
+sub010,open,visual,V1v,10,20
+sub010,open,visual,V2d,10,19
+sub010,open,visual,V2v,10,19
+sub010,open,visual,V3a,10,20
+sub010,open,visual,V3b,10,18
+sub010,open,visual,V3d,10,19
+sub010,open,visual,V3v,10,19
+sub010,close,visual,V1d,10,20
+sub010,close,visual,V1v,10,20
+sub010,close,visual,V2d,10,20
+sub010,close,visual,V2v,10,20
+sub010,close,visual,V3a,10,20
+sub010,close,visual,V3b,10,20
+sub010,close,visual,V3d,10,20
+sub010,close,visual,V3v,10,20
+sub010,open,frontal,fro Brodmann area 4,10,20
+sub010,open,frontal,fro Brodmann area 6,7,20
+sub010,open,frontal,fro Brodmann area 8,7,19
+sub010,open,frontal,fro Brodmann area 9,7,19
+sub010,open,frontal,fro Brodmann area 10,7,20
+sub010,open,frontal,fro Brodmann area 11,7,20
+sub010,open,frontal,fro Brodmann area 44,10,20
+sub010,open,frontal,fro Brodmann area 45,10,21
+sub010,open,frontal,fro Brodmann area 46,7,20
+sub010,open,frontal,fro Brodmann area 47,10,19
+sub010,close,frontal,fro Brodmann area 4,10,20
+sub010,close,frontal,fro Brodmann area 6,10,20
+sub010,close,frontal,fro Brodmann area 8,7,21
+sub010,close,frontal,fro Brodmann area 9,7,20
+sub010,close,frontal,fro Brodmann area 10,7,20
+sub010,close,frontal,fro Brodmann area 11,7,20
+sub010,close,frontal,fro Brodmann area 44,7,20
+sub010,close,frontal,fro Brodmann area 45,10,20
+sub010,close,frontal,fro Brodmann area 46,7,NaN
+sub010,close,frontal,fro Brodmann area 47,10,20
+sub010,open,auditory,aud Brodmann area 41,11,20
+sub010,open,auditory,aud Brodmann area 42,11,NaN
+sub010,open,auditory,aud Brodmann area 22,10,19
+sub010,close,auditory,aud Brodmann area 41,10,19
+sub010,close,auditory,aud Brodmann area 42,10,19
+sub010,close,auditory,aud Brodmann area 22,10,20
+sub011,open,somato,somato left,14,17
+sub011,open,somato,somato right,14,19
+sub011,close,somato,somato left,14,18
+sub011,close,somato,somato right,14,19
+sub011,open,visual,V1d,10,NaN
+sub011,open,visual,V1v,10,17
+sub011,open,visual,V2d,10,20
+sub011,open,visual,V2v,11,NaN
+sub011,open,visual,V3a,10,18
+sub011,open,visual,V3b,13,NaN
+sub011,open,visual,V3d,10,NaN
+sub011,open,visual,V3v,11,NaN
+sub011,close,visual,V1d,11,22
+sub011,close,visual,V1v,11,22
+sub011,close,visual,V2d,11,22
+sub011,close,visual,V2v,11,22
+sub011,close,visual,V3a,11,NaN
+sub011,close,visual,V3b,11,23
+sub011,close,visual,V3d,11,22
+sub011,close,visual,V3v,11,22
+sub011,open,frontal,fro Brodmann area 4,7,21
+sub011,open,frontal,fro Brodmann area 6,7,22
+sub011,open,frontal,fro Brodmann area 8,7,21
+sub011,open,frontal,fro Brodmann area 9,7,21
+sub011,open,frontal,fro Brodmann area 10,7,21
+sub011,open,frontal,fro Brodmann area 11,7,22
+sub011,open,frontal,fro Brodmann area 44,7,20
+sub011,open,frontal,fro Brodmann area 45,7,21
+sub011,open,frontal,fro Brodmann area 46,7,23
+sub011,open,frontal,fro Brodmann area 47,7,19
+sub011,close,frontal,fro Brodmann area 4,14,19
+sub011,close,frontal,fro Brodmann area 6,7,NaN
+sub011,close,frontal,fro Brodmann area 8,7,20
+sub011,close,frontal,fro Brodmann area 9,7,21
+sub011,close,frontal,fro Brodmann area 10,7,19
+sub011,close,frontal,fro Brodmann area 11,7,19
+sub011,close,frontal,fro Brodmann area 44,7,19
+sub011,close,frontal,fro Brodmann area 45,7,19
+sub011,close,frontal,fro Brodmann area 46,7,19
+sub011,close,frontal,fro Brodmann area 47,7,20
+sub011,open,auditory,aud Brodmann area 41,14,NaN
+sub011,open,auditory,aud Brodmann area 42,14,22
+sub011,open,auditory,aud Brodmann area 22,14,20
+sub011,close,auditory,aud Brodmann area 41,13,NaN
+sub011,close,auditory,aud Brodmann area 42,14,18
+sub011,close,auditory,aud Brodmann area 22,13,18
+sub012,open,somato,somato left,10,18
+sub012,open,somato,somato right,9,18
+sub012,close,somato,somato left,11,18
+sub012,close,somato,somato right,10,17
+sub012,open,visual,V1d,10,NaN
+sub012,open,visual,V1v,10,NaN
+sub012,open,visual,V2d,10,NaN
+sub012,open,visual,V2v,10,NaN
+sub012,open,visual,V3a,10,NaN
+sub012,open,visual,V3b,10,NaN
+sub012,open,visual,V3d,10,NaN
+sub012,open,visual,V3v,10,NaN
+sub012,close,visual,V1d,10,21
+sub012,close,visual,V1v,10,21
+sub012,close,visual,V2d,10,21
+sub012,close,visual,V2v,10,21
+sub012,close,visual,V3a,10,20
+sub012,close,visual,V3b,10,20
+sub012,close,visual,V3d,10,21
+sub012,close,visual,V3v,10,20
+sub012,open,frontal,fro Brodmann area 4,10,18
+sub012,open,frontal,fro Brodmann area 6,9,17
+sub012,open,frontal,fro Brodmann area 8,7,17
+sub012,open,frontal,fro Brodmann area 9,7,17
+sub012,open,frontal,fro Brodmann area 10,7,NaN
+sub012,open,frontal,fro Brodmann area 11,7,NaN
+sub012,open,frontal,fro Brodmann area 44,7,17
+sub012,open,frontal,fro Brodmann area 45,7,17
+sub012,open,frontal,fro Brodmann area 46,7,17
+sub012,open,frontal,fro Brodmann area 47,7,NaN
+sub012,close,frontal,fro Brodmann area 4,10,17
+sub012,close,frontal,fro Brodmann area 6,10,17
+sub012,close,frontal,fro Brodmann area 8,7,NaN
+sub012,close,frontal,fro Brodmann area 9,7,NaN
+sub012,close,frontal,fro Brodmann area 10,7,NaN
+sub012,close,frontal,fro Brodmann area 11,10,NaN
+sub012,close,frontal,fro Brodmann area 44,7,17
+sub012,close,frontal,fro Brodmann area 45,7,17
+sub012,close,frontal,fro Brodmann area 46,7,17
+sub012,close,frontal,fro Brodmann area 47,7,17
+sub012,open,auditory,aud Brodmann area 41,7,NaN
+sub012,open,auditory,aud Brodmann area 42,9,17
+sub012,open,auditory,aud Brodmann area 22,9,17
+sub012,close,auditory,aud Brodmann area 41,10,21
+sub012,close,auditory,aud Brodmann area 42,10,16
+sub012,close,auditory,aud Brodmann area 22,10,16
+sub017,open,somato,somato left,11,21
+sub017,open,somato,somato right,11,21
+sub017,close,somato,somato left,11,21
+sub017,close,somato,somato right,10,21
+sub017,open,visual,V1d,11,21
+sub017,open,visual,V1v,11,NaN
+sub017,open,visual,V2d,11,19
+sub017,open,visual,V2v,11,NaN
+sub017,open,visual,V3a,11,21
+sub017,open,visual,V3b,11,20
+sub017,open,visual,V3d,11,21
+sub017,open,visual,V3v,11,21
+sub017,close,visual,V1d,11,21
+sub017,close,visual,V1v,10,21
+sub017,close,visual,V2d,11,21
+sub017,close,visual,V2v,11,20
+sub017,close,visual,V3a,11,22
+sub017,close,visual,V3b,11,21
+sub017,close,visual,V3d,11,21
+sub017,close,visual,V3v,11,20
+sub017,open,frontal,fro Brodmann area 4,11,21
+sub017,open,frontal,fro Brodmann area 6,7,22
+sub017,open,frontal,fro Brodmann area 8,7,24
+sub017,open,frontal,fro Brodmann area 9,7,22
+sub017,open,frontal,fro Brodmann area 10,7,NaN
+sub017,open,frontal,fro Brodmann area 11,7,21
+sub017,open,frontal,fro Brodmann area 44,7,22
+sub017,open,frontal,fro Brodmann area 45,7,22
+sub017,open,frontal,fro Brodmann area 46,7,23
+sub017,open,frontal,fro Brodmann area 47,7,21
+sub017,close,frontal,fro Brodmann area 4,10,21
+sub017,close,frontal,fro Brodmann area 6,10,21
+sub017,close,frontal,fro Brodmann area 8,7,NaN
+sub017,close,frontal,fro Brodmann area 9,7,20
+sub017,close,frontal,fro Brodmann area 10,7,NaN
+sub017,close,frontal,fro Brodmann area 11,7,20
+sub017,close,frontal,fro Brodmann area 44,7,21
+sub017,close,frontal,fro Brodmann area 45,7,21
+sub017,close,frontal,fro Brodmann area 46,7,25
+sub017,close,frontal,fro Brodmann area 47,7,24
+sub017,open,auditory,aud Brodmann area 41,7,21
+sub017,open,auditory,aud Brodmann area 42,7,21
+sub017,open,auditory,aud Brodmann area 22,7,19
+sub017,close,auditory,aud Brodmann area 41,11,21
+sub017,close,auditory,aud Brodmann area 42,7,21
+sub017,close,auditory,aud Brodmann area 22,11,21
+sub018,open,somato,somato left,9,22
+sub018,open,somato,somato right,8,22
+sub018,close,somato,somato left,7,21
+sub018,close,somato,somato right,7,21
+sub018,open,visual,V1d,11,22
+sub018,open,visual,V1v,11,25
+sub018,open,visual,V2d,11,22
+sub018,open,visual,V2v,12,23
+sub018,open,visual,V3a,11,21
+sub018,open,visual,V3b,10,26
+sub018,open,visual,V3d,10,25
+sub018,open,visual,V3v,11,21
+sub018,close,visual,V1d,10,28
+sub018,close,visual,V1v,10,22
+sub018,close,visual,V2d,10,27
+sub018,close,visual,V2v,12,23
+sub018,close,visual,V3a,10,22
+sub018,close,visual,V3b,10,NaN
+sub018,close,visual,V3d,10,NaN
+sub018,close,visual,V3v,9,27
+sub018,open,frontal,fro Brodmann area 4,8,20
+sub018,open,frontal,fro Brodmann area 6,7,21
+sub018,open,frontal,fro Brodmann area 8,7,22
+sub018,open,frontal,fro Brodmann area 9,7,22
+sub018,open,frontal,fro Brodmann area 10,7,21
+sub018,open,frontal,fro Brodmann area 11,7,19
+sub018,open,frontal,fro Brodmann area 44,7,20
+sub018,open,frontal,fro Brodmann area 45,7,21
+sub018,open,frontal,fro Brodmann area 46,7,21
+sub018,open,frontal,fro Brodmann area 47,7,21
+sub018,close,frontal,fro Brodmann area 4,7,19
+sub018,close,frontal,fro Brodmann area 6,7,20
+sub018,close,frontal,fro Brodmann area 8,7,21
+sub018,close,frontal,fro Brodmann area 9,7,20
+sub018,close,frontal,fro Brodmann area 10,7,20
+sub018,close,frontal,fro Brodmann area 11,7,22
+sub018,close,frontal,fro Brodmann area 44,7,20
+sub018,close,frontal,fro Brodmann area 45,7,20
+sub018,close,frontal,fro Brodmann area 46,7,20
+sub018,close,frontal,fro Brodmann area 47,7,21
+sub018,open,auditory,aud Brodmann area 41,8,22
+sub018,open,auditory,aud Brodmann area 42,7,21
+sub018,open,auditory,aud Brodmann area 22,7,21
+sub018,close,auditory,aud Brodmann area 41,7,23
+sub018,close,auditory,aud Brodmann area 42,7,21
+sub018,close,auditory,aud Brodmann area 22,7,20
+sub020,open,somato,somato left,10,20
+sub020,open,somato,somato right,10,20
+sub020,close,somato,somato left,10,19
+sub020,close,somato,somato right,10,20
+sub020,open,visual,V1d,9,19
+sub020,open,visual,V1v,9,19
+sub020,open,visual,V2d,9,19
+sub020,open,visual,V2v,9,NaN
+sub020,open,visual,V3a,10,20
+sub020,open,visual,V3b,9,NaN
+sub020,open,visual,V3d,10,19
+sub020,open,visual,V3v,9,NaN
+sub020,close,visual,V1d,10,21
+sub020,close,visual,V1v,10,21
+sub020,close,visual,V2d,10,22
+sub020,close,visual,V2v,10,21
+sub020,close,visual,V3a,10,20
+sub020,close,visual,V3b,10,20
+sub020,close,visual,V3d,10,20
+sub020,close,visual,V3v,10,20
+sub020,open,frontal,fro Brodmann area 4,10,21
+sub020,open,frontal,fro Brodmann area 6,7,22
+sub020,open,frontal,fro Brodmann area 8,7,22
+sub020,open,frontal,fro Brodmann area 9,7,22
+sub020,open,frontal,fro Brodmann area 10,7,21
+sub020,open,frontal,fro Brodmann area 11,7,22
+sub020,open,frontal,fro Brodmann area 44,7,21
+sub020,open,frontal,fro Brodmann area 45,7,22
+sub020,open,frontal,fro Brodmann area 46,7,22
+sub020,open,frontal,fro Brodmann area 47,7,21
+sub020,close,frontal,fro Brodmann area 4,10,21
+sub020,close,frontal,fro Brodmann area 6,7,22
+sub020,close,frontal,fro Brodmann area 8,7,22
+sub020,close,frontal,fro Brodmann area 9,7,22
+sub020,close,frontal,fro Brodmann area 10,7,20
+sub020,close,frontal,fro Brodmann area 11,7,22
+sub020,close,frontal,fro Brodmann area 44,7,21
+sub020,close,frontal,fro Brodmann area 45,7,21
+sub020,close,frontal,fro Brodmann area 46,7,22
+sub020,close,frontal,fro Brodmann area 47,7,21
+sub020,open,auditory,aud Brodmann area 41,7,22
+sub020,open,auditory,aud Brodmann area 42,7,21
+sub020,open,auditory,aud Brodmann area 22,7,21
+sub020,close,auditory,aud Brodmann area 41,7,19
+sub020,close,auditory,aud Brodmann area 42,7,19
+sub020,close,auditory,aud Brodmann area 22,7,NaN
+sub021,open,somato,somato left,9,18
+sub021,open,somato,somato right,10,19
+sub021,close,somato,somato left,9,19
+sub021,close,somato,somato right,10,20
+sub021,open,visual,V1d,9,NaN
+sub021,open,visual,V1v,9,NaN
+sub021,open,visual,V2d,10,NaN
+sub021,open,visual,V2v,9,NaN
+sub021,open,visual,V3a,10,22
+sub021,open,visual,V3b,10,20
+sub021,open,visual,V3d,10,26
+sub021,open,visual,V3v,10,NaN
+sub021,close,visual,V1d,10,19
+sub021,close,visual,V1v,10,19
+sub021,close,visual,V2d,9,19
+sub021,close,visual,V2v,10,19
+sub021,close,visual,V3a,10,19
+sub021,close,visual,V3b,10,19
+sub021,close,visual,V3d,10,19
+sub021,close,visual,V3v,10,19
+sub021,open,frontal,fro Brodmann area 4,10,21
+sub021,open,frontal,fro Brodmann area 6,9,21
+sub021,open,frontal,fro Brodmann area 8,7,NaN
+sub021,open,frontal,fro Brodmann area 9,9,21
+sub021,open,frontal,fro Brodmann area 10,8,27
+sub021,open,frontal,fro Brodmann area 11,9,NaN
+sub021,open,frontal,fro Brodmann area 44,9,26
+sub021,open,frontal,fro Brodmann area 45,9,25
+sub021,open,frontal,fro Brodmann area 46,9,22
+sub021,open,frontal,fro Brodmann area 47,9,26
+sub021,close,frontal,fro Brodmann area 4,10,20
+sub021,close,frontal,fro Brodmann area 6,9,20
+sub021,close,frontal,fro Brodmann area 8,9,21
+sub021,close,frontal,fro Brodmann area 9,9,21
+sub021,close,frontal,fro Brodmann area 10,9,21
+sub021,close,frontal,fro Brodmann area 11,9,20
+sub021,close,frontal,fro Brodmann area 44,9,21
+sub021,close,frontal,fro Brodmann area 45,9,21
+sub021,close,frontal,fro Brodmann area 46,10,21
+sub021,close,frontal,fro Brodmann area 47,10,20
+sub021,open,auditory,aud Brodmann area 41,9,27
+sub021,open,auditory,aud Brodmann area 42,9,27
+sub021,open,auditory,aud Brodmann area 22,9,27
+sub021,close,auditory,aud Brodmann area 41,10,18
+sub021,close,auditory,aud Brodmann area 42,9,27
+sub021,close,auditory,aud Brodmann area 22,9,18
+sub022,open,somato,somato left,10,21
+sub022,open,somato,somato right,11,22
+sub022,close,somato,somato left,9,21
+sub022,close,somato,somato right,10,22
+sub022,open,visual,V1d,10,NaN
+sub022,open,visual,V1v,10,NaN
+sub022,open,visual,V2d,10,NaN
+sub022,open,visual,V2v,10,NaN
+sub022,open,visual,V3a,10,24
+sub022,open,visual,V3b,10,23
+sub022,open,visual,V3d,10,NaN
+sub022,open,visual,V3v,10,NaN
+sub022,close,visual,V1d,10,NaN
+sub022,close,visual,V1v,10,19
+sub022,close,visual,V2d,10,NaN
+sub022,close,visual,V2v,10,NaN
+sub022,close,visual,V3a,10,18
+sub022,close,visual,V3b,10,18
+sub022,close,visual,V3d,10,18
+sub022,close,visual,V3v,10,18
+sub022,open,frontal,fro Brodmann area 4,10,22
+sub022,open,frontal,fro Brodmann area 6,8,21
+sub022,open,frontal,fro Brodmann area 8,7,21
+sub022,open,frontal,fro Brodmann area 9,7,22
+sub022,open,frontal,fro Brodmann area 10,7,NaN
+sub022,open,frontal,fro Brodmann area 11,7,26
+sub022,open,frontal,fro Brodmann area 44,7,22
+sub022,open,frontal,fro Brodmann area 45,7,23
+sub022,open,frontal,fro Brodmann area 46,7,22
+sub022,open,frontal,fro Brodmann area 47,7,22
+sub022,close,frontal,fro Brodmann area 4,9,21
+sub022,close,frontal,fro Brodmann area 6,9,22
+sub022,close,frontal,fro Brodmann area 8,10,22
+sub022,close,frontal,fro Brodmann area 9,8,20
+sub022,close,frontal,fro Brodmann area 10,7,21
+sub022,close,frontal,fro Brodmann area 11,9,NaN
+sub022,close,frontal,fro Brodmann area 44,8,23
+sub022,close,frontal,fro Brodmann area 45,9,22
+sub022,close,frontal,fro Brodmann area 46,8,22
+sub022,close,frontal,fro Brodmann area 47,10,21
+sub022,open,auditory,aud Brodmann area 41,9,22
+sub022,open,auditory,aud Brodmann area 42,8,22
+sub022,open,auditory,aud Brodmann area 22,8,22
+sub022,close,auditory,aud Brodmann area 41,9,NaN
+sub022,close,auditory,aud Brodmann area 42,9,22
+sub022,close,auditory,aud Brodmann area 22,9,18
+sub023,open,somato,somato left,12,23
+sub023,open,somato,somato right,11,23
+sub023,close,somato,somato left,11,23
+sub023,close,somato,somato right,11,22
+sub023,open,visual,V1d,11,NaN
+sub023,open,visual,V1v,11,22
+sub023,open,visual,V2d,11,20
+sub023,open,visual,V2v,11,22
+sub023,open,visual,V3a,11,NaN
+sub023,open,visual,V3b,11,NaN
+sub023,open,visual,V3d,11,23
+sub023,open,visual,V3v,10,22
+sub023,close,visual,V1d,10,20
+sub023,close,visual,V1v,10,20
+sub023,close,visual,V2d,10,20
+sub023,close,visual,V2v,10,20
+sub023,close,visual,V3a,10,20
+sub023,close,visual,V3b,10,19
+sub023,close,visual,V3d,10,20
+sub023,close,visual,V3v,10,NaN
+sub023,open,frontal,fro Brodmann area 4,11,23
+sub023,open,frontal,fro Brodmann area 6,11,24
+sub023,open,frontal,fro Brodmann area 8,7,23
+sub023,open,frontal,fro Brodmann area 9,7,20
+sub023,open,frontal,fro Brodmann area 10,7,NaN
+sub023,open,frontal,fro Brodmann area 11,7,29
+sub023,open,frontal,fro Brodmann area 44,7,NaN
+sub023,open,frontal,fro Brodmann area 45,7,NaN
+sub023,open,frontal,fro Brodmann area 46,7,20
+sub023,open,frontal,fro Brodmann area 47,7,20
+sub023,close,frontal,fro Brodmann area 4,11,23
+sub023,close,frontal,fro Brodmann area 6,11,NaN
+sub023,close,frontal,fro Brodmann area 8,7,23
+sub023,close,frontal,fro Brodmann area 9,10,20
+sub023,close,frontal,fro Brodmann area 10,10,NaN
+sub023,close,frontal,fro Brodmann area 11,10,24
+sub023,close,frontal,fro Brodmann area 44,7,17
+sub023,close,frontal,fro Brodmann area 45,7,22
+sub023,close,frontal,fro Brodmann area 46,7,25
+sub023,close,frontal,fro Brodmann area 47,7,NaN
+sub023,open,auditory,aud Brodmann area 41,11,23
+sub023,open,auditory,aud Brodmann area 42,11,22
+sub023,open,auditory,aud Brodmann area 22,11,21
+sub023,close,auditory,aud Brodmann area 41,11,18
+sub023,close,auditory,aud Brodmann area 42,11,18
+sub023,close,auditory,aud Brodmann area 22,10,20
+sub024,open,somato,somato left,11,22
+sub024,open,somato,somato right,10,19
+sub024,close,somato,somato left,11,21
+sub024,close,somato,somato right,10,20
+sub024,open,visual,V1d,11,NaN
+sub024,open,visual,V1v,10,20
+sub024,open,visual,V2d,11,NaN
+sub024,open,visual,V2v,10,NaN
+sub024,open,visual,V3a,11,20
+sub024,open,visual,V3b,11,19
+sub024,open,visual,V3d,11,18
+sub024,open,visual,V3v,10,19
+sub024,close,visual,V1d,10,20
+sub024,close,visual,V1v,10,20
+sub024,close,visual,V2d,10,20
+sub024,close,visual,V2v,10,20
+sub024,close,visual,V3a,10,21
+sub024,close,visual,V3b,10,20
+sub024,close,visual,V3d,10,20
+sub024,close,visual,V3v,10,20
+sub024,open,frontal,fro Brodmann area 4,11,19
+sub024,open,frontal,fro Brodmann area 6,7,25
+sub024,open,frontal,fro Brodmann area 8,7,24
+sub024,open,frontal,fro Brodmann area 9,7,NaN
+sub024,open,frontal,fro Brodmann area 10,7,21
+sub024,open,frontal,fro Brodmann area 11,7,NaN
+sub024,open,frontal,fro Brodmann area 44,8,NaN
+sub024,open,frontal,fro Brodmann area 45,8,NaN
+sub024,open,frontal,fro Brodmann area 46,7,NaN
+sub024,open,frontal,fro Brodmann area 47,7,23
+sub024,close,frontal,fro Brodmann area 4,10,21
+sub024,close,frontal,fro Brodmann area 6,10,20
+sub024,close,frontal,fro Brodmann area 8,7,22
+sub024,close,frontal,fro Brodmann area 9,7,23
+sub024,close,frontal,fro Brodmann area 10,7,23
+sub024,close,frontal,fro Brodmann area 11,10,23
+sub024,close,frontal,fro Brodmann area 44,9,NaN
+sub024,close,frontal,fro Brodmann area 45,7,24
+sub024,close,frontal,fro Brodmann area 46,7,21
+sub024,close,frontal,fro Brodmann area 47,10,23
+sub024,open,auditory,aud Brodmann area 41,7,17
+sub024,open,auditory,aud Brodmann area 42,7,17
+sub024,open,auditory,aud Brodmann area 22,7,18
+sub024,close,auditory,aud Brodmann area 41,10,19
+sub024,close,auditory,aud Brodmann area 42,7,18
+sub024,close,auditory,aud Brodmann area 22,10,18
+sub025,open,somato,somato left,11,23
+sub025,open,somato,somato right,12,25
+sub025,close,somato,somato left,11,21
+sub025,close,somato,somato right,11,21
+sub025,open,visual,V1d,11,NaN
+sub025,open,visual,V1v,11,NaN
+sub025,open,visual,V2d,10,20
+sub025,open,visual,V2v,11,18
+sub025,open,visual,V3a,11,NaN
+sub025,open,visual,V3b,11,NaN
+sub025,open,visual,V3d,11,NaN
+sub025,open,visual,V3v,11,NaN
+sub025,close,visual,V1d,10,21
+sub025,close,visual,V1v,10,21
+sub025,close,visual,V2d,10,21
+sub025,close,visual,V2v,10,20
+sub025,close,visual,V3a,10,21
+sub025,close,visual,V3b,10,21
+sub025,close,visual,V3d,10,21
+sub025,close,visual,V3v,10,21
+sub025,open,frontal,fro Brodmann area 4,11,23
+sub025,open,frontal,fro Brodmann area 6,12,23
+sub025,open,frontal,fro Brodmann area 8,13,NaN
+sub025,open,frontal,fro Brodmann area 9,13,27
+sub025,open,frontal,fro Brodmann area 10,7,23
+sub025,open,frontal,fro Brodmann area 11,7,24
+sub025,open,frontal,fro Brodmann area 44,12,24
+sub025,open,frontal,fro Brodmann area 45,12,25
+sub025,open,frontal,fro Brodmann area 46,12,25
+sub025,open,frontal,fro Brodmann area 47,7,22
+sub025,close,frontal,fro Brodmann area 4,11,21
+sub025,close,frontal,fro Brodmann area 6,11,21
+sub025,close,frontal,fro Brodmann area 8,12,NaN
+sub025,close,frontal,fro Brodmann area 9,12,NaN
+sub025,close,frontal,fro Brodmann area 10,7,NaN
+sub025,close,frontal,fro Brodmann area 11,11,21
+sub025,close,frontal,fro Brodmann area 44,12,23
+sub025,close,frontal,fro Brodmann area 45,12,NaN
+sub025,close,frontal,fro Brodmann area 46,12,23
+sub025,close,frontal,fro Brodmann area 47,7,NaN
+sub025,open,auditory,aud Brodmann area 41,11,NaN
+sub025,open,auditory,aud Brodmann area 42,12,23
+sub025,open,auditory,aud Brodmann area 22,11,23
+sub025,close,auditory,aud Brodmann area 41,10,21
+sub025,close,auditory,aud Brodmann area 42,11,21
+sub025,close,auditory,aud Brodmann area 22,11,21
+sub026,open,somato,somato left,7,19
+sub026,open,somato,somato right,7,NaN
+sub026,close,somato,somato left,10,23
+sub026,close,somato,somato right,8,NaN
+sub026,open,visual,V1d,10,NaN
+sub026,open,visual,V1v,10,NaN
+sub026,open,visual,V2d,10,NaN
+sub026,open,visual,V2v,10,NaN
+sub026,open,visual,V3a,10,20
+sub026,open,visual,V3b,10,NaN
+sub026,open,visual,V3d,10,NaN
+sub026,open,visual,V3v,10,NaN
+sub026,close,visual,V1d,10,19
+sub026,close,visual,V1v,10,19
+sub026,close,visual,V2d,10,19
+sub026,close,visual,V2v,10,18
+sub026,close,visual,V3a,10,19
+sub026,close,visual,V3b,10,19
+sub026,close,visual,V3d,10,19
+sub026,close,visual,V3v,10,18
+sub026,open,frontal,fro Brodmann area 4,10,28
+sub026,open,frontal,fro Brodmann area 6,7,28
+sub026,open,frontal,fro Brodmann area 8,7,NaN
+sub026,open,frontal,fro Brodmann area 9,7,27
+sub026,open,frontal,fro Brodmann area 10,7,19
+sub026,open,frontal,fro Brodmann area 11,7,27
+sub026,open,frontal,fro Brodmann area 44,7,16
+sub026,open,frontal,fro Brodmann area 45,7,17
+sub026,open,frontal,fro Brodmann area 46,7,22
+sub026,open,frontal,fro Brodmann area 47,7,NaN
+sub026,close,frontal,fro Brodmann area 4,10,28
+sub026,close,frontal,fro Brodmann area 6,9,28
+sub026,close,frontal,fro Brodmann area 8,7,21
+sub026,close,frontal,fro Brodmann area 9,7,NaN
+sub026,close,frontal,fro Brodmann area 10,7,21
+sub026,close,frontal,fro Brodmann area 11,9,21
+sub026,close,frontal,fro Brodmann area 44,7,NaN
+sub026,close,frontal,fro Brodmann area 45,7,30
+sub026,close,frontal,fro Brodmann area 46,7,NaN
+sub026,close,frontal,fro Brodmann area 47,7,21
+sub026,open,auditory,aud Brodmann area 41,10,21
+sub026,open,auditory,aud Brodmann area 42,7,21
+sub026,open,auditory,aud Brodmann area 22,10,16
+sub026,close,auditory,aud Brodmann area 41,10,20
+sub026,close,auditory,aud Brodmann area 42,7,NaN
+sub026,close,auditory,aud Brodmann area 22,10,16
+sub027,open,somato,somato left,9,NaN
+sub027,open,somato,somato right,9,17
+sub027,close,somato,somato left,10,21
+sub027,close,somato,somato right,9,18
+sub027,open,visual,V1d,10,NaN
+sub027,open,visual,V1v,10,NaN
+sub027,open,visual,V2d,10,NaN
+sub027,open,visual,V2v,11,20
+sub027,open,visual,V3a,10,20
+sub027,open,visual,V3b,10,20
+sub027,open,visual,V3d,10,19
+sub027,open,visual,V3v,11,21
+sub027,close,visual,V1d,11,21
+sub027,close,visual,V1v,11,21
+sub027,close,visual,V2d,11,21
+sub027,close,visual,V2v,11,20
+sub027,close,visual,V3a,11,21
+sub027,close,visual,V3b,10,21
+sub027,close,visual,V3d,11,21
+sub027,close,visual,V3v,10,21
+sub027,open,frontal,fro Brodmann area 4,9,NaN
+sub027,open,frontal,fro Brodmann area 6,8,NaN
+sub027,open,frontal,fro Brodmann area 8,7,NaN
+sub027,open,frontal,fro Brodmann area 9,7,16
+sub027,open,frontal,fro Brodmann area 10,7,21
+sub027,open,frontal,fro Brodmann area 11,8,21
+sub027,open,frontal,fro Brodmann area 44,10,26
+sub027,open,frontal,fro Brodmann area 45,8,26
+sub027,open,frontal,fro Brodmann area 46,7,NaN
+sub027,open,frontal,fro Brodmann area 47,9,NaN
+sub027,close,frontal,fro Brodmann area 4,10,18
+sub027,close,frontal,fro Brodmann area 6,9,20
+sub027,close,frontal,fro Brodmann area 8,7,23
+sub027,close,frontal,fro Brodmann area 9,7,20
+sub027,close,frontal,fro Brodmann area 10,9,22
+sub027,close,frontal,fro Brodmann area 11,8,22
+sub027,close,frontal,fro Brodmann area 44,11,26
+sub027,close,frontal,fro Brodmann area 45,11,19
+sub027,close,frontal,fro Brodmann area 46,7,22
+sub027,close,frontal,fro Brodmann area 47,9,20
+sub027,open,auditory,aud Brodmann area 41,10,NaN
+sub027,open,auditory,aud Brodmann area 42,10,NaN
+sub027,open,auditory,aud Brodmann area 22,10,NaN
+sub027,close,auditory,aud Brodmann area 41,10,NaN
+sub027,close,auditory,aud Brodmann area 42,10,NaN
+sub027,close,auditory,aud Brodmann area 22,10,26
+sub028,open,somato,somato left,7,16
+sub028,open,somato,somato right,8,NaN
+sub028,close,somato,somato left,7,NaN
+sub028,close,somato,somato right,7,22
+sub028,open,visual,V1d,8,NaN
+sub028,open,visual,V1v,10,NaN
+sub028,open,visual,V2d,8,22
+sub028,open,visual,V2v,10,NaN
+sub028,open,visual,V3a,9,NaN
+sub028,open,visual,V3b,9,NaN
+sub028,open,visual,V3d,8,21
+sub028,open,visual,V3v,10,NaN
+sub028,close,visual,V1d,9,NaN
+sub028,close,visual,V1v,9,NaN
+sub028,close,visual,V2d,9,19
+sub028,close,visual,V2v,9,23
+sub028,close,visual,V3a,9,NaN
+sub028,close,visual,V3b,7,25
+sub028,close,visual,V3d,8,NaN
+sub028,close,visual,V3v,9,NaN
+sub028,open,frontal,fro Brodmann area 4,7,NaN
+sub028,open,frontal,fro Brodmann area 6,7,NaN
+sub028,open,frontal,fro Brodmann area 8,7,16
+sub028,open,frontal,fro Brodmann area 9,7,NaN
+sub028,open,frontal,fro Brodmann area 10,7,NaN
+sub028,open,frontal,fro Brodmann area 11,7,20
+sub028,open,frontal,fro Brodmann area 44,7,NaN
+sub028,open,frontal,fro Brodmann area 45,7,26
+sub028,open,frontal,fro Brodmann area 46,7,26
+sub028,open,frontal,fro Brodmann area 47,7,NaN
+sub028,close,frontal,fro Brodmann area 4,7,NaN
+sub028,close,frontal,fro Brodmann area 6,7,NaN
+sub028,close,frontal,fro Brodmann area 8,7,20
+sub028,close,frontal,fro Brodmann area 9,7,16
+sub028,close,frontal,fro Brodmann area 10,7,16
+sub028,close,frontal,fro Brodmann area 11,7,NaN
+sub028,close,frontal,fro Brodmann area 44,7,NaN
+sub028,close,frontal,fro Brodmann area 45,7,NaN
+sub028,close,frontal,fro Brodmann area 46,7,NaN
+sub028,close,frontal,fro Brodmann area 47,7,NaN
+sub028,open,auditory,aud Brodmann area 41,7,NaN
+sub028,open,auditory,aud Brodmann area 42,7,NaN
+sub028,open,auditory,aud Brodmann area 22,7,NaN
+sub028,close,auditory,aud Brodmann area 41,7,NaN
+sub028,close,auditory,aud Brodmann area 42,7,NaN
+sub028,close,auditory,aud Brodmann area 22,7,NaN
+sub029,open,somato,somato left,11,23
+sub029,open,somato,somato right,12,NaN
+sub029,close,somato,somato left,11,22
+sub029,close,somato,somato right,12,19
+sub029,open,visual,V1d,11,24
+sub029,open,visual,V1v,11,22
+sub029,open,visual,V2d,11,24
+sub029,open,visual,V2v,11,24
+sub029,open,visual,V3a,11,NaN
+sub029,open,visual,V3b,11,21
+sub029,open,visual,V3d,11,NaN
+sub029,open,visual,V3v,11,25
+sub029,close,visual,V1d,11,NaN
+sub029,close,visual,V1v,11,18
+sub029,close,visual,V2d,11,19
+sub029,close,visual,V2v,11,22
+sub029,close,visual,V3a,11,NaN
+sub029,close,visual,V3b,11,19
+sub029,close,visual,V3d,11,22
+sub029,close,visual,V3v,11,22
+sub029,open,frontal,fro Brodmann area 4,11,24
+sub029,open,frontal,fro Brodmann area 6,7,18
+sub029,open,frontal,fro Brodmann area 8,7,NaN
+sub029,open,frontal,fro Brodmann area 9,7,24
+sub029,open,frontal,fro Brodmann area 10,7,20
+sub029,open,frontal,fro Brodmann area 11,7,NaN
+sub029,open,frontal,fro Brodmann area 44,7,24
+sub029,open,frontal,fro Brodmann area 45,7,24
+sub029,open,frontal,fro Brodmann area 46,7,23
+sub029,open,frontal,fro Brodmann area 47,7,23
+sub029,close,frontal,fro Brodmann area 4,11,24
+sub029,close,frontal,fro Brodmann area 6,7,20
+sub029,close,frontal,fro Brodmann area 8,7,20
+sub029,close,frontal,fro Brodmann area 9,7,25
+sub029,close,frontal,fro Brodmann area 10,7,20
+sub029,close,frontal,fro Brodmann area 11,7,NaN
+sub029,close,frontal,fro Brodmann area 44,7,22
+sub029,close,frontal,fro Brodmann area 45,7,21
+sub029,close,frontal,fro Brodmann area 46,7,21
+sub029,close,frontal,fro Brodmann area 47,7,20
+sub029,open,auditory,aud Brodmann area 41,7,19
+sub029,open,auditory,aud Brodmann area 42,11,19
+sub029,open,auditory,aud Brodmann area 22,7,20
+sub029,close,auditory,aud Brodmann area 41,11,NaN
+sub029,close,auditory,aud Brodmann area 42,11,22
+sub029,close,auditory,aud Brodmann area 22,7,21
+sub030,open,somato,somato left,11,21
+sub030,open,somato,somato right,7,22
+sub030,close,somato,somato left,11,22
+sub030,close,somato,somato right,11,21
+sub030,open,visual,V1d,11,NaN
+sub030,open,visual,V1v,11,NaN
+sub030,open,visual,V2d,10,NaN
+sub030,open,visual,V2v,11,18
+sub030,open,visual,V3a,11,19
+sub030,open,visual,V3b,11,NaN
+sub030,open,visual,V3d,11,17
+sub030,open,visual,V3v,11,18
+sub030,close,visual,V1d,10,21
+sub030,close,visual,V1v,10,21
+sub030,close,visual,V2d,10,21
+sub030,close,visual,V2v,10,21
+sub030,close,visual,V3a,11,21
+sub030,close,visual,V3b,10,21
+sub030,close,visual,V3d,11,21
+sub030,close,visual,V3v,11,21
+sub030,open,frontal,fro Brodmann area 4,7,22
+sub030,open,frontal,fro Brodmann area 6,7,22
+sub030,open,frontal,fro Brodmann area 8,7,NaN
+sub030,open,frontal,fro Brodmann area 9,7,23
+sub030,open,frontal,fro Brodmann area 10,7,22
+sub030,open,frontal,fro Brodmann area 11,7,22
+sub030,open,frontal,fro Brodmann area 44,7,19
+sub030,open,frontal,fro Brodmann area 45,7,22
+sub030,open,frontal,fro Brodmann area 46,7,21
+sub030,open,frontal,fro Brodmann area 47,7,21
+sub030,close,frontal,fro Brodmann area 4,7,21
+sub030,close,frontal,fro Brodmann area 6,7,22
+sub030,close,frontal,fro Brodmann area 8,7,19
+sub030,close,frontal,fro Brodmann area 9,7,20
+sub030,close,frontal,fro Brodmann area 10,7,21
+sub030,close,frontal,fro Brodmann area 11,7,20
+sub030,close,frontal,fro Brodmann area 44,7,21
+sub030,close,frontal,fro Brodmann area 45,7,21
+sub030,close,frontal,fro Brodmann area 46,7,22
+sub030,close,frontal,fro Brodmann area 47,7,21
+sub030,open,auditory,aud Brodmann area 41,7,17
+sub030,open,auditory,aud Brodmann area 42,7,17
+sub030,open,auditory,aud Brodmann area 22,7,17
+sub030,close,auditory,aud Brodmann area 41,7,17
+sub030,close,auditory,aud Brodmann area 42,7,17
+sub030,close,auditory,aud Brodmann area 22,7,17
+sub031,open,somato,somato left,9,17
+sub031,open,somato,somato right,8,16
+sub031,close,somato,somato left,8,18
+sub031,close,somato,somato right,8,17
+sub031,open,visual,V1d,9,NaN
+sub031,open,visual,V1v,10,18
+sub031,open,visual,V2d,9,18
+sub031,open,visual,V2v,10,23
+sub031,open,visual,V3a,9,NaN
+sub031,open,visual,V3b,9,NaN
+sub031,open,visual,V3d,9,NaN
+sub031,open,visual,V3v,10,NaN
+sub031,close,visual,V1d,9,19
+sub031,close,visual,V1v,9,19
+sub031,close,visual,V2d,9,19
+sub031,close,visual,V2v,9,19
+sub031,close,visual,V3a,10,20
+sub031,close,visual,V3b,9,19
+sub031,close,visual,V3d,9,19
+sub031,close,visual,V3v,9,19
+sub031,open,frontal,fro Brodmann area 4,8,17
+sub031,open,frontal,fro Brodmann area 6,8,18
+sub031,open,frontal,fro Brodmann area 8,7,20
+sub031,open,frontal,fro Brodmann area 9,7,21
+sub031,open,frontal,fro Brodmann area 10,7,19
+sub031,open,frontal,fro Brodmann area 11,7,23
+sub031,open,frontal,fro Brodmann area 44,8,19
+sub031,open,frontal,fro Brodmann area 45,9,19
+sub031,open,frontal,fro Brodmann area 46,9,19
+sub031,open,frontal,fro Brodmann area 47,8,18
+sub031,close,frontal,fro Brodmann area 4,9,19
+sub031,close,frontal,fro Brodmann area 6,9,20
+sub031,close,frontal,fro Brodmann area 8,9,20
+sub031,close,frontal,fro Brodmann area 9,7,20
+sub031,close,frontal,fro Brodmann area 10,7,20
+sub031,close,frontal,fro Brodmann area 11,9,19
+sub031,close,frontal,fro Brodmann area 44,9,19
+sub031,close,frontal,fro Brodmann area 45,9,20
+sub031,close,frontal,fro Brodmann area 46,7,20
+sub031,close,frontal,fro Brodmann area 47,8,19
+sub031,open,auditory,aud Brodmann area 41,8,NaN
+sub031,open,auditory,aud Brodmann area 42,9,NaN
+sub031,open,auditory,aud Brodmann area 22,8,18
+sub031,close,auditory,aud Brodmann area 41,9,17
+sub031,close,auditory,aud Brodmann area 42,9,19
+sub031,close,auditory,aud Brodmann area 22,9,19
+sub032,open,somato,somato left,11,22
+sub032,open,somato,somato right,9,19
+sub032,close,somato,somato left,11,21
+sub032,close,somato,somato right,10,19
+sub032,open,visual,V1d,10,NaN
+sub032,open,visual,V1v,10,NaN
+sub032,open,visual,V2d,10,NaN
+sub032,open,visual,V2v,10,20
+sub032,open,visual,V3a,10,NaN
+sub032,open,visual,V3b,10,NaN
+sub032,open,visual,V3d,10,NaN
+sub032,open,visual,V3v,10,16
+sub032,close,visual,V1d,10,20
+sub032,close,visual,V1v,10,20
+sub032,close,visual,V2d,10,21
+sub032,close,visual,V2v,10,20
+sub032,close,visual,V3a,10,21
+sub032,close,visual,V3b,10,20
+sub032,close,visual,V3d,10,20
+sub032,close,visual,V3v,10,20
+sub032,open,frontal,fro Brodmann area 4,9,20
+sub032,open,frontal,fro Brodmann area 6,7,17
+sub032,open,frontal,fro Brodmann area 8,7,18
+sub032,open,frontal,fro Brodmann area 9,7,20
+sub032,open,frontal,fro Brodmann area 10,7,20
+sub032,open,frontal,fro Brodmann area 11,9,19
+sub032,open,frontal,fro Brodmann area 44,7,21
+sub032,open,frontal,fro Brodmann area 45,7,NaN
+sub032,open,frontal,fro Brodmann area 46,7,NaN
+sub032,open,frontal,fro Brodmann area 47,7,18
+sub032,close,frontal,fro Brodmann area 4,10,22
+sub032,close,frontal,fro Brodmann area 6,9,18
+sub032,close,frontal,fro Brodmann area 8,7,18
+sub032,close,frontal,fro Brodmann area 9,7,18
+sub032,close,frontal,fro Brodmann area 10,9,20
+sub032,close,frontal,fro Brodmann area 11,9,18
+sub032,close,frontal,fro Brodmann area 44,7,18
+sub032,close,frontal,fro Brodmann area 45,7,18
+sub032,close,frontal,fro Brodmann area 46,7,18
+sub032,close,frontal,fro Brodmann area 47,9,18
+sub032,open,auditory,aud Brodmann area 41,7,22
+sub032,open,auditory,aud Brodmann area 42,7,NaN
+sub032,open,auditory,aud Brodmann area 22,7,18
+sub032,close,auditory,aud Brodmann area 41,10,17
+sub032,close,auditory,aud Brodmann area 42,7,17
+sub032,close,auditory,aud Brodmann area 22,10,17
+sub033,open,somato,somato left,11,18
+sub033,open,somato,somato right,11,23
+sub033,close,somato,somato left,11,21
+sub033,close,somato,somato right,11,23
+sub033,open,visual,V1d,10,NaN
+sub033,open,visual,V1v,10,NaN
+sub033,open,visual,V2d,10,NaN
+sub033,open,visual,V2v,10,NaN
+sub033,open,visual,V3a,10,NaN
+sub033,open,visual,V3b,10,NaN
+sub033,open,visual,V3d,10,NaN
+sub033,open,visual,V3v,10,NaN
+sub033,close,visual,V1d,10,20
+sub033,close,visual,V1v,10,20
+sub033,close,visual,V2d,10,20
+sub033,close,visual,V2v,10,20
+sub033,close,visual,V3a,10,21
+sub033,close,visual,V3b,10,21
+sub033,close,visual,V3d,10,20
+sub033,close,visual,V3v,10,20
+sub033,open,frontal,fro Brodmann area 4,11,22
+sub033,open,frontal,fro Brodmann area 6,7,17
+sub033,open,frontal,fro Brodmann area 8,7,20
+sub033,open,frontal,fro Brodmann area 9,7,20
+sub033,open,frontal,fro Brodmann area 10,7,21
+sub033,open,frontal,fro Brodmann area 11,7,22
+sub033,open,frontal,fro Brodmann area 44,7,21
+sub033,open,frontal,fro Brodmann area 45,7,21
+sub033,open,frontal,fro Brodmann area 46,7,NaN
+sub033,open,frontal,fro Brodmann area 47,7,20
+sub033,close,frontal,fro Brodmann area 4,11,22
+sub033,close,frontal,fro Brodmann area 6,10,22
+sub033,close,frontal,fro Brodmann area 8,7,21
+sub033,close,frontal,fro Brodmann area 9,7,20
+sub033,close,frontal,fro Brodmann area 10,7,20
+sub033,close,frontal,fro Brodmann area 11,7,20
+sub033,close,frontal,fro Brodmann area 44,7,NaN
+sub033,close,frontal,fro Brodmann area 45,7,21
+sub033,close,frontal,fro Brodmann area 46,7,22
+sub033,close,frontal,fro Brodmann area 47,7,22
+sub033,open,auditory,aud Brodmann area 41,7,NaN
+sub033,open,auditory,aud Brodmann area 42,10,NaN
+sub033,open,auditory,aud Brodmann area 22,10,20
+sub033,close,auditory,aud Brodmann area 41,10,24
+sub033,close,auditory,aud Brodmann area 42,7,24
+sub033,close,auditory,aud Brodmann area 22,10,23
+sub034,open,somato,somato left,11,NaN
+sub034,open,somato,somato right,8,18
+sub034,close,somato,somato left,10,19
+sub034,close,somato,somato right,9,18
+sub034,open,visual,V1d,11,NaN
+sub034,open,visual,V1v,12,NaN
+sub034,open,visual,V2d,11,NaN
+sub034,open,visual,V2v,12,NaN
+sub034,open,visual,V3a,11,NaN
+sub034,open,visual,V3b,12,NaN
+sub034,open,visual,V3d,11,NaN
+sub034,open,visual,V3v,11,NaN
+sub034,close,visual,V1d,9,NaN
+sub034,close,visual,V1v,9,NaN
+sub034,close,visual,V2d,9,NaN
+sub034,close,visual,V2v,9,NaN
+sub034,close,visual,V3a,9,NaN
+sub034,close,visual,V3b,9,NaN
+sub034,close,visual,V3d,9,NaN
+sub034,close,visual,V3v,9,NaN
+sub034,open,frontal,fro Brodmann area 4,7,21
+sub034,open,frontal,fro Brodmann area 6,7,24
+sub034,open,frontal,fro Brodmann area 8,7,NaN
+sub034,open,frontal,fro Brodmann area 9,7,NaN
+sub034,open,frontal,fro Brodmann area 10,7,NaN
+sub034,open,frontal,fro Brodmann area 11,7,19
+sub034,open,frontal,fro Brodmann area 44,7,18
+sub034,open,frontal,fro Brodmann area 45,7,18
+sub034,open,frontal,fro Brodmann area 46,7,22
+sub034,open,frontal,fro Brodmann area 47,7,NaN
+sub034,close,frontal,fro Brodmann area 4,8,22
+sub034,close,frontal,fro Brodmann area 6,8,21
+sub034,close,frontal,fro Brodmann area 8,7,NaN
+sub034,close,frontal,fro Brodmann area 9,7,17
+sub034,close,frontal,fro Brodmann area 10,7,NaN
+sub034,close,frontal,fro Brodmann area 11,7,NaN
+sub034,close,frontal,fro Brodmann area 44,7,23
+sub034,close,frontal,fro Brodmann area 45,7,18
+sub034,close,frontal,fro Brodmann area 46,7,22
+sub034,close,frontal,fro Brodmann area 47,7,21
+sub034,open,auditory,aud Brodmann area 41,10,17
+sub034,open,auditory,aud Brodmann area 42,9,17
+sub034,open,auditory,aud Brodmann area 22,10,16
+sub034,close,auditory,aud Brodmann area 41,10,16
+sub034,close,auditory,aud Brodmann area 42,12,16
+sub034,close,auditory,aud Brodmann area 22,11,NaN
+sub035,open,somato,somato left,8,NaN
+sub035,open,somato,somato right,8,16
+sub035,close,somato,somato left,8,NaN
+sub035,close,somato,somato right,8,24
+sub035,open,visual,V1d,8,18
+sub035,open,visual,V1v,8,17
+sub035,open,visual,V2d,9,18
+sub035,open,visual,V2v,8,17
+sub035,open,visual,V3a,9,18
+sub035,open,visual,V3b,9,17
+sub035,open,visual,V3d,9,18
+sub035,open,visual,V3v,9,18
+sub035,close,visual,V1d,8,16
+sub035,close,visual,V1v,8,16
+sub035,close,visual,V2d,9,16
+sub035,close,visual,V2v,8,17
+sub035,close,visual,V3a,9,18
+sub035,close,visual,V3b,8,17
+sub035,close,visual,V3d,9,17
+sub035,close,visual,V3v,9,17
+sub035,open,frontal,fro Brodmann area 4,8,16
+sub035,open,frontal,fro Brodmann area 6,7,16
+sub035,open,frontal,fro Brodmann area 8,8,20
+sub035,open,frontal,fro Brodmann area 9,8,16
+sub035,open,frontal,fro Brodmann area 10,7,16
+sub035,open,frontal,fro Brodmann area 11,8,21
+sub035,open,frontal,fro Brodmann area 44,8,NaN
+sub035,open,frontal,fro Brodmann area 45,8,NaN
+sub035,open,frontal,fro Brodmann area 46,7,22
+sub035,open,frontal,fro Brodmann area 47,8,20
+sub035,close,frontal,fro Brodmann area 4,8,NaN
+sub035,close,frontal,fro Brodmann area 6,8,16
+sub035,close,frontal,fro Brodmann area 8,7,16
+sub035,close,frontal,fro Brodmann area 9,8,NaN
+sub035,close,frontal,fro Brodmann area 10,7,16
+sub035,close,frontal,fro Brodmann area 11,8,23
+sub035,close,frontal,fro Brodmann area 44,8,NaN
+sub035,close,frontal,fro Brodmann area 45,7,22
+sub035,close,frontal,fro Brodmann area 46,7,20
+sub035,close,frontal,fro Brodmann area 47,8,21
+sub035,open,auditory,aud Brodmann area 41,8,18
+sub035,open,auditory,aud Brodmann area 42,8,NaN
+sub035,open,auditory,aud Brodmann area 22,9,25
+sub035,close,auditory,aud Brodmann area 41,8,NaN
+sub035,close,auditory,aud Brodmann area 42,8,NaN
+sub035,close,auditory,aud Brodmann area 22,8,23
+sub036,open,somato,somato left,11,21
+sub036,open,somato,somato right,12,24
+sub036,close,somato,somato left,11,18
+sub036,close,somato,somato right,12,23
+sub036,open,visual,V1d,10,20
+sub036,open,visual,V1v,10,20
+sub036,open,visual,V2d,10,19
+sub036,open,visual,V2v,10,20
+sub036,open,visual,V3a,10,20
+sub036,open,visual,V3b,10,19
+sub036,open,visual,V3d,10,18
+sub036,open,visual,V3v,10,19
+sub036,close,visual,V1d,10,19
+sub036,close,visual,V1v,10,19
+sub036,close,visual,V2d,10,18
+sub036,close,visual,V2v,10,19
+sub036,close,visual,V3a,10,19
+sub036,close,visual,V3b,10,18
+sub036,close,visual,V3d,10,18
+sub036,close,visual,V3v,10,18
+sub036,open,frontal,fro Brodmann area 4,11,22
+sub036,open,frontal,fro Brodmann area 6,7,17
+sub036,open,frontal,fro Brodmann area 8,7,NaN
+sub036,open,frontal,fro Brodmann area 9,7,21
+sub036,open,frontal,fro Brodmann area 10,7,NaN
+sub036,open,frontal,fro Brodmann area 11,7,16
+sub036,open,frontal,fro Brodmann area 44,9,16
+sub036,open,frontal,fro Brodmann area 45,7,NaN
+sub036,open,frontal,fro Brodmann area 46,7,26
+sub036,open,frontal,fro Brodmann area 47,8,17
+sub036,close,frontal,fro Brodmann area 4,11,18
+sub036,close,frontal,fro Brodmann area 6,7,17
+sub036,close,frontal,fro Brodmann area 8,7,17
+sub036,close,frontal,fro Brodmann area 9,7,17
+sub036,close,frontal,fro Brodmann area 10,7,16
+sub036,close,frontal,fro Brodmann area 11,7,17
+sub036,close,frontal,fro Brodmann area 44,7,16
+sub036,close,frontal,fro Brodmann area 45,9,17
+sub036,close,frontal,fro Brodmann area 46,9,19
+sub036,close,frontal,fro Brodmann area 47,8,NaN
+sub036,open,auditory,aud Brodmann area 41,10,20
+sub036,open,auditory,aud Brodmann area 42,10,20
+sub036,open,auditory,aud Brodmann area 22,10,NaN
+sub036,close,auditory,aud Brodmann area 41,10,24
+sub036,close,auditory,aud Brodmann area 42,10,23
+sub036,close,auditory,aud Brodmann area 22,10,NaN
+sub037,open,somato,somato left,9,19
+sub037,open,somato,somato right,9,19
+sub037,close,somato,somato left,9,18
+sub037,close,somato,somato right,9,18
+sub037,open,visual,V1d,10,NaN
+sub037,open,visual,V1v,10,17
+sub037,open,visual,V2d,10,NaN
+sub037,open,visual,V2v,10,NaN
+sub037,open,visual,V3a,10,NaN
+sub037,open,visual,V3b,10,19
+sub037,open,visual,V3d,10,18
+sub037,open,visual,V3v,10,24
+sub037,close,visual,V1d,10,20
+sub037,close,visual,V1v,10,20
+sub037,close,visual,V2d,10,20
+sub037,close,visual,V2v,10,20
+sub037,close,visual,V3a,10,20
+sub037,close,visual,V3b,9,20
+sub037,close,visual,V3d,10,20
+sub037,close,visual,V3v,10,20
+sub037,open,frontal,fro Brodmann area 4,9,19
+sub037,open,frontal,fro Brodmann area 6,8,26
+sub037,open,frontal,fro Brodmann area 8,7,18
+sub037,open,frontal,fro Brodmann area 9,8,18
+sub037,open,frontal,fro Brodmann area 10,7,NaN
+sub037,open,frontal,fro Brodmann area 11,7,NaN
+sub037,open,frontal,fro Brodmann area 44,8,26
+sub037,open,frontal,fro Brodmann area 45,8,17
+sub037,open,frontal,fro Brodmann area 46,8,25
+sub037,open,frontal,fro Brodmann area 47,8,26
+sub037,close,frontal,fro Brodmann area 4,9,18
+sub037,close,frontal,fro Brodmann area 6,8,NaN
+sub037,close,frontal,fro Brodmann area 8,7,21
+sub037,close,frontal,fro Brodmann area 9,8,21
+sub037,close,frontal,fro Brodmann area 10,7,NaN
+sub037,close,frontal,fro Brodmann area 11,7,NaN
+sub037,close,frontal,fro Brodmann area 44,9,18
+sub037,close,frontal,fro Brodmann area 45,8,17
+sub037,close,frontal,fro Brodmann area 46,8,17
+sub037,close,frontal,fro Brodmann area 47,8,17
+sub037,open,auditory,aud Brodmann area 41,9,18
+sub037,open,auditory,aud Brodmann area 42,8,NaN
+sub037,open,auditory,aud Brodmann area 22,8,25
+sub037,close,auditory,aud Brodmann area 41,9,NaN
+sub037,close,auditory,aud Brodmann area 42,8,18
+sub037,close,auditory,aud Brodmann area 22,9,18
+sub039,open,somato,somato left,13,26
+sub039,open,somato,somato right,13,26
+sub039,close,somato,somato left,12,26
+sub039,close,somato,somato right,13,27
+sub039,open,visual,V1d,10,21
+sub039,open,visual,V1v,10,21
+sub039,open,visual,V2d,10,21
+sub039,open,visual,V2v,10,21
+sub039,open,visual,V3a,10,21
+sub039,open,visual,V3b,10,21
+sub039,open,visual,V3d,10,21
+sub039,open,visual,V3v,10,20
+sub039,close,visual,V1d,10,20
+sub039,close,visual,V1v,10,20
+sub039,close,visual,V2d,10,20
+sub039,close,visual,V2v,10,20
+sub039,close,visual,V3a,10,20
+sub039,close,visual,V3b,10,20
+sub039,close,visual,V3d,10,20
+sub039,close,visual,V3v,10,20
+sub039,open,frontal,fro Brodmann area 4,13,26
+sub039,open,frontal,fro Brodmann area 6,13,26
+sub039,open,frontal,fro Brodmann area 8,7,NaN
+sub039,open,frontal,fro Brodmann area 9,7,20
+sub039,open,frontal,fro Brodmann area 10,7,21
+sub039,open,frontal,fro Brodmann area 11,10,20
+sub039,open,frontal,fro Brodmann area 44,13,24
+sub039,open,frontal,fro Brodmann area 45,13,24
+sub039,open,frontal,fro Brodmann area 46,13,20
+sub039,open,frontal,fro Brodmann area 47,9,NaN
+sub039,close,frontal,fro Brodmann area 4,13,27
+sub039,close,frontal,fro Brodmann area 6,10,NaN
+sub039,close,frontal,fro Brodmann area 8,9,20
+sub039,close,frontal,fro Brodmann area 9,7,20
+sub039,close,frontal,fro Brodmann area 10,7,NaN
+sub039,close,frontal,fro Brodmann area 11,10,20
+sub039,close,frontal,fro Brodmann area 44,13,21
+sub039,close,frontal,fro Brodmann area 45,12,25
+sub039,close,frontal,fro Brodmann area 46,13,20
+sub039,close,frontal,fro Brodmann area 47,10,20
+sub039,open,auditory,aud Brodmann area 41,10,18
+sub039,open,auditory,aud Brodmann area 42,10,17
+sub039,open,auditory,aud Brodmann area 22,10,19
+sub039,close,auditory,aud Brodmann area 41,10,NaN
+sub039,close,auditory,aud Brodmann area 42,10,18
+sub039,close,auditory,aud Brodmann area 22,10,21
