@@ -2,7 +2,7 @@ clear ; clc;
 
 load ../data/bil_goodsubjectlist.27feb20.mat
 
-for nsuj = 1:length(suj_list)
+for nsuj = 1%:length(suj_list)
     
     subjectName             = suj_list{nsuj};
     
@@ -25,7 +25,7 @@ for nsuj = 1:length(suj_list)
     cfg.channel          	= max_chan;
     dataPostICA_clean       = ft_selectdata(cfg,dataPostICA_clean);
     
-    list_time             	= [-1 4.5]; %-1 0; 0.5 1.5; 2 3; 3.5 4.5];
+    list_time             	= [-1 0]; %-1 0; 0.5 1.5; 2 3; 3.5 4.5];
     
     for ntime = 1:size(list_time,1)
         

@@ -1,0 +1,40 @@
+clear;
+
+load(['P:\3035002.01\somatosensory localizer\subjects.mat']);
+
+for nsuj = 1:length(name)
+    
+    if nsuj < 10
+        sub_new_name        = ['sub0' num2str(nsuj)];
+    else
+        sub_new_name        = ['sub' num2str(nsuj)];
+    end
+    
+
+    %% anonymise mri
+
+    mri_in              = ['P:\3035002.01\somatosensory localizer\mri\' mrifilename{nsuj}];
+    mri                 = ft_read_mri(mri_in);
+    cfg                 = [];
+    cfg.feedback        = 'no';
+    mri_anon            = ft_defacevolume([], mri); 
+
+    ft_write_mri('subjectXX_anon.nii', mri_anon.anatomy, 'transform', mri_anon.transform, 'dataformat', 'nifti');
+
+    %% anonymise ds
+
+    for cond = {'left' 'right'}
+        
+        check_ds           	= dir(['P:\3035002.01\somatosensory localizer\MEG\' name{nsuj} '*' cond{:} '*.ds']);
+        
+        if length(check_ds) == 1
+            input_ds        = [check_ds(1).folder filesep check_ds(1).name];
+            output_ds       = ['D:\Dropbox\project_ops\data\ds\' sub_new_name '_localizer_' cond{:} '.ds'];
+            go_anonymiseDs(input_ds,output_ds);
+        else
+            error('');
+        end
+        
+    end
+    
+end

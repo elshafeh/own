@@ -32,8 +32,8 @@ for ns = 1:size(data_in,1)
         
         if ~iscell(cfg_in.channel)
             
-            t1              = find(round(data_in{ns,ncon}.time,3) == round(stat.time(1),3));
-            t2              = find(round(data_in{ns,ncon}.time,3) == round(stat.time(end),3));
+            t1              = 1; %find(round(data_in{ns,ncon}.time,2) == round(stat.time(1),2));
+            t2              = length(data_in{ns,ncon}.time); %find(round(data_in{ns,ncon}.time,2) == round(stat.time(end),2));
             
             t1              = t1(1);
             t2              = t2(1);

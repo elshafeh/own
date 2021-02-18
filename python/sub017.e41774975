@@ -1,0 +1,8 @@
+/home/brainrhythms/hesels/github/own/python/bil_decode_gabor_binning_loo.py:40: RuntimeWarning: Importing FieldTrip data without an info dict from the original file. Channel locations, orientations and types will be incorrect. The imported data cannot be used for source analysis, channel interpolation etc.
+  epochs                                          = mne.read_epochs_fieldtrip(fname, None, data_name='data', trialinfo_column=0)
+/home/brainrhythms/hesels/github/own/python/bil_decode_gabor_binning_loo.py:40: RuntimeWarning: The Pandas library is not installed. Not returning the original trialinfo matrix as metadata.
+  epochs                                          = mne.read_epochs_fieldtrip(fname, None, data_name='data', trialinfo_column=0)
+/home/brainrhythms/hesels/github/own/python/bil_decode_gabor_binning_loo.py:40: RuntimeWarning: Importing FieldTrip data without an info dict from the original file. Channel locations, orientations and types will be incorrect. The imported data cannot be used for source analysis, channel interpolation etc.
+  epochs                                          = mne.read_epochs_fieldtrip(fname, None, data_name='data', trialinfo_column=0)
+/home/brainrhythms/hesels/github/own/python/bil_decode_gabor_binning_loo.py:40: RuntimeWarning: The Pandas library is not installed. Not returning the original trialinfo matrix as metadata.
+  epochs                                          = mne.read_epochs_fieldtrip(fname, None, data_name='data', trialinfo_column=0)

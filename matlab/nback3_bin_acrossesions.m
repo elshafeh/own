@@ -69,7 +69,7 @@ for nsuj = 1:length(suj_list)
     cfg                                     = [];
     cfg.resamplefs                          = 100;
     cfg.detrend                             = 'no';
-    cfg.demean                              = 'yes';
+    cfg.demean                              = 'no'; % no demeaning
     data_downsample                         = ft_resampledata(cfg,  ft_appenddata([],sess_norepair{:}));
     data_downsample                         = rmfield(data_downsample,'cfg');
     

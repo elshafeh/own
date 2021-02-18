@@ -1,0 +1,44 @@
+----------------------------------------
+Begin PBS Prologue Sat Feb 13 10:42:20 CET 2021 1613209340
+Job ID:		   41755469.dccn-l029.dccn.nl
+Username:	   hesels
+Group:		   brainrhythms
+Asked resources:   nodes=1:ppn=4,mem=16gb,walltime=71:00:00,neednodes=1:ppn=4
+Queue:		   verylong
+Nodes:		   dccn-c058.dccn.nl
+----------------------------------------
+Limiting memory+swap to 17716740096 bytes ...
+End PBS Prologue Sat Feb 13 10:42:20 CET 2021 1613209340
+----------------------------------------
+
+Handling /project/3015079.01/data/sub029/preproc/sub029.1stgab.lock.broadband.centered.mat
+
+Not setting metadata
+Not setting metadata
+348 matching events found
+No baseline correction applied
+0 bad epochs dropped
+Applying baseline correction (mode: mean)
+
+Handling /project/3015079.01/data/sub029/preproc/sub029.2ndgab.lock.broadband.centered.mat
+
+Not setting metadata
+Not setting metadata
+348 matching events found
+No baseline correction applied
+0 bad epochs dropped
+Applying baseline correction (mode: mean)
+----------------------------------------
+Begin PBS Epilogue Sat Feb 13 10:43:01 CET 2021 1613209381
+Job ID:		   41755469.dccn-l029.dccn.nl
+Job Exit Code:     0
+Username:	   hesels
+Group:		   brainrhythms
+Job Name:	   sub029
+Session:	   104914
+Asked resources:   nodes=1:ppn=4,mem=16gb,walltime=71:00:00,neednodes=1:ppn=4
+Used resources:	   cput=00:00:20,walltime=00:00:36,mem=827904000b
+Queue:		   verylong
+Nodes:		   dccn-c058.dccn.nl
+End PBS Epilogue Sat Feb 13 10:43:01 CET 2021 1613209381
+----------------------------------------

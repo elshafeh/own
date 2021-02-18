@@ -4,12 +4,25 @@ ft_default.spmversion = 'spm12';
 
 load ../data/bil_goodsubjectlist.27feb20.mat
 
+new_suj_list            = {};
+for nsuj = 1:length(suj_list)
+    
+    subjectName         = suj_list{nsuj};
+    if ~strcmp(subjectName,'sub004') && ~strcmp(subjectName,'sub023') % one trigger was missing for these trials
+        new_suj_list{end+1}     = subjectName;
+    end
+end
+
+suj_list                = new_suj_list; keep suj_list
+
 for nsuj = 1:length(suj_list)
     
     subjectName          	= suj_list{nsuj};
     
     list_freq             	= {'theta' 'alpha' 'beta'};
-    list_win            	=  {'preGab1' 'preCue2' 'preGab2'};
+    
+    list_lock            	= {'1stcue' '2ndcue' '1stgab' '2ndgab'};
+    list_win            	= {'preCue1' 'preCue2' 'preGab1' 'preGab2'};
     
     list_bin            	= [1 5];
     name_bin                = {'Bin1' 'Bin5'};
@@ -18,7 +31,8 @@ for nsuj = 1:length(suj_list)
         for nwin = 1:length(list_win)
             for nbin = 1:length(list_bin)
                 
-                fname               = ['P:/3015079.01/data/' subjectName '\erf\' subjectName '.binning.' list_freq{nfreq} '.band.' list_win{nwin} '.window.bin' num2str(list_bin(nbin)) '.gfp.mat'];
+                fname               = ['P:/3015079.01/data/' subjectName '\erf\' subjectName '.' list_lock{nwin} '.lock.binning.' ... 
+                    list_freq{nfreq} '.band.' list_win{nwin} '.window.bin' num2str(list_bin(nbin)) '.gfp.mat'];
                 fprintf('loading %s\n',fname);
                 load(fname);
                 
@@ -28,6 +42,8 @@ for nsuj = 1:length(suj_list)
         end
     end
 end
+
+%%
 
 keep alldata list_* name_bin
 
@@ -41,7 +57,7 @@ cfg.correctm                = 'cluster';cfg.statistic = 'depsamplesT';
 cfg.uvar                    = 1;cfg.ivar = 2;
 cfg.tail                    = 0;cfg.clustertail  = 0;
 cfg.neighbours              = neighbours;
-cfg.latency                 = [-0.1 5.5];
+% cfg.latency                 = [-0.2 1.5];
 cfg.clusteralpha            = 0.05; % !!
 cfg.minnbchan               = 0; % !!
 cfg.alpha                   = 0.025;
@@ -59,8 +75,8 @@ keep alldata allstat list_*
 %% - % -
 
 figure;
-nrow                        	= 3;
-ncol                            = 3;
+nrow                        	= size(alldata,2);
+ncol                            = size(alldata,3);
 i                               = 0;
 zlimit                          = [0.4 0.8; 0.45 0.6];
 
@@ -68,7 +84,7 @@ for nfreq = 1:size(allstat,1)
     for nwin = 1:size(allstat,2)
         
         stat                    = allstat{nfreq,nwin};
-        stat.mask               = stat.prob < 0.05;
+        %         stat.mask               = stat.prob < 0.05;
         
         for nchan = 1:length(stat.label)
             
@@ -79,7 +95,7 @@ for nfreq = 1:size(allstat,1)
             cfg.channel      	= nchan;
             cfg.time_limit     	= stat.time([1 end]);
             cfg.color          	= {'-b' '-r'};
-            cfg.z_limit        	= [2.5e-14 1e-13];
+            cfg.z_limit        	= [2.2e-14 1.1e-13];
             cfg.linewidth      	= 10;
             
             i = i+1;
@@ -88,15 +104,16 @@ for nfreq = 1:size(allstat,1)
             
             ylabel({stat.label{nchan}, ['p= ' num2str(round(min_p,3))]})
             
-            vline([0 1.5 3 4.5 5.5],'--k');
-            xticks([0 1.5 3 4.5 5.5]);
-            xticklabels({'Cue1' 'Gab1' 'Cue2' 'Gab2' 'Mean RT'});
+            vline([0],'--k');
             
+            xticks([0 0.5 1 1.5]);
+            
+            %             xticklabels({'Cue1' 'Gab1' 'Cue2' 'Gab2' 'Mean RT'});
             %             hline(0.5,'--k');
             
             title([list_freq{nfreq} ' ' list_win{nwin}]);
                         
-            set(gca,'FontSize',14,'FontName', 'Calibri','FontWeight','normal');
+            set(gca,'FontSize',12,'FontName', 'Calibri','FontWeight','normal');
             
         end
     end

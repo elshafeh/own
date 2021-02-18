@@ -1,0 +1,29 @@
+----------------------------------------
+Begin PBS Prologue Mon Feb  8 08:30:33 CET 2021 1612769433
+Job ID:		   41692356.dccn-l029.dccn.nl
+Username:	   hesels
+Group:		   brainrhythms
+Asked resources:   walltime=11:30:00,mem=43gb,nodes=1,neednodes=1
+Queue:		   interactive
+Nodes:		   dccn-c032.dccn.nl
+----------------------------------------
+Limiting memory+swap to 46707769344 bytes ...
+End PBS Prologue Mon Feb  8 08:30:33 CET 2021 1612769433
+----------------------------------------
+New Walltime: 11:51:20
+Job info started...
+MATLAB is selecting SOFTWARE OPENGL rendering.
+----------------------------------------
+Begin PBS Epilogue Mon Feb  8 20:00:51 CET 2021 1612810851
+Job ID:		   41692356.dccn-l029.dccn.nl
+Job Exit Code:     -11
+Username:	   hesels
+Group:		   brainrhythms
+Job Name:	   MATLAB
+Session:	   2187
+Asked resources:   walltime=11:30:00,mem=43gb,nodes=1,neednodes=1
+Used resources:	   cput=01:03:59,walltime=11:30:13,mem=46110547968b
+Queue:		   interactive
+Nodes:		   dccn-c032.dccn.nl
+End PBS Epilogue Mon Feb  8 20:00:51 CET 2021 1612810851
+----------------------------------------
