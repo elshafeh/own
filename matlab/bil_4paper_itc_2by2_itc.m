@@ -13,7 +13,8 @@ load ../data/bil_goodsubjectlist.27feb20.mat
 for nsuj = 1:length(suj_list)
     
     sujName                    	= suj_list{nsuj};
-    fname                       = [project_dir 'data/' sujName '/tf/' sujName '.cuelock.itc.5binned.withEvoked.withIncorrect.mat'];
+    %     fname                       = [project_dir 'data/' sujName '/tf/' sujName '.cuelock.itc.5binned.withEvoked.withIncorrect.mat'];
+    fname                       = [project_dir 'data/' sujName '/tf/' sujName '.cuelock.itc.5binned.minusEvoked.withIncorrect.mat'];
     fprintf('loading %s\n',fname);
     load(fname);
     
@@ -81,7 +82,7 @@ end
 %%
 
 nw_stat                         = stat{1};
-nw_stat.mask                 	= nw_stat.prob < 0.3;
+nw_stat.mask                 	= nw_stat.prob < 0.05;
 
 statplot                        = [];
 statplot.powspctrm              = nw_stat.mask .* nw_stat.stat;
@@ -97,6 +98,7 @@ cfg.colormap                    = brewermap(256,'*RdBu');
 cfg.marker                      = 'off';
 cfg.comment                     = 'no';
 cfg.colorbar                    = 'yes';
+cfg.figure                      = 0;
 subplot(2,2,1);
 ft_topoplotTFR(cfg,statplot);
 
@@ -136,6 +138,7 @@ cfg.zlim                            = [-3 3];
 cfg.maskstyle                       = 'opacity';
 cfg.maskparameter                   = 'mask';
 cfg.maskalpha                       = 0.7;
+cfg.figure                          = 0;
 subplot(2,2,2);
 ft_singleplotTFR(cfg,statplot)
 ylim([-0.1 5.5]);
@@ -181,7 +184,7 @@ end
 xlim([-0.1 5.5]);
 xticks([0 1.5 3 4.5 5.5]);
 xticklabels({'1st Cue' '1st Gab' '2nd Cue' '2nd Gab' 'RT'});
-ylim([0.02 0.1]);
-yticks([0.02 0.1]);
+% ylim([0.02 0.1]);
+% yticks([0.02 0.1]);
 
 plot(nw_stat.time,fnd_time,'LineWidth',6);

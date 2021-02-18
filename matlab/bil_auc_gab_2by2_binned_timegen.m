@@ -7,7 +7,7 @@ load ../data/bil_goodsubjectlist.27feb20.mat
 for nsuj = 1:length(suj_list)
     
     subjectName                         = suj_list{nsuj};
-    dir_data                            = '~/Dropbox/project_me/data/bil/decode/';
+    dir_data                            = 'D:/Dropbox/project_me/data/bil/decode/';
     
     frequency_list                      = {'beta'}; % 'theta' 'alpha' 'gamma' 
     decoding_list                       = {'frequency'}; %  'orientation'
@@ -25,7 +25,7 @@ for nsuj = 1:length(suj_list)
             for ndeco = 1:length(decoding_list)
                 
                 flist_1               	= dir([dir_data subjectName '.1stgab.decodinggabor.' frequency_list{nfreq} ...
-                    '.band.preCue2.window.bin' num2str(list_bin(nbin)) '.' decoding_list{ndeco}  ext_name]);
+                    '.band.preGab1.window.bin' num2str(list_bin(nbin)) '.' decoding_list{ndeco}  ext_name]);
                 
                 flist                   = [flist_1]; clear flist_* %;flist_2];
                 
@@ -72,26 +72,18 @@ for nfreq = 1:size(alldata,2)
     cfg.correctm                    = 'cluster';cfg.statistic = 'depsamplesT';
     cfg.uvar                        = 1;cfg.ivar = 2;
     cfg.tail                        = 0;cfg.clustertail  = 0;
-    cfg.neighbours                  = neighbours;
     
     cfg.latency                     = [0 3];
     cfg.frequency                   = cfg.latency;
     
     cfg.clusteralpha                = 0.05; % !!
-    cfg.minnbchan                   = 0; % !!
     cfg.alpha                       = 0.025;
     
     cfg.numrandomization            = 1000;
     cfg.design                      = design;
     
-    for nchan = 1:length(alldata{1}.label)
-        cfg.channel                 = nchan;
-        allstat{nfreq,nchan}        = ft_freqstatistics(cfg, alldata{:,nfreq,1}, alldata{:,nfreq,2});
-    end
-    
+    allstat{nfreq,1}                = ft_freqstatistics(cfg, alldata{:,nfreq,1}, alldata{:,nfreq,2});
 end
-
-%%
 
 keep alldata *_list allstat name_bin
 
@@ -103,9 +95,8 @@ end
 
 %%
 
-figure;
-nrow                                = 2;
-ncol                                = 2;
+nrow                                = 1;
+ncol                                = 1;
 i                                   = 0;
 zlimit                              = [0.4 0.8; 0.45 0.6];
 
@@ -128,10 +119,11 @@ for dim_x = 1:size(allstat,1)
                 cfg.channel         = nchan;
                 cfg.parameter       = 'stat';
                 cfg.maskparameter 	= 'mask';
-                cfg.maskstyle     	= 'outline';
+                cfg.maskstyle     	= 'opacity';
+                cfg.maskalpha       = 0.3;
                 cfg.zlim           	= [-5 5];
                 cfg.colorbar       	='no';
-                
+                cfg.figure          = 0;
                 i = i+1;
                 subplot(nrow,ncol,i);
                 ft_singleplotTFR(cfg,stat);
@@ -151,6 +143,8 @@ for dim_x = 1:size(allstat,1)
                 yticks(vct_plt);
                 
                 set(gca,'FontSize',10,'FontName', 'Calibri');
+                
+                ylim([0 0.6]);
                 
             end
         end

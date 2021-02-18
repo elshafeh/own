@@ -9,8 +9,8 @@ for nsuj = 1:length(suj_list)
     subjectName                         = suj_list{nsuj};
     dir_data                            = '~/Dropbox/project_me/data/bil/decode/';
     
-    frequency_list                      = {'beta' }; % 'theta' 'alpha' 'beta' 
-    decoding_list                       = {'orientation'}; % 'orientation'
+    frequency_list                      = {'theta' 'alpha' 'beta' }; % 
+    decoding_list                       = {'frequency'}; % 'orientation'
     
     list_bin                            = [1 2 3 4 5];
     name_bin                            = {'Bin1' 'Bin2' 'Bin3' 'Bin4' 'Bin5'};

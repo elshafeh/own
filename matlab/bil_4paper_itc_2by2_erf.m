@@ -59,7 +59,7 @@ for ntest = 1:size(list_test,1)
     cfg.neighbours              = neighbours;
     
     cfg.clusteralpha            = 0.05; % !!
-    cfg.minnbchan               = 4; % !!
+    cfg.minnbchan               = 3; % !!
     cfg.alpha                   = 0.025;
     
     cfg.numrandomization        = 1000;
@@ -69,7 +69,7 @@ for ntest = 1:size(list_test,1)
     ix1                         = list_test(ntest,1);
     ix2                         = list_test(ntest,2);
     
-    cfg.latency                 = [-0.1 5.5];
+    cfg.latency                 = [-0.1 5.1];
     
     list_name{i}                = [[list_bin{ix1}] ' versus ' [list_bin{ix2}]];
     stat{i}                     = ft_timelockstatistics(cfg, alldata{:,ix1},alldata{:,ix2});
@@ -77,27 +77,34 @@ for ntest = 1:size(list_test,1)
     
 end
 
-
 %%
 
 nw_stat                         = stat{1};
+<<<<<<< HEAD
+nw_stat.stat(nw_stat.stat > 0)  = 0;
+sig_time = unique(stat{1}.time .* stat{1}.mask);
+sig_time = sig_time(sig_time ~=0);
+sig_time = [min(sig_time) max(sig_time)];
+=======
 % nw_stat.mask                 	= nw_stat.prob < 0.05;
+>>>>>>> d77931acdbd3cad92ad6f6db3d897f26108d3b01
 
 statplot                        = [];
 statplot.avg                  	= nw_stat.mask .* nw_stat.stat;
-statplot.label               	= nw_stat.label;
-statplot.dimord               	= nw_stat.dimord;
-statplot.time               	= nw_stat.time;
+statplot.label               	= nw_stat.label;statplot.dimord = nw_stat.dimord;statplot.time = nw_stat.time;
 
 cfg                             = [];
 cfg.layout                      = 'CTF275.lay';
-cfg.zlim                        = [-0.5 0.5];
+cfg.zlim                        = [-3 3];
+cfg.xlim                        = [3.7 5];
 cfg.colormap                    = brewermap(256,'*RdBu');
 cfg.marker                      = 'off';
 cfg.comment                     = 'no';
 cfg.colorbar                    = 'yes';
+cfg.figure                      = 0;
 subplot(2,2,1);
 ft_topoplotER(cfg,statplot);
+
 
 list_chan                       = {'MLO11','MLO12','MLO13','MLO14','MLO21', ... 
     'MLO22','MLO23','MLP11','MLP21','MLP22','MLP31', ... 
@@ -113,14 +120,8 @@ cfg.z_limit                     = [-1e-14 1.5e-13];
 cfg.linewidth                   = 10;
 subplot(2,2,2);
 h_plotSingleERFstat_selectChannel_nobox(cfg,nw_stat,alldata);
-xlim(statplot.time([1 end]));
+xlim([-0.1 5.5]); %statplot.time([1 end]));
 hline(0,'-k');
 vline(0,'-k');
 xticks([0 1.5 3 4.5 5.5]);
 xticklabels({'1st Cue' '1st Gab' '2nd Cue' '2nd Gab' 'RT'});
-
-%%
-
-sig_time = unique(stat{1}.time .* stat{1}.mask);
-sig_time = sig_time(sig_time ~=0);
-sig_time = [min(sig_time) max(sig_time)];
