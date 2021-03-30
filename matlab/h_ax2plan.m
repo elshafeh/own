@@ -16,8 +16,6 @@ if isunix
     end
 end
 
-
-
 cfg.planarmethod    = 'sincos';
 cfg.channel         = 'MEG';
 cfg.trials          = 'all';

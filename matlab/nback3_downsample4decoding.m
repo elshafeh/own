@@ -15,6 +15,7 @@ for nsuj = 1:length(suj_list)
         load(fname);
         
         %-%-% exclude trials with a previous response
+        % and 0back trials
         cfg                                 = [];
         cfg.trials                          = find(data.trialinfo(:,5) == 0 & data.trialinfo(:,1) ~= 4);
         data                                = ft_selectdata(cfg,data);

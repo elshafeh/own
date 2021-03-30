@@ -1,7 +1,5 @@
 clear ; clc;
 
-load ../data/bil_goodsubjectlist.27feb20.mat
-
 if isunix
     project_dir                     = '/project/3015079.01/';
     start_dir                       = '/project/';
@@ -21,20 +19,21 @@ for nsuj = 1:length(suj_list)
     fprintf('loading %s\n',fname);
     load(fname);
     
-    time_win                        = [1 2];
+    t1                              = 0.3;
+    t2                              = 1.5;
     
-    cfg                             = [];
-    cfg.latency                     = [-1 2];
-    data_axial{1}                   = ft_selectdata(cfg,dataPostICA_clean);
-    data_axial{2}                   = bil_changelock_onlysecondcue(subjectName,time_win,dataPostICA_clean); clear dataPostICA_clean;
+    time_win                        = [t1 t2];
     
-    %     data_axial{2}                   = bil_changelock_1stgab(subjectName,time_win(2,:),dataPostICA_clean);
-    %     data_axial{3}                   = bil_changelock_2ndgab(subjectName,time_win(3,:),dataPostICA_clean); clear dataPostICA_clean;
-    %     data_axial{4}                   = bil_changelock_onlyresp(subjectName,time_win(4,:),dataPostICA_clean);
-    %     list_lock                       = {'1stcue' '1stgab' '2ndgab' 'response'};
+    %     cfg                             = [];
+    %     cfg.latency                     = [-t1 t2];
+    %     data_axial{1}                   = ft_selectdata(cfg,dataPostICA_clean);
+    %     data_axial{2}                   = bil_changelock_onlysecondcue(subjectName,time_win,dataPostICA_clean); clear dataPostICA_clean;
     
+    data_axial{1}                   = bil_changelock_1stgab(subjectName,time_win,dataPostICA_clean);
+    data_axial{2}                   = bil_changelock_2ndgab(subjectName,time_win,dataPostICA_clean); clear dataPostICA_clean;
+    
+    list_lock                       = {'1stgab' '2ndgab'}; % {'1stcue' '2ndcue'};
     list_name                       = 'broadband';
-    list_lock                       = {'AllCues'};
     
     for nlock = 1:length(data_axial)
         
