@@ -1,9 +1,9 @@
 clear;clc;
 
-for nsuj = [1:33 35:36 38:44 46:51]
+for nsuj = [6:33 35:36 38:44 46:51]
     
     ext_bin_name                        = 'exl500concat3bins';
-    fname                               = ['~/Dropbox/project_me/data/nback/bin/sub' num2str(nsuj) '.' ext_bin_name '.binsummary.mat'];
+    fname                               = ['D:/Dropbox/project_me/data/nback/bin/sub' num2str(nsuj) '.' ext_bin_name '.binsummary.mat'];
     fprintf('loading %s\n',fname);
     load(fname);
     
@@ -12,7 +12,7 @@ for nsuj = [1:33 35:36 38:44 46:51]
     for nsess = 1:2
         
         
-        fname                           = ['~/Dropbox/project_me/data/nback/prepro/nback_' num2str(nsess) '/data_sess' num2str(nsess) '_s' num2str(nsuj) '.mat'];
+        fname                           = ['D:/Dropbox/project_me/data/nback/prepro/nback_' num2str(nsess) '/data_sess' num2str(nsess) '_s' num2str(nsuj) '.mat'];
         fprintf('loading %s\n',fname);
         load(fname);
         
@@ -59,7 +59,7 @@ for nsuj = [1:33 35:36 38:44 46:51]
                     avg_comb            = ft_combineplanar([],avg);
                     avg_comb            = rmfield(avg_comb,'cfg'); clc;
                     
-                    fname_out           = ['~/Dropbox/project_me/data/nback/erf/sub' num2str(nsuj) '.' list_name{nback}  ... 
+                    fname_out           = ['D:/Dropbox/project_me/data/nback/erf/sub' num2str(nsuj) '.' list_name{nback}  ... 
                         '.' list_stim{nstim} '.' list_band{nband} '.' ['b' num2str(nbin)] '.erfComb.mat'];
                     
                     fprintf('Saving %s\n',fname_out);

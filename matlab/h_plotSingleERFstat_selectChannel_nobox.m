@@ -32,27 +32,27 @@ for ns = 1:size(data_in,1)
         
         if ~iscell(cfg_in.channel)
             
-            t1              = 1; %find(round(data_in{ns,ncon}.time,2) == round(stat.time(1),2));
-            t2              = length(data_in{ns,ncon}.time); %find(round(data_in{ns,ncon}.time,2) == round(stat.time(end),2));
+            %             t1              = nearest(data_in{ns,ncon}.time,stat.time(1));
+            %             t2              = nearest(data_in{ns,ncon}.time,stat.time(end));
+            %             t1              = t1(1);
+            %             t2              = t2(1);
             
-            t1              = t1(1);
-            t2              = t2(1);
+            t1              = 1;
+            t2              = length(data_in{ns,ncon}.time);
             
             tmp             = data_in{ns,ncon}.avg(cfg_in.channel,t1:t2);
             data           	= nanmean(tmp,1);
             
         else
             
-<<<<<<< HEAD
-            t1              = nearest(data_in{ns,ncon}.time,stat.time(1));
-            t2              = nearest(data_in{ns,ncon}.time,stat.time(end));
-=======
-            t1              = 1; %find(round(data_in{ns,ncon}.time,2) == round(stat.time(1),2));
-            t2              = length(data_in{ns,ncon}.time); %find(round(data_in{ns,ncon}.time,2) == round(stat.time(end),2));
-            t1              = t1(1);
-            t2              = t2(end);
->>>>>>> 6a9ca58b7d384e0e358287d71e8e55c77001b619
+            %             t1              = nearest(data_in{ns,ncon}.time,stat.time(1));
+            %             t2              = nearest(data_in{ns,ncon}.time,stat.time(end));
+            %             t1              = t1(1);
+            %             t2              = t2(1);
             
+            t1              = 1;
+            t2              = length(data_in{ns,ncon}.time);
+
             find_chan_in_data = [];
             for nc = 1:length(cfg_in.channel)
                 find_chan_in_data            	= [find_chan_in_data; find(strcmp(cfg_in.channel{nc},data_in{ns,ncon}.label))];
@@ -63,7 +63,7 @@ for ns = 1:size(data_in,1)
             
         end
         
-        mtrx_data(ns,ncon,:)           	= squeeze(data); clear data tmp; clc;
+        mtrx_data(ns,ncon,:)           	= squeeze(data); clear data tmp; %clc;
         
     end
 end
@@ -91,19 +91,15 @@ for ncon = 1:size(data_in,2)
     mean_data                           = nanmean(tmp,1);
     bounds                              = nanstd(tmp, [], 1);
     bounds_sem                          = bounds ./ sqrt(size(tmp,1));
-    x_axis                              = stat.time;
+    x_axis                              = data_in{1}.time;
     
-<<<<<<< HEAD
-    %     boundedline(stat.time, mean_data, bounds_sem,['-' cfg_in.color(ncon)],'alpha'); % alpha makes bounds transparent
+
     if iscell(cfg_in.color)
         boundedline(x_axis, mean_data, bounds_sem,cfg_in.color{ncon},'alpha'); % alpha makes bounds transparent     
     else
         boundedline(x_axis, mean_data, bounds_sem,'cmap',cfg_in.color(ncon,:),'alpha'); % alpha makes bounds transparent
     end
-=======
-    boundedline(data_in{ns,ncon}.time, mean_data, bounds_sem,cfg_in.color{ncon},'alpha'); % alpha makes bounds transparent
->>>>>>> 6a9ca58b7d384e0e358287d71e8e55c77001b619
-
+    
     clear mean_data bounds_sem bounds
 end
 
@@ -122,13 +118,18 @@ ax	= gca;
 lm  = ax.YAxis.Limits(end);
 
 if size(stat.mask,1) == 1
-    plot_vct                    = double(stat.mask);
+    
+    plot_vct                    = nan(1,length(data_in{1}.time));
+    t1                          = nearest(data_in{1}.time,stat.time(1));
+    t2                          = nearest(data_in{1}.time,stat.time(end));
+    plot_vct(t1:t2)             = double(stat.mask);
     plot_vct(plot_vct == 1)     = lm;
     plot_vct(plot_vct == 0)     = NaN;
+    
 else
     plot_vct                    = mean(double(stat.mask),1);
     plot_vct(plot_vct ~= 0)     = lm;
     plot_vct(plot_vct == 0)     = NaN;
 end
 
-plot(stat.time,plot_vct,'k','LineWidth',cfg_in.linewidth);
+plot(x_axis,plot_vct,'-o','LineWidth',cfg_in.linewidth);

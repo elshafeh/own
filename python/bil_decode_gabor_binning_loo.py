@@ -86,7 +86,7 @@ for ilock in range(len(lck_list)):
         e_H0_array                                  = np.zeros((n_times,n_trials))
         
         clf                                         = make_pipeline(StandardScaler(), 
-                                                                LogisticRegressionCV(max_iter = 2000, 
+                                                                LogisticRegressionCV(max_iter = 3000, 
                                                                                      solver='lbfgs',cv=3))   
         
         savename                                    = dir_data_ou + suj + ext_name + '.decoding.' + dcd_list[ifeat] + '.leaveone.mat'
