@@ -55,8 +55,8 @@ cfg                                 = [];
 cfg.method                          = 'trial';
 cfg.preproc.demean                  = 'yes';
 cfg.megscale                        = 1;
-% cfg.ylim                            = [-2e-12 2e-12];
-% cfg.alim                            = cfg.ylim;
+cfg.ylim                            = [-2e-12 2e-12];
+cfg.alim                            = cfg.ylim;
 SecondRej                           = ft_rejectvisual(cfg,InitRej);
 SecondRej                           = rmfield(SecondRej,'cfg');
 

@@ -55,27 +55,27 @@ else
     cfg.alim                            = 1e-12;
     postICA_Rej                         = ft_rejectvisual(cfg,dataPostICA);
     
-    chan_group                          = {'MLC' 'MRC' 'MLP' 'MRP' 'MLT' 'MRT' 'MLF' 'MRF'};
-    
-    for ng = 1:length(chan_group)
-        chan_index{ng}                	 = [];
-    end
-    
-    for n = 1:length(postICA_Rej.label)
-        nme                             = postICA_Rej.label{n}(1:3);
-        flg                             = find(strcmp(nme,chan_group));
-        if ~isempty(flg)
-            chan_index{flg}             = [chan_index{flg};n]; clear nme flg;
-        end
-    end
-    
-    chan_inspect                        = [];
-    
-    for ng = 1:length(chan_group)
-        tmp                             = chan_index{ng};
-        tmp                             = tmp(randperm(length(tmp)));
-        chan_inspect                 	= [chan_inspect;tmp(1:4)];
-    end
+%     chan_group                          = {'MLC' 'MRC' 'MLP' 'MRP' 'MLT' 'MRT' 'MLF' 'MRF'};
+%     
+%     for ng = 1:length(chan_group)
+%         chan_index{ng}                	 = [];
+%     end
+%     
+%     for n = 1:length(postICA_Rej.label)
+%         nme                             = postICA_Rej.label{n}(1:3);
+%         flg                             = find(strcmp(nme,chan_group));
+%         if ~isempty(flg)
+%             chan_index{flg}             = [chan_index{flg};n]; clear nme flg;
+%         end
+%     end
+%     
+%     chan_inspect                        = [];
+%     
+%     for ng = 1:length(chan_group)
+%         tmp                             = chan_index{ng};
+%         tmp                             = tmp(randperm(length(tmp)));
+%         chan_inspect                 	= [chan_inspect;tmp(1:4)];
+%     end
     
     cfg                                 = [];
     cfg.viewmode                        = 'butterfly';

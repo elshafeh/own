@@ -2,8 +2,8 @@ clear;
 
 for nvox = {'0.5'}
     
-    load(['../data/template/template_grid_' nvox{:} 'cm.mat']);
-    brainnetome                 = ft_read_atlas('/Users/heshamelshafei/Documents/GitHub/fieldtrip/template/atlas/brainnetome/BNA_MPM_thr25_1.25mm.nii');
+    load(['../data/stock/template_grid_' nvox{:} 'cm.mat']);
+    brainnetome                 = ft_read_atlas('~/github/fieldtrip/template/atlas/brainnetome/BNA_MPM_thr25_1.25mm.nii');
     brainnetome.tissuelabel     = brainnetome.tissuelabel';
     
     template_grid               = ft_convert_units(template_grid,brainnetome.unit);

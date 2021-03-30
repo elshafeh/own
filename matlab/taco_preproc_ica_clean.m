@@ -55,7 +55,7 @@ else
     load(fname);
     
     % Check topography
-    for n = 14:-1:1
+    for n = 10:-1:1
         h_plotICA(comp,n);
     end
     
@@ -63,7 +63,7 @@ else
     
     % Plot Suspect Components
     cfg                                 = [];
-    cfg.layout                          = 'CTF275_helmet.mat';
+    cfg.layout                          = 'CTF151.lay'; %'CTF275_helmet.mat';
     cfg.viewmode                        = 'component';
     cfg.colormap                        = brewermap(256, '*RdBu');
     ft_databrowser(cfg,comp);

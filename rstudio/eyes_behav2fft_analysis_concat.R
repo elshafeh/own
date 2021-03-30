@@ -119,8 +119,11 @@ for (nmes in 1:length(list_measure)){
     }
   }
   
-  grid.arrange(grobs = myplots, 
+  fullfig <- grid.arrange(grobs = myplots, 
                ncol = 3,nrow,3)
+  
+  ggsave(filename="/Users/heshamelshafei/Desktop/visualalpha.png",
+         plot=fullfig,width=6,height=6)
   
 }
 
