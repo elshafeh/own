@@ -25,10 +25,10 @@ suj                                             = sys.argv[1]
 dir_dropbox                                     = '/project/3035002.01/nback/'#/Users/heshamelshafei/'
 
 dir_data_in                                     = dir_dropbox + 'preproc/'
-dir_data_out                                    = dir_dropbox + 'auc/'
+dir_data_out                                    = dir_dropbox + 'auc_dem/'
     
-ext_demean                                      = 'nodemean'
-ext_name                                        = dir_data_in + 'sub' + str(suj)+ '.data4loodecoding.' + ext_demean
+ext_demean                                      = 'yesdemean'
+ext_name                                        = dir_data_in + 'sub' + str(suj)+ '.broadband.' + ext_demean
 fname                                           = ext_name + '.mat'  
 ename                                           = ext_name + '.trialinfo.mat'
 print('Handling '+ fname)

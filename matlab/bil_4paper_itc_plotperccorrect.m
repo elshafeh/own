@@ -32,7 +32,10 @@ end
 
 keep alldata list_cue data4reg
 
-% save('D:/Dropbox/project_me/data/bil/itc.perc.with.cue.mat','alldata');
+%%
+
+data_out        = array2table(data4reg);
+writetable(data_out,'D:\Dropbox\project_me\data\bil\regression_data.csv');
 
 %%
 
@@ -63,4 +66,4 @@ set(gca,'FontSize',14,'FontName', 'Calibri','FontWeight','Light');
 
 %%
 
-mdl = fitlm(data4reg(:,1),data4reg(:,2))
+mdl = fitlm(data4reg(:,1),data4reg(:,2));
