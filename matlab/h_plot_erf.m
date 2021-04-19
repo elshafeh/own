@@ -1,30 +1,34 @@
 function h_plot_erf(cfg_in,data_in)
 
 % input 
-% cfg.label
+% cfg.channel
 
+mtrx_data                               = [];
 
-mtrx_data                           = [];
-
-for ns = 1:length(data_in)
-    
-    if isfield(cfg_in,'channel')
+for ns = 1:size(data_in,1)
+    for ncon = 1:size(data_in,2)
         
-        cfg                             = [];
-        cfg.channel                     = cfg_in.channel;
-        cfg.avgoverchan                 = 'yes';
-        data_nw{ns}                     = ft_selectdata(cfg,data_in{ns});
+        if iscell(cfg_in.channel)
+            find_chan                   = [];
+            for ni = 1:length(cfg_in.channel)
+            find_chan               	= [find_chan;find(strcmp(cfg_in.channel{ni},data_in{ns,ncon}.label))];
+            end
+        else
+            find_chan                   = find(strcmp(cfg_in.channel,data_in{ns,ncon}.label));
+        end
         
-        %         data_nw{ns}                     = data_in{ns};
-        %         data_nw{ns}.avg                 = data_nw{ns}.avg(cfg_in.label,:);
-        %         data_nw{ns}.label               = data_nw{ns}.label(cfg_in.label);
+        switch data_in{ns,ncon}.dimord
+            case 'chan_time'
+                data_type                   = 'time';
+                data                    	= nanmean(data_in{ns,ncon}.avg(find_chan,:),1);
+            case 'chan_freq'
+                data_type                   = 'freq';
+                data                    	= nanmean(data_in{ns,ncon}.powspctrm(find_chan,:),1);
+        end
+                
+        mtrx_data(ns,ncon,:)           	= data; clear data;
         
-    else
-        data_nw{ns}                     = data_in{ns};
     end
-    
-    mtrx_data(ns,:)                     = data_nw{ns}.avg;
-    
 end
 
 if isfield(cfg_in,'zerolim')
@@ -36,42 +40,45 @@ if isfield(cfg_in,'zerolim')
 end
 
 % Use the standard deviation over trials as error bounds:
-mean_data                           = nanmean(mtrx_data,1);
-bounds                              = nanstd(mtrx_data, [], 1);
-bounds_sem                          = bounds ./ sqrt(size(mtrx_data,1));
 
-time_axs                            = data_nw{1}.time;
-
-if isfield (cfg_in,'plot_single')
-if strcmp(cfg_in.plot_single,'yes')
-    plot(time_axs, mtrx_data, 'Color', [0.8 0.8 0.8]);
-end
+switch data_type
+    case 'time'
+        time_axs                        = data_in{1}.time;
+    case 'freq'
+        time_axs                        = data_in{1}.freq;
 end
 
-if isfield (cfg_in,'color')
-    boundedline(time_axs, mean_data, bounds_sem,['-' cfg_in.color],'alpha'); % alpha makes bounds transparent
-else
-    boundedline(time_axs, mean_data, bounds_sem,'-k','alpha'); % alpha makes bounds transparent
+hold on;
+
+for ncon = 1:size(data_in,2)
+    
+    tmp                                 = squeeze(mtrx_data(:,ncon,:));
+    
+    mean_data                           = nanmean(tmp,1);
+    bounds                              = nanstd(tmp, [], 1);
+    bounds_sem                          = bounds ./ sqrt(size(tmp,1));
+    
+    boundedline(time_axs, mean_data, bounds_sem,['-' cfg_in.color(ncon)],'alpha'); % alpha makes bounds transparent
+    
+    clear mean_data bounds_sem bounds
+    
+    if isfield (cfg_in,'plot_single')
+        if strcmp(cfg_in.plot_single,'yes')
+            plot(time_axs, tmp, 'Color', [0.8 0.8 0.8]);
+        end
+    end
+    
 end
 
-% Add all our previous improvements:
-% xlabel('Time (s)');
-% ylabel('Magnetic gradient (fT)');
-% ax                  = gca();
-% ax.XAxisLocation    = 'origin';
-% ax.YAxisLocation    = 'origin';
-% ax.TickDir          = 'out';
-% box off;
-% ax.XLabel.Position(2) = -60;
 
 if isfield(cfg_in,'xlim')
+    
     xlim(cfg_in.xlim);
     
-    t1              = find(round(cfg_in.xlim(1),2) == round(time_axs,2));
-    t2              = find(round(cfg_in.xlim(2),2) == round(time_axs,2));
-    
-    mean_data       = mean_data(t1:t2);
-    time_axs        = time_axs(t1:t2);
+    %     t1              = find(round(cfg_in.xlim(1),2) == round(time_axs,2));
+    %     t2              = find(round(cfg_in.xlim(2),2) == round(time_axs,2));
+    %     mean_data       = mean_data(t1:t2);
+    %     time_axs        = time_axs(t1:t2);
     
 end
 

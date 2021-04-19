@@ -63,4 +63,4 @@ set(gca,'FontSize',14,'FontName', 'Calibri','FontWeight','Light');
 
 %%
 
-mdl = fitlm(data4reg(:,1),data4reg(:,2))
+mdl             = fitlm(data4reg(:,1),data4reg(:,2));

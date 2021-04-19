@@ -61,7 +61,9 @@ for ns = 1:length(suj_list)
                 cfg.bsfilter             	= 'yes';
                 cfg.bsfreq               	= [49 51; 99 101; 149 151];
                 cfg.precision             	= 'single';
-                data                       	= ft_preprocessing(cfg);
+                
+                error('use DFT filters!')
+                data                        = ft_preprocessing(cfg);
                 
                 % DownSample to 300Hz
                 cfg                      	= [];

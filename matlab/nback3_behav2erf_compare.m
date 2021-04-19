@@ -13,7 +13,6 @@ for nsuj = 1:length(suj_list)
             fname_in                        = [dir_data 'sub' num2str(suj_list(nsuj)) '.' num2str(nback) 'back.target'];
             fname_in                        = [fname_in '.' list_behav{nbehav} '.erfComb.mat'];
             
-            
             try
                 fprintf('loading %s\n',fname_in);
                 load(fname_in,'avg_comb');

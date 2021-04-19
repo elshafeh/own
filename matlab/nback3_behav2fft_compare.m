@@ -4,8 +4,8 @@ suj_list                                        = [1:33 35:36 38:44 46:51];
 
 for nsuj = 1:length(suj_list)
     
-    %     list_behav                                  = {'fast.pre' 'slow.pre'};
     list_behav                                  = {'fast.post' 'slow.post'};
+    %     list_behav                                  = {'fast.pre' 'slow.pre'};
 
     for nback = 1:2
         for nbehav = 1:2
@@ -102,28 +102,30 @@ for nback = 1:length(stat)
         i = i + 1;
         subplot(nrow,ncol,i)
         ft_topoplotER(cfg,statplot);
-        title({[num2str(nback) 'B good - bad'],['p = ' num2str(round(min_p(nback),3))]});
+        title({[num2str(nback) 'B fast - slow'],['p = ' num2str(round(min_p(nback),3))]});
         
         set(gca,'FontSize',14,'FontName', 'Calibri','FontWeight','normal');
         
         find_sig_chan                           = mean(statplot.avg,2);
         find_sig_chan                           = find(find_sig_chan ~= 0);
         list_chan                               = nw_stat.label(find_sig_chan);
-        
-        list_chan                               = nw_stat.label;
-        
+                
         cfg                                     = [];
         cfg.channel                             = list_chan;
         cfg.time_limit                          = nw_stat.time([1 end]);
         cfg.color                               = [109 179 177; 111 71 142];
         cfg.color                               = cfg.color ./ 256;
         cfg.z_limit                             = [0 1e-23];
-        cfg.linewidth                           = 10;
+        
+        cfg.linewidth                           = 5;
+        cfg.lineshape                           = '-r';
+        
+        
         i = i + 1;
         subplot(nrow,ncol,i)
         h_plotSingleERFstat_selectChannel_nobox(cfg,nw_stat,nw_data);
         
-        legend({'good' '' 'bad' ''});
+        legend({'fast' '' 'slow' ''});
         
         xlim(statplot.time([1 end]));
         hline(0,'-k');

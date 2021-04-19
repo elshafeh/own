@@ -33,7 +33,7 @@ for nsuj = [1:33 35:36 38:44 46:51]
     list_behav                              = {'correct' 'incorrect' 'fast' 'slow'};
     
     for nback = [1 2]
-        for nstim = [2] % let's focus only on targets
+        for nstim = [1 2] % let's focus only on targets
             
             flg_nback_stim                  = find(trialinfo(:,1) == nback + 4 & trialinfo(:,2) == nstim);
             
@@ -52,7 +52,7 @@ for nsuj = [1:33 35:36 38:44 46:51]
                 index_trials{3}             = sub_info_correct(find(sub_info_correct(:,2) < median_rt),3); % fast
                 index_trials{4}             = sub_info_correct(find(sub_info_correct(:,2) > median_rt),3); % slow
                 
-                for nbehav = [3 4]
+                for nbehav = [1]
                 
                     if ~isempty(index_trials{nbehav})
                         
@@ -65,8 +65,10 @@ for nsuj = [1:33 35:36 38:44 46:51]
                         cfg.trials          = index_trials{nbehav};
                         
                         cfg.foi             = [1:1:30 32:2:100];
-                        cfg.t_ftimwin       = ones(length(cfg.foi),1).*0.5;
+                        
+                        cfg.t_ftimwin       = 4./cfg.foi;
                         cfg.tapsmofrq       = 0.2 *cfg.foi;
+                        
                         cfg.toi             = -1.5:0.02:2;
                         
                         freq                = ft_freqanalysis(cfg,data);
@@ -79,7 +81,7 @@ for nsuj = [1:33 35:36 38:44 46:51]
                         
                         dir_data            = '~/Dropbox/project_me/data/nback/tf/behav2tf/';
                         fname_out           = [dir_data 'sub' num2str(nsuj) '.' list_name{nback} '.' list_stim{nstim}];
-                        fname_out           = [fname_out '.' list_behav{nbehav} '.mtm.mat'];
+                        fname_out           = [fname_out '.' list_behav{nbehav} '.adaptive.mtm.mat'];
                         
                         fprintf('Saving %s\n',fname_out);
                         tic;save(fname_out,'freq_comb','-v7.3');toc

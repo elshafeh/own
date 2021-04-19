@@ -104,14 +104,12 @@ seg = ft_volumesegment(cfg, mri);
 
 %check segmented volume against mri
 
-mri.brainmask = seg.gray+seg.white+seg.csf;
-cfg              = [];
-cfg.interactive  = 'yes';
-cfg.funparameter = 'brainmask';
+mri.brainmask       = seg.gray+seg.white+seg.csf;
+cfg                 = [];
+cfg.interactive     = 'yes';
+cfg.funparameter    = 'brainmask';
 figure, hold on
 ft_sourceplot(cfg, mri);
-
-
 
 %% Comput leadfield(s)
 
@@ -138,7 +136,6 @@ grid               = ft_prepare_sourcemodel(cfg);
 % n'ont aucune importance
 
 grid.MNI_pos = template_grid.pos;
-
 
 % make a figure of the single subject headmodel, and grid positions
 
