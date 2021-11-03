@@ -8,7 +8,14 @@ for nsuj = [1:33 35:36 38:44 46:51]
     fprintf('loading %s\n',fname);
     load(fname);
     
-    bin_summary         = rmfield(bin_summary,'index');
+    if isfield(bin_summary,'trialinfo')
+        bin_summary     = rmfield(bin_summary,'trialinfo');
+    end
+    
+    if isfield(bin_summary,'index')
+        bin_summary     = rmfield(bin_summary,'index');
+    end
+    
     alldata            	= [alldata bin_summary];
     
 end

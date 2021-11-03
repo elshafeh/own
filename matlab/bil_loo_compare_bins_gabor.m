@@ -10,8 +10,8 @@ end
 
 load ../data/bil_goodsubjectlist.27feb20.mat
 
-% list_win                                        = {'1stgab' 'orientation'; '2ndgab' 'orientation'};
-list_win                                        = {'1stgab' 'frequency'; '2ndgab' 'frequency'};
+list_win                                        = {'1stgab' 'orientation'; '2ndgab' 'orientation'};
+% list_win                                        = {'1stgab' 'frequency'; '2ndgab' 'frequency'};
 
 for nsuj = 1:length(suj_list)
     for nwin 	= 1:size(list_win,1)
@@ -65,7 +65,7 @@ for nsuj = 1:length(suj_list)
             
             subject_folder                     	= [project_dir 'data/' subjectName '/tf/'];
             fname                           	= [subject_folder subjectName '.' list_win{ix_win,1} ...
-                '.lock.allbandbinning.' ...
+                '.lock.allbandbinning.newpeaks.' ...
                 list_band{nband} '.band.prestim.window.mat'];
             
             fprintf('loading %s\n',fname);
@@ -109,22 +109,22 @@ for nsuj = 1:length(suj_list)
         end
     end
     
-    %     for nband = 1:size(alldata,2)
-    %         for nbin = 1:size(alldata,4)
-    %
-    %             data_1                              = alldata{nsuj,nband,1,nbin}.avg;
-    %             data_2                              = alldata{nsuj,nband,2,nbin}.avg;
-    %
-    %             data_avg                            = [];
-    %             data_avg.avg                      	= mean([data_1;data_2],1);
-    %             data_avg.time                      	= alldata{nsuj,nband,1,nbin}.time;
-    %             data_avg.label                     	= {'gab avg'};
-    %             data_avg.dimord                   	= 'chan_time';
-    %
-    %             alldata{nsuj,nband,3,nbin}          = data_avg; clear data_1 data_2 data_avg;
-    %
-    %         end
-    %     end
+    for nband = 1:size(alldata,2)
+        for nbin = 1:size(alldata,4)
+            
+            data_1                              = alldata{nsuj,nband,1,nbin}.avg;
+            data_2                              = alldata{nsuj,nband,2,nbin}.avg;
+            
+            data_avg                            = [];
+            data_avg.avg                      	= mean([data_1;data_2],1);
+            data_avg.time                      	= alldata{nsuj,nband,1,nbin}.time;
+            data_avg.label                     	= {'gab avg'};
+            data_avg.dimord                   	= 'chan_time';
+            
+            alldata{nsuj,nband,3,nbin}          = data_avg; clear data_1 data_2 data_avg;
+            
+        end
+    end
     
     keep alldata list_* nsuj suj_list nwin project_dir;
     
@@ -149,7 +149,7 @@ for nband = 1:size(alldata,2)
         cfg.neighbours              = neighbours;
         cfg.channel                 = 1;
         
-        cfg.latency                 = [0 0.6];
+        cfg.latency                 = [0 0.5];
         cfg.clusteralpha            = 0.05; % !!
         cfg.minnbchan               = 0; % !!
         cfg.alpha                   = 0.025;
@@ -166,6 +166,8 @@ keep alldata list_* allstat
 
 %%
 
+clc;
+
 figure;
 
 nrow                                = size(allstat,2);
@@ -176,7 +178,7 @@ lo                                  = 0.7;
 lf                                  = 1;
 
 zlimit                              = [lo lo lo ;lf lf lf ;lo lo lo; lf lf lf];
-plimit                              = 0.1;
+plimit                              = 0.15;
 
 for nwin = 1:size(allstat,2)
     for nband = 1:size(allstat,1)
@@ -197,8 +199,8 @@ for nwin = 1:size(allstat,2)
             cfg.time_limit          = [-0.05 1]; %stat.time([1 end]);
             cfg.color               = {'-b' '-r'};
             cfg.z_limit             = [0.45 1]; %zlimit(nwin,nband)];
-            cfg.linewidth           = 1;
-            
+            cfg.linewidth           = 2;
+            cfg.lineshape           = '-x';
             i = i+1;
             subplot(nrow,ncol,i);
             h_plotSingleERFstat_selectChannel_nobox(cfg,stat,squeeze(alldata(:,nband,nwin,:)));

@@ -32,7 +32,7 @@ suj_list                                            = list(["sub001","sub003","s
                                                             "sub027","sub028","sub029","sub031","sub032","sub033","sub034","sub035","sub036","sub037"])
 
 
-lck_list                                            = list(['1stgab','2ndgab'])
+lck_list                                            = list(['1stgab']) # ,'2ndgab'
 dcd_list                                            = list(["orientation","frequency","color"])
 
 for isub in range(len(suj_list)):
@@ -40,7 +40,7 @@ for isub in range(len(suj_list)):
     suj                                             = suj_list[isub]
         
     dir_data_in                                     = 'P:/3015079.01/data/' + suj + '/preproc/'
-    dir_data_out                                    = 'D:/Dropbox/project_me/data/bil/decode/'
+    dir_data_out                                    = 'P:/3035002.01/bil/timegen/'
     
     for ilock in [0]:    
         
@@ -51,7 +51,7 @@ for isub in range(len(suj_list)):
         eventName                                   = dir_data_in + suj + ext_name + '.trialinfo.mat'
         
         epochs                                      = mne.read_epochs_fieldtrip(fname, None, data_name='data', trialinfo_column=0)
-        epochs                                      = epochs.apply_baseline(baseline=(-0.2,-0.1))
+        #epochs                                      = epochs.apply_baseline(baseline=(-0.2,-0.1))
         
         broad_events                                = loadmat(eventName)['index']
         
@@ -59,13 +59,14 @@ for isub in range(len(suj_list)):
         broad_data[np.where(np.isnan(broad_data))]  = 0
         time_axis                                   = epochs.times
         
-        freq_list                                   = list(["alpha","beta","gamma","theta"])
-        wind_list                                   = list(["preCue2"]) # list(["preGab" + str(ilock+1)])
+        freq_list                                   = list(["alpha","beta","theta"]) # "gamma"
+        wind_list                                   = list([lck_list[ilock]]) # list(["preCue2"]) # list(["preGab" + str(ilock+1)])
         
         for ifreq in range(len(freq_list)):
             for iwind in range(len(wind_list)):
                 
-                fname_bin                           = 'P:/3015079.01/data/' + suj + '/tf/' + suj + '.allbandbinning.' + freq_list[ifreq] + '.band.'+ wind_list[iwind] + '.window.index.mat'
+                fname_bin                           = 'P:/3015079.01/data/' + suj + '/tf/' + suj + '.' + wind_list[iwind]+ '.lock.allbandbinning.newpeaks.' 
+                fname_bin                           = fname_bin + freq_list[ifreq] + '.band.prestim.window.index.mat'
                 print('\nLoading '+ fname_bin+'\n')
                 bin_index                           = loadmat(fname_bin)['bin_index']
                 
@@ -128,8 +129,8 @@ for isub in range(len(suj_list)):
                         time_axis                   = epochs.times
                         time_axis                   = np.squeeze(time_axes[lm_time1:lm_time2])
                         
-                        fname_out                   = dir_data_out + suj + '.' + lck_list[ilock] + '.decodinggabor.' +freq_list[ifreq] + '.band.'
-                        fname_out                   = fname_out + wind_list[iwind] + '.window.bin' + str(ibin+1) + '.' + dcd_list[ifeat] + '.all.bsl.timegen.mat'
+                        fname_out                   = dir_data_out + suj + '.' + lck_list[ilock] + '.decodinggabor.' + freq_list[ifreq] + '.band.'
+                        fname_out                   = fname_out + wind_list[iwind] + '.window.bin' + str(ibin+1) + '.' + dcd_list[ifeat] + '.newpeaks.all.nobsl.timegen.mat'
                         
                         if not os.path.exists(fname_out):
                         

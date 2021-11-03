@@ -130,6 +130,8 @@ sum_table   <- sub_table %>%
   mutate(tot= length(corr_rep), len= sum(corr_rep),percent = len/tot) %>%
   summarise(max(percent))
 
+write.csv(sum_table,"/Users/heshamelshafei/github/own/doc/bil.behavioralReport.summarised.csv", row.names = FALSE)
+
 col_names                         = colnames(sum_table);
 col_names[length((col_names))]    = "perc_corr";
 names(sum_table)                  = col_names

@@ -4,7 +4,7 @@ function [min_p_val,p_val] = h_pValSort(x)
 % ouput : minimum p-value + vector of the p-values of all the clusters with
 % indexed by their sign (+/-)
 
-if isfield(x,'posclusters') && isfield(x,'negclusters') 
+if isfield(x,'posclusters') && isfield(x,'negclusters')
     
     if isempty(x.posclusters)
         p_val       = [x.negclusters.prob; repmat(-1,1,length([x.negclusters.prob]))];

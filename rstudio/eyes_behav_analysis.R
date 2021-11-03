@@ -24,7 +24,7 @@ line_size           <- 1
 error_size          <- .2
 
 
-fname               <- "P:/3015039.05/data/all_sub/eyes_virt_behav.csv"
+fname               <- "/Users/heshamelshafei/github/own/doc/eyes_virt_behav.csv"
 sub_table           <- read.table(fname,sep = ',',header=T)
 sub_table$eye       <- factor(sub_table$eye , levels = c("open","close")) # re-order factor names
 

@@ -10,7 +10,6 @@ for nsuj = 1:length(suj_list)
     
     for nsess = 1:2
         
-        
         fname                               = ['~/Dropbox/project_me/data/nback/prepro/nback_' num2str(nsess) '/data_sess' num2str(nsess) '_s' num2str(suj_list(nsuj)) '.mat'];
         fprintf('loading %s\n',fname);
         load(fname);

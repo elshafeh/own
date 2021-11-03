@@ -71,5 +71,5 @@ for nview = [1 2]
     light ('Position',list_view(nview,:));
     material dull
     saveas(gcf,['D:\Dropbox\project_me\pub\Papers\postdoc\bilbo_manuscript_v1\_figures\_prep\source\lcmv\b1vb5.' num2str(nview) '.png']);
-
+    
 end

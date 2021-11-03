@@ -96,12 +96,12 @@ else
             cfg.comment                 = 'no';
             cfg.figure                  = 0;
             i                           = i +1;
-            subplot(nrow,ncol,i)
+            cfg.figure                  = subplot(nrow,ncol,i);
             ft_topoplotTFR(cfg,stat2plot)
             title([ext_name ' cluster #' num2str(ncluster) ' topo p=' num2str(vct(sig_clusters(ncluster)))]);
             
             i                           = i +1;
-            subplot(nrow,ncol,i)
+            cfg.figure                  = subplot(nrow,ncol,i);
             ft_singleplotTFR(cfg,stat2plot);
             if ncluster == 1
                 title(cfg_in.test_name);

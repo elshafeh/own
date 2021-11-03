@@ -15,23 +15,12 @@ for nsuj = 1:length(suj_list)
     list_cond{1}                = {'pre','correct','*'};
     list_cond{2}                = {'retro','correct','*'};
     
-    %     list_cond{3}                = {'*','correct','*'};
-    %     list_cond{4}                = {'*','incorrect','*'};
-    %
-    %     list_cond{5}                = {'*','correct','fast'};
-    %     list_cond{6}                = {'*','correct','slow'};
-    %
-    %     list_cond{7}                = {'pre','correct','*'};
-    %     list_cond{8}                = {'pre','incorrect','*'};
-    %
-    %     list_cond{9}                = {'retro','correct','*'};
-    %     list_cond{10}           	= {'retro','incorrect','*'};
-    
     for ncond = 1:length(list_cond)
         
         fprintf('\n');
         
-        ext_name                = ['I:/bil/tf/' subjectName '.cuelock.mtmconvolPOW.m1p7s.20msStep.1t100Hz.1HzStep.AvgTrials.'];
+        dir_data                = ['/project/3015079.01/data/' subjectName '/tf/'];
+        ext_name                = [dir_data subjectName '.cuelock.mtmconvolPOW.m1p7s.20msStep.1t100Hz.1HzStep.AvgTrials.'];
         
         ext_cue                 = list_cond{ncond}{1};
         ext_cor                 = list_cond{ncond}{2};
@@ -44,12 +33,11 @@ for nsuj = 1:length(suj_list)
             fprintf('loading %s\n',fname);
             load(fname);
             tmp{nfile}          = freq_comb; clear freq_comb;
-            
         end
         
         freq                    = ft_freqgrandaverage([],tmp{:}); clear tmp;
         
-        fname                   = [start_dir '3015079.01/data/' subjectName '/tf/' subjectName '.firstcuelock.freqComb.alphaPeak.m1000m0ms.gratinglock.demean.erfComb.max20chan.p0p200ms.mat'];
+        fname                   = [dir_data subjectName '.firstcuelock.alphabetapeak.fft.mat'];
         fprintf('loading %s\n',fname);
         load(fname);
         
@@ -115,7 +103,6 @@ close all;
 
 %%
 nw_stat                         = stat{1};
-nw_stat.mask                 	= nw_stat.prob < 0.05;
 
 statplot                        = [];
 statplot.avg                  	= nw_stat.mask .* nw_stat.stat;
@@ -124,19 +111,18 @@ statplot.dimord               	= nw_stat.dimord;
 statplot.time               	= nw_stat.time;
 
 cfg                             = [];
-cfg.layout                      = 'CTF275.lay';
+cfg.layout                      = 'CTF275_helmet.mat'; %'CTF275.lay';
 cfg.zlim                        = [-3 3];
 cfg.colormap                    = brewermap(256,'PRGn');
 cfg.marker                      = 'off';
 cfg.comment                     = 'no';
 cfg.colorbar                    = 'yes';
-subplot(2,2,1);
+cfg.figure                      = subplot(2,2,1);
 cfg.xlim                        = [0.35 0.98];
 ft_topoplotER(cfg,statplot);
 cfg.xlim                        = [3 4];
-subplot(2,2,2);
+cfg.figure                      = subplot(2,2,2);
 ft_topoplotER(cfg,statplot);
-
 
 list_chan                       = {'MLO12','MLO13','MLO14','MLP33','MLP34','MLP42','MLP43','MLP44','MLP53','MLP54','MLP55','MLP56', ...
     'MLT15','MLT16','MLT26','MLT27','MLT37'};
@@ -147,6 +133,7 @@ cfg.time_limit              	= nw_stat.time([1 end]);
 cfg.color                       = {'-b' '-r'};
 cfg.z_limit                     = [-0.65 0.1];
 cfg.linewidth                   = 10;
+cfg.lineshape                   = '-k';
 subplot(2,2,3:4);
 h_plotSingleERFstat_selectChannel_nobox(cfg,nw_stat,alldata);
 xlim(statplot.time([1 end]));

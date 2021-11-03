@@ -29,13 +29,13 @@ for isub in range(len(suj_list)):
     
     suj                                         = suj_list[isub]
     
-    dir_data_in                                 = '/Users/heshamelshafei//Dropbox/project_me/data/bil/virt/' #'/project/3015079.01/data/' + suj + '/virt/'
-    dir_data_out                                = dir_data_in
+    dir_data_in                                 = 'P:/3015079.01/data/' + suj + '/virt/'
+    dir_data_out                                = 'P:/3015079.01/data/' + suj + '/pac/'
     ext_virtual                                 = 'wallis'
     
     fname                                       = dir_data_in + suj+'.virtualelectrode.' +ext_virtual +'.mat'
-    eventName                                   = dir_data_in + suj  + '_firstCueLock_ICAlean_finalrej_trialinfo.mat'
-    binName                                     = dir_data_in + suj  + '.cuelock.itc.comb.5binned.allchan.index.mat'
+    eventName                                   = 'P:/3015079.01/data/' + suj + '/preproc/' + suj  + '_firstCueLock_ICAlean_finalrej_trialinfo.mat'
+    binName                                     = 'P:/3015079.01/data/' + suj + '/tf/' + suj  + '.cuelock.itc.5binned.withEvoked.withIncorrect.mat'
     
     print('\nHandling '+ fname)
     print('\nHandling '+ eventName+'\n')
@@ -66,9 +66,9 @@ for isub in range(len(suj_list)):
         sf                                      = 300
         
         for nchan in range(np.shape(alldata)[1]):
-            for nlow in [1,3]:
+            for nlow in [2]:
                 
-                nwidth                          = 2
+                nwidth                          = 4
                 
                 x                               = np.squeeze(alldata[:,:,t1:t2])
                 x                               = np.squeeze(x[find_correct,:,:])

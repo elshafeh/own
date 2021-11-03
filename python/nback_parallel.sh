@@ -6,10 +6,5 @@ do
     #echo "/home/brainrhythms/hesels/github/own/python/nback_cond.sh $suj" | qsub -N "sub$suj-cond" -l 'nodes=1:ppn=16,mem=63gb,walltime=71:00:00'
     #echo "/home/brainrhythms/hesels/github/own/python/nback_id.sh $suj" | qsub -N "sub$suj-id" -l 'nodes=1:ppn=16,mem=63gb,walltime=71:00:00'
     #echo "/home/brainrhythms/hesels/github/own/python/nback_cat.sh $suj" | qsub -N "sub$suj-cat" -l 'nodes=1:ppn=16,mem=63gb,walltime=71:00:00'
-    echo "/home/brainrhythms/hesels/github/own/python/nback_timegen.sh $suj" | qsub -N "sub$suj-tgen" -l 'nodes=1:ppn=16,mem=63gb,walltime=71:00:00'
+    echo "/home/brainrhythms/hesels/github/own/python/nback_timegen.sh $suj" | qsub -N "sub$suj-virt" -l 'nodes=1:ppn=16,mem=63gb,walltime=71:00:00'
 done
-
-
-
-
-                                            

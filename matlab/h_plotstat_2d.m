@@ -123,7 +123,7 @@ if min_pvalue < cfg_in.plimit
                     cfg.comment                 = 'no';
                     
                     i                           = i +1;
-                    subplot(nrow,ncol,i)
+                    cfg.figure                  = subplot(nrow,ncol,i);
                     ft_topoplotER(cfg,stat2plot)
                     title({'blue vs red',cfg_in.title,[ext_name ' cluster #' num2str(ncluster) ' topo p=' num2str(round(vct(sig_clusters(ncluster)),3))]});
                     

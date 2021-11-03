@@ -1,3 +1,4 @@
+
 clear ; close all;
 clc; global ft_default;
 ft_default.spmversion = 'spm12';
@@ -15,15 +16,13 @@ load ../data/bil_goodsubjectlist.27feb20.mat
 for nsuj = 1:length(suj_list)
     
     subjectName                     = suj_list{nsuj};
-    fname                           = [project_dir 'data/' subjectName '/tf/' subjectName '.firstcuelock.1overf.orig.alphabetaPeak.' ...
-        'm1000m0ms.mat'];
+    dir_data                        = ['/project/3015079.01/data/' subjectName '/tf/'];
+    fname                           = [dir_data subjectName '.firstcuelock.alphabetapeak.fft.mat'];
     load(fname);
-    allpeaks(nsuj,1)                = [apeak_orig];
-    allpeaks(nsuj,2)                = [bpeak_orig];
+    allpeaks(nsuj,1)                = [apeak];
+    allpeaks(nsuj,2)                = [bpeak];
     
 end
-
-allpeaks(isnan(allpeaks(:,2)),2) 	= nanmean(allpeaks(:,2));
 
 keep allpeaks suj_list project_dir
 
@@ -38,7 +37,7 @@ for nsuj = 1:length(suj_list)
         fprintf('loading %s\n',fname);
         load(fname);
         
-        list_band                 	= {'theta' 'alpha' 'beta'};
+        list_band                 	= {'gamma'}; % {'alpha' 'beta'}; % 'theta'
         
         for nband = 1:length(list_band)
             
@@ -70,7 +69,7 @@ for nsuj = 1:length(suj_list)
     
     % -- baseline correct
     
-    for nband = 1:3
+    for nband = 1:size(pow,1)
         
         sub_pow                         = squeeze(pow(nband,:,:,:));
         bsl                             = squeeze(mean(sub_pow,1));
@@ -139,7 +138,7 @@ for nband = 1:length(stat)
     test_band                       = list_band{nband};
     
     nw_stat                         = stat{nband};
-    nw_stat.mask                 	= nw_stat.prob < 0.05;
+    nw_stat.mask                 	= nw_stat.prob < 0.11;
     
     statplot                        = [];
     statplot.avg                  	= nw_stat.mask .* nw_stat.stat;
@@ -148,13 +147,13 @@ for nband = 1:length(stat)
     statplot.time               	= nw_stat.time;
     
     cfg                             = [];
-    cfg.layout                      = 'CTF275.lay';
+    cfg.layout                      = 'CTF275_helmet.lay'; % 'CTF275.lay';
     cfg.zlim                        = [-3 3];
     cfg.colormap                    = brewermap(256,'*RdBu');
     cfg.marker                      = 'off';
     cfg.comment                     = 'no';
     cfg.colorbar                    = 'yes';
-    subplot(2,2,1);
+    cfg.figure                      = subplot(2,2,1);
     
     switch test_band
         case 'theta'
@@ -185,6 +184,7 @@ for nband = 1:length(stat)
     cfg.color                       = {'-b' '-r'};
     cfg.z_limit                     = [0.8 1.3];
     cfg.linewidth                   = 10;
+    cfg.lineshape                   = '-k';
     subplot(2,2,3:4);
     h_plotSingleERFstat_selectChannel_nobox(cfg,nw_stat,squeeze(alldata(:,[1 5],nband)));
     xlim(statplot.time([1 end]));

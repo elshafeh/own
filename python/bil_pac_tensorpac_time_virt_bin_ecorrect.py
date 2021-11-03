@@ -28,13 +28,12 @@ suj_list                                        = list(["sub001","sub003","sub00
 for isub in range(len(suj_list)):
     
     suj                                         = suj_list[isub]
-    dir_data_out                                = 'J:/bil/decode/'
     
     dir_data_in                                 = 'D:/Dropbox/project_me/data/bil/virt/'
-    dir_data_out                                = dir_data_in
+    dir_data_out                                = 'P:/3035002.01/bil/pac/'
     ext_virtual                                 = 'wallis'
     
-    fname                                       = dir_data_in + suj+'.virtualelectrode.' + ext_virtual +'.mat'
+    fname                                       = 'P:/3015079.01/data/' + suj + '/virt/' + suj + '.virtualelectrode.' + ext_virtual +'.mat'
     eventName                                   = 'P:/3015079.01/data/' + suj + '/preproc/' + suj  + '_firstCueLock_ICAlean_finalrej_trialinfo.mat'
     binName                                     = 'P:/3015079.01/data/' + suj + '/tf/' + suj + '.itc.incorrect.index.mat'
     
@@ -62,9 +61,9 @@ for isub in range(len(suj_list)):
         sf                                      = 300
         
         for nchan in range(np.shape(alldata)[1]):
-            for nlow in [1,3]:
+            for nlow in [1]:
                 
-                nwidth                          = 2
+                nwidth                          = 6
                 
                 x                               = np.squeeze(alldata[:,:,t1:t2])
                 x                               = np.squeeze(x[find_correct,:,:])

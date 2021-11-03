@@ -36,8 +36,7 @@ for nsuj = 1:length(suj_list)
             
             subject_folder                     	= [project_dir 'data/' subjectName '/tf/'];
             fname                           	= [subject_folder subjectName '.' list_win{ix_win,1} ...
-                '.lock.allbandbinning.' ...
-                list_band{nband} '.band.prestim.window.mat'];
+                '.lock.allbandbinning.newpeaks.' list_band{nband} '.band.prestim.window.mat'];
             fprintf('loading %s\n',fname);
             load(fname);
             
@@ -161,7 +160,8 @@ for nwin = 1:size(allstat,2)
             cfg.time_limit          = [-0.05 1]; %stat.time([1 end]);
             cfg.color               = {'-b' '-r'};
             cfg.z_limit             = zlimit(nchan,:);
-            cfg.linewidth           = 1;
+            cfg.linewidth           = 5;
+            cfg.lineshape           = '-k';
             
             i = i+1;
             subplot(nrow,ncol,i);

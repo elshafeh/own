@@ -12,6 +12,7 @@ import numpy as np
 import sys
 
 from mne.decoding import (GeneralizingEstimator, SlidingEstimator, cross_val_multiscore, LinearModel)
+from mne.datasets import sample
 
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
@@ -34,6 +35,8 @@ ename                                       = ext_name + '.trialinfo.mat'
 print('Handling '+ fname)
 
 epochs_nback                                = mne.read_epochs_fieldtrip(fname, None, data_name='data', trialinfo_column=0)
+epochs_nback                                = epochs_nback.resample(50)
+
 
 alldata                                     = epochs_nback.get_data() #Get all epochs as a 3D array.
 allevents                                   = loadmat(ename)['index']  
@@ -46,14 +49,14 @@ alldata                                     = np.squeeze(alldata[:,:,t1:t2])
 
 list_band                                   = list(["alpha","beta"])
 list_bin                                    = list(["b1","b2"])
-list_window                                 = list(["pre","post"])
+list_window                                 = list(["pre"])
 
 for nband in range(len(list_band)):
     for nwin in range(len(list_window)):
         for nbin in range(len(list_bin)):
             
             iname                           = dir_dropbox + 'bin_index/' + 'sub' + str(suj)+ '.' + list_band[nband] + '.' + list_window[nwin]
-            iname                           = iname + '.' + list_bin[nbin] + '.index.mat'
+            iname                           = iname + '.' + list_bin[nbin] + '.equalhemi.withback.index.mat'
             print('Handling '+ iname)
             
             index                           = loadmat(iname)['index'] - 1
@@ -61,34 +64,11 @@ for nband in range(len(list_band)):
             x                               = np.squeeze(alldata[index,:,:])
             sub_events                      = np.squeeze(allevents[index,:])
             
-            ext_auc                         = '.' + ext_demean + '.auc.timegen.mat'
+            ext_auc                         = '.' + ext_demean + '.withback.downsample.auc.timegen.mat'
             
             ext_name                        = dir_dropbox + 'timegen/' + 'sub' + str(suj)+ '.' + list_band[nband]
             ext_name                        = ext_name + '.' + list_window[nwin] + '.' + list_bin[nbin]
-            
-            # Decode stim category
-            list_stim                       = list(['first','target'])
-            for nstim in [1,2]:
-                
-                fscores_out                 = ext_name + '.decoding.' + list_stim[nstim-1] + ext_auc
-                
-                if not os.path.exists(fscores_out):
-                    
-                    find_stim               = np.squeeze(np.where(sub_events[:,1] == nstim))
-                    
-                    if np.size(find_stim)>0:
-                    
-                        y                   = np.zeros(np.shape(sub_events)[0])
-                        y[find_stim]         = 1
-                    
-                        clf                 = make_pipeline(StandardScaler(), LogisticRegression(solver='lbfgs'))
-                        time_gen            = GeneralizingEstimator(clf, scoring='roc_auc', n_jobs=1,verbose=True)
-                        time_gen.fit(X=x, y=y)
-                        scores              = time_gen.score(X=x, y=y)
-                        
-                        savemat(fscores_out, mdict={'scores': scores,'time_axis':time_axis})
-                        print('\nsaving '+ fscores_out + '\n')
-                
+                            
             # Decode stim identity
             stim_present                    = np.unique(allevents[:,2])
             

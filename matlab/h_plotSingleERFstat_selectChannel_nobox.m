@@ -86,14 +86,17 @@ hold on;
 % Use the standard deviation over trials as error bounds:
 for ncon = 1:size(data_in,2)
     
-    tmp                                 = squeeze(mtrx_data(:,ncon,:));
+    if size(data_in,2) > 1
+        tmp                                 = squeeze(mtrx_data(:,ncon,:));
+    else
+        tmp                                 = mtrx_data;
+    end
     
     mean_data                           = nanmean(tmp,1);
     bounds                              = nanstd(tmp, [], 1);
     bounds_sem                          = bounds ./ sqrt(size(tmp,1));
     x_axis                              = data_in{1}.time;
     
-
     if iscell(cfg_in.color)
         boundedline(x_axis, mean_data, bounds_sem,cfg_in.color{ncon},'alpha'); % alpha makes bounds transparent     
     else
@@ -127,9 +130,19 @@ if size(stat.mask,1) == 1
     plot_vct(plot_vct == 0)     = NaN;
     
 else
+    
     plot_vct                    = mean(double(stat.mask),1);
     plot_vct(plot_vct ~= 0)     = lm;
     plot_vct(plot_vct == 0)     = NaN;
+
+    x_axis                      = stat.time;
+    
+    %     plot_vct                    = nan(1,length(data_in{1}.time));
+    %     t1                          = nearest(data_in{1}.time,stat.time(1));
+    %     t2                          = nearest(data_in{1}.time,stat.time(end));
+    %     plot_vct(t1:t2)           	= mask_vector;
+        
 end
 
-plot(x_axis,plot_vct,'-o','LineWidth',cfg_in.linewidth);
+plot(x_axis,plot_vct,cfg_in.lineshape,'LineWidth',cfg_in.linewidth);
+x                               = 0;
