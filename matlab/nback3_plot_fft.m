@@ -1,51 +1,81 @@
 clear;clc;
 
-suj_list             	= [1:33 35:36 38:44 46:51];
+suj_list                   	= [1:33 35:36 38:44 46:51];
+
+list_channel              	= [];
 
 for nsuj = 1:length(suj_list)
     
-    list_time        	= {'pre' 'post'};
-
-    for ntime = 1:2
-
-        dir_data     	= '~/Dropbox/project_me/data/nback/tf/behav2tf/';
-        fname_1     	= dir([dir_data 'sub' num2str(suj_list(nsuj)) '.*.target.fast.' list_time{ntime}  '.fft.mat']);
-        fname_2     	= dir([dir_data 'sub' num2str(suj_list(nsuj)) '.*.target.slow.' list_time{ntime}  '.fft.mat']);
-        flist           = [fname_1;fname_2]; clear fname_*
-        
-        pow             = [];
-        
-        for nf = 1:length(flist)
-            
-            fname       = [flist(nf).folder filesep flist(nf).name];
-            fprintf('loading %s\n',fname);
-            load(fname);
-            
-            pow(nf,:,:)	= freq_comb.powspctrm;
-            
-        end
-        
-        alldata{nsuj,ntime}     = freq_comb;
-        alldata{nsuj,ntime}.powpsctrm     = squeeze(mean(pow,1)); clear pow freq_comb
-        
-        
-    end
+    subjectname             = ['sub' num2str(suj_list(nsuj))];
+    
+    % load peak
+    dir_data                = '~/Dropbox/project_me/data/nback/peak/';
+    fname                   = [dir_data subjectname '.alphabeta.peak.package.0back.equalhemi.mat']; % fixed
+    fprintf('loading %s\n',fname);
+    load(fname);
+    
+    dataplot(nsuj,1)        = apeak;
+    dataplot(nsuj,2)        = bpeak;
+    
+    dir_data               	= '~/Dropbox/project_me/data/nback/fft/';
+    fname                   = [dir_data subjectname '.alphabeta.peak.fft.0back.mat'];
+    fprintf('loading %s\n',fname);
+    load(fname);
+    
+    gavg                    = freq_comb;
+    
+    cfg                     = [];
+    cfg.channel             = max_chan;
+    cfg.avgoverchan         = 'yes';
+    freq_peak               = ft_selectdata(cfg,freq_comb); clear freq_comb
+    freq_peak.label         = {'avg'};
+    
+    alldata{nsuj,1}         = freq_peak; 
+    
+    list_channel            = [list_channel;max_chan];
+    
+    clc;
+    
 end
 
-keep alldata
+dataplot(isnan(dataplot(:,2)),2)        = round(nanmean(dataplot(:,2)));
+
+keep alldata dataplot list_channel gavg
 
 %%
 clc;
 close all;
 
+subplot(2,2,1)
+hold on;
 
-cfg                     = [];
-cfg.channel            	= {'MEG1912+1913','MEG1922+1923','MEG2032+2033','MEG2042+2043','MEG2112+2113', ... 
-    'MEG2312+2313','MEG2342+2343'};
-cfg.xlim                = [1 40];
-cfg.color               = 'br';
-cfg.plot_single         = 'no';
+cfg                         = [];
+cfg.label                   = {'avg'};
+cfg.xlim                    = [1 30];
+cfg.color                   = 'k';
+cfg.plot_single             = 'no';
 h_plot_erf(cfg,alldata);
-legend({'pre' '' 'post' ''});
+
+vline(round(median(dataplot(:,1))),'--k');
+vline(round(median(dataplot(:,2))),'--k');
+
 title('Occipital power spectrum');
-set(gca,'FontSize',16,'FontName', 'Calibri','FontWeight','normal');
+set(gca,'FontSize',14,'FontName', 'Calibri','FontWeight','normal');
+
+gavg.powspctrm(:)           = 0;
+
+cfg                         = [];
+cfg.layout                  = 'neuromag306cmb.lay';
+cfg.ylim                    = 'maxabs';
+cfg.marker                  = 'on';
+cfg.comment                 = 'no';
+cfg.colormap                = brewermap(256,'*RdBu');
+cfg.colorbar                = 'no';
+cfg.highlight               = 'on';
+cfg.highlightchannel        = unique(list_channel);
+cfg.highlightcolor          = [0 0 0];
+cfg.highlightsize           = 18;
+cfg.highlightsymbol         = '.';
+cfg.figure                  = subplot(2,2,2);
+ft_topoplotER(cfg, gavg);
+

@@ -12,12 +12,10 @@ for nsuj = 1:length(suj_list)
     
     subjectName             = suj_list{nsuj};
     
-    %     chk                     = dir([project_dir 'data/' subjectName '/mri/' subjectName '.processedmri.mat']);
     chk                     = dir(['/project/3015039.06/bil/mri/' subjectName '.processedmri.plusnas.mat']);
     
     
-    template_file           = '../data/stock/template_grid_0.5cm.mat';%'../data/stock/obob_parcellation_grid_5mm.mat'; %
-
+    template_file           = '../data/stock/template_grid_0.5cm.mat';
     if isempty(chk)
         % if subject has no mri
         mri_filename      	= '/home/common/matlab/fieldtrip/template/anatomy/single_subj_T1.nii';
@@ -40,7 +38,6 @@ for nsuj = 1:length(suj_list)
     cfg.channel            	= 'MEG';
     leadfield              	= ft_prepare_leadfield(cfg);
 
-    %     fname_out               = ['/project/3015039.06/bil/head/' subjectName '.volgridLead.obob.mat'];
     fname_out               = ['/project/3015039.06/bil/head/' subjectName '.volgridLead.0.5cm.withNas.mat'];
     
     fprintf('saving %s\n',fname_out);

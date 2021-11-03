@@ -312,6 +312,7 @@ nline = size(plotdata,1);
 [xl, yl, xp, yp, marker, lnsty, lncol, ptchcol, alpha] = deal(cell(nline,1));
 
 for iln = 1:nline
+    
     xl{iln} = plotdata{iln,1};
     yl{iln} = plotdata{iln,2};
 %     if isvert

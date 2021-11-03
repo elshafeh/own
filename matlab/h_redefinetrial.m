@@ -11,31 +11,40 @@ function new_data = h_redefinetrial(cfg,data)
 % cfg.begsample                           = offset.target;
 % both values for window should be positive
 
+new_data                        = data;
+new_data                        = rmfield(new_data,'trial');
+new_data                        = rmfield(new_data,'time');
+new_data                        = rmfield(new_data,'trialinfo');
 
-new_data                    = data;
-
-for nt = 1:length(new_data.trial)
-    
-    % this is important
-    find_zero               = find(round(new_data.time{nt},4) == round(0,4));
-    
-    if isempty(find_zero)
-        find_zero           = find(round(data.time{nt},3) == round(0,3));
-    end
-    
-    if isempty(find_zero)
-        find_zero           = find(round(data.time{nt},2) == round(0,2));
-    end
-    
-    ix_start                = (find_zero+cfg.begsample(nt)) - cfg.window(1)*data.fsample;
-    ix_end                  = (find_zero+cfg.begsample(nt)) + cfg.window(2)*data.fsample;
-    
-    sin_trl                 = new_data.trial{nt}(:,ix_start:ix_end);
-    sin_time                = -cfg.window(1):1/data.fsample:cfg.window(2);
-    
-    new_data.trial{nt}      = sin_trl;
-    new_data.time{nt}       = sin_time;
-    
+if isfield(new_data,'sampleinfo')
+    new_data                 	= rmfield(new_data,'sampleinfo');
 end
 
-new_data                    = rmfield(new_data,'sampleinfo');
+i                               = 0;
+
+for nt = 1:length(data.trial)
+    
+    % this is important
+    find_zero                   = nearest(data.time{nt},0);
+    
+    ix_start                    = (find_zero+cfg.begsample(nt)) - cfg.window(1)*data.fsample;
+    ix_end                      = (find_zero+cfg.begsample(nt)) + cfg.window(2)*data.fsample;
+    
+    if ix_end <= length(data.trial{nt})
+        
+        i                       = i + 1;
+        
+        sin_trl                 = data.trial{nt}(:,ix_start:ix_end);
+        sin_time                = -cfg.window(1):1/data.fsample:cfg.window(2);
+        
+        new_data.trial{i}       = sin_trl;
+        new_data.time{i}        = sin_time;
+        new_data.trialinfo(i,:)	= data.trialinfo(nt,:);
+        
+    else
+        
+        warning('sample out of limits');
+        
+    end
+    
+end

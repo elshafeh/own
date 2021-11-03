@@ -8,13 +8,13 @@ mtrx_data                               = [];
 for ns = 1:size(data_in,1)
     for ncon = 1:size(data_in,2)
         
-        if iscell(cfg_in.channel)
+        if iscell(cfg_in.label)
             find_chan                   = [];
-            for ni = 1:length(cfg_in.channel)
-            find_chan               	= [find_chan;find(strcmp(cfg_in.channel{ni},data_in{ns,ncon}.label))];
+            for ni = 1:length(cfg_in.label)
+            find_chan               	= [find_chan;find(strcmp(cfg_in.label{ni},data_in{ns,ncon}.label))];
             end
         else
-            find_chan                   = find(strcmp(cfg_in.channel,data_in{ns,ncon}.label));
+            find_chan                   = 1;
         end
         
         switch data_in{ns,ncon}.dimord

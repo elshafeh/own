@@ -8,6 +8,24 @@ load(mri_filename); % load in already preocessed MRIs
 
 fprintf('Segment the individual brain\n')
 
+if strcmp(mri.coordsys,'neuromag')
+    
+    cfg                         = [];
+    cfg.method                  = 'interactive';
+    cfg.coordsys                = 'neuromag';
+    mri_realigned               = ft_volumerealign(cfg,mri);
+    
+    % read the single subject anatomical MRI
+    mri                         = ft_volumereslice([], mri_realigned);
+    mri.coordsys                = 'ctf';
+    
+    % segment the anatomical MRI
+    cfg                         = [];
+    cfg.downsample              = 1;
+    seg                         = ft_volumesegment(cfg, mri);
+    
+end
+
 %check segmented volume against mri
 mri.brainmask       = seg.gray+seg.white+seg.csf;
 

@@ -2,24 +2,22 @@ clear;clc;
 
 allbehav                            = [];
 
-for nsuj = [1:33 35:36 38:44 46:51]
+for nbehav = [1:33 35:36 38:44 46:51]
     
-    dir_data                        = '~/Dropbox/project_me/data/nback/trialinfo/';
-    fname                           = [dir_data 'sub' num2str(nsuj) '.trialinfo.mat'];
-    load(fname);
+    dir_data                        = '~/Dropbox/project_me/data/nback/singletrial/';
+    fname_in                        = [ dir_data 'sub' num2str(nbehav) '.singletrial.trialinfo.mat'];
+    fprintf('loading %s\n',fname_in);
+    load(fname_in)
     
-    flg_nback_stim                  = find(trialinfo(:,2) == 2);
-    sub_info                        = trialinfo(flg_nback_stim,[4 5 6]);
+    correct_trials                  = find(rem(trialinfo(:,4),2) ~= 0);
+    perc_correct                    = length(correct_trials) ./ length(trialinfo);
     
-    sub_info_correct                = sub_info(sub_info(:,1) == 1 | sub_info(:,1) == 3,:); % remove incorrect trials for RT analyses
-    sub_info_correct                = sub_info_correct(sub_info_correct(:,2) ~= 0,:); % remove zeros
+    correct_trials_with_rt          = find(rem(trialinfo(:,4),2) ~= 0 & trialinfo(:,5) ~= 0);
+    rt_vector                       = trialinfo(correct_trials_with_rt,5) ./ 1000;
+    rt_vector                       = rt_vector/mean(rt_vector);
+    mean_rt                         = mean(rt_vector);
     
-    median_rt                       = median(sub_info_correct(:,2));
-    perc_correct                    = length(sub_info_correct) ./ length(sub_info);
-
-    
-    allbehav                        = [allbehav;median_rt perc_correct];
-    
+    allbehav                        = [allbehav;perc_correct mean_rt];
     
 end
 
@@ -31,7 +29,7 @@ suj_list                            = [1:33 35:36 38:44 46:51];
 
 for nsuj = 1:length(suj_list)
     
-    list_cond                       = {'first.pre' 'first.post' 'target.pre' 'target.post'};
+    list_cond                       = {'first.pre' 'target.pre' }; %'first.post' 'target.post'}; % 
     
     for ncond = 1:length(list_cond)
         
@@ -40,6 +38,14 @@ for nsuj = 1:length(suj_list)
         
         fprintf('loading %s\n',fname_in);
         load(fname_in);
+                
+        f1                          = nearest(freq_comb.freq,1);
+        f2                          = nearest(freq_comb.freq,30);
+        freq_comb.powspctrm         = freq_comb.powspctrm(:,f1:f2);
+        freq_comb.freq              = freq_comb.freq(f1:f2);
+        
+        pow                         = freq_comb.powspctrm;
+        pow                         = pow ./ nanmean(pow,1);
         
         avg                         = [];
         avg.label                   = freq_comb.label;
@@ -61,9 +67,8 @@ nbsuj                               = size(alldata,1);
 
 cfg                                 = [];
 cfg.method                          = 'montecarlo';
-cfg.latency                         = [1 35];
 cfg.statistic                       = 'ft_statfun_correlationT';
-cfg.type                            = 'Spearman';
+cfg.type                            = 'Pearson';
 cfg.clusterstatistics               = 'maxsum';
 cfg.correctm                        = 'cluster';
 cfg.clusteralpha                    = 0.05;
@@ -90,11 +95,11 @@ end
 keep alldata allbehav stat min_p p_val list_cond
 
 plimit                              = 0.15;
-nrow                                = 3;
-ncol                                = 2;
+nrow                                = 2;
+ncol                                = 4;
 i                                   = 0;
 
-list_behav                          = {'rt' 'accuracy'};
+list_behav                          = {'Accuracy' 'Reaction time'};
 
 for nbehav = 1:size(stat,1)
     for ncond = 1:size(stat,2)
@@ -125,7 +130,9 @@ for nbehav = 1:size(stat,1)
             cfg.colorbar            = 'no';
             
             i = i + 1;
-            subplot(nrow,ncol,i)
+            cfg.figure              = subplot(nrow,ncol,i);
+            
+            
             ft_topoplotER(cfg,statplot);
             title({[list_behav{nbehav} ' with ' list_cond{ncond} ' fft'], ...
                 ['p = ' num2str(round(min_p(nbehav,ncond),3))]});

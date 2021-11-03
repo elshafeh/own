@@ -1,6 +1,6 @@
 clear;clc;
 
-for nsuj = [1:33 35:36 38:44 46:51]
+for nsuj = [1:33 35:36 38:44 46:51] %
     
     for nsess = 1:2
         
@@ -29,13 +29,32 @@ for nsuj = [1:33 35:36 38:44 46:51]
     trialinfo(:,6)                          = 1:length(data.trialinfo); % trial indices to match with bin
     
     list_name                               = {'1back','2back'};
-    list_stim                               = {'first' 'target'};
+    list_stim                               = {'first' 'target' 'allstim' 'norep' 'nontarget' 'filler'};
     list_behav                              = {'correct' 'incorrect' 'fast' 'slow'};
     
     for nback = [1 2]
-        for nstim = [1 2] % let's focus only on targets
+        for nstim = [5 6] % let's focus only on targets
             
-            flg_nback_stim                  = find(trialinfo(:,1) == nback + 4 & trialinfo(:,2) == nstim);
+            switch nstim
+                case 1
+                    % find first
+                    flg_nback_stim              = find(trialinfo(:,1) == nback + 4 & trialinfo(:,2) == nstim);
+                case 2
+                    % find target
+                    flg_nback_stim              = find(trialinfo(:,1) == nback + 4 & trialinfo(:,2) == nstim);
+                case 3
+                    % take all stim
+                    flg_nback_stim             	= find(trialinfo(:,1) == nback + 4);
+                case 4
+                    % ignore trials with RT
+                    flg_nback_stim             	= find(trialinfo(:,1) == nback+ 4 & trialinfo(:,5) == 0);
+                case 5
+                    % ignore targets
+                    flg_nback_stim             	= find(trialinfo(:,1) == nback+ 4 & trialinfo(:,2) ~= 2);
+                case 6
+                    % find fillers
+                    flg_nback_stim             	= find(trialinfo(:,1) == nback+ 4 & trialinfo(:,2) == 0);
+            end
             
             if ~isempty(flg_nback_stim)
                 

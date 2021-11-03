@@ -1,7 +1,7 @@
 clear ; close all; global ft_default
 ft_default.spmversion = 'spm12';
 
-suj_list                                    = [16:33 35:36 38:44 46:51]; % 1:15; % [1:33 35:36 38:44 46:51];
+suj_list                                    = [1:33 35:36 38:44 46:51];
 
 for nsuj = 1:length(suj_list)
     

@@ -8,7 +8,7 @@ atlas.tissuelabel   	= atlas.tissuelabel';
 atlas_param            	= 'tissue';
 atlas               	= ft_convert_units(atlas,'cm');
 
-load ../data/stock/template_grid_0.1cm.mat
+load ../data/stock/template_grid_0.5cm.mat
 
 % create source structure to interpolate the atlas onto
 
@@ -41,11 +41,11 @@ for d = 1:length(roi_interest)
     index_vox        	=  [index_vox ; indxH repmat(d,size(indxH,1),1)];
     
     if ismember(roi_interest(d),aud_areas)
-        ext_modality  	= 'aud';
+        ext_modality  	= 'aud atlas';
     elseif ismember(roi_interest(d),mot_areas)
-        ext_modality 	= 'mot';
+        ext_modality 	= 'mot atlas';
     elseif ismember(roi_interest(d),vis_areas)
-        ext_modality  	= 'vis';
+        ext_modality  	= 'vis atlas';
     end
     
     % extract name and remove underscores
@@ -63,62 +63,62 @@ end
 
 % this plot the atlas
 
-save('~/Dropbox/project_me/data/pam/index/pam_alpha_1mm_aal_index.mat','index_vox','index_name');
+save('~/Dropbox/project_me/data/pam/index/pam_alpha_5mm_aal_index.mat','index_vox','index_name');
 
-plot_atlas                      = 'no';
-
-if strcmp(plot_atlas,'yes')
-    
-    source.pow                  = nan(length(source.pos),1);
-    source.pow(index_vox(:,1))      = index_vox(:,2);
-    
-    % left right top views
-    list_view                 	= [-90 0 0 ; 90 0 0; 0 0 90; 0 -90 0];
-    
-    cfg_caret                	= [];
-    cfg_caret.method         	= 'surface';
-    cfg_caret.funparameter    	= 'pow';
-    cfg_caret.funcolormap    	= brewermap(16,'Spectral');
-    cfg_caret.projmethod      	= 'nearest';
-    cfg_caret.camlight         	= 'no';
-    cfg_caret.surffile         	= 'surface_white_both.mat'; %; %'surface_pial_both.mat'; %'surface_white_both.mat';
-    cfg_caret.surfinflated     	= 'surface_inflated_both_caret.mat';
-    
-    cfg_infla               	= [];
-    cfg_infla.method          	= 'surface';
-    cfg_infla.funparameter   	= 'pow';
-    cfg_infla.funcolormap    	= brewermap(16,'Spectral');
-    cfg_infla.projmethod      	= 'nearest';
-    cfg_infla.camlight        	= 'no';
-    cfg_infla.surffile         	= 'surface_white_both.mat';
-    cfg_infla.surfinflated     	= 'surface_inflated_both.mat';
-    
-    cfg_nofla                 	= [];
-    cfg_nofla.method          	= 'surface';
-    cfg_nofla.funparameter     	= 'pow';
-    cfg_nofla.funcolormap    	= brewermap(16,'Spectral');
-    cfg_nofla.projmethod      	= 'nearest';
-    cfg_nofla.camlight        	= 'no';
-    cfg_nofla.surffile        	= 'surface_white_both.mat';
-    
-    for nview = 1
-        
-        ft_sourceplot(cfg_caret, source);
-        view (list_view(nview,:));
-        material dull
-        title('AAL parcels caret inflation');
-        
-        ft_sourceplot(cfg_infla, source);
-        view (list_view(nview,:));
-        material dull
-        title('AAL parcels inflation');
-        
-        
-        ft_sourceplot(cfg_nofla, source);
-        view (list_view(nview,:));
-        material dull
-        title('AAL parcels no inflation');
-        
-    end
-    
-end
+% plot_atlas                      = 'no';
+% 
+% if strcmp(plot_atlas,'yes')
+%     
+%     source.pow                  = nan(length(source.pos),1);
+%     source.pow(index_vox(:,1))      = index_vox(:,2);
+%     
+%     % left right top views
+%     list_view                 	= [-90 0 0 ; 90 0 0; 0 0 90; 0 -90 0];
+%     
+%     cfg_caret                	= [];
+%     cfg_caret.method         	= 'surface';
+%     cfg_caret.funparameter    	= 'pow';
+%     cfg_caret.funcolormap    	= brewermap(16,'Spectral');
+%     cfg_caret.projmethod      	= 'nearest';
+%     cfg_caret.camlight         	= 'no';
+%     cfg_caret.surffile         	= 'surface_white_both.mat'; %; %'surface_pial_both.mat'; %'surface_white_both.mat';
+%     cfg_caret.surfinflated     	= 'surface_inflated_both_caret.mat';
+%     
+%     cfg_infla               	= [];
+%     cfg_infla.method          	= 'surface';
+%     cfg_infla.funparameter   	= 'pow';
+%     cfg_infla.funcolormap    	= brewermap(16,'Spectral');
+%     cfg_infla.projmethod      	= 'nearest';
+%     cfg_infla.camlight        	= 'no';
+%     cfg_infla.surffile         	= 'surface_white_both.mat';
+%     cfg_infla.surfinflated     	= 'surface_inflated_both.mat';
+%     
+%     cfg_nofla                 	= [];
+%     cfg_nofla.method          	= 'surface';
+%     cfg_nofla.funparameter     	= 'pow';
+%     cfg_nofla.funcolormap    	= brewermap(16,'Spectral');
+%     cfg_nofla.projmethod      	= 'nearest';
+%     cfg_nofla.camlight        	= 'no';
+%     cfg_nofla.surffile        	= 'surface_white_both.mat';
+%     
+%     for nview = 1
+%         
+%         ft_sourceplot(cfg_caret, source);
+%         view (list_view(nview,:));
+%         material dull
+%         title('AAL parcels caret inflation');
+%         
+%         ft_sourceplot(cfg_infla, source);
+%         view (list_view(nview,:));
+%         material dull
+%         title('AAL parcels inflation');
+%         
+%         
+%         ft_sourceplot(cfg_nofla, source);
+%         view (list_view(nview,:));
+%         material dull
+%         title('AAL parcels no inflation');
+%         
+%     end
+%     
+% end

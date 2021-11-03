@@ -1,6 +1,6 @@
 function [region_index,region_name] = h_createIndexfieldtrip(vox_pos,atlas_path)
 
-atlas                       = ft_read_atlas('~/Documents/GitHub/fieldtrip/template/atlas/aal/ROI_MNI_V4.nii');
+atlas                       = ft_read_atlas(atlas_path);
 
 source                      = [];
 source.pos                  = vox_pos;

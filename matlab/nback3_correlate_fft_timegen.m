@@ -2,7 +2,7 @@ clear;clc;
 
 suj_list                          	= [1:33 35:36 38:44 46:51];
 ext_decode                          = 'stim';
-list_cond                           = {'allstim.pre' 'allstim.post'}; % {'target.pre' 'target.post' 'first.pre' 'first.post'};%
+list_cond                           = {'allstim.pre'}; % {'target.pre' 'target.post' 'first.pre' 'first.post'};%
 
 for nsuj = 1:length(suj_list)
     

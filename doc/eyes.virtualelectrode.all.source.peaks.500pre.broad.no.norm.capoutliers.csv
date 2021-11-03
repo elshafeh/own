@@ -1,0 +1,1189 @@
+sub,eyes,measure,roi,cond,compare,band,value
+sub001,open,visual power,Brodmann,correct,accuracy,alpha,0.196653388024396
+sub001,open,visual power,Brodmann,incorrect,accuracy,alpha,0.233793608152752
+sub001,open,visual power,Brodmann,correct_e,accuracy_e,alpha,-0.00914902588264013
+sub001,open,visual power,Brodmann,incorrect_e,accuracy_e,alpha,0.233793608152752
+sub001,open,visual power,Brodmann,fast,rt,alpha,0.0505100740550295
+sub001,open,visual power,Brodmann,slow,rt,alpha,0.395259236194486
+sub001,open,somato lateralisation index,max,correct,accuracy,alpha,0.0972696832487051
+sub001,open,somato lateralisation index,max,incorrect,accuracy,alpha,-0.199961259893753
+sub001,open,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.0537218774706446
+sub001,open,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,-0.199961259893753
+sub001,open,somato lateralisation index,max,fast,rt,alpha,0.141756046776195
+sub001,open,somato lateralisation index,max,slow,rt,alpha,0.100721729335241
+sub001,open,absolute,Brodmann,correct,accuracy,alpha,1.48788055838437e-05
+sub001,open,absolute,Brodmann,incorrect,accuracy,alpha,1.11744845891174e-05
+sub001,open,absolute,Brodmann,correct_e,accuracy_e,alpha,1.27926828076489e-05
+sub001,open,absolute,Brodmann,incorrect_e,accuracy_e,alpha,1.11744845891174e-05
+sub001,open,absolute,Brodmann,fast,rt,alpha,1.40888124129196e-05
+sub001,open,absolute,Brodmann,slow,rt,alpha,1.56667308309592e-05
+sub001,closed,visual power,Brodmann,correct,accuracy,alpha,-0.163076257813237
+sub001,closed,visual power,Brodmann,incorrect,accuracy,alpha,0.0140593952485034
+sub001,closed,visual power,Brodmann,correct_e,accuracy_e,alpha,-0.30907973488807
+sub001,closed,visual power,Brodmann,incorrect_e,accuracy_e,alpha,0.0140593952485034
+sub001,closed,visual power,Brodmann,fast,rt,alpha,-0.161336705130912
+sub001,closed,visual power,Brodmann,slow,rt,alpha,-0.191289412897907
+sub001,closed,somato lateralisation index,max,correct,accuracy,alpha,-0.00524036641742466
+sub001,closed,somato lateralisation index,max,incorrect,accuracy,alpha,-0.0102658626931263
+sub001,closed,somato lateralisation index,max,correct_e,accuracy_e,alpha,-0.106760456729181
+sub001,closed,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,-0.0102658626931263
+sub001,closed,somato lateralisation index,max,fast,rt,alpha,0.0975550992490454
+sub001,closed,somato lateralisation index,max,slow,rt,alpha,-0.124803740538771
+sub001,closed,absolute,Brodmann,correct,accuracy,alpha,2.27843230485191e-05
+sub001,closed,absolute,Brodmann,incorrect,accuracy,alpha,2.60483473884955e-05
+sub001,closed,absolute,Brodmann,correct_e,accuracy_e,alpha,2.15316311633208e-05
+sub001,closed,absolute,Brodmann,incorrect_e,accuracy_e,alpha,2.60483473884955e-05
+sub001,closed,absolute,Brodmann,fast,rt,alpha,2.27312241617621e-05
+sub001,closed,absolute,Brodmann,slow,rt,alpha,2.33882494662153e-05
+sub002,open,visual power,Brodmann,correct,accuracy,alpha,-0.104304300263975
+sub002,open,visual power,Brodmann,incorrect,accuracy,alpha,0.15109664198079
+sub002,open,visual power,Brodmann,correct_e,accuracy_e,alpha,-0.0222773132088258
+sub002,open,visual power,Brodmann,incorrect_e,accuracy_e,alpha,0.15109664198079
+sub002,open,visual power,Brodmann,fast,rt,alpha,-0.169264187602282
+sub002,open,visual power,Brodmann,slow,rt,alpha,-0.0380651164974925
+sub002,open,somato lateralisation index,max,correct,accuracy,alpha,-0.00226228689954179
+sub002,open,somato lateralisation index,max,incorrect,accuracy,alpha,0.0790386055421179
+sub002,open,somato lateralisation index,max,correct_e,accuracy_e,alpha,-0.0384815038996336
+sub002,open,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.0790386055421179
+sub002,open,somato lateralisation index,max,fast,rt,alpha,-0.017958684592223
+sub002,open,somato lateralisation index,max,slow,rt,alpha,0.0150847149566322
+sub002,open,absolute,Brodmann,correct,accuracy,alpha,3.20297527327421e-06
+sub002,open,absolute,Brodmann,incorrect,accuracy,alpha,3.87093722736748e-06
+sub002,open,absolute,Brodmann,correct_e,accuracy_e,alpha,3.24901365374148e-06
+sub002,open,absolute,Brodmann,incorrect_e,accuracy_e,alpha,3.87093722736748e-06
+sub002,open,absolute,Brodmann,fast,rt,alpha,2.91637936512604e-06
+sub002,open,absolute,Brodmann,slow,rt,alpha,3.49742372350269e-06
+sub002,closed,visual power,Brodmann,correct,accuracy,alpha,0.136409448560218
+sub002,closed,visual power,Brodmann,incorrect,accuracy,alpha,0.252248165026386
+sub002,closed,visual power,Brodmann,correct_e,accuracy_e,alpha,-0.0222248153246476
+sub002,closed,visual power,Brodmann,incorrect_e,accuracy_e,alpha,0.252248165026386
+sub002,closed,visual power,Brodmann,fast,rt,alpha,0.250234979989662
+sub002,closed,visual power,Brodmann,slow,rt,alpha,0.0684510570910915
+sub002,closed,somato lateralisation index,max,correct,accuracy,alpha,0.00676856003679582
+sub002,closed,somato lateralisation index,max,incorrect,accuracy,alpha,0.0407771809935077
+sub002,closed,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.0419929407371655
+sub002,closed,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.0407771809935077
+sub002,closed,somato lateralisation index,max,fast,rt,alpha,0.0829037502931427
+sub002,closed,somato lateralisation index,max,slow,rt,alpha,-0.0385139999687056
+sub002,closed,absolute,Brodmann,correct,accuracy,alpha,1.24312649298392e-05
+sub002,closed,absolute,Brodmann,incorrect,accuracy,alpha,1.31930331427795e-05
+sub002,closed,absolute,Brodmann,correct_e,accuracy_e,alpha,1.13470697903852e-05
+sub002,closed,absolute,Brodmann,incorrect_e,accuracy_e,alpha,1.31930331427795e-05
+sub002,closed,absolute,Brodmann,fast,rt,alpha,1.21340347370779e-05
+sub002,closed,absolute,Brodmann,slow,rt,alpha,1.28014177761021e-05
+sub003,open,visual power,Brodmann,correct,accuracy,alpha,0.0964748502267713
+sub003,open,visual power,Brodmann,incorrect,accuracy,alpha,0.148648232533538
+sub003,open,visual power,Brodmann,correct_e,accuracy_e,alpha,-0.0942700426056924
+sub003,open,visual power,Brodmann,incorrect_e,accuracy_e,alpha,0.148648232533538
+sub003,open,visual power,Brodmann,fast,rt,alpha,0.15770109340163
+sub003,open,visual power,Brodmann,slow,rt,alpha,-0.0242687370062952
+sub003,open,somato lateralisation index,max,correct,accuracy,alpha,0.146277393813883
+sub003,open,somato lateralisation index,max,incorrect,accuracy,alpha,0.0100634943523694
+sub003,open,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.103885056093073
+sub003,open,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.0100634943523694
+sub003,open,somato lateralisation index,max,fast,rt,alpha,0.101393735490456
+sub003,open,somato lateralisation index,max,slow,rt,alpha,0.195783824656437
+sub003,open,absolute,Brodmann,correct,accuracy,alpha,4.67660781013313e-06
+sub003,open,absolute,Brodmann,incorrect,accuracy,alpha,4.27701648374515e-06
+sub003,open,absolute,Brodmann,correct_e,accuracy_e,alpha,4.05774414396565e-06
+sub003,open,absolute,Brodmann,incorrect_e,accuracy_e,alpha,4.27701648374515e-06
+sub003,open,absolute,Brodmann,fast,rt,alpha,5.02132694810642e-06
+sub003,open,absolute,Brodmann,slow,rt,alpha,4.41916062868706e-06
+sub003,closed,visual power,Brodmann,correct,accuracy,alpha,0.163900138152322
+sub003,closed,visual power,Brodmann,incorrect,accuracy,alpha,0.00772898828886229
+sub003,closed,visual power,Brodmann,correct_e,accuracy_e,alpha,0.00899808463220775
+sub003,closed,visual power,Brodmann,incorrect_e,accuracy_e,alpha,0.00772898828886229
+sub003,closed,visual power,Brodmann,fast,rt,alpha,0.0382177006590776
+sub003,closed,visual power,Brodmann,slow,rt,alpha,0.285296542983393
+sub003,closed,somato lateralisation index,max,correct,accuracy,alpha,0.0921109442691836
+sub003,closed,somato lateralisation index,max,incorrect,accuracy,alpha,-0.0371709820749852
+sub003,closed,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.0316440592970116
+sub003,closed,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,-0.0371709820749852
+sub003,closed,somato lateralisation index,max,fast,rt,alpha,0.00108543329978417
+sub003,closed,somato lateralisation index,max,slow,rt,alpha,0.165408441880606
+sub003,closed,absolute,Brodmann,correct,accuracy,alpha,8.59160286709106e-06
+sub003,closed,absolute,Brodmann,incorrect,accuracy,alpha,8.73721046757718e-06
+sub003,closed,absolute,Brodmann,correct_e,accuracy_e,alpha,7.86496174844452e-06
+sub003,closed,absolute,Brodmann,incorrect_e,accuracy_e,alpha,8.73721046757718e-06
+sub003,closed,absolute,Brodmann,fast,rt,alpha,8.10556498008746e-06
+sub003,closed,absolute,Brodmann,slow,rt,alpha,8.98006641212577e-06
+sub004,open,visual power,Brodmann,correct,accuracy,alpha,0.306264681236032
+sub004,open,visual power,Brodmann,incorrect,accuracy,alpha,-0.0943057920917685
+sub004,open,visual power,Brodmann,correct_e,accuracy_e,alpha,0.0508617240066428
+sub004,open,visual power,Brodmann,incorrect_e,accuracy_e,alpha,-0.0943057920917685
+sub004,open,visual power,Brodmann,fast,rt,alpha,0.517247157796378
+sub004,open,visual power,Brodmann,slow,rt,alpha,0.23423634918145
+sub004,open,somato lateralisation index,max,correct,accuracy,alpha,-0.0568982199030607
+sub004,open,somato lateralisation index,max,incorrect,accuracy,alpha,0.0195885481833101
+sub004,open,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.248219319866193
+sub004,open,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.0195885481833101
+sub004,open,somato lateralisation index,max,fast,rt,alpha,0.0351184194289101
+sub004,open,somato lateralisation index,max,slow,rt,alpha,-0.123933313713353
+sub004,open,absolute,Brodmann,correct,accuracy,alpha,3.55323716400011e-06
+sub004,open,absolute,Brodmann,incorrect,accuracy,alpha,3.30181831352125e-06
+sub004,open,absolute,Brodmann,correct_e,accuracy_e,alpha,3.45787199045862e-06
+sub004,open,absolute,Brodmann,incorrect_e,accuracy_e,alpha,3.30181831352125e-06
+sub004,open,absolute,Brodmann,fast,rt,alpha,3.72931197766723e-06
+sub004,open,absolute,Brodmann,slow,rt,alpha,3.45724722910095e-06
+sub004,closed,visual power,Brodmann,correct,accuracy,alpha,0.219030800913148
+sub004,closed,visual power,Brodmann,incorrect,accuracy,alpha,0.0524750708978983
+sub004,closed,visual power,Brodmann,correct_e,accuracy_e,alpha,0.15808694216062
+sub004,closed,visual power,Brodmann,incorrect_e,accuracy_e,alpha,0.0524750708978983
+sub004,closed,visual power,Brodmann,fast,rt,alpha,0.296463470514546
+sub004,closed,visual power,Brodmann,slow,rt,alpha,0.193532546235695
+sub004,closed,somato lateralisation index,max,correct,accuracy,alpha,-0.0170042606384972
+sub004,closed,somato lateralisation index,max,incorrect,accuracy,alpha,0.1833833760585
+sub004,closed,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.130605456460932
+sub004,closed,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.1833833760585
+sub004,closed,somato lateralisation index,max,fast,rt,alpha,-0.066565859940032
+sub004,closed,somato lateralisation index,max,slow,rt,alpha,0.028126333160715
+sub004,closed,absolute,Brodmann,correct,accuracy,alpha,8.06016450844652e-06
+sub004,closed,absolute,Brodmann,incorrect,accuracy,alpha,8.25465912174357e-06
+sub004,closed,absolute,Brodmann,correct_e,accuracy_e,alpha,9.21985546337099e-06
+sub004,closed,absolute,Brodmann,incorrect_e,accuracy_e,alpha,8.25465912174357e-06
+sub004,closed,absolute,Brodmann,fast,rt,alpha,7.96337334255265e-06
+sub004,closed,absolute,Brodmann,slow,rt,alpha,8.32679908186661e-06
+sub005,open,visual power,Brodmann,correct,accuracy,alpha,0.158463636370227
+sub005,open,visual power,Brodmann,incorrect,accuracy,alpha,-0.00193728247681711
+sub005,open,visual power,Brodmann,correct_e,accuracy_e,alpha,0.145529418166949
+sub005,open,visual power,Brodmann,incorrect_e,accuracy_e,alpha,-0.00193728247681711
+sub005,open,visual power,Brodmann,fast,rt,alpha,0.0615494983180787
+sub005,open,visual power,Brodmann,slow,rt,alpha,0.34041580183465
+sub005,open,somato lateralisation index,max,correct,accuracy,alpha,0.0273019060232432
+sub005,open,somato lateralisation index,max,incorrect,accuracy,alpha,-0.0538876721434038
+sub005,open,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.0955926928782602
+sub005,open,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,-0.0538876721434038
+sub005,open,somato lateralisation index,max,fast,rt,alpha,0.085578488366713
+sub005,open,somato lateralisation index,max,slow,rt,alpha,-0.037290040551228
+sub005,open,absolute,Brodmann,correct,accuracy,alpha,2.8454367740519e-06
+sub005,open,absolute,Brodmann,incorrect,accuracy,alpha,2.44276001519913e-06
+sub005,open,absolute,Brodmann,correct_e,accuracy_e,alpha,2.94545002562318e-06
+sub005,open,absolute,Brodmann,incorrect_e,accuracy_e,alpha,2.44276001519913e-06
+sub005,open,absolute,Brodmann,fast,rt,alpha,2.85849558144854e-06
+sub005,open,absolute,Brodmann,slow,rt,alpha,2.92345300473891e-06
+sub005,closed,visual power,Brodmann,correct,accuracy,alpha,-0.346681634966618
+sub005,closed,visual power,Brodmann,incorrect,accuracy,alpha,-0.263967498549621
+sub005,closed,visual power,Brodmann,correct_e,accuracy_e,alpha,-0.310739973198063
+sub005,closed,visual power,Brodmann,incorrect_e,accuracy_e,alpha,-0.263967498549621
+sub005,closed,visual power,Brodmann,fast,rt,alpha,-0.380752615841433
+sub005,closed,visual power,Brodmann,slow,rt,alpha,-0.316097913115301
+sub005,closed,somato lateralisation index,max,correct,accuracy,alpha,0.163721999730716
+sub005,closed,somato lateralisation index,max,incorrect,accuracy,alpha,0.0462893335417511
+sub005,closed,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.159061311171332
+sub005,closed,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.0462893335417511
+sub005,closed,somato lateralisation index,max,fast,rt,alpha,0.225956118538169
+sub005,closed,somato lateralisation index,max,slow,rt,alpha,0.0751281805067533
+sub005,closed,absolute,Brodmann,correct,accuracy,alpha,7.22612620513158e-06
+sub005,closed,absolute,Brodmann,incorrect,accuracy,alpha,7.2180816698354e-06
+sub005,closed,absolute,Brodmann,correct_e,accuracy_e,alpha,7.85714391895935e-06
+sub005,closed,absolute,Brodmann,incorrect_e,accuracy_e,alpha,7.2180816698354e-06
+sub005,closed,absolute,Brodmann,fast,rt,alpha,6.8884305732849e-06
+sub005,closed,absolute,Brodmann,slow,rt,alpha,7.52235209953868e-06
+sub006,open,visual power,Brodmann,correct,accuracy,alpha,0.146743166370898
+sub006,open,visual power,Brodmann,incorrect,accuracy,alpha,0.485844883689974
+sub006,open,visual power,Brodmann,correct_e,accuracy_e,alpha,-0.025972459656046
+sub006,open,visual power,Brodmann,incorrect_e,accuracy_e,alpha,0.485844883689974
+sub006,open,visual power,Brodmann,fast,rt,alpha,0.0719767984095138
+sub006,open,visual power,Brodmann,slow,rt,alpha,0.297127771660703
+sub006,open,somato lateralisation index,max,correct,accuracy,alpha,0.216129039032664
+sub006,open,somato lateralisation index,max,incorrect,accuracy,alpha,0.450841285824779
+sub006,open,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.0656564467697046
+sub006,open,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.450841285824779
+sub006,open,somato lateralisation index,max,fast,rt,alpha,0.265323122103719
+sub006,open,somato lateralisation index,max,slow,rt,alpha,0.134263321447199
+sub006,open,absolute,Brodmann,correct,accuracy,alpha,4.80196068035017e-06
+sub006,open,absolute,Brodmann,incorrect,accuracy,alpha,5.4197828276449e-06
+sub006,open,absolute,Brodmann,correct_e,accuracy_e,alpha,4.76300492775641e-06
+sub006,open,absolute,Brodmann,incorrect_e,accuracy_e,alpha,5.4197828276449e-06
+sub006,open,absolute,Brodmann,fast,rt,alpha,4.62830550268371e-06
+sub006,open,absolute,Brodmann,slow,rt,alpha,5.05495861838665e-06
+sub006,closed,visual power,Brodmann,correct,accuracy,alpha,0.0221889399697347
+sub006,closed,visual power,Brodmann,incorrect,accuracy,alpha,0.350492128821134
+sub006,closed,visual power,Brodmann,correct_e,accuracy_e,alpha,0.042251529659994
+sub006,closed,visual power,Brodmann,incorrect_e,accuracy_e,alpha,0.350492128821134
+sub006,closed,visual power,Brodmann,fast,rt,alpha,-0.0313207776983084
+sub006,closed,visual power,Brodmann,slow,rt,alpha,0.0780734275425062
+sub006,closed,somato lateralisation index,max,correct,accuracy,alpha,0.21165096988411
+sub006,closed,somato lateralisation index,max,incorrect,accuracy,alpha,0.164565884726818
+sub006,closed,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.36717351102848
+sub006,closed,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.164565884726818
+sub006,closed,somato lateralisation index,max,fast,rt,alpha,0.291492708318828
+sub006,closed,somato lateralisation index,max,slow,rt,alpha,0.155876834993614
+sub006,closed,absolute,Brodmann,correct,accuracy,alpha,5.35277402727776e-06
+sub006,closed,absolute,Brodmann,incorrect,accuracy,alpha,6.93060148540679e-06
+sub006,closed,absolute,Brodmann,correct_e,accuracy_e,alpha,5.74974591799319e-06
+sub006,closed,absolute,Brodmann,incorrect_e,accuracy_e,alpha,6.93060148540679e-06
+sub006,closed,absolute,Brodmann,fast,rt,alpha,5.08461612954868e-06
+sub006,closed,absolute,Brodmann,slow,rt,alpha,5.66408103670371e-06
+sub007,open,visual power,Brodmann,correct,accuracy,alpha,-0.0236311166615151
+sub007,open,visual power,Brodmann,incorrect,accuracy,alpha,-0.0810528417421636
+sub007,open,visual power,Brodmann,correct_e,accuracy_e,alpha,-0.0794438863737753
+sub007,open,visual power,Brodmann,incorrect_e,accuracy_e,alpha,-0.0810528417421636
+sub007,open,visual power,Brodmann,fast,rt,alpha,0.0647511417060147
+sub007,open,visual power,Brodmann,slow,rt,alpha,-0.0232951594525243
+sub007,open,somato lateralisation index,max,correct,accuracy,alpha,-0.0101136113874797
+sub007,open,somato lateralisation index,max,incorrect,accuracy,alpha,0.00265157639763886
+sub007,open,somato lateralisation index,max,correct_e,accuracy_e,alpha,-0.00270948469982808
+sub007,open,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.00265157639763886
+sub007,open,somato lateralisation index,max,fast,rt,alpha,-0.0437198026900551
+sub007,open,somato lateralisation index,max,slow,rt,alpha,-0.00762274817478377
+sub007,open,absolute,Brodmann,correct,accuracy,alpha,1.39733430532097e-07
+sub007,open,absolute,Brodmann,incorrect,accuracy,alpha,1.87244166923027e-07
+sub007,open,absolute,Brodmann,correct_e,accuracy_e,alpha,1.5456968921087e-07
+sub007,open,absolute,Brodmann,incorrect_e,accuracy_e,alpha,1.87244166923027e-07
+sub007,open,absolute,Brodmann,fast,rt,alpha,1.36478945615784e-07
+sub007,open,absolute,Brodmann,slow,rt,alpha,1.46425697770032e-07
+sub007,closed,visual power,Brodmann,correct,accuracy,alpha,-0.347357985521312
+sub007,closed,visual power,Brodmann,incorrect,accuracy,alpha,-0.370336926831884
+sub007,closed,visual power,Brodmann,correct_e,accuracy_e,alpha,-0.29487617497127
+sub007,closed,visual power,Brodmann,incorrect_e,accuracy_e,alpha,-0.370336926831884
+sub007,closed,visual power,Brodmann,fast,rt,alpha,-0.300041705594966
+sub007,closed,visual power,Brodmann,slow,rt,alpha,-0.395016225139108
+sub007,closed,somato lateralisation index,max,correct,accuracy,alpha,0.0161042358626167
+sub007,closed,somato lateralisation index,max,incorrect,accuracy,alpha,-0.0128553194767291
+sub007,closed,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.0142182929542961
+sub007,closed,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,-0.0128553194767291
+sub007,closed,somato lateralisation index,max,fast,rt,alpha,-0.0103315242546223
+sub007,closed,somato lateralisation index,max,slow,rt,alpha,0.0307189138860117
+sub007,closed,absolute,Brodmann,correct,accuracy,alpha,2.48891401815227e-07
+sub007,closed,absolute,Brodmann,incorrect,accuracy,alpha,2.31544721714401e-07
+sub007,closed,absolute,Brodmann,correct_e,accuracy_e,alpha,2.31837688486721e-07
+sub007,closed,absolute,Brodmann,incorrect_e,accuracy_e,alpha,2.31544721714401e-07
+sub007,closed,absolute,Brodmann,fast,rt,alpha,2.79315321326122e-07
+sub007,closed,absolute,Brodmann,slow,rt,alpha,2.28952587130241e-07
+sub008,open,visual power,Brodmann,correct,accuracy,alpha,0.134029057983681
+sub008,open,visual power,Brodmann,incorrect,accuracy,alpha,0.241773136011112
+sub008,open,visual power,Brodmann,correct_e,accuracy_e,alpha,0.436098232991147
+sub008,open,visual power,Brodmann,incorrect_e,accuracy_e,alpha,0.241773136011112
+sub008,open,visual power,Brodmann,fast,rt,alpha,0.213274582250053
+sub008,open,visual power,Brodmann,slow,rt,alpha,0.221096822496293
+sub008,open,somato lateralisation index,max,correct,accuracy,alpha,-0.0836840324142278
+sub008,open,somato lateralisation index,max,incorrect,accuracy,alpha,-0.155285664687604
+sub008,open,somato lateralisation index,max,correct_e,accuracy_e,alpha,-0.239864968000477
+sub008,open,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,-0.155285664687604
+sub008,open,somato lateralisation index,max,fast,rt,alpha,-0.194129258446579
+sub008,open,somato lateralisation index,max,slow,rt,alpha,-0.0153132203396018
+sub008,open,absolute,Brodmann,correct,accuracy,alpha,7.2389269579789e-06
+sub008,open,absolute,Brodmann,incorrect,accuracy,alpha,7.96381792439118e-06
+sub008,open,absolute,Brodmann,correct_e,accuracy_e,alpha,9.89182783176485e-06
+sub008,open,absolute,Brodmann,incorrect_e,accuracy_e,alpha,7.96381792439118e-06
+sub008,open,absolute,Brodmann,fast,rt,alpha,7.32433711862726e-06
+sub008,open,absolute,Brodmann,slow,rt,alpha,7.40445646803237e-06
+sub008,closed,visual power,Brodmann,correct,accuracy,alpha,-0.403909313695685
+sub008,closed,visual power,Brodmann,incorrect,accuracy,alpha,-0.502042063172413
+sub008,closed,visual power,Brodmann,correct_e,accuracy_e,alpha,0.199641037499001
+sub008,closed,visual power,Brodmann,incorrect_e,accuracy_e,alpha,-0.502042063172413
+sub008,closed,visual power,Brodmann,fast,rt,alpha,-0.451200590084584
+sub008,closed,visual power,Brodmann,slow,rt,alpha,-0.348708192321574
+sub008,closed,somato lateralisation index,max,correct,accuracy,alpha,0.0313979995812811
+sub008,closed,somato lateralisation index,max,incorrect,accuracy,alpha,-0.179808798466613
+sub008,closed,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.246798793919267
+sub008,closed,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,-0.179808798466613
+sub008,closed,somato lateralisation index,max,fast,rt,alpha,0.0278316968349582
+sub008,closed,somato lateralisation index,max,slow,rt,alpha,0.00346196081650249
+sub008,closed,absolute,Brodmann,correct,accuracy,alpha,5.68993127900976e-06
+sub008,closed,absolute,Brodmann,incorrect,accuracy,alpha,4.95897266146449e-06
+sub008,closed,absolute,Brodmann,correct_e,accuracy_e,alpha,9.76815603778168e-06
+sub008,closed,absolute,Brodmann,incorrect_e,accuracy_e,alpha,4.95897266146449e-06
+sub008,closed,absolute,Brodmann,fast,rt,alpha,5.49594109254193e-06
+sub008,closed,absolute,Brodmann,slow,rt,alpha,6.02586232548461e-06
+sub009,open,visual power,Brodmann,correct,accuracy,alpha,0.185788396580779
+sub009,open,visual power,Brodmann,incorrect,accuracy,alpha,0.245326130756165
+sub009,open,visual power,Brodmann,correct_e,accuracy_e,alpha,0.182909508988973
+sub009,open,visual power,Brodmann,incorrect_e,accuracy_e,alpha,0.245326130756165
+sub009,open,visual power,Brodmann,fast,rt,alpha,0.0979724587090493
+sub009,open,visual power,Brodmann,slow,rt,alpha,0.304085466121185
+sub009,open,somato lateralisation index,max,correct,accuracy,alpha,0.124745886480073
+sub009,open,somato lateralisation index,max,incorrect,accuracy,alpha,0.474349652692634
+sub009,open,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.220187000849249
+sub009,open,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.474349652692634
+sub009,open,somato lateralisation index,max,fast,rt,alpha,0.117048216491444
+sub009,open,somato lateralisation index,max,slow,rt,alpha,0.178229760026707
+sub009,open,absolute,Brodmann,correct,accuracy,alpha,8.7787241690898e-06
+sub009,open,absolute,Brodmann,incorrect,accuracy,alpha,9.2819962432933e-06
+sub009,open,absolute,Brodmann,correct_e,accuracy_e,alpha,8.29920414676572e-06
+sub009,open,absolute,Brodmann,incorrect_e,accuracy_e,alpha,9.2819962432933e-06
+sub009,open,absolute,Brodmann,fast,rt,alpha,8.3142130364716e-06
+sub009,open,absolute,Brodmann,slow,rt,alpha,9.55186563686591e-06
+sub009,closed,visual power,Brodmann,correct,accuracy,alpha,-0.241649946204199
+sub009,closed,visual power,Brodmann,incorrect,accuracy,alpha,-0.228700960518629
+sub009,closed,visual power,Brodmann,correct_e,accuracy_e,alpha,-0.261135123840645
+sub009,closed,visual power,Brodmann,incorrect_e,accuracy_e,alpha,-0.228700960518629
+sub009,closed,visual power,Brodmann,fast,rt,alpha,-0.188462191393966
+sub009,closed,visual power,Brodmann,slow,rt,alpha,-0.287383973406938
+sub009,closed,somato lateralisation index,max,correct,accuracy,alpha,0.260364073475319
+sub009,closed,somato lateralisation index,max,incorrect,accuracy,alpha,0.0741782207397544
+sub009,closed,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.200426935657801
+sub009,closed,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.0741782207397544
+sub009,closed,somato lateralisation index,max,fast,rt,alpha,0.301343837655504
+sub009,closed,somato lateralisation index,max,slow,rt,alpha,0.262063294826076
+sub009,closed,absolute,Brodmann,correct,accuracy,alpha,1.28101612370535e-05
+sub009,closed,absolute,Brodmann,incorrect,accuracy,alpha,1.22273289692457e-05
+sub009,closed,absolute,Brodmann,correct_e,accuracy_e,alpha,1.32278304714072e-05
+sub009,closed,absolute,Brodmann,incorrect_e,accuracy_e,alpha,1.22273289692457e-05
+sub009,closed,absolute,Brodmann,fast,rt,alpha,1.32087171696776e-05
+sub009,closed,absolute,Brodmann,slow,rt,alpha,1.2329075402731e-05
+sub010,open,visual power,Brodmann,correct,accuracy,alpha,0.0740825451815726
+sub010,open,visual power,Brodmann,incorrect,accuracy,alpha,-0.102423716579584
+sub010,open,visual power,Brodmann,correct_e,accuracy_e,alpha,-0.331799351033237
+sub010,open,visual power,Brodmann,incorrect_e,accuracy_e,alpha,-0.102423716579584
+sub010,open,visual power,Brodmann,fast,rt,alpha,0.134290020725715
+sub010,open,visual power,Brodmann,slow,rt,alpha,-0.0502112480141701
+sub010,open,somato lateralisation index,max,correct,accuracy,alpha,0.303757976595532
+sub010,open,somato lateralisation index,max,incorrect,accuracy,alpha,0.521802955915631
+sub010,open,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.152868503364647
+sub010,open,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.521802955915631
+sub010,open,somato lateralisation index,max,fast,rt,alpha,0.405089314271998
+sub010,open,somato lateralisation index,max,slow,rt,alpha,0.182809449467687
+sub010,open,absolute,Brodmann,correct,accuracy,alpha,9.31226380114593e-06
+sub010,open,absolute,Brodmann,incorrect,accuracy,alpha,8.43276978474122e-06
+sub010,open,absolute,Brodmann,correct_e,accuracy_e,alpha,8.41109932012036e-06
+sub010,open,absolute,Brodmann,incorrect_e,accuracy_e,alpha,8.43276978474122e-06
+sub010,open,absolute,Brodmann,fast,rt,alpha,9.53495482874e-06
+sub010,open,absolute,Brodmann,slow,rt,alpha,8.81182441102302e-06
+sub010,closed,visual power,Brodmann,correct,accuracy,alpha,-0.362977074855879
+sub010,closed,visual power,Brodmann,incorrect,accuracy,alpha,-0.37445040054237
+sub010,closed,visual power,Brodmann,correct_e,accuracy_e,alpha,-0.204652119225011
+sub010,closed,visual power,Brodmann,incorrect_e,accuracy_e,alpha,-0.37445040054237
+sub010,closed,visual power,Brodmann,fast,rt,alpha,-0.295524785446783
+sub010,closed,visual power,Brodmann,slow,rt,alpha,-0.428742255847428
+sub010,closed,somato lateralisation index,max,correct,accuracy,alpha,0.712561774450073
+sub010,closed,somato lateralisation index,max,incorrect,accuracy,alpha,0.240699341556073
+sub010,closed,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.641203913915431
+sub010,closed,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.240699341556073
+sub010,closed,somato lateralisation index,max,fast,rt,alpha,0.77164961294977
+sub010,closed,somato lateralisation index,max,slow,rt,alpha,0.62147307287167
+sub010,closed,absolute,Brodmann,correct,accuracy,alpha,2.13589615423711e-05
+sub010,closed,absolute,Brodmann,incorrect,accuracy,alpha,2.04216504600065e-05
+sub010,closed,absolute,Brodmann,correct_e,accuracy_e,alpha,2.37762713555986e-05
+sub010,closed,absolute,Brodmann,incorrect_e,accuracy_e,alpha,2.04216504600065e-05
+sub010,closed,absolute,Brodmann,fast,rt,alpha,2.16675929052668e-05
+sub010,closed,absolute,Brodmann,slow,rt,alpha,2.06896775341781e-05
+sub011,open,visual power,Brodmann,correct,accuracy,alpha,1.64927650538994
+sub011,open,visual power,Brodmann,incorrect,accuracy,alpha,0.734812538267996
+sub011,open,visual power,Brodmann,correct_e,accuracy_e,alpha,1.97295095370627
+sub011,open,visual power,Brodmann,incorrect_e,accuracy_e,alpha,0.734812538267996
+sub011,open,visual power,Brodmann,fast,rt,alpha,1.85397750645199
+sub011,open,visual power,Brodmann,slow,rt,alpha,1.31168777348513
+sub011,open,somato lateralisation index,max,correct,accuracy,alpha,-0.00421831629832826
+sub011,open,somato lateralisation index,max,incorrect,accuracy,alpha,-0.107424096528832
+sub011,open,somato lateralisation index,max,correct_e,accuracy_e,alpha,-0.0867009399566722
+sub011,open,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,-0.107424096528832
+sub011,open,somato lateralisation index,max,fast,rt,alpha,-0.0472997850169825
+sub011,open,somato lateralisation index,max,slow,rt,alpha,0.0469092456042774
+sub011,open,absolute,Brodmann,correct,accuracy,alpha,6.5540017057571e-06
+sub011,open,absolute,Brodmann,incorrect,accuracy,alpha,5.51757376996048e-06
+sub011,open,absolute,Brodmann,correct_e,accuracy_e,alpha,6.16652095744849e-06
+sub011,open,absolute,Brodmann,incorrect_e,accuracy_e,alpha,5.51757376996048e-06
+sub011,open,absolute,Brodmann,fast,rt,alpha,6.45144501090587e-06
+sub011,open,absolute,Brodmann,slow,rt,alpha,6.76125061599864e-06
+sub011,closed,visual power,Brodmann,correct,accuracy,alpha,-0.217530893046079
+sub011,closed,visual power,Brodmann,incorrect,accuracy,alpha,-0.125171752047368
+sub011,closed,visual power,Brodmann,correct_e,accuracy_e,alpha,-0.229321318562735
+sub011,closed,visual power,Brodmann,incorrect_e,accuracy_e,alpha,-0.125171752047368
+sub011,closed,visual power,Brodmann,fast,rt,alpha,-0.221748147120184
+sub011,closed,visual power,Brodmann,slow,rt,alpha,-0.239840875074562
+sub011,closed,somato lateralisation index,max,correct,accuracy,alpha,-0.0408750441395264
+sub011,closed,somato lateralisation index,max,incorrect,accuracy,alpha,0.0377910165545653
+sub011,closed,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.117451186551596
+sub011,closed,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.0377910165545653
+sub011,closed,somato lateralisation index,max,fast,rt,alpha,0.018341158613156
+sub011,closed,somato lateralisation index,max,slow,rt,alpha,-0.0734043974519776
+sub011,closed,absolute,Brodmann,correct,accuracy,alpha,6.02340785088789e-06
+sub011,closed,absolute,Brodmann,incorrect,accuracy,alpha,6.23957789453711e-06
+sub011,closed,absolute,Brodmann,correct_e,accuracy_e,alpha,6.39690328465776e-06
+sub011,closed,absolute,Brodmann,incorrect_e,accuracy_e,alpha,6.23957789453711e-06
+sub011,closed,absolute,Brodmann,fast,rt,alpha,5.92316213502061e-06
+sub011,closed,absolute,Brodmann,slow,rt,alpha,5.84636137116246e-06
+sub012,open,visual power,Brodmann,correct,accuracy,alpha,0.462796224707341
+sub012,open,visual power,Brodmann,incorrect,accuracy,alpha,0.569493854799771
+sub012,open,visual power,Brodmann,correct_e,accuracy_e,alpha,0.183077271898942
+sub012,open,visual power,Brodmann,incorrect_e,accuracy_e,alpha,0.569493854799771
+sub012,open,visual power,Brodmann,fast,rt,alpha,0.601458673312111
+sub012,open,visual power,Brodmann,slow,rt,alpha,0.375472073446459
+sub012,open,somato lateralisation index,max,correct,accuracy,alpha,0.104245571347164
+sub012,open,somato lateralisation index,max,incorrect,accuracy,alpha,-0.0414266347974382
+sub012,open,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.275673810371787
+sub012,open,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,-0.0414266347974382
+sub012,open,somato lateralisation index,max,fast,rt,alpha,0.0910003510047192
+sub012,open,somato lateralisation index,max,slow,rt,alpha,0.120093357780738
+sub012,open,absolute,Brodmann,correct,accuracy,alpha,9.04684826516164e-06
+sub012,open,absolute,Brodmann,incorrect,accuracy,alpha,9.19650105747312e-06
+sub012,open,absolute,Brodmann,correct_e,accuracy_e,alpha,8.34199671130466e-06
+sub012,open,absolute,Brodmann,incorrect_e,accuracy_e,alpha,9.19650105747312e-06
+sub012,open,absolute,Brodmann,fast,rt,alpha,1.0180350817535e-05
+sub012,open,absolute,Brodmann,slow,rt,alpha,7.87082955232261e-06
+sub012,closed,visual power,Brodmann,correct,accuracy,alpha,-0.197299723741466
+sub012,closed,visual power,Brodmann,incorrect,accuracy,alpha,0.286675076607367
+sub012,closed,visual power,Brodmann,correct_e,accuracy_e,alpha,-0.267627138365054
+sub012,closed,visual power,Brodmann,incorrect_e,accuracy_e,alpha,0.286675076607367
+sub012,closed,visual power,Brodmann,fast,rt,alpha,-0.227226406905652
+sub012,closed,visual power,Brodmann,slow,rt,alpha,-0.176909092996631
+sub012,closed,somato lateralisation index,max,correct,accuracy,alpha,0.134044251593904
+sub012,closed,somato lateralisation index,max,incorrect,accuracy,alpha,0.10271005716217
+sub012,closed,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.168063328700489
+sub012,closed,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.10271005716217
+sub012,closed,somato lateralisation index,max,fast,rt,alpha,0.200505465631626
+sub012,closed,somato lateralisation index,max,slow,rt,alpha,0.0523656975601257
+sub012,closed,absolute,Brodmann,correct,accuracy,alpha,1.38516616945665e-05
+sub012,closed,absolute,Brodmann,incorrect,accuracy,alpha,1.53456149811742e-05
+sub012,closed,absolute,Brodmann,correct_e,accuracy_e,alpha,1.19212315247295e-05
+sub012,closed,absolute,Brodmann,incorrect_e,accuracy_e,alpha,1.53456149811742e-05
+sub012,closed,absolute,Brodmann,fast,rt,alpha,1.38693413588928e-05
+sub012,closed,absolute,Brodmann,slow,rt,alpha,1.3829160204628e-05
+sub017,open,visual power,Brodmann,correct,accuracy,alpha,0.249963158963384
+sub017,open,visual power,Brodmann,incorrect,accuracy,alpha,0.268684260388891
+sub017,open,visual power,Brodmann,correct_e,accuracy_e,alpha,-0.148007027333943
+sub017,open,visual power,Brodmann,incorrect_e,accuracy_e,alpha,0.268684260388891
+sub017,open,visual power,Brodmann,fast,rt,alpha,0.560689534417992
+sub017,open,visual power,Brodmann,slow,rt,alpha,0.0226703620677946
+sub017,open,somato lateralisation index,max,correct,accuracy,alpha,0.258297969873623
+sub017,open,somato lateralisation index,max,incorrect,accuracy,alpha,0.145122814590484
+sub017,open,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.306290490565065
+sub017,open,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.145122814590484
+sub017,open,somato lateralisation index,max,fast,rt,alpha,0.226495748795881
+sub017,open,somato lateralisation index,max,slow,rt,alpha,0.260102009164601
+sub017,open,absolute,Brodmann,correct,accuracy,alpha,2.25215972690651e-06
+sub017,open,absolute,Brodmann,incorrect,accuracy,alpha,2.21402744291751e-06
+sub017,open,absolute,Brodmann,correct_e,accuracy_e,alpha,1.76091565365502e-06
+sub017,open,absolute,Brodmann,incorrect_e,accuracy_e,alpha,2.21402744291751e-06
+sub017,open,absolute,Brodmann,fast,rt,alpha,2.60692780896683e-06
+sub017,open,absolute,Brodmann,slow,rt,alpha,1.87003775353036e-06
+sub017,closed,visual power,Brodmann,correct,accuracy,alpha,-0.160022511555523
+sub017,closed,visual power,Brodmann,incorrect,accuracy,alpha,-0.506293391341287
+sub017,closed,visual power,Brodmann,correct_e,accuracy_e,alpha,0.149071709234909
+sub017,closed,visual power,Brodmann,incorrect_e,accuracy_e,alpha,-0.506293391341287
+sub017,closed,visual power,Brodmann,fast,rt,alpha,-0.160039186651381
+sub017,closed,visual power,Brodmann,slow,rt,alpha,-0.197174007780559
+sub017,closed,somato lateralisation index,max,correct,accuracy,alpha,0.240107850874217
+sub017,closed,somato lateralisation index,max,incorrect,accuracy,alpha,0.374649618755241
+sub017,closed,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.268813300244572
+sub017,closed,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.374649618755241
+sub017,closed,somato lateralisation index,max,fast,rt,alpha,0.190408134122276
+sub017,closed,somato lateralisation index,max,slow,rt,alpha,0.252003267463226
+sub017,closed,absolute,Brodmann,correct,accuracy,alpha,5.35147743201004e-06
+sub017,closed,absolute,Brodmann,incorrect,accuracy,alpha,3.99006997747693e-06
+sub017,closed,absolute,Brodmann,correct_e,accuracy_e,alpha,6.12013800871667e-06
+sub017,closed,absolute,Brodmann,incorrect_e,accuracy_e,alpha,3.99006997747693e-06
+sub017,closed,absolute,Brodmann,fast,rt,alpha,5.25459364915805e-06
+sub017,closed,absolute,Brodmann,slow,rt,alpha,5.2166962018649e-06
+sub018,open,visual power,Brodmann,correct,accuracy,alpha,-0.0373660486287928
+sub018,open,visual power,Brodmann,incorrect,accuracy,alpha,0.168785435510233
+sub018,open,visual power,Brodmann,correct_e,accuracy_e,alpha,-0.0436373715894592
+sub018,open,visual power,Brodmann,incorrect_e,accuracy_e,alpha,0.168785435510233
+sub018,open,visual power,Brodmann,fast,rt,alpha,0.0343590096317867
+sub018,open,visual power,Brodmann,slow,rt,alpha,-0.0812722670456728
+sub018,open,somato lateralisation index,max,correct,accuracy,alpha,0.0880803947792565
+sub018,open,somato lateralisation index,max,incorrect,accuracy,alpha,0.118510266622257
+sub018,open,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.00537965239707986
+sub018,open,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.118510266622257
+sub018,open,somato lateralisation index,max,fast,rt,alpha,0.175342776117708
+sub018,open,somato lateralisation index,max,slow,rt,alpha,0.00542259912074242
+sub018,open,absolute,Brodmann,correct,accuracy,alpha,2.45428203065469e-06
+sub018,open,absolute,Brodmann,incorrect,accuracy,alpha,2.78495777780355e-06
+sub018,open,absolute,Brodmann,correct_e,accuracy_e,alpha,2.57769918284888e-06
+sub018,open,absolute,Brodmann,incorrect_e,accuracy_e,alpha,2.78495777780355e-06
+sub018,open,absolute,Brodmann,fast,rt,alpha,2.42112462914958e-06
+sub018,open,absolute,Brodmann,slow,rt,alpha,2.56422717279667e-06
+sub018,closed,visual power,Brodmann,correct,accuracy,alpha,0.0103481045243084
+sub018,closed,visual power,Brodmann,incorrect,accuracy,alpha,0.0110512714045226
+sub018,closed,visual power,Brodmann,correct_e,accuracy_e,alpha,-0.0133050646486188
+sub018,closed,visual power,Brodmann,incorrect_e,accuracy_e,alpha,0.0110512714045226
+sub018,closed,visual power,Brodmann,fast,rt,alpha,0.157787063152247
+sub018,closed,visual power,Brodmann,slow,rt,alpha,-0.0847718298363538
+sub018,closed,somato lateralisation index,max,correct,accuracy,alpha,-0.00230955428370933
+sub018,closed,somato lateralisation index,max,incorrect,accuracy,alpha,0.0296387147460021
+sub018,closed,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.0825457699610851
+sub018,closed,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.0296387147460021
+sub018,closed,somato lateralisation index,max,fast,rt,alpha,-0.0091909122040325
+sub018,closed,somato lateralisation index,max,slow,rt,alpha,-0.0199456776361152
+sub018,closed,absolute,Brodmann,correct,accuracy,alpha,1.23267950049255e-06
+sub018,closed,absolute,Brodmann,incorrect,accuracy,alpha,1.16540893929221e-06
+sub018,closed,absolute,Brodmann,correct_e,accuracy_e,alpha,1.24652099930425e-06
+sub018,closed,absolute,Brodmann,incorrect_e,accuracy_e,alpha,1.16540893929221e-06
+sub018,closed,absolute,Brodmann,fast,rt,alpha,1.22881455900883e-06
+sub018,closed,absolute,Brodmann,slow,rt,alpha,1.26546886314331e-06
+sub020,open,visual power,Brodmann,correct,accuracy,alpha,0.181683833774727
+sub020,open,visual power,Brodmann,incorrect,accuracy,alpha,-0.11705320189932
+sub020,open,visual power,Brodmann,correct_e,accuracy_e,alpha,0.170641786100934
+sub020,open,visual power,Brodmann,incorrect_e,accuracy_e,alpha,-0.11705320189932
+sub020,open,visual power,Brodmann,fast,rt,alpha,0.11245103854455
+sub020,open,visual power,Brodmann,slow,rt,alpha,0.249648754787156
+sub020,open,somato lateralisation index,max,correct,accuracy,alpha,0.406451065917381
+sub020,open,somato lateralisation index,max,incorrect,accuracy,alpha,0.371634014052134
+sub020,open,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.262678450461247
+sub020,open,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.371634014052134
+sub020,open,somato lateralisation index,max,fast,rt,alpha,0.426742125041487
+sub020,open,somato lateralisation index,max,slow,rt,alpha,0.378511158345389
+sub020,open,absolute,Brodmann,correct,accuracy,alpha,3.98048009633569e-06
+sub020,open,absolute,Brodmann,incorrect,accuracy,alpha,3.4392067728441e-06
+sub020,open,absolute,Brodmann,correct_e,accuracy_e,alpha,4.06817998708757e-06
+sub020,open,absolute,Brodmann,incorrect_e,accuracy_e,alpha,3.4392067728441e-06
+sub020,open,absolute,Brodmann,fast,rt,alpha,3.80928354706611e-06
+sub020,open,absolute,Brodmann,slow,rt,alpha,4.1124672534723e-06
+sub020,closed,visual power,Brodmann,correct,accuracy,alpha,-0.162454240451776
+sub020,closed,visual power,Brodmann,incorrect,accuracy,alpha,-0.186171620333921
+sub020,closed,visual power,Brodmann,correct_e,accuracy_e,alpha,-0.190299945998706
+sub020,closed,visual power,Brodmann,incorrect_e,accuracy_e,alpha,-0.186171620333921
+sub020,closed,visual power,Brodmann,fast,rt,alpha,-0.22610917127896
+sub020,closed,visual power,Brodmann,slow,rt,alpha,-0.0873054183729049
+sub020,closed,somato lateralisation index,max,correct,accuracy,alpha,0.187880485226943
+sub020,closed,somato lateralisation index,max,incorrect,accuracy,alpha,0.178893279066332
+sub020,closed,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.142684818840044
+sub020,closed,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.178893279066332
+sub020,closed,somato lateralisation index,max,fast,rt,alpha,0.159351971488226
+sub020,closed,somato lateralisation index,max,slow,rt,alpha,0.234323008932784
+sub020,closed,absolute,Brodmann,correct,accuracy,alpha,3.71075285596034e-06
+sub020,closed,absolute,Brodmann,incorrect,accuracy,alpha,3.51438043957017e-06
+sub020,closed,absolute,Brodmann,correct_e,accuracy_e,alpha,3.3664162072345e-06
+sub020,closed,absolute,Brodmann,incorrect_e,accuracy_e,alpha,3.51438043957017e-06
+sub020,closed,absolute,Brodmann,fast,rt,alpha,3.74036425281936e-06
+sub020,closed,absolute,Brodmann,slow,rt,alpha,3.74441716319881e-06
+sub021,open,visual power,Brodmann,correct,accuracy,alpha,0.11211119807283
+sub021,open,visual power,Brodmann,incorrect,accuracy,alpha,0.464077648778848
+sub021,open,visual power,Brodmann,correct_e,accuracy_e,alpha,0.00542170684918193
+sub021,open,visual power,Brodmann,incorrect_e,accuracy_e,alpha,0.464077648778848
+sub021,open,visual power,Brodmann,fast,rt,alpha,0.0895061981104456
+sub021,open,visual power,Brodmann,slow,rt,alpha,0.128366173615469
+sub021,open,somato lateralisation index,max,correct,accuracy,alpha,0.121708085279727
+sub021,open,somato lateralisation index,max,incorrect,accuracy,alpha,0.0896464525264511
+sub021,open,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.0877883618870278
+sub021,open,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.0896464525264511
+sub021,open,somato lateralisation index,max,fast,rt,alpha,0.146902083891993
+sub021,open,somato lateralisation index,max,slow,rt,alpha,0.109138262945511
+sub021,open,absolute,Brodmann,correct,accuracy,alpha,2.76399131805357e-06
+sub021,open,absolute,Brodmann,incorrect,accuracy,alpha,2.60524838093565e-06
+sub021,open,absolute,Brodmann,correct_e,accuracy_e,alpha,2.69275199868991e-06
+sub021,open,absolute,Brodmann,incorrect_e,accuracy_e,alpha,2.60524838093565e-06
+sub021,open,absolute,Brodmann,fast,rt,alpha,2.74873722238953e-06
+sub021,open,absolute,Brodmann,slow,rt,alpha,2.66173902055873e-06
+sub021,closed,visual power,Brodmann,correct,accuracy,alpha,-0.0547389290741568
+sub021,closed,visual power,Brodmann,incorrect,accuracy,alpha,-0.167056949782563
+sub021,closed,visual power,Brodmann,correct_e,accuracy_e,alpha,0.00226200003996663
+sub021,closed,visual power,Brodmann,incorrect_e,accuracy_e,alpha,-0.167056949782563
+sub021,closed,visual power,Brodmann,fast,rt,alpha,-0.143982960892043
+sub021,closed,visual power,Brodmann,slow,rt,alpha,0.0437583749193729
+sub021,closed,somato lateralisation index,max,correct,accuracy,alpha,0.0125354238242722
+sub021,closed,somato lateralisation index,max,incorrect,accuracy,alpha,-0.000379942190513976
+sub021,closed,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.000519460645143978
+sub021,closed,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,-0.000379942190513976
+sub021,closed,somato lateralisation index,max,fast,rt,alpha,0.00365214435882449
+sub021,closed,somato lateralisation index,max,slow,rt,alpha,0.0367991691015295
+sub021,closed,absolute,Brodmann,correct,accuracy,alpha,4.94427318502469e-06
+sub021,closed,absolute,Brodmann,incorrect,accuracy,alpha,3.80779302876768e-06
+sub021,closed,absolute,Brodmann,correct_e,accuracy_e,alpha,5.03227420237499e-06
+sub021,closed,absolute,Brodmann,incorrect_e,accuracy_e,alpha,3.80779302876768e-06
+sub021,closed,absolute,Brodmann,fast,rt,alpha,4.96904459080899e-06
+sub021,closed,absolute,Brodmann,slow,rt,alpha,4.90934106819912e-06
+sub022,open,visual power,Brodmann,correct,accuracy,alpha,0.412557586690437
+sub022,open,visual power,Brodmann,incorrect,accuracy,alpha,0.530713586327499
+sub022,open,visual power,Brodmann,correct_e,accuracy_e,alpha,0.379187373342138
+sub022,open,visual power,Brodmann,incorrect_e,accuracy_e,alpha,0.530713586327499
+sub022,open,visual power,Brodmann,fast,rt,alpha,0.567225235735215
+sub022,open,visual power,Brodmann,slow,rt,alpha,0.258194672503967
+sub022,open,somato lateralisation index,max,correct,accuracy,alpha,0.373952774459393
+sub022,open,somato lateralisation index,max,incorrect,accuracy,alpha,0.41681826138773
+sub022,open,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.516440755809997
+sub022,open,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.41681826138773
+sub022,open,somato lateralisation index,max,fast,rt,alpha,0.264280088473622
+sub022,open,somato lateralisation index,max,slow,rt,alpha,0.383101972146541
+sub022,open,absolute,Brodmann,correct,accuracy,alpha,3.20177719341626e-06
+sub022,open,absolute,Brodmann,incorrect,accuracy,alpha,2.98604379887709e-06
+sub022,open,absolute,Brodmann,correct_e,accuracy_e,alpha,3.09118990732324e-06
+sub022,open,absolute,Brodmann,incorrect_e,accuracy_e,alpha,2.98604379887709e-06
+sub022,open,absolute,Brodmann,fast,rt,alpha,3.36208266899258e-06
+sub022,open,absolute,Brodmann,slow,rt,alpha,3.09037072784459e-06
+sub022,closed,visual power,Brodmann,correct,accuracy,alpha,-0.0735155114757586
+sub022,closed,visual power,Brodmann,incorrect,accuracy,alpha,-0.267415923232331
+sub022,closed,visual power,Brodmann,correct_e,accuracy_e,alpha,-0.0600671574558775
+sub022,closed,visual power,Brodmann,incorrect_e,accuracy_e,alpha,-0.267415923232331
+sub022,closed,visual power,Brodmann,fast,rt,alpha,-0.149351317970937
+sub022,closed,visual power,Brodmann,slow,rt,alpha,0.0106888696301197
+sub022,closed,somato lateralisation index,max,correct,accuracy,alpha,0.229911739473408
+sub022,closed,somato lateralisation index,max,incorrect,accuracy,alpha,0.275258946511199
+sub022,closed,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.15325011518609
+sub022,closed,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.275258946511199
+sub022,closed,somato lateralisation index,max,fast,rt,alpha,0.496141940791799
+sub022,closed,somato lateralisation index,max,slow,rt,alpha,0.0313981046505494
+sub022,closed,absolute,Brodmann,correct,accuracy,alpha,9.6894078852906e-06
+sub022,closed,absolute,Brodmann,incorrect,accuracy,alpha,7.83604385719049e-06
+sub022,closed,absolute,Brodmann,correct_e,accuracy_e,alpha,8.92118299558196e-06
+sub022,closed,absolute,Brodmann,incorrect_e,accuracy_e,alpha,7.83604385719049e-06
+sub022,closed,absolute,Brodmann,fast,rt,alpha,9.26594878488729e-06
+sub022,closed,absolute,Brodmann,slow,rt,alpha,1.02073451961567e-05
+sub023,open,visual power,Brodmann,correct,accuracy,alpha,0.242138144841219
+sub023,open,visual power,Brodmann,incorrect,accuracy,alpha,0.0176408846923323
+sub023,open,visual power,Brodmann,correct_e,accuracy_e,alpha,0.751161954624855
+sub023,open,visual power,Brodmann,incorrect_e,accuracy_e,alpha,0.0176408846923323
+sub023,open,visual power,Brodmann,fast,rt,alpha,0.420576670135022
+sub023,open,visual power,Brodmann,slow,rt,alpha,0.0971219499044721
+sub023,open,somato lateralisation index,max,correct,accuracy,alpha,0.214367545715549
+sub023,open,somato lateralisation index,max,incorrect,accuracy,alpha,-0.0431411171592539
+sub023,open,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.283901622360679
+sub023,open,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,-0.0431411171592539
+sub023,open,somato lateralisation index,max,fast,rt,alpha,0.188552167414938
+sub023,open,somato lateralisation index,max,slow,rt,alpha,0.250511913216165
+sub023,open,absolute,Brodmann,correct,accuracy,alpha,3.26584626697035e-06
+sub023,open,absolute,Brodmann,incorrect,accuracy,alpha,2.86955195417402e-06
+sub023,open,absolute,Brodmann,correct_e,accuracy_e,alpha,3.79027629423911e-06
+sub023,open,absolute,Brodmann,incorrect_e,accuracy_e,alpha,2.86955195417402e-06
+sub023,open,absolute,Brodmann,fast,rt,alpha,3.38942015150485e-06
+sub023,open,absolute,Brodmann,slow,rt,alpha,3.14828393075545e-06
+sub023,closed,visual power,Brodmann,correct,accuracy,alpha,-0.182670392135023
+sub023,closed,visual power,Brodmann,incorrect,accuracy,alpha,-0.196390790148866
+sub023,closed,visual power,Brodmann,correct_e,accuracy_e,alpha,-0.0674336709571947
+sub023,closed,visual power,Brodmann,incorrect_e,accuracy_e,alpha,-0.196390790148866
+sub023,closed,visual power,Brodmann,fast,rt,alpha,-0.0472840135217007
+sub023,closed,visual power,Brodmann,slow,rt,alpha,-0.337406253880223
+sub023,closed,somato lateralisation index,max,correct,accuracy,alpha,0.237334570232635
+sub023,closed,somato lateralisation index,max,incorrect,accuracy,alpha,0.474018369691279
+sub023,closed,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.459458750025106
+sub023,closed,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.474018369691279
+sub023,closed,somato lateralisation index,max,fast,rt,alpha,0.2035236148211
+sub023,closed,somato lateralisation index,max,slow,rt,alpha,0.261395343479147
+sub023,closed,absolute,Brodmann,correct,accuracy,alpha,4.96332797214815e-06
+sub023,closed,absolute,Brodmann,incorrect,accuracy,alpha,4.42889614957997e-06
+sub023,closed,absolute,Brodmann,correct_e,accuracy_e,alpha,4.81869356133868e-06
+sub023,closed,absolute,Brodmann,incorrect_e,accuracy_e,alpha,4.42889614957997e-06
+sub023,closed,absolute,Brodmann,fast,rt,alpha,5.87024723331874e-06
+sub023,closed,absolute,Brodmann,slow,rt,alpha,4.1229202664871e-06
+sub024,open,visual power,Brodmann,correct,accuracy,alpha,1.10003681374125
+sub024,open,visual power,Brodmann,incorrect,accuracy,alpha,-0.235290832321072
+sub024,open,visual power,Brodmann,correct_e,accuracy_e,alpha,1.82470848643673
+sub024,open,visual power,Brodmann,incorrect_e,accuracy_e,alpha,-0.235290832321072
+sub024,open,visual power,Brodmann,fast,rt,alpha,0.825147208395619
+sub024,open,visual power,Brodmann,slow,rt,alpha,1.27946797909399
+sub024,open,somato lateralisation index,max,correct,accuracy,alpha,-0.0167833168088811
+sub024,open,somato lateralisation index,max,incorrect,accuracy,alpha,-0.0234728845814802
+sub024,open,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.0328562931428244
+sub024,open,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,-0.0234728845814802
+sub024,open,somato lateralisation index,max,fast,rt,alpha,-0.0888238317141847
+sub024,open,somato lateralisation index,max,slow,rt,alpha,0.0727048702441662
+sub024,open,absolute,Brodmann,correct,accuracy,alpha,1.70743732081829e-06
+sub024,open,absolute,Brodmann,incorrect,accuracy,alpha,1.16963122355194e-06
+sub024,open,absolute,Brodmann,correct_e,accuracy_e,alpha,1.77823221980544e-06
+sub024,open,absolute,Brodmann,incorrect_e,accuracy_e,alpha,1.16963122355194e-06
+sub024,open,absolute,Brodmann,fast,rt,alpha,1.73198432056023e-06
+sub024,open,absolute,Brodmann,slow,rt,alpha,1.63523955053149e-06
+sub024,closed,visual power,Brodmann,correct,accuracy,alpha,-0.017275979504983
+sub024,closed,visual power,Brodmann,incorrect,accuracy,alpha,0.380032970108693
+sub024,closed,visual power,Brodmann,correct_e,accuracy_e,alpha,0.0900502444384919
+sub024,closed,visual power,Brodmann,incorrect_e,accuracy_e,alpha,0.380032970108693
+sub024,closed,visual power,Brodmann,fast,rt,alpha,-0.0762938677654159
+sub024,closed,visual power,Brodmann,slow,rt,alpha,0.00449703267919291
+sub024,closed,somato lateralisation index,max,correct,accuracy,alpha,0.0356898141567344
+sub024,closed,somato lateralisation index,max,incorrect,accuracy,alpha,0.116135018609714
+sub024,closed,somato lateralisation index,max,correct_e,accuracy_e,alpha,-0.0190967298985237
+sub024,closed,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.116135018609714
+sub024,closed,somato lateralisation index,max,fast,rt,alpha,0.202290360280077
+sub024,closed,somato lateralisation index,max,slow,rt,alpha,-0.049764600654699
+sub024,closed,absolute,Brodmann,correct,accuracy,alpha,3.91382654135511e-06
+sub024,closed,absolute,Brodmann,incorrect,accuracy,alpha,5.08072155893065e-06
+sub024,closed,absolute,Brodmann,correct_e,accuracy_e,alpha,4.19918895284636e-06
+sub024,closed,absolute,Brodmann,incorrect_e,accuracy_e,alpha,5.08072155893065e-06
+sub024,closed,absolute,Brodmann,fast,rt,alpha,4.0193878990668e-06
+sub024,closed,absolute,Brodmann,slow,rt,alpha,3.71096397922893e-06
+sub025,open,visual power,Brodmann,correct,accuracy,alpha,1.80334881467814
+sub025,open,visual power,Brodmann,incorrect,accuracy,alpha,0.66081166393038
+sub025,open,visual power,Brodmann,correct_e,accuracy_e,alpha,1.63715779973963
+sub025,open,visual power,Brodmann,incorrect_e,accuracy_e,alpha,0.66081166393038
+sub025,open,visual power,Brodmann,fast,rt,alpha,1.9559253919486
+sub025,open,visual power,Brodmann,slow,rt,alpha,1.3996398448357
+sub025,open,somato lateralisation index,max,correct,accuracy,alpha,0.108498362972955
+sub025,open,somato lateralisation index,max,incorrect,accuracy,alpha,0.0272642716403234
+sub025,open,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.103093993607518
+sub025,open,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.0272642716403234
+sub025,open,somato lateralisation index,max,fast,rt,alpha,0.0824548248229973
+sub025,open,somato lateralisation index,max,slow,rt,alpha,0.138578672805528
+sub025,open,absolute,Brodmann,correct,accuracy,alpha,1.64805987634189e-06
+sub025,open,absolute,Brodmann,incorrect,accuracy,alpha,1.4801328776406e-06
+sub025,open,absolute,Brodmann,correct_e,accuracy_e,alpha,1.65166159357598e-06
+sub025,open,absolute,Brodmann,incorrect_e,accuracy_e,alpha,1.4801328776406e-06
+sub025,open,absolute,Brodmann,fast,rt,alpha,1.71563240566548e-06
+sub025,open,absolute,Brodmann,slow,rt,alpha,1.57917099589184e-06
+sub025,closed,visual power,Brodmann,correct,accuracy,alpha,-0.00327673879314377
+sub025,closed,visual power,Brodmann,incorrect,accuracy,alpha,0.0303480145954786
+sub025,closed,visual power,Brodmann,correct_e,accuracy_e,alpha,0.0376661794141543
+sub025,closed,visual power,Brodmann,incorrect_e,accuracy_e,alpha,0.0303480145954786
+sub025,closed,visual power,Brodmann,fast,rt,alpha,0.129990536920758
+sub025,closed,visual power,Brodmann,slow,rt,alpha,-0.132667705671011
+sub025,closed,somato lateralisation index,max,correct,accuracy,alpha,0.147624377545372
+sub025,closed,somato lateralisation index,max,incorrect,accuracy,alpha,0.0757101888431523
+sub025,closed,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.0328067939656057
+sub025,closed,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.0757101888431523
+sub025,closed,somato lateralisation index,max,fast,rt,alpha,0.0756220713872347
+sub025,closed,somato lateralisation index,max,slow,rt,alpha,0.200965109504404
+sub025,closed,absolute,Brodmann,correct,accuracy,alpha,5.80864808671384e-06
+sub025,closed,absolute,Brodmann,incorrect,accuracy,alpha,5.79874535132705e-06
+sub025,closed,absolute,Brodmann,correct_e,accuracy_e,alpha,5.88227505334627e-06
+sub025,closed,absolute,Brodmann,incorrect_e,accuracy_e,alpha,5.79874535132705e-06
+sub025,closed,absolute,Brodmann,fast,rt,alpha,6.48810990845767e-06
+sub025,closed,absolute,Brodmann,slow,rt,alpha,5.12918626497001e-06
+sub026,open,visual power,Brodmann,correct,accuracy,alpha,0.0278746982854563
+sub026,open,visual power,Brodmann,incorrect,accuracy,alpha,0.101724774314276
+sub026,open,visual power,Brodmann,correct_e,accuracy_e,alpha,-0.0107657265367712
+sub026,open,visual power,Brodmann,incorrect_e,accuracy_e,alpha,0.101724774314276
+sub026,open,visual power,Brodmann,fast,rt,alpha,0.45568154511891
+sub026,open,visual power,Brodmann,slow,rt,alpha,-0.179116855487323
+sub026,open,somato lateralisation index,max,correct,accuracy,alpha,0.0613876614570016
+sub026,open,somato lateralisation index,max,incorrect,accuracy,alpha,-0.0800447960508574
+sub026,open,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.0487054279891694
+sub026,open,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,-0.0800447960508574
+sub026,open,somato lateralisation index,max,fast,rt,alpha,-0.103515965006369
+sub026,open,somato lateralisation index,max,slow,rt,alpha,0.231191347611148
+sub026,open,absolute,Brodmann,correct,accuracy,alpha,2.16785458784529e-06
+sub026,open,absolute,Brodmann,incorrect,accuracy,alpha,2.47132496677753e-06
+sub026,open,absolute,Brodmann,correct_e,accuracy_e,alpha,2.16516461884292e-06
+sub026,open,absolute,Brodmann,incorrect_e,accuracy_e,alpha,2.47132496677753e-06
+sub026,open,absolute,Brodmann,fast,rt,alpha,2.36146261619516e-06
+sub026,open,absolute,Brodmann,slow,rt,alpha,2.10389717833692e-06
+sub026,closed,visual power,Brodmann,correct,accuracy,alpha,-0.137950277532925
+sub026,closed,visual power,Brodmann,incorrect,accuracy,alpha,-0.231139052798659
+sub026,closed,visual power,Brodmann,correct_e,accuracy_e,alpha,-0.258781165217197
+sub026,closed,visual power,Brodmann,incorrect_e,accuracy_e,alpha,-0.231139052798659
+sub026,closed,visual power,Brodmann,fast,rt,alpha,-0.186996203553585
+sub026,closed,visual power,Brodmann,slow,rt,alpha,-0.0821467334137713
+sub026,closed,somato lateralisation index,max,correct,accuracy,alpha,-0.0212164324295664
+sub026,closed,somato lateralisation index,max,incorrect,accuracy,alpha,-0.142111089273331
+sub026,closed,somato lateralisation index,max,correct_e,accuracy_e,alpha,-0.039947528559747
+sub026,closed,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,-0.142111089273331
+sub026,closed,somato lateralisation index,max,fast,rt,alpha,0.107536606622678
+sub026,closed,somato lateralisation index,max,slow,rt,alpha,-0.123492413891674
+sub026,closed,absolute,Brodmann,correct,accuracy,alpha,3.1435634760818e-06
+sub026,closed,absolute,Brodmann,incorrect,accuracy,alpha,2.50195792722377e-06
+sub026,closed,absolute,Brodmann,correct_e,accuracy_e,alpha,3.07972337580786e-06
+sub026,closed,absolute,Brodmann,incorrect_e,accuracy_e,alpha,2.50195792722377e-06
+sub026,closed,absolute,Brodmann,fast,rt,alpha,3.04836303076578e-06
+sub026,closed,absolute,Brodmann,slow,rt,alpha,3.28305132180281e-06
+sub027,open,visual power,Brodmann,correct,accuracy,alpha,0.820618500577112
+sub027,open,visual power,Brodmann,incorrect,accuracy,alpha,0.248540442563128
+sub027,open,visual power,Brodmann,correct_e,accuracy_e,alpha,1.02669404919831
+sub027,open,visual power,Brodmann,incorrect_e,accuracy_e,alpha,0.248540442563128
+sub027,open,visual power,Brodmann,fast,rt,alpha,0.897951433321742
+sub027,open,visual power,Brodmann,slow,rt,alpha,0.898315655692766
+sub027,open,somato lateralisation index,max,correct,accuracy,alpha,-0.0180833208133541
+sub027,open,somato lateralisation index,max,incorrect,accuracy,alpha,-0.155578038043724
+sub027,open,somato lateralisation index,max,correct_e,accuracy_e,alpha,-0.0981454714018986
+sub027,open,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,-0.155578038043724
+sub027,open,somato lateralisation index,max,fast,rt,alpha,0.0734005324013909
+sub027,open,somato lateralisation index,max,slow,rt,alpha,-0.141578552791133
+sub027,open,absolute,Brodmann,correct,accuracy,alpha,4.53483815636417e-06
+sub027,open,absolute,Brodmann,incorrect,accuracy,alpha,3.60811506852024e-06
+sub027,open,absolute,Brodmann,correct_e,accuracy_e,alpha,4.56537088914384e-06
+sub027,open,absolute,Brodmann,incorrect_e,accuracy_e,alpha,3.60811506852024e-06
+sub027,open,absolute,Brodmann,fast,rt,alpha,4.75345260901038e-06
+sub027,open,absolute,Brodmann,slow,rt,alpha,4.45907951767409e-06
+sub027,closed,visual power,Brodmann,correct,accuracy,alpha,-0.108452395385146
+sub027,closed,visual power,Brodmann,incorrect,accuracy,alpha,-0.123647810125613
+sub027,closed,visual power,Brodmann,correct_e,accuracy_e,alpha,-0.24392239736677
+sub027,closed,visual power,Brodmann,incorrect_e,accuracy_e,alpha,-0.123647810125613
+sub027,closed,visual power,Brodmann,fast,rt,alpha,-0.0623205514504752
+sub027,closed,visual power,Brodmann,slow,rt,alpha,-0.112642218005157
+sub027,closed,somato lateralisation index,max,correct,accuracy,alpha,-0.215140775224943
+sub027,closed,somato lateralisation index,max,incorrect,accuracy,alpha,0.167968646797192
+sub027,closed,somato lateralisation index,max,correct_e,accuracy_e,alpha,-0.337625340687565
+sub027,closed,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.167968646797192
+sub027,closed,somato lateralisation index,max,fast,rt,alpha,-0.251365194896304
+sub027,closed,somato lateralisation index,max,slow,rt,alpha,-0.238674766786414
+sub027,closed,absolute,Brodmann,correct,accuracy,alpha,6.70234177112912e-06
+sub027,closed,absolute,Brodmann,incorrect,accuracy,alpha,6.56692704827461e-06
+sub027,closed,absolute,Brodmann,correct_e,accuracy_e,alpha,6.22525266709954e-06
+sub027,closed,absolute,Brodmann,incorrect_e,accuracy_e,alpha,6.56692704827461e-06
+sub027,closed,absolute,Brodmann,fast,rt,alpha,6.6787096396457e-06
+sub027,closed,absolute,Brodmann,slow,rt,alpha,7.05843447447992e-06
+sub028,open,visual power,Brodmann,correct,accuracy,alpha,0.0524645723536262
+sub028,open,visual power,Brodmann,incorrect,accuracy,alpha,0.203843134919231
+sub028,open,visual power,Brodmann,correct_e,accuracy_e,alpha,0.227996215837949
+sub028,open,visual power,Brodmann,incorrect_e,accuracy_e,alpha,0.203843134919231
+sub028,open,visual power,Brodmann,fast,rt,alpha,-0.139773821325599
+sub028,open,visual power,Brodmann,slow,rt,alpha,0.174937163729429
+sub028,open,somato lateralisation index,max,correct,accuracy,alpha,0.297078562970637
+sub028,open,somato lateralisation index,max,incorrect,accuracy,alpha,0.144384491866725
+sub028,open,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.19022205759062
+sub028,open,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.144384491866725
+sub028,open,somato lateralisation index,max,fast,rt,alpha,0.310211011280116
+sub028,open,somato lateralisation index,max,slow,rt,alpha,0.283625287270825
+sub028,open,absolute,Brodmann,correct,accuracy,alpha,2.57496447761569e-06
+sub028,open,absolute,Brodmann,incorrect,accuracy,alpha,2.49842843956178e-06
+sub028,open,absolute,Brodmann,correct_e,accuracy_e,alpha,2.72072850124948e-06
+sub028,open,absolute,Brodmann,incorrect_e,accuracy_e,alpha,2.49842843956178e-06
+sub028,open,absolute,Brodmann,fast,rt,alpha,2.52293939898954e-06
+sub028,open,absolute,Brodmann,slow,rt,alpha,2.65498865421332e-06
+sub028,closed,visual power,Brodmann,correct,accuracy,alpha,-0.0825774911219731
+sub028,closed,visual power,Brodmann,incorrect,accuracy,alpha,-0.0750054446979752
+sub028,closed,visual power,Brodmann,correct_e,accuracy_e,alpha,0.0237171327015645
+sub028,closed,visual power,Brodmann,incorrect_e,accuracy_e,alpha,-0.0750054446979752
+sub028,closed,visual power,Brodmann,fast,rt,alpha,-0.0986253809344784
+sub028,closed,visual power,Brodmann,slow,rt,alpha,-0.0691868023161356
+sub028,closed,somato lateralisation index,max,correct,accuracy,alpha,0.156407952253909
+sub028,closed,somato lateralisation index,max,incorrect,accuracy,alpha,0.153694160113058
+sub028,closed,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.129496435041016
+sub028,closed,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.153694160113058
+sub028,closed,somato lateralisation index,max,fast,rt,alpha,0.175768360978029
+sub028,closed,somato lateralisation index,max,slow,rt,alpha,0.170190852089196
+sub028,closed,absolute,Brodmann,correct,accuracy,alpha,7.89706157449324e-06
+sub028,closed,absolute,Brodmann,incorrect,accuracy,alpha,8.50532119833408e-06
+sub028,closed,absolute,Brodmann,correct_e,accuracy_e,alpha,8.93875209883268e-06
+sub028,closed,absolute,Brodmann,incorrect_e,accuracy_e,alpha,8.50532119833408e-06
+sub028,closed,absolute,Brodmann,fast,rt,alpha,8.06390419543652e-06
+sub028,closed,absolute,Brodmann,slow,rt,alpha,7.62819400129911e-06
+sub029,open,visual power,Brodmann,correct,accuracy,alpha,0.0593989304482249
+sub029,open,visual power,Brodmann,incorrect,accuracy,alpha,-0.144418865291484
+sub029,open,visual power,Brodmann,correct_e,accuracy_e,alpha,0.211443927466132
+sub029,open,visual power,Brodmann,incorrect_e,accuracy_e,alpha,-0.144418865291484
+sub029,open,visual power,Brodmann,fast,rt,alpha,0.0538913513613011
+sub029,open,visual power,Brodmann,slow,rt,alpha,0.105158879087523
+sub029,open,somato lateralisation index,max,correct,accuracy,alpha,0.045891985623914
+sub029,open,somato lateralisation index,max,incorrect,accuracy,alpha,0.058690068457228
+sub029,open,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.0201387306163452
+sub029,open,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.058690068457228
+sub029,open,somato lateralisation index,max,fast,rt,alpha,0.121500568698014
+sub029,open,somato lateralisation index,max,slow,rt,alpha,-0.0276336588361904
+sub029,open,absolute,Brodmann,correct,accuracy,alpha,6.79584347660268e-07
+sub029,open,absolute,Brodmann,incorrect,accuracy,alpha,6.39703938022166e-07
+sub029,open,absolute,Brodmann,correct_e,accuracy_e,alpha,7.91287630527841e-07
+sub029,open,absolute,Brodmann,incorrect_e,accuracy_e,alpha,6.39703938022166e-07
+sub029,open,absolute,Brodmann,fast,rt,alpha,6.13321014298304e-07
+sub029,open,absolute,Brodmann,slow,rt,alpha,7.44818024064693e-07
+sub029,closed,visual power,Brodmann,correct,accuracy,alpha,-0.243122591143752
+sub029,closed,visual power,Brodmann,incorrect,accuracy,alpha,-0.170572520362647
+sub029,closed,visual power,Brodmann,correct_e,accuracy_e,alpha,-0.250916760709975
+sub029,closed,visual power,Brodmann,incorrect_e,accuracy_e,alpha,-0.170572520362647
+sub029,closed,visual power,Brodmann,fast,rt,alpha,-0.18252745661624
+sub029,closed,visual power,Brodmann,slow,rt,alpha,-0.309400975470464
+sub029,closed,somato lateralisation index,max,correct,accuracy,alpha,-0.0998464872036669
+sub029,closed,somato lateralisation index,max,incorrect,accuracy,alpha,0.0134703903720896
+sub029,closed,somato lateralisation index,max,correct_e,accuracy_e,alpha,-0.064958917254447
+sub029,closed,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.0134703903720896
+sub029,closed,somato lateralisation index,max,fast,rt,alpha,-0.0826638868991192
+sub029,closed,somato lateralisation index,max,slow,rt,alpha,-0.106536418041876
+sub029,closed,absolute,Brodmann,correct,accuracy,alpha,1.51254816957974e-06
+sub029,closed,absolute,Brodmann,incorrect,accuracy,alpha,1.43930295086253e-06
+sub029,closed,absolute,Brodmann,correct_e,accuracy_e,alpha,1.64752691454945e-06
+sub029,closed,absolute,Brodmann,incorrect_e,accuracy_e,alpha,1.43930295086253e-06
+sub029,closed,absolute,Brodmann,fast,rt,alpha,1.78778284111345e-06
+sub029,closed,absolute,Brodmann,slow,rt,alpha,1.25299508822751e-06
+sub030,open,visual power,Brodmann,correct,accuracy,alpha,0.0274368670827196
+sub030,open,visual power,Brodmann,incorrect,accuracy,alpha,0.257813727935354
+sub030,open,visual power,Brodmann,correct_e,accuracy_e,alpha,0.0673288714857418
+sub030,open,visual power,Brodmann,incorrect_e,accuracy_e,alpha,0.257813727935354
+sub030,open,visual power,Brodmann,fast,rt,alpha,-0.0964104213212288
+sub030,open,visual power,Brodmann,slow,rt,alpha,0.0890768077924066
+sub030,open,somato lateralisation index,max,correct,accuracy,alpha,0.042025254118141
+sub030,open,somato lateralisation index,max,incorrect,accuracy,alpha,0.107724829114262
+sub030,open,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.105367709701831
+sub030,open,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.107724829114262
+sub030,open,somato lateralisation index,max,fast,rt,alpha,-0.0460584144962883
+sub030,open,somato lateralisation index,max,slow,rt,alpha,0.113401444179517
+sub030,open,absolute,Brodmann,correct,accuracy,alpha,2.4204980836427e-06
+sub030,open,absolute,Brodmann,incorrect,accuracy,alpha,2.36886150218035e-06
+sub030,open,absolute,Brodmann,correct_e,accuracy_e,alpha,2.42861870151295e-06
+sub030,open,absolute,Brodmann,incorrect_e,accuracy_e,alpha,2.36886150218035e-06
+sub030,open,absolute,Brodmann,fast,rt,alpha,2.31190290849721e-06
+sub030,open,absolute,Brodmann,slow,rt,alpha,2.52778757570693e-06
+sub030,closed,visual power,Brodmann,correct,accuracy,alpha,0.0182457004254606
+sub030,closed,visual power,Brodmann,incorrect,accuracy,alpha,-0.0930535087852211
+sub030,closed,visual power,Brodmann,correct_e,accuracy_e,alpha,-0.0827576188882996
+sub030,closed,visual power,Brodmann,incorrect_e,accuracy_e,alpha,-0.0930535087852211
+sub030,closed,visual power,Brodmann,fast,rt,alpha,0.0232085404861935
+sub030,closed,visual power,Brodmann,slow,rt,alpha,-0.0265782362571885
+sub030,closed,somato lateralisation index,max,correct,accuracy,alpha,-0.0165677936820234
+sub030,closed,somato lateralisation index,max,incorrect,accuracy,alpha,0.0819591012001596
+sub030,closed,somato lateralisation index,max,correct_e,accuracy_e,alpha,-0.189587921863982
+sub030,closed,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.0819591012001596
+sub030,closed,somato lateralisation index,max,fast,rt,alpha,-0.00159590380388408
+sub030,closed,somato lateralisation index,max,slow,rt,alpha,-0.0330634184838834
+sub030,closed,absolute,Brodmann,correct,accuracy,alpha,7.49980934255243e-06
+sub030,closed,absolute,Brodmann,incorrect,accuracy,alpha,7.75341434912136e-06
+sub030,closed,absolute,Brodmann,correct_e,accuracy_e,alpha,6.95528013580234e-06
+sub030,closed,absolute,Brodmann,incorrect_e,accuracy_e,alpha,7.75341434912136e-06
+sub030,closed,absolute,Brodmann,fast,rt,alpha,7.47060814023093e-06
+sub030,closed,absolute,Brodmann,slow,rt,alpha,7.39362510828501e-06
+sub031,open,visual power,Brodmann,correct,accuracy,alpha,0.448993756397168
+sub031,open,visual power,Brodmann,incorrect,accuracy,alpha,0.373631856656877
+sub031,open,visual power,Brodmann,correct_e,accuracy_e,alpha,0.48979086028623
+sub031,open,visual power,Brodmann,incorrect_e,accuracy_e,alpha,0.373631856656877
+sub031,open,visual power,Brodmann,fast,rt,alpha,0.428650374940964
+sub031,open,visual power,Brodmann,slow,rt,alpha,0.397374092320579
+sub031,open,somato lateralisation index,max,correct,accuracy,alpha,0.116669264907082
+sub031,open,somato lateralisation index,max,incorrect,accuracy,alpha,-0.148504620003519
+sub031,open,somato lateralisation index,max,correct_e,accuracy_e,alpha,-0.00185519494763833
+sub031,open,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,-0.148504620003519
+sub031,open,somato lateralisation index,max,fast,rt,alpha,0.0841501311973277
+sub031,open,somato lateralisation index,max,slow,rt,alpha,0.0957173781302458
+sub031,open,absolute,Brodmann,correct,accuracy,alpha,9.81371460045714e-06
+sub031,open,absolute,Brodmann,incorrect,accuracy,alpha,8.19392096169342e-06
+sub031,open,absolute,Brodmann,correct_e,accuracy_e,alpha,1.02119261598011e-05
+sub031,open,absolute,Brodmann,incorrect_e,accuracy_e,alpha,8.19392096169342e-06
+sub031,open,absolute,Brodmann,fast,rt,alpha,1.06069411257422e-05
+sub031,open,absolute,Brodmann,slow,rt,alpha,9.02132535178896e-06
+sub031,closed,visual power,Brodmann,correct,accuracy,alpha,-0.11251679073542
+sub031,closed,visual power,Brodmann,incorrect,accuracy,alpha,-0.112402368348187
+sub031,closed,visual power,Brodmann,correct_e,accuracy_e,alpha,-0.16952891091482
+sub031,closed,visual power,Brodmann,incorrect_e,accuracy_e,alpha,-0.112402368348187
+sub031,closed,visual power,Brodmann,fast,rt,alpha,0.00380215548081032
+sub031,closed,visual power,Brodmann,slow,rt,alpha,-0.212818788493506
+sub031,closed,somato lateralisation index,max,correct,accuracy,alpha,0.005258918639284
+sub031,closed,somato lateralisation index,max,incorrect,accuracy,alpha,0.199693946589993
+sub031,closed,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.061764587040789
+sub031,closed,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.199693946589993
+sub031,closed,somato lateralisation index,max,fast,rt,alpha,0.00277280652371106
+sub031,closed,somato lateralisation index,max,slow,rt,alpha,0.0265285093110717
+sub031,closed,absolute,Brodmann,correct,accuracy,alpha,1.05034756650039e-05
+sub031,closed,absolute,Brodmann,incorrect,accuracy,alpha,1.02274855084215e-05
+sub031,closed,absolute,Brodmann,correct_e,accuracy_e,alpha,9.63318382601923e-06
+sub031,closed,absolute,Brodmann,incorrect_e,accuracy_e,alpha,1.02274855084215e-05
+sub031,closed,absolute,Brodmann,fast,rt,alpha,1.14954962308762e-05
+sub031,closed,absolute,Brodmann,slow,rt,alpha,9.93881892638131e-06
+sub032,open,visual power,Brodmann,correct,accuracy,alpha,0.379765231337925
+sub032,open,visual power,Brodmann,incorrect,accuracy,alpha,0.423763449915774
+sub032,open,visual power,Brodmann,correct_e,accuracy_e,alpha,0.240063575594496
+sub032,open,visual power,Brodmann,incorrect_e,accuracy_e,alpha,0.423763449915774
+sub032,open,visual power,Brodmann,fast,rt,alpha,0.517521430322782
+sub032,open,visual power,Brodmann,slow,rt,alpha,0.236836209458496
+sub032,open,somato lateralisation index,max,correct,accuracy,alpha,0.0297518471835518
+sub032,open,somato lateralisation index,max,incorrect,accuracy,alpha,0.00754571231067007
+sub032,open,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.00485699703564384
+sub032,open,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.00754571231067007
+sub032,open,somato lateralisation index,max,fast,rt,alpha,0.0901126780139011
+sub032,open,somato lateralisation index,max,slow,rt,alpha,0.0290924317777086
+sub032,open,absolute,Brodmann,correct,accuracy,alpha,3.98660026797565e-06
+sub032,open,absolute,Brodmann,incorrect,accuracy,alpha,3.64100999592456e-06
+sub032,open,absolute,Brodmann,correct_e,accuracy_e,alpha,3.92166617418052e-06
+sub032,open,absolute,Brodmann,incorrect_e,accuracy_e,alpha,3.64100999592456e-06
+sub032,open,absolute,Brodmann,fast,rt,alpha,4.35997952792771e-06
+sub032,open,absolute,Brodmann,slow,rt,alpha,3.67628189329284e-06
+sub032,closed,visual power,Brodmann,correct,accuracy,alpha,-0.188913300104421
+sub032,closed,visual power,Brodmann,incorrect,accuracy,alpha,-0.0542236891097055
+sub032,closed,visual power,Brodmann,correct_e,accuracy_e,alpha,-0.258375876510691
+sub032,closed,visual power,Brodmann,incorrect_e,accuracy_e,alpha,-0.0542236891097055
+sub032,closed,visual power,Brodmann,fast,rt,alpha,-0.220021682962598
+sub032,closed,visual power,Brodmann,slow,rt,alpha,-0.155113689402388
+sub032,closed,somato lateralisation index,max,correct,accuracy,alpha,-0.0336523166170413
+sub032,closed,somato lateralisation index,max,incorrect,accuracy,alpha,0.118031362823893
+sub032,closed,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.0997652913158414
+sub032,closed,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.118031362823893
+sub032,closed,somato lateralisation index,max,fast,rt,alpha,0.0473111922894576
+sub032,closed,somato lateralisation index,max,slow,rt,alpha,-0.127220953494474
+sub032,closed,absolute,Brodmann,correct,accuracy,alpha,6.77088506815976e-06
+sub032,closed,absolute,Brodmann,incorrect,accuracy,alpha,7.60246158200552e-06
+sub032,closed,absolute,Brodmann,correct_e,accuracy_e,alpha,6.35823297474133e-06
+sub032,closed,absolute,Brodmann,incorrect_e,accuracy_e,alpha,7.60246158200552e-06
+sub032,closed,absolute,Brodmann,fast,rt,alpha,6.62737913034905e-06
+sub032,closed,absolute,Brodmann,slow,rt,alpha,6.8648868275371e-06
+sub033,open,visual power,Brodmann,correct,accuracy,alpha,0.577066754494588
+sub033,open,visual power,Brodmann,incorrect,accuracy,alpha,0.622851245204628
+sub033,open,visual power,Brodmann,correct_e,accuracy_e,alpha,1.39666270058823
+sub033,open,visual power,Brodmann,incorrect_e,accuracy_e,alpha,0.622851245204628
+sub033,open,visual power,Brodmann,fast,rt,alpha,0.761960431983397
+sub033,open,visual power,Brodmann,slow,rt,alpha,0.401154384968155
+sub033,open,somato lateralisation index,max,correct,accuracy,alpha,0.185166724719065
+sub033,open,somato lateralisation index,max,incorrect,accuracy,alpha,0.216554046125772
+sub033,open,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.446923788528475
+sub033,open,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.216554046125772
+sub033,open,somato lateralisation index,max,fast,rt,alpha,0.1423794966489
+sub033,open,somato lateralisation index,max,slow,rt,alpha,0.215636504121213
+sub033,open,absolute,Brodmann,correct,accuracy,alpha,4.16078405460261e-06
+sub033,open,absolute,Brodmann,incorrect,accuracy,alpha,5.85746617231183e-06
+sub033,open,absolute,Brodmann,correct_e,accuracy_e,alpha,4.33551129307777e-06
+sub033,open,absolute,Brodmann,incorrect_e,accuracy_e,alpha,5.85746617231183e-06
+sub033,open,absolute,Brodmann,fast,rt,alpha,4.44677446734315e-06
+sub033,open,absolute,Brodmann,slow,rt,alpha,4.04010428458423e-06
+sub033,closed,visual power,Brodmann,correct,accuracy,alpha,0.177997683781239
+sub033,closed,visual power,Brodmann,incorrect,accuracy,alpha,-0.233783859467475
+sub033,closed,visual power,Brodmann,correct_e,accuracy_e,alpha,0.148830300252827
+sub033,closed,visual power,Brodmann,incorrect_e,accuracy_e,alpha,-0.233783859467475
+sub033,closed,visual power,Brodmann,fast,rt,alpha,0.205574322929156
+sub033,closed,visual power,Brodmann,slow,rt,alpha,0.138376031136187
+sub033,closed,somato lateralisation index,max,correct,accuracy,alpha,0.0722883959865638
+sub033,closed,somato lateralisation index,max,incorrect,accuracy,alpha,-0.262868620053413
+sub033,closed,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.100566972255216
+sub033,closed,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,-0.262868620053413
+sub033,closed,somato lateralisation index,max,fast,rt,alpha,-0.00640780828146225
+sub033,closed,somato lateralisation index,max,slow,rt,alpha,0.114225490441598
+sub033,closed,absolute,Brodmann,correct,accuracy,alpha,1.43349911616885e-05
+sub033,closed,absolute,Brodmann,incorrect,accuracy,alpha,1.44889839867846e-05
+sub033,closed,absolute,Brodmann,correct_e,accuracy_e,alpha,1.54687817826376e-05
+sub033,closed,absolute,Brodmann,incorrect_e,accuracy_e,alpha,1.44889839867846e-05
+sub033,closed,absolute,Brodmann,fast,rt,alpha,1.37775420061219e-05
+sub033,closed,absolute,Brodmann,slow,rt,alpha,1.4869442497802e-05
+sub034,open,visual power,Brodmann,correct,accuracy,alpha,0.231029153191194
+sub034,open,visual power,Brodmann,incorrect,accuracy,alpha,0.344525186481518
+sub034,open,visual power,Brodmann,correct_e,accuracy_e,alpha,0.318001822868435
+sub034,open,visual power,Brodmann,incorrect_e,accuracy_e,alpha,0.344525186481518
+sub034,open,visual power,Brodmann,fast,rt,alpha,0.120294787658962
+sub034,open,visual power,Brodmann,slow,rt,alpha,0.410989800988408
+sub034,open,somato lateralisation index,max,correct,accuracy,alpha,0.0998047295854768
+sub034,open,somato lateralisation index,max,incorrect,accuracy,alpha,-0.00194634125497141
+sub034,open,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.118946423306264
+sub034,open,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,-0.00194634125497141
+sub034,open,somato lateralisation index,max,fast,rt,alpha,0.172151498047116
+sub034,open,somato lateralisation index,max,slow,rt,alpha,0.0433586902475447
+sub034,open,absolute,Brodmann,correct,accuracy,alpha,2.94957514358221e-06
+sub034,open,absolute,Brodmann,incorrect,accuracy,alpha,2.71998780811097e-06
+sub034,open,absolute,Brodmann,correct_e,accuracy_e,alpha,3.31555834846679e-06
+sub034,open,absolute,Brodmann,incorrect_e,accuracy_e,alpha,2.71998780811097e-06
+sub034,open,absolute,Brodmann,fast,rt,alpha,2.81422434097417e-06
+sub034,open,absolute,Brodmann,slow,rt,alpha,3.0248213921849e-06
+sub034,closed,visual power,Brodmann,correct,accuracy,alpha,-0.115549618117629
+sub034,closed,visual power,Brodmann,incorrect,accuracy,alpha,0.0993857326354873
+sub034,closed,visual power,Brodmann,correct_e,accuracy_e,alpha,-0.036358430967121
+sub034,closed,visual power,Brodmann,incorrect_e,accuracy_e,alpha,0.0993857326354873
+sub034,closed,visual power,Brodmann,fast,rt,alpha,-0.139587751526456
+sub034,closed,visual power,Brodmann,slow,rt,alpha,-0.0624646595400031
+sub034,closed,somato lateralisation index,max,correct,accuracy,alpha,0.0824493456167971
+sub034,closed,somato lateralisation index,max,incorrect,accuracy,alpha,-0.19498213111889
+sub034,closed,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.330348799099196
+sub034,closed,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,-0.19498213111889
+sub034,closed,somato lateralisation index,max,fast,rt,alpha,0.0990311940495543
+sub034,closed,somato lateralisation index,max,slow,rt,alpha,0.0624289897172725
+sub034,closed,absolute,Brodmann,correct,accuracy,alpha,7.38392946092897e-06
+sub034,closed,absolute,Brodmann,incorrect,accuracy,alpha,8.93026414978418e-06
+sub034,closed,absolute,Brodmann,correct_e,accuracy_e,alpha,6.88247938824699e-06
+sub034,closed,absolute,Brodmann,incorrect_e,accuracy_e,alpha,8.93026414978418e-06
+sub034,closed,absolute,Brodmann,fast,rt,alpha,7.57471457192276e-06
+sub034,closed,absolute,Brodmann,slow,rt,alpha,7.23990563749284e-06
+sub035,open,visual power,Brodmann,correct,accuracy,alpha,0.0269616913973946
+sub035,open,visual power,Brodmann,incorrect,accuracy,alpha,-0.00211551983555688
+sub035,open,visual power,Brodmann,correct_e,accuracy_e,alpha,0.115317214541247
+sub035,open,visual power,Brodmann,incorrect_e,accuracy_e,alpha,-0.00211551983555688
+sub035,open,visual power,Brodmann,fast,rt,alpha,0.0122283892141219
+sub035,open,visual power,Brodmann,slow,rt,alpha,0.0385433882099092
+sub035,open,somato lateralisation index,max,correct,accuracy,alpha,-0.000697277203373591
+sub035,open,somato lateralisation index,max,incorrect,accuracy,alpha,0.171100534760052
+sub035,open,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.011325880428983
+sub035,open,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.171100534760052
+sub035,open,somato lateralisation index,max,fast,rt,alpha,0.0817100846082145
+sub035,open,somato lateralisation index,max,slow,rt,alpha,-0.065932670524098
+sub035,open,absolute,Brodmann,correct,accuracy,alpha,1.08044331917092e-05
+sub035,open,absolute,Brodmann,incorrect,accuracy,alpha,1.02158014661901e-05
+sub035,open,absolute,Brodmann,correct_e,accuracy_e,alpha,1.03319961254071e-05
+sub035,open,absolute,Brodmann,incorrect_e,accuracy_e,alpha,1.02158014661901e-05
+sub035,open,absolute,Brodmann,fast,rt,alpha,1.06053769152504e-05
+sub035,open,absolute,Brodmann,slow,rt,alpha,1.13097284749449e-05
+sub035,closed,visual power,Brodmann,correct,accuracy,alpha,-0.0775821138907487
+sub035,closed,visual power,Brodmann,incorrect,accuracy,alpha,-0.0898759627572928
+sub035,closed,visual power,Brodmann,correct_e,accuracy_e,alpha,-0.0393065163500474
+sub035,closed,visual power,Brodmann,incorrect_e,accuracy_e,alpha,-0.0898759627572928
+sub035,closed,visual power,Brodmann,fast,rt,alpha,0.00981380290936628
+sub035,closed,visual power,Brodmann,slow,rt,alpha,-0.161876443381973
+sub035,closed,somato lateralisation index,max,correct,accuracy,alpha,0.0261376411572871
+sub035,closed,somato lateralisation index,max,incorrect,accuracy,alpha,0.158927978436711
+sub035,closed,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.0494101900312231
+sub035,closed,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.158927978436711
+sub035,closed,somato lateralisation index,max,fast,rt,alpha,0.0251796109217366
+sub035,closed,somato lateralisation index,max,slow,rt,alpha,0.0232649762474435
+sub035,closed,absolute,Brodmann,correct,accuracy,alpha,1.45135186103722e-05
+sub035,closed,absolute,Brodmann,incorrect,accuracy,alpha,1.60336696881171e-05
+sub035,closed,absolute,Brodmann,correct_e,accuracy_e,alpha,1.44123582730704e-05
+sub035,closed,absolute,Brodmann,incorrect_e,accuracy_e,alpha,1.60336696881171e-05
+sub035,closed,absolute,Brodmann,fast,rt,alpha,1.614990902907e-05
+sub035,closed,absolute,Brodmann,slow,rt,alpha,1.33087257949862e-05
+sub036,open,visual power,Brodmann,correct,accuracy,alpha,0.112409656673689
+sub036,open,visual power,Brodmann,incorrect,accuracy,alpha,0.352010163752603
+sub036,open,visual power,Brodmann,correct_e,accuracy_e,alpha,0.121220894841038
+sub036,open,visual power,Brodmann,incorrect_e,accuracy_e,alpha,0.352010163752603
+sub036,open,visual power,Brodmann,fast,rt,alpha,0.0227331860272375
+sub036,open,visual power,Brodmann,slow,rt,alpha,0.285091291455643
+sub036,open,somato lateralisation index,max,correct,accuracy,alpha,0.281734775907492
+sub036,open,somato lateralisation index,max,incorrect,accuracy,alpha,0.262911850932627
+sub036,open,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.10819315450442
+sub036,open,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.262911850932627
+sub036,open,somato lateralisation index,max,fast,rt,alpha,0.342551413820632
+sub036,open,somato lateralisation index,max,slow,rt,alpha,0.207405813115997
+sub036,open,absolute,Brodmann,correct,accuracy,alpha,9.4769157501569e-06
+sub036,open,absolute,Brodmann,incorrect,accuracy,alpha,8.92986822179471e-06
+sub036,open,absolute,Brodmann,correct_e,accuracy_e,alpha,9.3374807981791e-06
+sub036,open,absolute,Brodmann,incorrect_e,accuracy_e,alpha,8.92986822179471e-06
+sub036,open,absolute,Brodmann,fast,rt,alpha,9.46052021428578e-06
+sub036,open,absolute,Brodmann,slow,rt,alpha,9.6568475244482e-06
+sub036,closed,visual power,Brodmann,correct,accuracy,alpha,0.109734671382483
+sub036,closed,visual power,Brodmann,incorrect,accuracy,alpha,0.0136424458976496
+sub036,closed,visual power,Brodmann,correct_e,accuracy_e,alpha,0.365937107433546
+sub036,closed,visual power,Brodmann,incorrect_e,accuracy_e,alpha,0.0136424458976496
+sub036,closed,visual power,Brodmann,fast,rt,alpha,0.207217499311899
+sub036,closed,visual power,Brodmann,slow,rt,alpha,0.0185721244234513
+sub036,closed,somato lateralisation index,max,correct,accuracy,alpha,0.127243619116707
+sub036,closed,somato lateralisation index,max,incorrect,accuracy,alpha,-0.0301989430091526
+sub036,closed,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.23752486281304
+sub036,closed,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,-0.0301989430091526
+sub036,closed,somato lateralisation index,max,fast,rt,alpha,0.158721468585592
+sub036,closed,somato lateralisation index,max,slow,rt,alpha,0.225454253759387
+sub036,closed,absolute,Brodmann,correct,accuracy,alpha,1.93282359374985e-05
+sub036,closed,absolute,Brodmann,incorrect,accuracy,alpha,1.8120485918114e-05
+sub036,closed,absolute,Brodmann,correct_e,accuracy_e,alpha,1.934957298922e-05
+sub036,closed,absolute,Brodmann,incorrect_e,accuracy_e,alpha,1.8120485918114e-05
+sub036,closed,absolute,Brodmann,fast,rt,alpha,2.15014852615267e-05
+sub036,closed,absolute,Brodmann,slow,rt,alpha,1.74825066221117e-05
+sub037,open,visual power,Brodmann,correct,accuracy,alpha,0.52182246915583
+sub037,open,visual power,Brodmann,incorrect,accuracy,alpha,0.277014638402887
+sub037,open,visual power,Brodmann,correct_e,accuracy_e,alpha,1.14919690017459
+sub037,open,visual power,Brodmann,incorrect_e,accuracy_e,alpha,0.277014638402887
+sub037,open,visual power,Brodmann,fast,rt,alpha,0.744523441006264
+sub037,open,visual power,Brodmann,slow,rt,alpha,0.362839674454345
+sub037,open,somato lateralisation index,max,correct,accuracy,alpha,0.0364772830554284
+sub037,open,somato lateralisation index,max,incorrect,accuracy,alpha,0.354177044833669
+sub037,open,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.00238181311846939
+sub037,open,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.354177044833669
+sub037,open,somato lateralisation index,max,fast,rt,alpha,0.236173667136736
+sub037,open,somato lateralisation index,max,slow,rt,alpha,-0.127985270271728
+sub037,open,absolute,Brodmann,correct,accuracy,alpha,1.25217793912315e-05
+sub037,open,absolute,Brodmann,incorrect,accuracy,alpha,1.23522992375632e-05
+sub037,open,absolute,Brodmann,correct_e,accuracy_e,alpha,1.43195240227732e-05
+sub037,open,absolute,Brodmann,incorrect_e,accuracy_e,alpha,1.23522992375632e-05
+sub037,open,absolute,Brodmann,fast,rt,alpha,1.35590674580529e-05
+sub037,open,absolute,Brodmann,slow,rt,alpha,1.15787848485661e-05
+sub037,closed,visual power,Brodmann,correct,accuracy,alpha,-0.143067709222386
+sub037,closed,visual power,Brodmann,incorrect,accuracy,alpha,-0.0675180980857213
+sub037,closed,visual power,Brodmann,correct_e,accuracy_e,alpha,-0.20964135699582
+sub037,closed,visual power,Brodmann,incorrect_e,accuracy_e,alpha,-0.0675180980857213
+sub037,closed,visual power,Brodmann,fast,rt,alpha,-0.0816063821867918
+sub037,closed,visual power,Brodmann,slow,rt,alpha,-0.210331018473798
+sub037,closed,somato lateralisation index,max,correct,accuracy,alpha,0.0208298000710288
+sub037,closed,somato lateralisation index,max,incorrect,accuracy,alpha,0.14044070725329
+sub037,closed,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.145152941537098
+sub037,closed,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.14044070725329
+sub037,closed,somato lateralisation index,max,fast,rt,alpha,0.00129341136312652
+sub037,closed,somato lateralisation index,max,slow,rt,alpha,-0.00544416521941182
+sub037,closed,absolute,Brodmann,correct,accuracy,alpha,2.48454840902607e-05
+sub037,closed,absolute,Brodmann,incorrect,accuracy,alpha,1.94417759675656e-05
+sub037,closed,absolute,Brodmann,correct_e,accuracy_e,alpha,2.59735182573974e-05
+sub037,closed,absolute,Brodmann,incorrect_e,accuracy_e,alpha,1.94417759675656e-05
+sub037,closed,absolute,Brodmann,fast,rt,alpha,2.63877189131304e-05
+sub037,closed,absolute,Brodmann,slow,rt,alpha,2.35184825568149e-05
+sub039,open,visual power,Brodmann,correct,accuracy,alpha,0.161109272075328
+sub039,open,visual power,Brodmann,incorrect,accuracy,alpha,-0.374645078925005
+sub039,open,visual power,Brodmann,correct_e,accuracy_e,alpha,-0.0977529376574819
+sub039,open,visual power,Brodmann,incorrect_e,accuracy_e,alpha,-0.374645078925005
+sub039,open,visual power,Brodmann,fast,rt,alpha,0.257138642487743
+sub039,open,visual power,Brodmann,slow,rt,alpha,0.065350416915432
+sub039,open,somato lateralisation index,max,correct,accuracy,alpha,0.0145888060780809
+sub039,open,somato lateralisation index,max,incorrect,accuracy,alpha,-0.0124926782216112
+sub039,open,somato lateralisation index,max,correct_e,accuracy_e,alpha,-0.108333809224739
+sub039,open,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,-0.0124926782216112
+sub039,open,somato lateralisation index,max,fast,rt,alpha,0.0298002833623722
+sub039,open,somato lateralisation index,max,slow,rt,alpha,0.00729466476740694
+sub039,open,absolute,Brodmann,correct,accuracy,alpha,9.15373425495933e-06
+sub039,open,absolute,Brodmann,incorrect,accuracy,alpha,6.31216808558544e-06
+sub039,open,absolute,Brodmann,correct_e,accuracy_e,alpha,9.43514670118368e-06
+sub039,open,absolute,Brodmann,incorrect_e,accuracy_e,alpha,6.31216808558544e-06
+sub039,open,absolute,Brodmann,fast,rt,alpha,9.63964641897569e-06
+sub039,open,absolute,Brodmann,slow,rt,alpha,9.09302550938725e-06
+sub039,closed,visual power,Brodmann,correct,accuracy,alpha,0.0232563155501303
+sub039,closed,visual power,Brodmann,incorrect,accuracy,alpha,-0.0123589769792836
+sub039,closed,visual power,Brodmann,correct_e,accuracy_e,alpha,0.104711803685678
+sub039,closed,visual power,Brodmann,incorrect_e,accuracy_e,alpha,-0.0123589769792836
+sub039,closed,visual power,Brodmann,fast,rt,alpha,0.139319458937792
+sub039,closed,visual power,Brodmann,slow,rt,alpha,-0.00633226554886321
+sub039,closed,somato lateralisation index,max,correct,accuracy,alpha,-0.092416865138281
+sub039,closed,somato lateralisation index,max,incorrect,accuracy,alpha,0.524112810726495
+sub039,closed,somato lateralisation index,max,correct_e,accuracy_e,alpha,0.00194124551151608
+sub039,closed,somato lateralisation index,max,incorrect_e,accuracy_e,alpha,0.524112810726495
+sub039,closed,somato lateralisation index,max,fast,rt,alpha,-0.0654916752116789
+sub039,closed,somato lateralisation index,max,slow,rt,alpha,-0.135497183935995
+sub039,closed,absolute,Brodmann,correct,accuracy,alpha,1.9025648372954e-05
+sub039,closed,absolute,Brodmann,incorrect,accuracy,alpha,1.48552893117542e-05
+sub039,closed,absolute,Brodmann,correct_e,accuracy_e,alpha,1.63179873807374e-05
+sub039,closed,absolute,Brodmann,incorrect_e,accuracy_e,alpha,1.48552893117542e-05
+sub039,closed,absolute,Brodmann,fast,rt,alpha,2.02689366438949e-05
+sub039,closed,absolute,Brodmann,slow,rt,alpha,1.92729942459969e-05
