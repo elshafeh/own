@@ -4,11 +4,13 @@ suj_list                          	= [1:33 35:36 38:44 46:51];
 
 for nsuj = 1:length(suj_list)
         
-    fname_in                    	= ['~/Dropbox/project_me/data/nback/peak/sub' num2str(suj_list(nsuj)) '.alphabeta.peak.package.0back.mat'];
+    dir_data                        = '~/Dropbox/project_me/data/nback/peak/';
+    fname_in                    	= [dir_data 'sub' num2str(suj_list(nsuj)) '.alphabeta.peak.package.0back.mat'];
     fprintf('loading %s\n',fname_in);
     load(fname_in);
     
-    allbetapeaks(nsuj,1)            = bpeak;
+    allbetapeaks(nsuj,1)            = apeak;
+    allbetapeaks(nsuj,2)            = bpeak;
     
 end
 
@@ -26,7 +28,9 @@ for nsuj = 1:length(suj_list)
     fprintf('loading %s\n',fname_in);
     load(fname_in);
     
-    for nback = 1:2
+    list_band                       = {'alpha' 'band'};
+    
+    for nband = 1:2
         
         for nbehav = 1:2
         

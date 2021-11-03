@@ -11,16 +11,6 @@ ext_freq                        = [num2str(freq_interest-freq_tap) 't' num2str(f
 ext_time_source                 = [ext_ext num2str(abs(time_window(1)*1000)) ext_ext num2str(abs((time_window(2))*1000))];
 ext_name                        = [ext_freq '.' ext_time_source];
 
-if freq_interest < 7
-    source_name                 = 'theta';
-else
-    if freq_interest < 15
-        source_name             = 'alpha';
-    else
-        source_name         	= 'beta';
-    end
-end
-
 cfg                             = [];
 cfg.toilim                      = time_window;
 data                            = ft_redefinetrial(cfg, data_in);

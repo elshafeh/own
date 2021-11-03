@@ -32,8 +32,7 @@ alldata$eye_block     <- as.factor(alldata$eye_block)
 
 model_beh           <- lme4::lmer(sleep ~ (eye+eye_block)^2 + (1|sub), data =alldata)
 model_beh_anova     <- Anova(model_beh,type=2,test.statistic=c("F"))
-print(model_beh_anova)
-
+ 
 res <- emmeans(model_beh, pairwise ~ eye)
 print(res)
 

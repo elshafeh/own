@@ -1,4 +1,4 @@
-function PLF_out = mbon_PhaseLockingFactor(data, cfg)
+function PLF_out = mbon_PhaseLockingFactor(cfg,data)
  
 % ft_ PLF function
 % 1) computes the Phase Locking Factor for each channel,

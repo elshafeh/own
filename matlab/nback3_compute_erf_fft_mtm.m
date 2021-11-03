@@ -38,34 +38,34 @@ for nsuj = [1:33 35:36 38:44 46:51]
     
     list_stim               = {'first' 'target' 'allstim'};
     
-    for nstim = [3]
-        %% compute ERFs
+    for nstim = [1 2 3]
         
-        cfg                 = [];
-        
-        if nstim < 3
-            cfg.trials  	= find(trialinfo(:,2) == nstim); % target or first
-        else
-            cfg.trials      = find(trialinfo(:,2) > -1); % all
-        end
-        
-        avg                 = ft_timelockanalysis(cfg, data_preproc);
-        
-        avg_comb            = ft_combineplanar([],avg);
-        avg_comb            = rmfield(avg_comb,'cfg'); clc;
-        
-        dir_data            = '~/Dropbox/project_me/data/nback/corr/erf/';
-        fname_out           = [dir_data 'sub' num2str(nsuj) '.allback.allbehav.' list_stim{nstim} '.erfComb.mat'];
-        
-        fprintf('Saving %s\n',fname_out);
-        tic;save(fname_out,'avg_comb','-v7.3');toc
+        %         %% compute ERFs
+        %         cfg                 = [];
+        %
+        %         if nstim < 3
+        %             cfg.trials  	= find(trialinfo(:,2) == nstim); % target or first
+        %         else
+        %             cfg.trials      = find(trialinfo(:,2) > -1); % all
+        %         end
+        %
+        %         avg                 = ft_timelockanalysis(cfg, data_preproc);
+        %
+        %         avg_comb            = ft_combineplanar([],avg);
+        %         avg_comb            = rmfield(avg_comb,'cfg'); clc;
+        %
+        %         dir_data            = '~/Dropbox/project_me/data/nback/corr/erf/';
+        %         fname_out           = [dir_data 'sub' num2str(nsuj) '.allback.allbehav.' list_stim{nstim} '.erfComb.mat'];
+        %
+        %         fprintf('Saving %s\n',fname_out);
+        %         tic;save(fname_out,'avg_comb','-v7.3');toc
         
         %% compute FFT
         
-        list_time_window    = [-0.499 0; 0 0.499];
-        list_time_name      = {'pre' 'post'};
+        list_time_window    = [-0.499 0]; %; 0 0.499];
+        list_time_name      = {'pre'}; % 'post'};
         
-        for ntime = [1 2]
+        for ntime = [1]
             
             % select time window and trials
             cfg           	= [];
@@ -116,7 +116,7 @@ for nsuj = [1:33 35:36 38:44 46:51]
             cfg.trials      = find(trialinfo(:,2) > -1); % all
         end
         
-        cfg.foi             = [1:1:30 32:2:100];
+        cfg.foi             = [1:1:40];
         cfg.t_ftimwin       = ones(length(cfg.foi),1).*0.5;
         cfg.tapsmofrq       = 0.2 *cfg.foi;
         cfg.toi             = -1.5:0.02:2;

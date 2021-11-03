@@ -11,7 +11,7 @@ load ../data/bil_goodsubjectlist.27feb20.mat
 for nsuj = 1:length(suj_list)
     
     subjectName                             = suj_list{nsuj};
-    list_window                             = {'p4300p5500' };
+    list_window                             = {'p4300p5500'};
     
     for ntime = 1:length(list_window)
         

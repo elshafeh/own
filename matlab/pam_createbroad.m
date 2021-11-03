@@ -4,7 +4,7 @@ ft_path                 = '~/github/fieldtrip/template/atlas/afni/';
 current_path            = '/Users/heshamelshafei/github/own/matlab/';
 
 cd(ft_path);
-atlas                   = ft_read_atlas('TTatlas+tlrc.HEAD');
+atlas                   = ft_read_atlas('~/github/fieldtrip/template/atlas/afni/TTatlas+tlrc.HEAD');
 atlas                   = ft_convert_units(atlas,'cm');
 
 cd(current_path);

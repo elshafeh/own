@@ -37,13 +37,17 @@ for nsuj = [1:33 35:36 38:44 46:51]
     trialinfo(:,6)                  = 1:length(data.trialinfo); % trial indices to match with bin
     
     list_name                       = {'1back','2back'};
-    list_stim                       = {'first' 'target'};
-    list_behav                      = {'correct' 'incorrect' 'fast' 'slow'};
+    list_stim                       = {'first' 'target' 'allstim'};
+    list_behav                      = {'correct' 'incorrect' 'fast' 'slow' };
     
     for nback = [1 2]
-        for nstim = [2] % let's focus only on targets
+        for nstim = [3] % let's focus only on targets
             
-            flg_nback_stim          = find(trialinfo(:,1) == nback + 4 & trialinfo(:,2) == nstim);
+            if nstim < 3
+                flg_nback_stim     	= find(trialinfo(:,1) == nback + 4 & trialinfo(:,2) == nstim);
+            else
+                flg_nback_stim     	= find(trialinfo(:,1) == nback + 4);
+            end
             
             if ~isempty(flg_nback_stim)
                 
@@ -60,7 +64,7 @@ for nsuj = [1:33 35:36 38:44 46:51]
                 index_trials{3}     = sub_info_correct(find(sub_info_correct(:,2) < median_rt),3); % fast
                 index_trials{4}     = sub_info_correct(find(sub_info_correct(:,2) > median_rt),3); % slow
                 
-                for nbehav = 1:length(index_trials)
+                for nbehav = [1]
                 
                     if ~isempty(index_trials{nbehav})
                         

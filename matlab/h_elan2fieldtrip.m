@@ -1,4 +1,4 @@
-function h_elan2fieldtrip(infIN,time_pre,time_post,infOUT)
+function data_elan = h_elan2fieldtrip(infIN,time_pre,time_post,infOUT,output_save)
 
 % infIN is a struct with these fields:
 % eegName : name of elan file
@@ -74,7 +74,11 @@ end
 
 % save
 data_elan.cfg.cache_pos = pos; % backup pos to verify
-fprintf('Saving: %s\n',infOUT.name);
-save(infOUT.name,'data_elan','-v7.3')
+
+if strcmp(output_save,'yes')
+    fprintf('Saving: %s\n',infOUT.name);
+    save(infOUT.name,'data_elan','-v7.3')
+end
+
 fprintf('%s\n','Done!');
 

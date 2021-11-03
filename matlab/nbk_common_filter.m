@@ -11,7 +11,7 @@ cfg.foi                         = freq_interest;
 cfg.tapsmofrq                   = freq_tap;
 cfg.output                      = 'powandcsd';
 cfg.taper                       = 'hanning';
-cfg.pad                         = 'nextpow2';
+cfg.pad                         = 2;
 freq                            = ft_freqanalysis(cfg,data_in); clc ;
 
 cfg                             = [];

@@ -18,93 +18,59 @@ rm(list=ls())
 source("/Users/heshamelshafei/github/own/toolbox/RainCloudPlots/tutorial_R/summarySE.R")
 source("/Users/heshamelshafei/github/own/toolbox/RainCloudPlots/tutorial_R/R_rainclouds.R")
 
-col_map <- "Dark2"
-erbar_w <- .6; erbar_s <- .8; pd  <- position_dodge(erbar_w+.1)
+erbar_w <- .2; erbar_s <- .8; pd  <- position_dodge(erbar_w+.1)
 scat_s  <- 1.5;mean_s  <- 5; font_s  <- 16
-plot_lim <- c(0.88,1)
-plot_breaks <- seq(plot_lim[1],plot_lim[2],by = 0.02)
 
-dir_file            <- "/Users/heshamelshafei/gitHub/own/doc/"
-fname               <- paste0(dir_file,"nback_binning_behavior_exl500concat2bins.prepost.txt")
-sub_table           <- read.table(fname,sep = ',',header=T)
+dir_file              <- "/Users/heshamelshafei/gitHub/own/doc/"
 
-sub_table$sub       <- as.factor(sub_table$sub)
-sub_table$band      <- as.factor(sub_table$band)
-sub_table$bin       <- as.factor(sub_table$bin)
-sub_table$win       <- as.factor(sub_table$win)
-# sub_table$cond      <- as.factor(sub_table$cond)
+# fname                 <- paste0(dir_file,"nback_binning_behavior_preconcat2bins.restrict.txt")
+# fname               <- paste0(dir_file,"nback_binning_behavior_exl500concat2bins.prepost.txt")
+fname               <- paste0(dir_file,"nback_binning_behavior_preconcat2bins.0back.txt")
+sub_table             <- read.table(fname,sep = ',',header=T)
 
-sub_table$band      <- ordered(sub_table$band, levels = c("slow","alpha","beta")) #,"gamma1","gamma2"))
-sub_table$win      <- ordered(sub_table$win, levels = c("pre","post")) #,"gamma1","gamma2"))
+sub_table <- sub_table[sub_table$win == "pre",]
+sub_table <- sub_table[sub_table$band == "alpha" | sub_table$band == "beta",]
 
-rep_data            <- sub_table
-model_beh           <- lme4::lmer(acc ~ (band+bin+win)^3 + (1|sub), data =rep_data)
-model_beh_anova     <- Anova(model_beh,type=2,test.statistic=c("F"))
-print(model_beh_anova)
+sub_table$sub         <- as.factor(sub_table$sub);sub_table$band        <- as.factor(sub_table$band)
+sub_table$bin         <- as.factor(sub_table$bin);sub_table$win         <- as.factor(sub_table$win)
+sub_table$rt          <- sub_table$rt /1000
+sub_table$rt_correct  <- sub_table$rt_correct /1000
 
-rep_data            <- sub_table[sub_table$win == "pre",]
-model_beh           <- lme4::lmer(acc ~ (band+bin)^2 + (1|sub), data =rep_data)
+model_beh           <- lme4::lmer(acc ~ (band+bin)^2 + (1|sub), data =sub_table)
 model_beh_anova     <- Anova(model_beh,type=2,test.statistic=c("F"))
 print(model_beh_anova)
 emmeans(model_beh, pairwise ~ bin|band)
 
-rep_data            <- sub_table[sub_table$win == "post",]
-model_beh           <- lme4::lmer(acc ~ (band+bin)^2 + (1|sub), data =rep_data)
+model_beh           <- lme4::lmer(rt_correct ~ (band+bin)^2 + (1|sub), data =sub_table)
 model_beh_anova     <- Anova(model_beh,type=2,test.statistic=c("F"))
 print(model_beh_anova)
-emmeans(model_beh, pairwise ~ bin|band)
+emmeans(model_beh, pairwise ~ bin)
 
-## ----------------------------------------------
+col_map <- c("#3339FF","#F0290D") # "#37E941"
 
-rep_data            <- sub_table
-sumrepdat           <- summarySE(rep_data, measurevar = "acc", 
-                                 groupvars=c("band","bin","win"))
+p1 <- ggplot(sub_table, aes(x = band, y = acc, fill = bin)) +
+  geom_flat_violin(aes(band),position = position_nudge(x = .2, y = 0),
+                   adjust = 1.5, trim = FALSE, alpha = .5, colour = NA)+
+  geom_boxplot(alpha = .5, width = .35, colour = "black")+
+  scale_colour_manual(values= col_map)+
+  scale_fill_manual(values = col_map)+
+  scale_y_continuous(name = '',limits = c(0.5,1.1),breaks = c(0.5,0.7,0.9,1.1))+
+  ggtitle('Accuracy')+
+  scale_x_discrete(name = '')+
+  theme_pubclean(base_size = 16,base_family = "Calibri")
 
-ggplot(sumrepdat, aes(x = win, y = acc_mean, group = bin, colour = bin,fill=bin))+
-  geom_point(shape = 15,position=pd,size=mean_s) +
-  geom_errorbar(data = sumrepdat, aes(x = win, y = acc_mean, group = bin, colour = bin, 
-                                      ymin = acc_mean-se, ymax = acc_mean+se), 
-                width = erbar_w,size=erbar_s,position=pd)+
-  scale_colour_brewer(palette = col_map)+
-  scale_fill_brewer(palette = col_map)+
-  ggtitle("")+facet_wrap(~band)+
-  scale_y_continuous(name = "Accuracy",breaks =plot_breaks,
-                     limits = c(plot_lim[1], plot_lim[2]))+
-  theme_pubclean(base_size = font_s,base_family = "Calibri")
 
-## ----------------------------------------------
+p2 <- ggplot(sub_table, aes(x = band, y = rt_correct, fill = bin)) +
+  geom_flat_violin(aes(band),position = position_nudge(x = .2, y = 0),
+                   adjust = 1.5, trim = FALSE, alpha = .5, colour = NA)+
+  geom_boxplot(alpha = .5, width = .35, colour = "black")+
+  scale_colour_manual(values= col_map)+
+  scale_fill_manual(values = col_map)+
+  scale_y_continuous(name = '',limits = c(0,1.2),breaks=(c(0,0.4,0.8,1.2)))+
+  scale_x_discrete(name = '')+
+  ggtitle('Reaction time')+
+  theme_pubclean(base_size = 16,base_family = "Calibri")
 
-rep_data            <- sub_table
-model_beh           <- lme4::lmer(rt ~ (band+bin+win)^3 + (1|sub), data =rep_data)
-model_beh_anova     <- Anova(model_beh,type=2,test.statistic=c("F"))
-print(model_beh_anova)
-emmeans(model_beh, pairwise ~ bin|band)
-
-rep_data            <- sub_table[sub_table$win == "pre",]
-model_beh           <- lme4::lmer(rt ~ (band+bin)^2 + (1|sub), data =rep_data)
-model_beh_anova     <- Anova(model_beh,type=2,test.statistic=c("F"))
-print(model_beh_anova)
-
-rep_data            <- sub_table[sub_table$win == "post",]
-model_beh           <- lme4::lmer(rt ~ (band+bin)^2 + (1|sub), data =rep_data)
-model_beh_anova     <- Anova(model_beh,type=2,test.statistic=c("F"))
-print(model_beh_anova)
-emmeans(model_beh, pairwise ~ bin|band)
-
-rep_data            <- sub_table
-sumrepdat           <- summarySE(rep_data, measurevar = "rt", groupvars=c("bin","band","win"))
-erbar_w <- .2; plot_lim  <- c(500,700)
-plot_breaks         <- seq(plot_lim[1],plot_lim[2],by = 50)
-
-ggplot(sumrepdat, aes(x = win, y = rt_mean, group = bin, colour = bin,fill=bin))+
-  geom_point(shape = 15,position=pd,size=mean_s) +
-  geom_errorbar(data = sumrepdat, aes(x = win, y = rt_mean, group = bin, colour = bin, 
-                                      ymin = rt_mean-se, ymax = rt_mean+se), 
-                width = erbar_w,size=erbar_s,position=pd)+
-  scale_colour_brewer(palette = col_map)+
-  scale_fill_brewer(palette = col_map)+
-  ggtitle("")+facet_wrap(~band)+
-  scale_y_continuous(name = "RT",breaks =plot_breaks,
-                     limits = c(plot_lim[1], plot_lim[2]))+
-  theme_pubclean(base_size = font_s,base_family = "Calibri")
+fullfig <- ggarrange(p1,p2,ncol=2,nrow=1)
+fullfig
 

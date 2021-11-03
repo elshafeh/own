@@ -32,14 +32,12 @@ for nsuj = [10 20 33]
     source.pos                   	= template_grid.pos;
     source.dim                  	= template_grid.dim;
     source.pow                    	= nan(length(source.pos),1);
-    
 
     vct_data                        = abs((act - bsl) ./ bsl); % rel change 
 
     find_left                       = find(source.pos(:,1) < 0);
     find_rite                       = find(source.pos(:,1) > 0);
     
-
     max_vox                         = [];
     
     % find max left

@@ -1,4 +1,4 @@
-function [vox_list] = h_findMaxVoxelPerRegion(source_in,cfg_in)
+function [vox_list] = h_findMaxVoxelPerRegion(cfg_in,source_in)
 
 % input : 
 % source_in: source struct with .pow and .pos
@@ -7,8 +7,8 @@ function [vox_list] = h_findMaxVoxelPerRegion(source_in,cfg_in)
 % [2] .number_voxels: specify how many values u need
 % [3] .direction: find (max) or (min)
 
-atlas_path                              = '~/Documents/GitHub/fieldtrip/template/atlas/aal/ROI_MNI_V4.nii';
-[region_index,region_name]              = h_createIndexfieldtrip(source_in.pos,atlas_path);
+[region_index]                          = cfg_in.region_index;
+[region_name]                           = cfg_in.region_name;
 
 roi_interest                            = [];
 
@@ -16,17 +16,25 @@ switch cfg_in.hemisphere
     case 'left'
         for nroi = 1:90
             cut_name                    = strsplit(region_name{nroi},'_');
-            cut_name                    = cut_name{end};
-            if strcmp(cut_name,'L')
-                roi_interest           	= [roi_interest;nroi];
+            hemi_name                  	= cut_name{end};
+            roi_name                    = cut_name{1};
+            if strcmp(hemi_name,'L')
+                flg                     = find(strcmp(cfg_in.focus,roi_name));
+                if ~isempty(flg)
+                    roi_interest      	= [roi_interest;nroi];
+                end
             end
         end
     case 'right'
         for nroi = 1:90
             cut_name                    = strsplit(region_name{nroi},'_');
-            cut_name                    = cut_name{end};
-            if strcmp(cut_name,'L')
-                roi_interest           	= [roi_interest;nroi];
+            hemi_name                  	= cut_name{end};
+            roi_name                    = cut_name{1};
+            if strcmp(hemi_name,'R')
+                flg                     = find(strcmp(cfg_in.focus,roi_name));
+                if ~isempty(flg)
+                    roi_interest      	= [roi_interest;nroi];
+                end
             end
         end
 end
@@ -36,7 +44,6 @@ clear noi
 i                                       = 0;
 
 for nroi = 1:length(roi_interest)
-    
     
     vct                                 = source_in.pow(region_index(region_index(:,2) == roi_interest(nroi),1));
     inx                                 = region_index(region_index(:,2) == roi_interest(nroi),1);

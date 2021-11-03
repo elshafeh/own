@@ -55,7 +55,7 @@ end
 keep alldata *_list name_bin
 
 nsuj                            = size(alldata,1);
-[design,neighbours]             = h_create_design_neighbours(nsuj,alldata{1,1},'gfp','t'); clc;
+[design,neighbours]             = h_create_design_neighbours(nsuj,alldata{1,1},'average','t'); clc;
 
 for nfreq = 1:size(alldata,2)
     

@@ -1,108 +1,96 @@
-function X = Shuffle(Arg1, Arg2, Arg3)  %#ok<INUSD,STOUT>
-% Random permutation of array elements
-% SHUFFLE works in Inplace, Index and Derange mode:
+function [Y,index] = Shuffle(X, bindDim)
+% [Y,index] = Shuffle(X [, bindDim])
 %
-% 1. INPLACE MODE: Y = Shuffle(X, Dim)   - - - - - - - - - - - - - - - - - - - -
-% The elements of the input array are randomly re-ordered along the specified
-% dimension. In opposite to X(RANDPERM(LENGTH(X)) no temporary memory is used,
-% such that SHUFFLE is much more efficient for large arrays.
-% INPUT:
-%   X: Array of any size. Types: DOUBLE, SINGLE, CHAR, LOGICAL,
-%      (U)INT64/32/16/8. The processed dimension must be shorter than 2^32
-%      elements. To shuffle larger or complex arrays, use the Index mode.
-%   Dim: Dimension to operate on.
-%      Optional, default: [], operate on first non-singleton dimension.
-% OUTPUT:
-%   Y: Array of same size and type as X, but with shuffled elements.
+% Randomly sorts X.
 %
-% 2. INDEX MODE: Index = Shuffle(N, 'index', NOut)   - - - - - - - - - - - - - -
-% A vector of shuffled indices is created as by RANDPERM, but faster and using
-% the smallest possible integer type to save memory. The number of output
-% elements can be limited. This method works for cells, structs or complex
-% arrays.
-% INPUT:
-%   N:      Numeric scalar >= 0.
-%   String: 'index'.
-%   NOut:   Optional, number of outputs, NOut <= N. Default: N.
-% OUTPUT:
-%   Index:  [1 x nOut] vector containing the shuffled elements of the vector
-%           [1:N] vector. To limit the memory usage the smallest possible type
-%           is used: UINT8/16/32 or INT64.
+% If X is a vector, sorts all of X, so Y = X(index).
+% If X is an m-by-n matrix, sorts each column of X, so
+%   for j=1:n, Y(:,j)=X(index(:,j),j).
 %
-% 3. DERANGEMENT MODE: Index = Shuffle(N, 'derange', NOut)   - - - - - - - - - -
-% Equivalent to Index mode, but all elements Index[i] ~= i.
+% The optional 'bindDim' parameter allows this function to shuffle with the
+% same order across the bindDim. It also work with higher dimension arrays.
+% for example, if you have an n by m matrix X and hope shuffle each column
+% with same random order (Shuffle the rows), rather than shuffle each
+% column independently, you can run Shuffle(X, 2). This function also works
+% on higher dimension arrays. say a 3-d array, If you bind the 2nd
+% dimension, it will shuffle the rows on each page independently. If I bind
+% the 2nd and 3rd dimension, then it will shuffle the layer of the 3-d
+% array.
 %
-% CONTROL COMMANDS:  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-% Shuffle(S, 'seed'): S is either empty, scalar or a [1 x 4] DOUBLE vector to
-%      set the random number  generator to a certain state. 4 integers between 0
-%      and 2^32-1 are recommended for maximum entropy. If S is empty the default
-%      seed is used.
-% Shuffle([], 'lock'): Lock Mex in the memory such that "clear all" does not
-%      reset the random  number generator. If the Mex was compiled with
-%      -DAUTOLOCK it is locked automatically.
-% Shuffle([], 'unlock'): Unlock the Mex file to allow a recompilation.
-% Shuffle(): Display compiler settings and status: Fast/exact integer, accept
-%      cell/struct, current lock status, auto-lock mode.
+% Examples:
 %
-% EXAMPLES:
-%   Shuffle(12345678901, 'seed');
-%   R = Shuffle(1:8)             %  [5, 8, 7, 4, 2, 6, 3, 1]
-%   R = Shuffle('abcdefg')       %  'gdfbcea'
-%   R = Shuffle([1:4; 5:8], 2)   %  [3, 4, 2, 1;  8, 6, 7, 5]
-%   I = Shuffle(8, 'index');     %  UINT8([3, 6, 5, 2, 4, 7, 8, 1])
-% Choose 10 different rows from a 1000 x 100 matrix:
-%   X = rand(1000, 100);       Y = X(Shuffle(1000, 'index', 10), :);
-% Operate on cells or complex arrays:
-%   C = {9, 's', 1:5};         SC = C(Shuffle(numel(C), 'index'));
-%   M = rand(3) + i * rand(3); SM = M(:, Shuffle(size(C, 2), 'index'))
+% create a 2-d array:
+%   x = repmat((1:4)',1,5)
 %
-% NOTES: Shuffle(X) is about 50% to 85% faster than: Y = X(randperm(numel(X)).
-%   It uses the Knuth-shuffle algorithm, also known as Fisher-Yates-shuffle.
-%   The random numbers are created by the cute KISS algorithm of George
-%   Marsaglia, which has a period of about 2^124 (~10^37).
-%   More notes in Shuffle.c.
+% Shuffle each column of x independently:
+%   y1 = Shuffle(x)
 %
-% COMPILATION: See Shuffle.c
+% Shuffle columns of x with same order:
+%   y2 = Shuffle(x,2)
 %
-% Tested: Matlab 6.5, 7.7, 7.8, WinXP, 32bit
-%         Compiler: LCC2.4/3.8, BCC5.5, OWC1.8, MSVC2008
-% Assumed Compatibility: higher Matlab versions, Mac, Linux, 64bit
-% Author: Jan Simon, Heidelberg, (C) 2010-2011 j@n-simon.de
+% Create a 3-d array (4 by 5 by 3), each column contains a vector [1:4]'
+%   x = reshape(repmat(reshape(kron([1,1,1],1:4),4,3),5,1),4,5,3)
 %
-% See also RAND, RANDPERM.
-% FEX:
-
-% $JRev: R-m V:012 Sum:Q65/zXZqnvFX Date:07-Mar-2011 00:49:06 $
-% $License: BSD (use/copy/change/redistribute on own risk, mention the author) $
-% $UnitTest: uTest_Shuffle $
-% $File: Tools\GLSets\Shuffle.m $
-
-% History see Shuffle.c
-
-% Some Matlab algorithms for the Knuth-Shuffle: --------------------------------
-% They are faster than Matlab's RANDPERM methods, but the MEX is recommended!
-
-% n = numel(X);
-% for i = 2:n      % Knuth shuffle in forward direction:
-%    w    = ceil(rand * i);   % 1 <= w <= i
-%    t    = X(w);
-%    X(w) = X(i);
-%    X(i) = t;
-% end
+% Shuffle each column independently on each page:
+%   [y,ind]=Shuffle(x)
+%
+% Shuffle 1*5 rows independently on each page:
+%   [y,ind]=Shuffle(x,[2])
+%
+% Shuffle 1*1*3 rows independently on each column:
+%   [y,ind]=Shuffle(x,[3])
+%
+% Create a 3-d array (3 by 4 by 5), each row contains a vector [1:4]
+%   x = reshape(repmat(reshape(kron(1:4,[1,1,1]),3,4),1,5),3,4,5)
+%
+% Shuffle 3*1*5 page along the 2nd dimension:
+%   [y,ind]=Shuffle(x,[1,3])
+%
+% This is same as:
+%   y2 = RandDim(x,2)
+%   x = reshape(repmat(reshape(repmat(reshape(kron(1:4,[1,1,1]),3,4),1,5),3,4,5),1,2),3,4,5,2)
+%   [y,ind]=Shuffle(x,[1,3])
+%
+% Also see SORT, Sample, Randi, RandDim, and RandSample.
  
-% for i = n:-1:2   % Knuth shuffle in backward direction:
-%    w    = ceil(rand * i);   % 1 <= w <= i
-%    t    = X(w);
-%    X(w) = X(i);
-%    X(i) = t;
-% end
+% xx/xx/92  dhb  Wrote it.
+% 10/25/93  dhb  Return index.
+% 05/25/96  dgp  Made consistent with sort and "for i=Shuffle(1:10)"
+% 06/29/96  dgp  Edited comments above.
+% 05/18/02  dhb  Modified code to do what comments say, for matrices.
+% 06/2/02   dhb  Fixed bug introduced 5/18.
+% 9/10/15   niki Add bindDim. so that this function can shuffle with the same
+%                order across the bindDim.
+ 
+if nargin<2
+    bindDim = [];
+end
+ 
+num_dim = ndims(X);
+siz_unbind = size(X);
+siz_unbind(bindDim) = 1;
+ 
+sort_dim = find(siz_unbind>1,1);
+permute_ind = [sort_dim, bindDim, setdiff(1:num_dim, [bindDim, sort_dim])];
+X = permute(X, permute_ind); 
+ 
+siz = size(X);
+bind_ind = 2:(length(bindDim)+1);
+unbind_ind = (length(bindDim)+2):num_dim;
+num_bind = prod(siz(bind_ind));
+num_unbind = prod(siz(unbind_ind));
+ 
+rsp_siz = [siz(1), num_bind, num_unbind];
+X = reshape(X, rsp_siz);
+[~,index] = sort(rand([siz(1),1, num_unbind]));
+ 
+index = repmat(index,1,num_bind) ...
+    + repmat(0:siz(1):siz(1)*(num_bind-1), [siz(1),1,num_unbind])...
+    + repmat(reshape(0:siz(1)*num_bind:siz(1)*num_bind*(num_unbind-1),1,1,num_unbind), siz(1), num_bind);
+ 
+Y = X(index);
+Y = permute(reshape(Y,siz), permute_ind);
+index = permute(reshape(index,siz), permute_ind);
+ 
+ 
 
-% for i = 1:nOut   % Limit output:
-%    w    = ceil(rand * (n - i + 1)) + (i - 1);   % i <= w <= n
-%    t    = X(w);
-%    X(w) = X(i);
-%    X(i) = t;
-% end
-% X = X(1:nOut);
-
-error(['JSimon:', mfilename, ':NoMex'], 'Need compiled mex file!');

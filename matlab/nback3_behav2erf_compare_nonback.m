@@ -9,7 +9,7 @@ for nsuj = 1:length(suj_list)
     for nbeh = 1:2
         
         dir_data             	= '~/Dropbox/project_me/data/nback/erf/behav2erf/';
-        flist                 	= dir([dir_data 'sub' num2str(suj_list(nsuj)) '.*back.first.' list_behav{nbeh} '.erfComb.mat']);
+        flist                 	= dir([dir_data 'sub' num2str(suj_list(nsuj)) '.*back.target.' list_behav{nbeh} '.erfComb.mat']);
         
         pow                  	= [];
         
@@ -46,7 +46,7 @@ nbsuj                                      	= size(alldata,1);
 [design,neighbours]                      	= h_create_design_neighbours(nbsuj,alldata{1,1},'elekta','t');
 
 cfg                                         = [];
-cfg.latency                                 = [-0.1 0.5];
+cfg.latency                                 = [-0.1 2];
 cfg.statistic                               = 'ft_statfun_depsamplesT';
 cfg.method                                  = 'montecarlo';
 cfg.correctm                                = 'cluster';
@@ -99,7 +99,7 @@ if min_p < plimit
     cfg.colorbar                            = 'no';
     
     i = i + 1;
-    subplot(nrow,ncol,i)
+    cfg.figure                              = subplot(nrow,ncol,i);
     ft_topoplotER(cfg,statplot);
     title({'fast - slow',['p = ' num2str(round(min_p,3))]});
     
@@ -128,7 +128,7 @@ if min_p < plimit
     xlim(statplot.time([1 end]));
     hline(0,'-k');
     vline(0,'-k');
-    xticks([0 0.1 0.2 0.3 0.4 0.5]);
+    %     xticks([0 0.1 0.2 0.3 0.4 0.5]);
     set(gca,'FontSize',16,'FontName', 'Calibri','FontWeight','normal');
     
 end

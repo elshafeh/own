@@ -1,13 +1,13 @@
-function [vox_list,vox_indx] = h_findStatMaxVoxel(stat,threshold,list_size,hemi)
+function [vox_list,vox_indx] = bae_h_findStatMaxVoxel(stat,threshold,list_size,hemi)
 
 % input : stat struct , p value , number of maximum ,
 
 atlas               = ft_read_atlas('../../fieldtrip-20151124/template/atlas/aal/ROI_MNI_V4.nii');
 roi                 = atlas.tissuelabel;
 
-indx_tot    = h_createIndexfieldtrip(stat.pos,'../../fieldtrip-20151124/');
+indx_tot            = h_createIndexfieldtrip(stat.pos,'../../fieldtrip-20151124/');
 
-stat.mask   = stat.prob < threshold ;
+stat.mask           = stat.prob < threshold ;
 
 nw_stat = stat ;
 

@@ -9,9 +9,9 @@ for nsuj = [1:33 35:36 38:44 46:51]
         fprintf('loading %s\n',fname);
         load(fname);
         
-        %-%-% exclude trials with a previous response + 0back
+        %-%-% exclude trials with a previous response
         cfg                                 = [];
-        cfg.trials                          = find(data.trialinfo(:,5) == 0 & data.trialinfo(:,1) ~= 4);
+        cfg.trials                          = find(data.trialinfo(:,5) == 0); %
         data                                = ft_selectdata(cfg,data);
         
         sess_carr{nsess}                    = megrepair(data);
@@ -28,14 +28,21 @@ for nsuj = [1:33 35:36 38:44 46:51]
     trialinfo(:,5)                          = data.trialinfo(:,7); % rt
     trialinfo(:,6)                          = 1:length(data.trialinfo); % trial indices to match with bin
     
-    list_name                               = {'1back','2back'};
-    list_stim                               = {'first' 'target'};
+    list_name                               = {'0back' '1back','2back'};
+    list_stim                               = {'first' 'target' 'allstim'};
     list_behav                              = {'correct' 'incorrect' 'fast' 'slow'};
     
-    for nback = [1 2]
-        for nstim = [2] % let's focus only on targets
+    for nback = 1:length(list_name)
+        
+        for nstim = 2 
             
-            flg_nback_stim                  = find(trialinfo(:,1) == nback + 4 & trialinfo(:,2) == nstim);
+            nback_addon                     = 3;
+            
+            if nstim == 3
+                flg_nback_stim              = find(trialinfo(:,1) == nback+nback_addon);
+            else
+                flg_nback_stim              = find(trialinfo(:,1) == nback+nback_addon & trialinfo(:,2) == nstim);
+            end
             
             if ~isempty(flg_nback_stim)
                 
@@ -52,14 +59,14 @@ for nsuj = [1:33 35:36 38:44 46:51]
                 index_trials{3}             = sub_info_correct(find(sub_info_correct(:,2) < median_rt),3); % fast
                 index_trials{4}             = sub_info_correct(find(sub_info_correct(:,2) > median_rt),3); % slow
                 
-                for nbehav = [3 4]
+                for nbehav = 1
                     
                     if ~isempty(index_trials{nbehav})
                         
-                        list_time_window    = [-0.499 0; 0 0.499];
-                        list_time_name      = {'pre' 'post'};
+                        list_time_window    = [-0.499 0];
+                        list_time_name      = {'pre'};
                         
-                        for ntime = [1 2]
+                        for ntime = 1:length(list_time_name)
                             
                             % select time window and trials
                             cfg           	= [];
@@ -73,7 +80,7 @@ for nsuj = [1:33 35:36 38:44 46:51]
                             cfg.method    	= 'mtmfft';
                             cfg.keeptrials 	= 'no';
                             cfg.pad         = 1;
-                            cfg.foi         = 1:1/cfg.pad:100;
+                            cfg.foi         = 1:1/cfg.pad:40;
                             cfg.taper     	= 'hanning';
                             cfg.tapsmofrq  	= 0 ;
                             freq        	= ft_freqanalysis(cfg,fft_data);

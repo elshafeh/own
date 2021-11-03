@@ -12,15 +12,13 @@ for nsuj = 1:length(suj_list)
         connec_measure                      = 'plv'; % plv coh.imag
         test_band                           = 'beta'; % theta alpha beta gamma
         
-        fname                               = ['~/Dropbox/project_me/data/bil/virt/' subjectName '.wallis.itc.' ... 
-            list_cond{ncond} '.' connec_measure '.mat'];
         
-        
+        fname                               = '~/Dropbox/project_me/data/nback/conn/';
+        fname                               = [fname subjectName '.' list_cond{ncond} '.wallis.' connec_measure '.connectivity.mat'];
         fprintf('loading %s\n',fname);
         load(fname);
-                
-        list_band                           = {'theta' 'alpha' 'beta' 'gamma'};
         
+        list_band                           = {'alpha' 'beta'};
         f_center                            = find(strcmp(list_band,test_band));
         
         test_done                        	= {};
